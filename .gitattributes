@@ -1,0 +1,82 @@
+# Image
+GAD181---Dead-Babies/Assets/*.jpg filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.jpeg filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.png filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.apng filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.atsc filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.gif filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.bmp filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.exr filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.tga filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.tiff filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.tif filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.iff filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.pict filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.dds filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.xcf filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.leo filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.kra filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.kpp filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.clip filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.webm filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.webp filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.svg filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.svgz filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.psd filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.afphoto filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.afdesign filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+GAD181---Dead-Babies/Assets/*.mp3 filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.ogg filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.wav filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.aiff filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.aif filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.mod filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.it filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.s3m filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.xm filter=lfs diff=lfs merge=lfs -text
+
+# Video
+GAD181---Dead-Babies/Assets/*.mov filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.avi filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.asf filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.mpg filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.mpeg filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.mp4 filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.flv filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.ogv filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.wmv filter=lfs diff=lfs merge=lfs -text
+
+# 3D
+GAD181---Dead-Babies/Assets/*.fbx filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.obj filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.max filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.blend filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.blender filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.dae filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.mb filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.ma filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.3ds filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.dfx filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.c4d filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.lwo filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.lwo2 filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.abc filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.3dm filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.bin filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.glb filter=lfs diff=lfs merge=lfs -text
+
+# Packaging
+GAD181---Dead-Babies/Assets/*.zip filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.7z filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.gz filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.rar filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.tar filter=lfs diff=lfs merge=lfs -text
+
+# Executables
+GAD181---Dead-Babies/Assets/*.exe filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.dll filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.so filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.pdb filter=lfs diff=lfs merge=lfs -text
+GAD181---Dead-Babies/Assets/*.mdb filter=lfs diff=lfs merge=lfs -text
