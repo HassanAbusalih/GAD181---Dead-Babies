@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Onix
+  m_EditorClassIdentifier: 
+  pokeName: Onix
+  description: 
+  pokeSprite: {fileID: 0}
+  maxHp: 35
+  attack: 45
+  defense: 160
+  spAttack: 30
+  spDefence: 45
+  speed: 70
+  type1: 9
+  type2: 13
