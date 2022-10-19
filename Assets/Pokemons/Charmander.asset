@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Charmander
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 34fae48b014419a48b3e6a7352ca589b, type: 3}
   maxHp: 45
   attack: 52
   defense: 43
@@ -23,3 +23,8 @@ MonoBehaviour:
   speed: 65
   type1: 2
   type2: 0
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 11fac35d7bb64184097dd30c181e9c73, type: 2}
+    level: 1
+  - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
+    level: 1

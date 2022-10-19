@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Bulbasaur
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 39f133b6f2d94f14b879c67d34a6f9cb, type: 3}
   maxHp: 45
   attack: 49
   defense: 49
@@ -23,3 +23,8 @@ MonoBehaviour:
   speed: 45
   type1: 5
   type2: 8
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
+    level: 1
+  - moves: {fileID: 11400000, guid: 7e1ba876675050546910cde280c7cccb, type: 2}
+    level: 6
