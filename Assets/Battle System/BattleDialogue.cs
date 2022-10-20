@@ -14,7 +14,7 @@ public class BattleDialogue : MonoBehaviour
         Attacks.SetActive(false);
         dialoguetext.enabled = true;
         dialoguetext.text = dialogue;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
     }
     
     public void SetMoves(List<Move> Moves)
@@ -22,13 +22,26 @@ public class BattleDialogue : MonoBehaviour
         for (int i = 0; i < PokeMoves.Count; i++)
         {
             if (i < Moves.Count)
-                Moves[i].Base.movename = PokeMoves[i].text;
+                PokeMoves[i].text = Moves[i].Base.movename;
             else
                 PokeMoves[i].text = "-";
         }
 
     }
+
+    public void UpdateMoveSelection(int selection)
+    {
+        for (int i = 0; i < PokeMoves.Count; i++)
+        {
+            if (selection == i)
+            {
+                PokeMoves[i].color = Color.blue;
+            }
+            else PokeMoves[i].color = Color.black;
+        } 
+    }
 }
+
 
 
 
@@ -38,5 +51,7 @@ public enum BattleState
     PlayerTurn,
     PlayerAttack,
     EnemyAttack,
-    Busy
+    Busy,
+    PlayerWin,
+    EnemyWin
 }
