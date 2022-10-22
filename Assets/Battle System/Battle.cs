@@ -9,6 +9,10 @@ public class Battle : MonoBehaviour
     public BattleUnit enemyMon;
     public BattleUI enemyInfo;
     public BattleDialogue dialogue;
+    public Animator animator;
+    public AudioSource audiosource1;
+    public AudioSource audiosource2;
+   
     BattleState state;
     int selection;
 
@@ -67,6 +71,9 @@ public class Battle : MonoBehaviour
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemon.pokeName + " fainted!");
                 yield return dialogue.SetDialogue("You win!");
                 state = BattleState.PlayerWin;
+                yield return EndAnimation();
+                yield return new WaitForSeconds(2);
+
             }
             else
             {
@@ -84,7 +91,10 @@ public class Battle : MonoBehaviour
             if (fainted)
             {
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemon.pokeName + " fainted!");
+                yield return dialogue.SetDialogue("You Lose");
                 state = BattleState.EnemyWin;
+                yield return EndAnimation();
+                yield return new WaitForSeconds(2);
             }
             else
             {
@@ -128,4 +138,20 @@ public class Battle : MonoBehaviour
             state = BattleState.PlayerAttack;
         }
     }
+
+    IEnumerator EndAnimation()
+    {
+        
+        if (state == BattleState.PlayerWin)
+        {
+            audiosource2.Stop();
+            audiosource1.Play(); 
+        }
+        yield return new WaitForSeconds(5);
+        animator.SetBool("End", true);
+
+    }
+
+    
+
 }
