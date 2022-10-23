@@ -47,7 +47,7 @@ public class Pokemon
         return false;
     }
 
-    public Move RandomMove()
+    public Move RandomMove() 
     {
         int i = Random.Range(0, pMoves.Count);
         return pMoves[i];
