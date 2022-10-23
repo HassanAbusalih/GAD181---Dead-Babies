@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Battle : MonoBehaviour
 {
@@ -72,7 +73,7 @@ public class Battle : MonoBehaviour
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemon.pokeName + " fainted!");
                 Victory();
                 yield return dialogue.SetDialogue("You win!");
-                yield return EndAnimation();
+                yield return EndBattle();
             }
             else
             {
@@ -92,7 +93,7 @@ public class Battle : MonoBehaviour
                 state = BattleState.EnemyWin;
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemon.pokeName + " fainted!");
                 yield return dialogue.SetDialogue("You lose!");
-                yield return EndAnimation();
+                yield return EndBattle();
             }
             else
             {
@@ -146,12 +147,14 @@ public class Battle : MonoBehaviour
         }
     }
 
-    IEnumerator EndAnimation()
+    IEnumerator EndBattle()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         animator.SetBool("End", true);
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(0);
     }
 
-    
+
 
 }
