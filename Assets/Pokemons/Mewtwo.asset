@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Mewtwo
+  m_EditorClassIdentifier: 
+  pokeName: Mewtwo
+  description: 
+  pokeSprite: {fileID: 0}
+  maxHp: 106
+  attack: 110
+  defense: 90
+  spAttack: 154
+  spDefence: 90
+  speed: 130
+  type1: 11
+  type2: 0
