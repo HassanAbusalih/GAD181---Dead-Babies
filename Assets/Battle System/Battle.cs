@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Battle : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class Battle : MonoBehaviour
     public BattleUnit enemyMon;
     public BattleUI enemyInfo;
     public BattleDialogue dialogue;
+    public Animator animator;
+    public AudioSource audiosource1;
+    public AudioSource audiosource2;
+   
     BattleState state;
     int selection;
 
@@ -64,9 +69,11 @@ public class Battle : MonoBehaviour
             enemyInfo.DamageTaken();
             if (fainted)
             {
-                yield return dialogue.SetDialogue(enemyMon.pokemon.pokemon.pokeName + " fainted!");
-                yield return dialogue.SetDialogue("You win!");
                 state = BattleState.PlayerWin;
+                yield return dialogue.SetDialogue(enemyMon.pokemon.pokemon.pokeName + " fainted!");
+                Victory();
+                yield return dialogue.SetDialogue("You win!");
+                yield return EndBattle();
             }
             else
             {
@@ -83,8 +90,10 @@ public class Battle : MonoBehaviour
             playerInfo.DamageTaken();
             if (fainted)
             {
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemon.pokeName + " fainted!");
                 state = BattleState.EnemyWin;
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemon.pokeName + " fainted!");
+                yield return dialogue.SetDialogue("You lose!");
+                yield return EndBattle();
             }
             else
             {
@@ -128,4 +137,27 @@ public class Battle : MonoBehaviour
             state = BattleState.PlayerAttack;
         }
     }
+
+    void Victory()
+    {
+        if (state == BattleState.PlayerWin)
+        {
+            audiosource2.Stop();
+            audiosource1.Play();
+        }
+    }
+
+    IEnumerator EndBattle()
+    {
+        yield return new WaitForSeconds(2);
+        animator.SetBool("End", true);
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(0);
+        asyncOperation.allowSceneActivation = false;
+        yield return new WaitForSeconds(1.5f);
+        asyncOperation.allowSceneActivation = true;
+
+    }
+
+
+
 }

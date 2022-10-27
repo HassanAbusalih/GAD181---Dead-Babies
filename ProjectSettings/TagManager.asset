@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Tall Grass
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Dirt Grass and flower
+    uniqueID: 224612565
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Tall Grass
+    uniqueID: 2745620051
+    locked: 0
+  - name: Player
+    uniqueID: 1725290609
+    locked: 0
+  - name: Trees
+    uniqueID: 527318383
     locked: 0
