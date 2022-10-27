@@ -23,6 +23,7 @@ MonoBehaviour:
   speed: 45
   type1: 5
   type2: 8
+  pokeNumber: 2
   learnableMoves:
   - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
     level: 1

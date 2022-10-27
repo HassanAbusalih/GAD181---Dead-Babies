@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 43
   type1: 3
   type2: 0
+  pokeNumber: 3
+  learnableMoves: []

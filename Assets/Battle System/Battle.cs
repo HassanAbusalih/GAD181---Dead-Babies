@@ -10,17 +10,26 @@ public class Battle : MonoBehaviour
     public BattleUnit enemyMon;
     public BattleUI enemyInfo;
     public BattleDialogue dialogue;
+    public PokemonParties pokemonParties;
     public Animator animator;
     public AudioSource audiosource1;
     public AudioSource audiosource2;
-   
+    int pokemonNumber;
     BattleState state;
     int selection;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SetupBattle());
+        for (int i = 0; i < pokemonParties.playerParty.Count; i++)
+        {
+            pokemonParties.playerParty[i].MakePokemon();
+        }
+        for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
+        {
+            pokemonParties.enemyParty[i].MakePokemon();
+        }
+        StartCoroutine(StartBattle());
     }
 
     // Update is called once per frame
@@ -37,15 +46,22 @@ public class Battle : MonoBehaviour
         }
     }
 
-    public IEnumerator SetupBattle()
+    public IEnumerator StartBattle()
     {
         state = BattleState.Start;
-        playerMon.Setup();
-        enemyMon.Setup();
+        yield return StartCoroutine(SetupPokemon());
+        yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
+        StartCoroutine(PlayerTurn());
+    }
+
+    public IEnumerator SetupPokemon()
+    { 
+        //yield return StartCoroutine(Load());
+        yield return new WaitForSeconds(0.1f);
+        playerMon.Setup(pokemonParties.playerParty[0]);
+        enemyMon.Setup(pokemonParties.enemyParty[0]);
         playerInfo.Setup(playerMon.pokemon);
         enemyInfo.Setup(enemyMon.pokemon);
-        yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemon.pokeName + " appears!");
-        StartCoroutine(PlayerTurn());
     }
 
     IEnumerator PlayerTurn()
@@ -64,16 +80,30 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
-            yield return dialogue.SetDialogue(playerMon.pokemon.pokemon.pokeName + " uses " + move.Base.name + " !");
+            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             bool fainted = enemyMon.pokemon.TakeDamage(move);
             enemyInfo.DamageTaken();
             if (fainted)
             {
-                state = BattleState.PlayerWin;
-                yield return dialogue.SetDialogue(enemyMon.pokemon.pokemon.pokeName + " fainted!");
-                Victory();
-                yield return dialogue.SetDialogue("You win!");
-                yield return EndBattle();
+                pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
+                yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
+                if (pokemonParties.enemyParty.Count == 0)
+                {
+                    state = BattleState.PlayerWin;
+                    yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
+                    Victory();
+                    yield return dialogue.SetDialogue("You win!");
+                    Save();
+                    yield return EndBattle();
+                }
+                else
+                {
+                    yield return new WaitForSeconds(1f);
+                    yield return SetupPokemon();
+                    yield return dialogue.SetDialogue("Enemy sends out " + enemyMon.pokemon.pokemonBase.pokeName + "!");
+                    state = BattleState.EnemyAttack;
+                    StartCoroutine(Attack());
+                }
             }
             else
             {
@@ -85,15 +115,27 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
-            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemon.pokeName + " uses " + move.Base.name + " !");
+            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             bool fainted = playerMon.pokemon.TakeDamage(move);
             playerInfo.DamageTaken();
             if (fainted)
             {
-                state = BattleState.EnemyWin;
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemon.pokeName + " fainted!");
-                yield return dialogue.SetDialogue("You lose!");
-                yield return EndBattle();
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " fainted!");
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[0]);
+                Save();
+                if (pokemonParties.playerParty.Count == 0)
+                {
+                    state = BattleState.EnemyWin;
+                    yield return dialogue.SetDialogue("You lose!");
+                    yield return EndBattle();
+                }
+                else
+                {
+                    yield return new WaitForSeconds(1f);
+                    yield return SetupPokemon();
+                    yield return dialogue.SetDialogue("You send out " + playerMon.pokemon.pokemonBase.pokeName + "!");
+                    StartCoroutine(PlayerTurn());
+                }
             }
             else
             {
@@ -158,6 +200,31 @@ public class Battle : MonoBehaviour
 
     }
 
+    IEnumerator Load()
+    {
+        yield return null;
+        for (int i = 0; i < PlayerPrefs.GetInt("Party"); i++)
+        {
+            pokemonNumber = PlayerPrefs.GetInt($"pokemon{i}");
+            for (int j = 0; j < pokemonParties.allPokemon.Count; j++)
+            {
+                if (pokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
+                {
+                    pokemonParties.playerParty.Add(pokemonParties.allPokemon[j]);
+                    pokemonParties.playerParty[pokemonParties.playerParty.Count].level = PlayerPrefs.GetInt($"pokemonLevel{i}");
+                }
+            }
+        }
+    }
 
+    public void Save()
+    {
+        PlayerPrefs.SetInt("Party", pokemonParties.playerParty.Count);
+        for (int i = 0; i < pokemonParties.playerParty.Count; i++)
+        {
+            PlayerPrefs.SetInt($"pokemon{i}", pokemonParties.playerParty[i].pokemonBase.pokeNumber);
+            PlayerPrefs.SetInt($"pokemonLevel{i}", pokemonParties.playerParty[i].level);
+        }
+    }
 
 }
