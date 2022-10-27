@@ -2,30 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Pokemon 
 {
-    public PokemonBase pokemon;
-    public int level;
+    [SerializeField] public PokemonBase pokemonBase;
+    [SerializeField] public int level;
     public float totalHP;
     public float currentHP;
     public List<Move> pMoves;
 
-    public Pokemon(PokemonBase Base, int pokemonLevel)
+    public void MakePokemon()
     {
-        pokemon = Base;
-        level = pokemonLevel;
-        totalHP = PokemonHealth(pokemon.maxHp);
-        currentHP = PokemonHealth(pokemon.maxHp);
-        pMoves = new List<Move>();
-        foreach (var move in Base.learnableMoves)
-        {
+         totalHP = PokemonHealth(pokemonBase.maxHp);
+         currentHP = PokemonHealth(pokemonBase.maxHp);
+         pMoves = new List<Move>();
+         foreach (var move in pokemonBase.learnableMoves)
+         {
             if (move.level <= level)
+            {
                 pMoves.Add(new Move(move.moves));
+                if (pMoves.Count == 4)
+                {
+                    break;
+                }
+            }
 
-            if (pMoves.Count == 4)
-                break;
-                
-        }
+         }
     }
 
     float PokemonHealth(int maxHP)
