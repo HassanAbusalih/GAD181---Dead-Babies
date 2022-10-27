@@ -16,8 +16,8 @@ public class BattleUI : MonoBehaviour
     public void Setup(Pokemon pokemon)
     {
         newPokemon = pokemon;
-        pokemonName.text = pokemon.pokemon.pokeName;
-        pokemonLevel.text = "Lvl " + pokemon.level;
+        pokemonName.text = pokemon.pokemonBase.pokeName;
+        pokemonLevel.text = "Lvl   " + pokemon.level;
         pokemonHP.text = pokemon.currentHP + " / " + pokemon.totalHP;
         health.SetHealth(pokemon.currentHP, pokemon.totalHP);
     }
@@ -25,6 +25,6 @@ public class BattleUI : MonoBehaviour
     public void DamageTaken()
     {
         health.SetHealth(newPokemon.currentHP, newPokemon.totalHP);
-        pokemonHP.text = newPokemon.currentHP + " / " + newPokemon.totalHP;
+        pokemonHP.text = ((int)newPokemon.currentHP) + " / " + ((int)newPokemon.totalHP);
     }
 }
