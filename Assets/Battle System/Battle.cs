@@ -149,10 +149,13 @@ public class Battle : MonoBehaviour
 
     IEnumerator EndBattle()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         animator.SetBool("End", true);
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(0);
+        asyncOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(0);
+        asyncOperation.allowSceneActivation = true;
+
     }
 
 

@@ -69,8 +69,10 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator LoadScene()
     {
-        yield return new WaitForSeconds(1.1f); 
-        SceneManager.LoadScene(1);
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(1);
+        asyncOperation.allowSceneActivation = false;
+        yield return new WaitForSeconds(1.1f);
+        asyncOperation.allowSceneActivation = true;
     }
 
 }
