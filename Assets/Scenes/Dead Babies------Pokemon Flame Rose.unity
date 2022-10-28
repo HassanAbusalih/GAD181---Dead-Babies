@@ -513,6 +513,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &276493456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6388750533834007314, guid: 323fbcfc99867184d9a1010bd1f56e0b, type: 3}
+  m_PrefabInstance: {fileID: 6388750533237031021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &276493461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276493456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75bd006c1f53e5c4c8877600b6999a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonParties: {fileID: 926748331}
 --- !u!1 &334362019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +2539,72 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &926748330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926748332}
+  - component: {fileID: 926748331}
+  m_Layer: 0
+  m_Name: Pokemons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &926748331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926748330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerParty:
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 1
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 6
+    totalHP: 0
+    currentHP: 0
+  enemyParty: []
+  allPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+--- !u!4 &926748332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926748330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4476161, y: 0.27538234, z: -880.0272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1106999307
 GameObject:
   m_ObjectHideFlags: 0
@@ -22112,6 +22196,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 6388750533834007532, guid: 323fbcfc99867184d9a1010bd1f56e0b, type: 3}
+      propertyPath: saveLoad
+      value: 
+      objectReference: {fileID: 276493461}
     - target: {fileID: 6388750533834007532, guid: 323fbcfc99867184d9a1010bd1f56e0b, type: 3}
       propertyPath: battleAnim
       value: 
