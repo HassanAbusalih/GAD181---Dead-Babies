@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Pikachu
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 08bf8104891c24d47b27c853c112bb70, type: 3}
   maxHp: 35
   attack: 55
   defense: 40
@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 90
   type1: 4
   type2: 0
+  pokeNumber: 0
+  learnableMoves: []

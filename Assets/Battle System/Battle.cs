@@ -18,7 +18,7 @@ public class Battle : MonoBehaviour
     BattleState state;
     int selection;
     int selectionB;
-    bool isTrainer = false;
+    bool isTrainer;
 
     // Start is called before the first frame update
 
@@ -27,7 +27,6 @@ public class Battle : MonoBehaviour
     void Start()
     {
         saveLoad.Load();
-        InitializePokemon();
         StartCoroutine(StartBattle());
     }
 
@@ -53,11 +52,11 @@ public class Battle : MonoBehaviour
     public IEnumerator StartBattle()
     {
         state = BattleState.Start;
-        saveLoad.Save();
+        InitializePokemon();
         yield return StartCoroutine(SetupPokemon());
         yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
         state = BattleState.PlayerMenu;
-        yield return dialogue.SetDialogue("Select an action");
+        yield return dialogue.SetDialogue("Select an action.");
     }
 
     public IEnumerator SetupPokemon()
@@ -99,12 +98,11 @@ public class Battle : MonoBehaviour
                     yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                     Victory();
                     yield return dialogue.SetDialogue("You win!");
-                    saveLoad.Save();
+                    saveLoad.PlayerSave();
                     yield return EndBattle();
                 }
                 else
                 {
-                    yield return new WaitForSeconds(1f);
                     yield return SetupPokemon();
                     yield return dialogue.SetDialogue("Enemy sends out " + enemyMon.pokemon.pokemonBase.pokeName + "!");
                     state = BattleState.EnemyAttack;
@@ -128,7 +126,8 @@ public class Battle : MonoBehaviour
             {
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " fainted!");
                 pokemonParties.playerParty.Remove(pokemonParties.playerParty[0]);
-                saveLoad.Save();
+                PlayerPrefs.DeleteAll();
+                saveLoad.PlayerSave();
                 if (pokemonParties.playerParty.Count == 0)
                 {
                     state = BattleState.EnemyWin;
@@ -137,7 +136,6 @@ public class Battle : MonoBehaviour
                 }
                 else
                 {
-                    yield return new WaitForSeconds(1f);
                     yield return SetupPokemon();
                     yield return dialogue.SetDialogue("You send out " + playerMon.pokemon.pokemonBase.pokeName + "!");
                     StartCoroutine(PlayerTurn());
@@ -147,7 +145,7 @@ public class Battle : MonoBehaviour
             {
                 state = BattleState.PlayerMenu;
                 dialogue.menu.SetActive(true);
-                StartCoroutine(dialogue.SetDialogue("Select an action"));
+                StartCoroutine(dialogue.SetDialogue("Select an action."));
             }
         }
     }
@@ -207,7 +205,7 @@ public class Battle : MonoBehaviour
     {
         if (isTrainer == true)
         {
-            StartCoroutine(dialogue.SetDialogue("You Can't Capture a Trainers Pokemon"));
+            StartCoroutine(dialogue.SetDialogue("You cannot capture a trainer's Pokemon."));
           
         }
 
@@ -215,13 +213,15 @@ public class Battle : MonoBehaviour
         {
             
             pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
-            StartCoroutine(dialogue.SetDialogue("You have captured " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name));
+            StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name + "!"));
+            PlayerPrefs.DeleteAll();
+            saveLoad.PlayerSave();
             Victory();
             StartCoroutine(EndBattle());
         }
         else
         {
-            StartCoroutine(dialogue.SetDialogue("Your party is full"));
+            StartCoroutine(dialogue.SetDialogue("Your party is full."));
         }
     }
 
