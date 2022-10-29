@@ -17,11 +17,13 @@ public class Battle : MonoBehaviour
     public SaveLoad saveLoad;
     BattleState state;
     int selection;
+    int selectionB;
+    bool isTrainer = false;
 
     // Start is called before the first frame update
-    
-    
-    
+
+
+
     void Start()
     {
         saveLoad.Load();
@@ -32,7 +34,12 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (state == BattleState.PlayerTurn)
+        if (state == BattleState.PlayerMenu)
+        {
+            MenuSelection();
+            dialogue.UpdateMenuSelection(selectionB);
+        }
+        else if (state == BattleState.PlayerTurn)
         {
             MoveSelection();
             dialogue.UpdateMoveSelection(selection);
@@ -49,7 +56,8 @@ public class Battle : MonoBehaviour
         saveLoad.Save();
         yield return StartCoroutine(SetupPokemon());
         yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
-        StartCoroutine(PlayerTurn());
+        state = BattleState.PlayerMenu;
+        yield return dialogue.SetDialogue("Select an action");
     }
 
     public IEnumerator SetupPokemon()
@@ -137,8 +145,83 @@ public class Battle : MonoBehaviour
             }
             else
             {
+                state = BattleState.PlayerMenu;
+                dialogue.menu.SetActive(true);
+                StartCoroutine(dialogue.SetDialogue("Select an action"));
+            }
+        }
+    }
+    void MenuSelection()
+    {
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (selectionB < dialogue.menuActions.Count - 1)
+            {
+                selectionB++;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (selectionB > 0)
+            {
+                selectionB--;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            if (selectionB > 1)
+            {
+                selectionB -= 2;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            if (selectionB < dialogue.menuActions.Count - 2)
+            {
+                selectionB += 2;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (selectionB == 0)
+            {
+                dialogue.menu.SetActive(false);
                 StartCoroutine(PlayerTurn());
             }
+            else if(selectionB == 1)
+            {
+                CatchPokemon();
+            }
+            else if(selectionB == 2)
+            {
+
+            }
+            else if(selectionB == 3)
+            {
+
+            }
+        }
+    }
+    void CatchPokemon()
+    {
+        if (isTrainer == true)
+        {
+            StartCoroutine(dialogue.SetDialogue("You Can't Capture a Trainers Pokemon"));
+          
+        }
+
+        else if (pokemonParties.playerParty.Count < 5)
+        {
+            
+            pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
+            StartCoroutine(dialogue.SetDialogue("You have captured " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name));
+            Victory();
+            StartCoroutine(EndBattle());
+        }
+        else
+        {
+            StartCoroutine(dialogue.SetDialogue("Your party is full"));
         }
     }
 

@@ -8,6 +8,8 @@ public class BattleDialogue : MonoBehaviour
     public TextMeshProUGUI dialoguetext;
     public GameObject Attacks;
     public List<TextMeshProUGUI> PokeMoves;
+    public List<TextMeshProUGUI> menuActions;
+    public GameObject menu; 
 
     public IEnumerator SetDialogue(string dialogue)
     {
@@ -40,6 +42,17 @@ public class BattleDialogue : MonoBehaviour
             else PokeMoves[i].color = Color.black;
         } 
     }
+    public void UpdateMenuSelection(int selection)
+    {
+        for (int i = 0; i < menuActions.Count; i++)
+        {
+            if (selection == i)
+            {
+                menuActions[i].color = Color.blue;
+            }
+            else menuActions[i].color = Color.black;
+        } 
+    }
 }
 
 
@@ -50,6 +63,7 @@ public enum BattleState
     Start,
     PlayerTurn,
     PlayerAttack,
+    PlayerMenu,
     EnemyAttack,
     Busy,
     PlayerWin,
