@@ -14,28 +14,32 @@ public class Battle : MonoBehaviour
     public Animator animator;
     public AudioSource audiosource1;
     public AudioSource audiosource2;
-    int pokemonNumber;
+    public SaveLoad saveLoad;
     BattleState state;
     int selection;
+    int selectionB;
+    bool isTrainer = false;
 
     // Start is called before the first frame update
+
+
+
     void Start()
     {
-        for (int i = 0; i < pokemonParties.playerParty.Count; i++)
-        {
-            pokemonParties.playerParty[i].MakePokemon();
-        }
-        for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
-        {
-            pokemonParties.enemyParty[i].MakePokemon();
-        }
+        saveLoad.Load();
+        InitializePokemon();
         StartCoroutine(StartBattle());
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (state == BattleState.PlayerTurn)
+        if (state == BattleState.PlayerMenu)
+        {
+            MenuSelection();
+            dialogue.UpdateMenuSelection(selectionB);
+        }
+        else if (state == BattleState.PlayerTurn)
         {
             MoveSelection();
             dialogue.UpdateMoveSelection(selection);
@@ -49,15 +53,17 @@ public class Battle : MonoBehaviour
     public IEnumerator StartBattle()
     {
         state = BattleState.Start;
+        saveLoad.Save();
         yield return StartCoroutine(SetupPokemon());
         yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
-        StartCoroutine(PlayerTurn());
+        state = BattleState.PlayerMenu;
+        yield return dialogue.SetDialogue("Select an action");
     }
 
     public IEnumerator SetupPokemon()
-    { 
-        //yield return StartCoroutine(Load());
-        yield return new WaitForSeconds(0.1f);
+    {
+        yield return null;
+        InitializePokemon();
         playerMon.Setup(pokemonParties.playerParty[0]);
         enemyMon.Setup(pokemonParties.enemyParty[0]);
         playerInfo.Setup(playerMon.pokemon);
@@ -93,7 +99,7 @@ public class Battle : MonoBehaviour
                     yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                     Victory();
                     yield return dialogue.SetDialogue("You win!");
-                    Save();
+                    saveLoad.Save();
                     yield return EndBattle();
                 }
                 else
@@ -122,7 +128,7 @@ public class Battle : MonoBehaviour
             {
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " fainted!");
                 pokemonParties.playerParty.Remove(pokemonParties.playerParty[0]);
-                Save();
+                saveLoad.Save();
                 if (pokemonParties.playerParty.Count == 0)
                 {
                     state = BattleState.EnemyWin;
@@ -139,8 +145,83 @@ public class Battle : MonoBehaviour
             }
             else
             {
+                state = BattleState.PlayerMenu;
+                dialogue.menu.SetActive(true);
+                StartCoroutine(dialogue.SetDialogue("Select an action"));
+            }
+        }
+    }
+    void MenuSelection()
+    {
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            if (selectionB < dialogue.menuActions.Count - 1)
+            {
+                selectionB++;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            if (selectionB > 0)
+            {
+                selectionB--;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            if (selectionB > 1)
+            {
+                selectionB -= 2;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            if (selectionB < dialogue.menuActions.Count - 2)
+            {
+                selectionB += 2;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (selectionB == 0)
+            {
+                dialogue.menu.SetActive(false);
                 StartCoroutine(PlayerTurn());
             }
+            else if(selectionB == 1)
+            {
+                CatchPokemon();
+            }
+            else if(selectionB == 2)
+            {
+
+            }
+            else if(selectionB == 3)
+            {
+
+            }
+        }
+    }
+    void CatchPokemon()
+    {
+        if (isTrainer == true)
+        {
+            StartCoroutine(dialogue.SetDialogue("You Can't Capture a Trainers Pokemon"));
+          
+        }
+
+        else if (pokemonParties.playerParty.Count < 5)
+        {
+            
+            pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
+            StartCoroutine(dialogue.SetDialogue("You have captured " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name));
+            Victory();
+            StartCoroutine(EndBattle());
+        }
+        else
+        {
+            StartCoroutine(dialogue.SetDialogue("Your party is full"));
         }
     }
 
@@ -200,30 +281,15 @@ public class Battle : MonoBehaviour
 
     }
 
-    IEnumerator Load()
+    void InitializePokemon()
     {
-        yield return null;
-        for (int i = 0; i < PlayerPrefs.GetInt("Party"); i++)
-        {
-            pokemonNumber = PlayerPrefs.GetInt($"pokemon{i}");
-            for (int j = 0; j < pokemonParties.allPokemon.Count; j++)
-            {
-                if (pokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
-                {
-                    pokemonParties.playerParty.Add(pokemonParties.allPokemon[j]);
-                    pokemonParties.playerParty[pokemonParties.playerParty.Count].level = PlayerPrefs.GetInt($"pokemonLevel{i}");
-                }
-            }
-        }
-    }
-
-    public void Save()
-    {
-        PlayerPrefs.SetInt("Party", pokemonParties.playerParty.Count);
         for (int i = 0; i < pokemonParties.playerParty.Count; i++)
         {
-            PlayerPrefs.SetInt($"pokemon{i}", pokemonParties.playerParty[i].pokemonBase.pokeNumber);
-            PlayerPrefs.SetInt($"pokemonLevel{i}", pokemonParties.playerParty[i].level);
+            pokemonParties.playerParty[i].MakePokemon();
+        }
+        for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
+        {
+            pokemonParties.enemyParty[i].MakePokemon();
         }
     }
 

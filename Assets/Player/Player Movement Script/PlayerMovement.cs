@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D myBoxCollider2D;
     public Animator anim;
     public Animator battleAnim;
-    
+    public SaveLoad saveLoad;
 
     
     
@@ -60,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 battleAnim.SetBool("Encounter", true);
                 Debug.Log(battleEcnounterRng);
+                saveLoad.Save();
                 StartCoroutine(LoadScene());
                 Debug.Log("I am supposed to be in the battle scene");
             }

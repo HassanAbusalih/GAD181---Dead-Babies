@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PokemonParties : MonoBehaviour
 {
-    public List<Pokemon> playerParty;
-    public List<Pokemon> enemyParty;
-    public List<Pokemon> allPokemon;
+    public List<Pokemon> playerParty = new List<Pokemon>();
+    public List<Pokemon> enemyParty = new List<Pokemon>();
+    public List<Pokemon> allPokemon = new List<Pokemon>();
 }
