@@ -6,14 +6,17 @@ using TMPro;
 public class BattleDialogue : MonoBehaviour
 {
     public TextMeshProUGUI dialoguetext;
-    public GameObject Attacks;
+    public GameObject attacks;
+    public GameObject menu;
+    public GameObject pokemonList;
+    public GameObject selectionBox;
+    public List<TextMeshProUGUI> playerPokemon;
     public List<TextMeshProUGUI> PokeMoves;
     public List<TextMeshProUGUI> menuActions;
-    public GameObject menu; 
 
     public IEnumerator SetDialogue(string dialogue)
     {
-        Attacks.SetActive(false);
+        attacks.SetActive(false);
         dialoguetext.enabled = true;
         dialoguetext.text = dialogue;
         yield return new WaitForSeconds(2f);
@@ -53,6 +56,30 @@ public class BattleDialogue : MonoBehaviour
             else menuActions[i].color = Color.black;
         } 
     }
+
+    public void UpdatePokemonSelection(int selection)
+    {
+        for (int i = 0; i < playerPokemon.Count; i++)
+        {
+            if (selection == i)
+            {
+                playerPokemon[i].color = Color.blue;
+            }
+            else playerPokemon[i].color = Color.black;
+        }
+    }
+
+    public void SetPokemonNames(List<Pokemon> pokemons)
+    {
+        for (int i = 0; i < playerPokemon.Count; i++)
+        {
+            if (i < pokemons.Count)
+                playerPokemon[i].text = pokemons[i].pokemonBase.pokeName;
+            else
+                playerPokemon[i].text = "-";
+        }
+
+    }
 }
 
 
@@ -61,9 +88,10 @@ public class BattleDialogue : MonoBehaviour
 public enum BattleState
 {
     Start,
+    PlayerMenu,
+    PokemonSelection,
     PlayerTurn,
     PlayerAttack,
-    PlayerMenu,
     EnemyAttack,
     Busy,
     PlayerWin,
