@@ -156,10 +156,11 @@ public class Battle : MonoBehaviour
         else if (pokemonParties.playerParty.Count < 6)
         {
             pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
+            state = BattleState.PlayerWin;
+            Victory();
             StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name + "!"));
             PlayerPrefs.DeleteAll();
             saveLoad.PlayerSave();
-            Victory();
             StartCoroutine(EndBattle());
         }
         else
@@ -206,6 +207,7 @@ public class Battle : MonoBehaviour
             }
             else if(selectionB == 1)
             {
+                state = BattleState.Busy;
                 CatchPokemon();
             }
             else if(selectionB == 2)
@@ -308,6 +310,7 @@ public class Battle : MonoBehaviour
 
     IEnumerator SwitchPokemon()
     {
+        state = BattleState.EnemyAttack;
         switchIn = pokemonParties.playerParty[selectionC];
         pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionC]);
         pokemonParties.playerParty.Insert(0, switchIn);
@@ -315,7 +318,8 @@ public class Battle : MonoBehaviour
         dialogue.pokemonList.SetActive(false);
         dialogue.selectionBox.SetActive(false);
         InitializePokemon();
-        state = BattleState.EnemyAttack;
+        selectionC = 0;
+        dialogue.SetPokemonNames(pokemonParties.playerParty);
         StartCoroutine(Attack());
     }
     void InitializePokemon()
