@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Vileplume
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: e5cc483a799077649ba4ccf2b2dd01fc, type: 3}
   maxHp: 75
   attack: 80
   defense: 85
@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 50
   type1: 5
   type2: 8
+  pokeNumber: 0
+  learnableMoves: []

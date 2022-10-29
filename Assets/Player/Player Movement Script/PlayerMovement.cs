@@ -10,9 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public Animator battleAnim;
     public SaveLoad saveLoad;
-
-    
-    
     private float speed = 3.0f;
     Vector2 movementOfPlayer;
 
@@ -20,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        saveLoad.Load();
         myBoxCollider2D = GetComponent<BoxCollider2D>();
     }
 
@@ -55,19 +53,32 @@ public class PlayerMovement : MonoBehaviour
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("Tall Grass")))
         {
             int battleEcnounterRng = Random.Range(1, 500);
-            Debug.Log("Am walking on grass");
             if(battleEcnounterRng <= 5)
             {
+                Debug.Log("Encounter happening.");
                 battleAnim.SetBool("Encounter", true);
-                Debug.Log(battleEcnounterRng);
-                saveLoad.Save();
+                PlayerPrefs.DeleteAll();
+                saveLoad.PlayerSave();
+                saveLoad.isTrainer = false;
+                saveLoad.EnemySave();
                 StartCoroutine(LoadScene());
-                Debug.Log("I am supposed to be in the battle scene");
             }
-             
         }
-
+        else if (saveLoad.isTrainer)
+        {
+            saveLoad.PlayerSave();
+            saveLoad.EnemySave();
+        }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Trainer"))
+        {
+            saveLoad.isTrainer = true;
+        }
+    }
+
     IEnumerator LoadScene()
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(1);

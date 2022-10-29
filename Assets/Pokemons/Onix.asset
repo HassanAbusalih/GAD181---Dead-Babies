@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Onix
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 515dfd44963b6b144825f73b471c42f4, type: 3}
   maxHp: 35
   attack: 45
   defense: 160
@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 70
   type1: 9
   type2: 13
+  pokeNumber: 0
+  learnableMoves: []
