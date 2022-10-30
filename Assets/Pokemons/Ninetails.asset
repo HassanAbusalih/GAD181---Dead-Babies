@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Ninetails
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: c8cca3d0a936e5340887654cd2fc9029, type: 3}
   maxHp: 73
   attack: 76
   defense: 75
@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 100
   type1: 2
   type2: 0
+  pokeNumber: 0
+  learnableMoves: []
