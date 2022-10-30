@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Psyduck
   description: 
   pokeSprite: {fileID: 21300000, guid: e240e566ce0fdd849bc7efeb786c1209, type: 3}
+  backSprite: {fileID: 21300000, guid: f8965dd2d3ce063428d363952300e286, type: 3}
   maxHp: 50
   attack: 52
   defense: 48

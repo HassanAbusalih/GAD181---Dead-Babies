@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Charizard
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 7c574465b6570384aaa703b64b313cc3, type: 3}
+  backSprite: {fileID: 21300000, guid: ce259ca890d1c5147b13cadd7c2d07bd, type: 3}
   maxHp: 78
   attack: 84
   defense: 78
@@ -23,6 +24,7 @@ MonoBehaviour:
   speed: 65
   type1: 2
   type2: 10
+  pokeNumber: 0
   learnableMoves:
   - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
     level: 1

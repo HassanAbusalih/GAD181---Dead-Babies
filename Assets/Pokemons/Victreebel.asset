@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Victreebel
   description: 
   pokeSprite: {fileID: 21300000, guid: cb7566b848b14fc459fe6fecdd20b71f, type: 3}
+  backSprite: {fileID: 21300000, guid: ff7ea92b9e15b6f4fa430d1d2a5fb1e3, type: 3}
   maxHp: 80
   attack: 105
   defense: 65

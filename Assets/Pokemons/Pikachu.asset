@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Pikachu
   description: 
   pokeSprite: {fileID: 21300000, guid: 08bf8104891c24d47b27c853c112bb70, type: 3}
+  backSprite: {fileID: 21300000, guid: 1f8abde2089f9e144887f5d44a651a80, type: 3}
   maxHp: 35
   attack: 55
   defense: 40
