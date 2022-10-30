@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Bulbasaur
   description: 
   pokeSprite: {fileID: 21300000, guid: 39f133b6f2d94f14b879c67d34a6f9cb, type: 3}
+  backSprite: {fileID: 21300000, guid: d21bb42161af0a7409d7af9ef9cb5313, type: 3}
   maxHp: 45
   attack: 49
   defense: 49

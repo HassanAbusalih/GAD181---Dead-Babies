@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Onix
   description: 
   pokeSprite: {fileID: 21300000, guid: 515dfd44963b6b144825f73b471c42f4, type: 3}
+  backSprite: {fileID: 21300000, guid: be279e0d5e7b86e458aa2e10ff7b3169, type: 3}
   maxHp: 35
   attack: 45
   defense: 160

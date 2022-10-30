@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Scyther
   description: 
   pokeSprite: {fileID: 21300000, guid: 77e33faf2423a9f449628d90a26554c7, type: 3}
+  backSprite: {fileID: 21300000, guid: d48f22cd32406fb4fad46ed6ce020817, type: 3}
   maxHp: 70
   attack: 110
   defense: 80

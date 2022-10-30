@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Vileplume
   description: 
   pokeSprite: {fileID: 21300000, guid: e5cc483a799077649ba4ccf2b2dd01fc, type: 3}
+  backSprite: {fileID: 21300000, guid: 25782e947f05fb940a51ebb9503f70cb, type: 3}
   maxHp: 75
   attack: 80
   defense: 85
