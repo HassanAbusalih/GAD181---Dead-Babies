@@ -2476,7 +2476,7 @@ MonoBehaviour:
   - {fileID: 1450109470}
   - {fileID: 2012978212}
   - {fileID: 1764545075}
-  PokeMoves:
+  pokeMoves:
   - {fileID: 917245186}
   - {fileID: 1739109631}
   - {fileID: 58866457}

@@ -11,7 +11,7 @@ public class BattleDialogue : MonoBehaviour
     public GameObject pokemonList;
     public GameObject selectionBox;
     public List<TextMeshProUGUI> playerPokemon;
-    public List<TextMeshProUGUI> PokeMoves;
+    public List<TextMeshProUGUI> pokeMoves;
     public List<TextMeshProUGUI> menuActions;
 
     public IEnumerator SetDialogue(string dialogue)
@@ -24,51 +24,28 @@ public class BattleDialogue : MonoBehaviour
     
     public void SetMoves(List<Move> Moves)
     {
-        for (int i = 0; i < PokeMoves.Count; i++)
+        for (int i = 0; i < pokeMoves.Count; i++)
         {
             if (i < Moves.Count)
-                PokeMoves[i].text = Moves[i].Base.movename;
+                pokeMoves[i].text = Moves[i].Base.movename;
             else
-                PokeMoves[i].text = "-";
+                pokeMoves[i].text = "-";
         }
 
     }
 
-    public void UpdateMoveSelection(int selection)
+    public void UpdateMenuSelection(int selection, List<TextMeshProUGUI> menu)
     {
-        for (int i = 0; i < PokeMoves.Count; i++)
+        for (int i = 0; i < menu.Count; i++)
         {
             if (selection == i)
             {
-                PokeMoves[i].color = Color.blue;
+                menu[i].color = Color.blue;
             }
-            else PokeMoves[i].color = Color.black;
+            else menu[i].color = Color.black;
         } 
     }
-    public void UpdateMenuSelection(int selection)
-    {
-        for (int i = 0; i < menuActions.Count; i++)
-        {
-            if (selection == i)
-            {
-                menuActions[i].color = Color.blue;
-            }
-            else menuActions[i].color = Color.black;
-        } 
-    }
-
-    public void UpdatePokemonSelection(int selection)
-    {
-        for (int i = 0; i < playerPokemon.Count; i++)
-        {
-            if (selection == i)
-            {
-                playerPokemon[i].color = Color.blue;
-            }
-            else playerPokemon[i].color = Color.black;
-        }
-    }
-
+    
     public void SetPokemonNames(List<Pokemon> pokemons)
     {
         for (int i = 0; i < playerPokemon.Count; i++)
