@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Rhydon
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 17ddb8ce688916441924a0c2e6431f41, type: 3}
   maxHp: 105
   attack: 130
   defense: 120
@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 40
   type1: 15
   type2: 13
+  pokeNumber: 0
+  learnableMoves: []

@@ -531,6 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonParties: {fileID: 926748331}
+  isTrainer: 0
 --- !u!1 &334362019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,12 +2570,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerParty:
-  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
-    level: 1
-    totalHP: 0
-    currentHP: 0
-  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
-    level: 6
+  - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+    level: 7
     totalHP: 0
     currentHP: 0
   enemyParty: []
@@ -2588,6 +2585,18 @@ MonoBehaviour:
     totalHP: 0
     currentHP: 0
   - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 8351a9c423859b24c8c8d3e93cde1a5c, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 9497fd36b0316ee4b835f50a9d635a3b, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
@@ -21913,7 +21922,7 @@ GameObject:
   - component: {fileID: 2133290703}
   m_Layer: 0
   m_Name: old man_5
-  m_TagString: Untagged
+  m_TagString: Trainer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

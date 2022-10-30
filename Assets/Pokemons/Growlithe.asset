@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Growlithe
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 37161d1814faf494cab682ff87329b76, type: 3}
   maxHp: 55
   attack: 70
   defense: 45
@@ -23,3 +23,5 @@ MonoBehaviour:
   speed: 60
   type1: 2
   type2: 0
+  pokeNumber: 0
+  learnableMoves: []

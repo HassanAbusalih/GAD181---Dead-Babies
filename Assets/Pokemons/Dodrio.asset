@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Dodrio
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 18824ec3a3810d14fb2986ee37bf3b66, type: 3}
   maxHp: 60
   attack: 110
   defense: 70
@@ -23,3 +23,7 @@ MonoBehaviour:
   speed: 100
   type1: 1
   type2: 10
+  pokeNumber: 4
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
+    level: 0
