@@ -139,10 +139,8 @@ public class SwitchPokemon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && selectionB != selectionA)
         {
             pokemonB = pokemonParties.playerParty[selectionB];
-            pokemonParties.playerParty.Insert(selectionA, pokemonB);
-            pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionA + 1]);
-            pokemonParties.playerParty.Insert(selectionB, pokemonA);
-            pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB + 1]);
+            pokemonParties.playerParty[selectionA] = pokemonB;
+            pokemonParties.playerParty[selectionB] = pokemonA;
             SetPokemonNames(pokemonParties.playerParty);
             switching = false;
             SetFlag();
