@@ -319,8 +319,8 @@ public class Battle : MonoBehaviour
     {
         state = BattleState.EnemyAttack;
         switchIn = pokemonParties.playerParty[selectionC];
-        pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionC]);
-        pokemonParties.playerParty.Insert(0, switchIn);
+        pokemonParties.playerParty[selectionC] = pokemonParties.playerParty[0];
+        pokemonParties.playerParty[0] = switchIn;
         yield return dialogue.SetDialogue($"You send out {switchIn.pokemonBase.pokeName}!");
         dialogue.pokemonList.SetActive(false);
         dialogue.selectionBox.SetActive(false);
