@@ -139,13 +139,26 @@ public class SwitchPokemon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && selectionB != selectionA)
         {
             pokemonB = pokemonParties.playerParty[selectionB];
-            pokemonParties.playerParty.Insert(selectionA, pokemonB);
-            pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionA + 1]);
-            pokemonParties.playerParty.Insert(selectionB, pokemonA);
-            pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB + 1]);
-            SetPokemonNames(pokemonParties.playerParty);
-            switching = false;
-            SetFlag();
+            if (selectionA == 0)
+            {
+                pokemonParties.playerParty.Insert(selectionB, pokemonA);
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB + 1]);
+                pokemonParties.playerParty.Insert(selectionA, pokemonB);
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionA + 1]);
+                SetPokemonNames(pokemonParties.playerParty);
+                switching = false;
+                SetFlag();
+            }
+            else
+            {
+                pokemonParties.playerParty.Insert(selectionA, pokemonB);
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionA + 1]);
+                pokemonParties.playerParty.Insert(selectionB, pokemonA);
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB + 1]);
+                SetPokemonNames(pokemonParties.playerParty);
+                switching = false;
+                SetFlag();
+            }
         }
     }
 
