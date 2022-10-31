@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Ninetails
   description: 
   pokeSprite: {fileID: 21300000, guid: c8cca3d0a936e5340887654cd2fc9029, type: 3}
+  backSprite: {fileID: 21300000, guid: ec0108e30ff8b97498581d3bf2c84694, type: 3}
   maxHp: 73
   attack: 76
   defense: 75

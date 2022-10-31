@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Wartortle
+  m_Name: wartortle
   m_EditorClassIdentifier: 
   pokeName: Wartortle
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 4025ab4e5f621fd43b2e0c885c63592a, type: 3}
+  backSprite: {fileID: 21300000, guid: 71d6dd39990bc774294226c12a9f4e4f, type: 3}
   maxHp: 59
   attack: 63
   defense: 80

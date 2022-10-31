@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Rhydon
   description: 
   pokeSprite: {fileID: 21300000, guid: 17ddb8ce688916441924a0c2e6431f41, type: 3}
+  backSprite: {fileID: 21300000, guid: 06e6d980fee4e1741b26537e43375985, type: 3}
   maxHp: 105
   attack: 130
   defense: 120

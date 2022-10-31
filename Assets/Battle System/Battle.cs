@@ -20,15 +20,20 @@ public class Battle : MonoBehaviour
     int selection;
     int selectionB;
     int selectionC;
-    bool isTrainer;
 
     // Start is called before the first frame update
-
-
 
     void Start()
     {
         saveLoad.Load();
+        for (int i = 0; i < pokemonParties.playerParty.Count; i++)
+        {
+            pokemonParties.playerParty[i].MakePokemon();
+        }
+        for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
+        {
+            pokemonParties.enemyParty[i].MakePokemon();
+        }
         StartCoroutine(StartBattle());
     }
 
@@ -38,17 +43,17 @@ public class Battle : MonoBehaviour
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
-            dialogue.UpdatePokemonSelection(selectionC);
+            dialogue.UpdateMenuSelection(selectionC, dialogue.playerPokemon);
         }
         if (state == BattleState.PlayerMenu)
         {
             MenuSelection();
-            dialogue.UpdateMenuSelection(selectionB);
+            dialogue.UpdateMenuSelection(selectionB, dialogue.menuActions);
         }
         else if (state == BattleState.PlayerTurn)
         {
             MoveSelection();
-            dialogue.UpdateMoveSelection(selection);
+            dialogue.UpdateMenuSelection(selection, dialogue.pokeMoves);
         }
         else if (state == BattleState.PlayerAttack)
         {
@@ -85,6 +90,7 @@ public class Battle : MonoBehaviour
             yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             bool fainted = enemyMon.pokemon.TakeDamage(move);
             enemyInfo.DamageTaken();
+            selection = 0;
             if (fainted)
             {
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
@@ -148,20 +154,22 @@ public class Battle : MonoBehaviour
     }
     void CatchPokemon()
     {
-        if (isTrainer == true)
+        if (saveLoad.isTrainer == true)
         {
             StartCoroutine(dialogue.SetDialogue("You cannot capture a trainer's Pokemon."));
         }
-
         else if (pokemonParties.playerParty.Count < 6)
         {
-            pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
-            state = BattleState.PlayerWin;
-            Victory();
-            StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name + "!"));
-            PlayerPrefs.DeleteAll();
-            saveLoad.PlayerSave();
-            StartCoroutine(EndBattle());
+            if (Random.Range(0, 10) <= 7)
+            {
+                state = BattleState.PlayerWin;
+                pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
+                Victory();
+                StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name + "!"));
+                PlayerPrefs.DeleteAll();
+                saveLoad.PlayerSave();
+                StartCoroutine(EndBattle());
+            }
         }
         else
         {
@@ -207,7 +215,6 @@ public class Battle : MonoBehaviour
             }
             else if(selectionB == 1)
             {
-                state = BattleState.Busy;
                 CatchPokemon();
             }
             else if(selectionB == 2)
@@ -225,7 +232,7 @@ public class Battle : MonoBehaviour
             }
             else if(selectionB == 3)
             {
-
+                StartCoroutine(Escape());
             }
         }
     }
@@ -324,18 +331,29 @@ public class Battle : MonoBehaviour
     }
     void InitializePokemon()
     {
-        for (int i = 0; i < pokemonParties.playerParty.Count; i++)
-        {
-            pokemonParties.playerParty[i].MakePokemon();
-        }
-        for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
-        {
-            pokemonParties.enemyParty[i].MakePokemon();
-        }
         playerMon.Setup(pokemonParties.playerParty[0]);
         enemyMon.Setup(pokemonParties.enemyParty[0]);
         playerInfo.Setup(playerMon.pokemon);
         enemyInfo.Setup(enemyMon.pokemon);
     }
 
+    IEnumerator Escape()
+    {
+        if (saveLoad.isTrainer)
+        {
+            StartCoroutine(dialogue.SetDialogue("You cannot escape a trainer battle!"));
+        }
+        else if (Random.Range(0, 10) <= 8)
+        {
+            state = BattleState.Busy;
+            yield return dialogue.SetDialogue("You run away!");
+            StartCoroutine(EndBattle());
+        }
+        else
+        {
+            state = BattleState.EnemyAttack;
+            yield return dialogue.SetDialogue("You fail to escape!");
+            StartCoroutine(Attack());
+        }
+    }
 }

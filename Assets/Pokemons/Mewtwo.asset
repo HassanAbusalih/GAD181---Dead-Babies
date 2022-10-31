@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Mewtwo
   description: 
   pokeSprite: {fileID: 21300000, guid: dc54615437b00bd47bc40909318f0e1c, type: 3}
+  backSprite: {fileID: 21300000, guid: b4ef2ae324d4e1543bf0ba4442d018e4, type: 3}
   maxHp: 106
   attack: 110
   defense: 90

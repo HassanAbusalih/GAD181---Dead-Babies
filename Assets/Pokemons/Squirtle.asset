@@ -15,6 +15,7 @@ MonoBehaviour:
   pokeName: Squirtle
   description: 
   pokeSprite: {fileID: 21300000, guid: d0317c2d7f2567a4f816813201e74ceb, type: 3}
+  backSprite: {fileID: 21300000, guid: e16ce62b60467654e9956d756bd6ac5c, type: 3}
   maxHp: 44
   attack: 48
   defense: 65
