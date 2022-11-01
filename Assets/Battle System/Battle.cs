@@ -66,6 +66,7 @@ public class Battle : MonoBehaviour
         state = BattleState.Start;
         dialogue.SetPokemonNames(pokemonParties.playerParty);
         InitializePokemon();
+        yield return new WaitForSeconds(0.1f);
         yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
         state = BattleState.PlayerMenu;
         yield return dialogue.SetDialogue("Select an action.");
