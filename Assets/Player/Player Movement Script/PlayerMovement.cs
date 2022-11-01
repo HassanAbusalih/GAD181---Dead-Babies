@@ -72,16 +72,10 @@ public class PlayerMovement : MonoBehaviour
         {
             saveLoad.PlayerSave();
             saveLoad.EnemySave();
+            StartCoroutine(LoadScene());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Trainer"))
-        {
-            saveLoad.isTrainer = true;
-        }
-    }
 
     IEnumerator LoadScene()
     {
