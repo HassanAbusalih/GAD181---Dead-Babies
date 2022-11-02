@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Andrew
   m_EditorClassIdentifier: 
-  TrainerName: Andrew
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 5123514160994630897, guid: 2576c1d0d06566a46b7c4a196d0c22ee, type: 3}
+  trainerName: 
+  trainerSprite: 
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 6
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
+  battled: 0
