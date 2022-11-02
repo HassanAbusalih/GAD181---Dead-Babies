@@ -15,6 +15,9 @@ public class Battle : MonoBehaviour
     public AudioSource audiosource1;
     public AudioSource audiosource2;
     public SaveLoad saveLoad;
+    public Animator captureanimation;
+    public Animator capturefailanimation;
+    public SpriteRenderer enemypokemon;
     Pokemon switchIn;
     BattleState state;
     int selection;
@@ -153,7 +156,7 @@ public class Battle : MonoBehaviour
             }
         }
     }
-    void CatchPokemon()
+    IEnumerator CatchPokemon()
     {
         if (saveLoad.isTrainer == true)
         {
@@ -161,7 +164,10 @@ public class Battle : MonoBehaviour
         }
         else if (pokemonParties.playerParty.Count < 6)
         {
-            if (Random.Range(0, 10) <= 7)
+            captureanimation.SetBool("Capture", true);
+            yield return new WaitForSeconds(1);
+            enemypokemon.GetComponent<SpriteRenderer>().enabled = false;
+            if (Random.Range(0, 10) <= 0)
             {
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
@@ -170,6 +176,13 @@ public class Battle : MonoBehaviour
                 PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 StartCoroutine(EndBattle());
+            }
+            else
+            {
+                capturefailanimation.SetBool("capturefail", true);
+                yield return new WaitForSeconds(2.5f);
+                enemypokemon.GetComponent<SpriteRenderer>().enabled = true;
+                StartCoroutine(dialogue.SetDialogue("The Force is strong with him"));
             }
         }
         else
@@ -216,7 +229,7 @@ public class Battle : MonoBehaviour
             }
             else if(selectionB == 1)
             {
-                CatchPokemon();
+                StartCoroutine(CatchPokemon());
             }
             else if(selectionB == 2)
             {
