@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonParties: {fileID: 926748331}
+  trainerName: 
   isTrainer: 0
 --- !u!1 &334362019
 GameObject:
@@ -3338,7 +3339,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerParty: []
+  playerParty:
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 6
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 9497fd36b0316ee4b835f50a9d635a3b, type: 2}
+    level: 7
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+    level: 8
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 9
+    totalHP: 0
+    currentHP: 0
   enemyParty: []
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
@@ -6284,11 +6301,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2576895620344958996, guid: 7acd5259a5f93194db856d7c8dd6439b, type: 3}
   m_PrefabInstance: {fileID: 1291448312}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1273474353 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 6388750533834007533, guid: 323fbcfc99867184d9a1010bd1f56e0b, type: 3}
-  m_PrefabInstance: {fileID: 6388750533237031021}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1291448312
 PrefabInstance:
@@ -23132,8 +23144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerbox: {fileID: 2133290703}
-  playerbox: {fileID: 1273474353}
+  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  pokemonParties: {fileID: 926748331}
+  saveLoad: {fileID: 276493461}
 --- !u!212 &2133290705
 SpriteRenderer:
   m_ObjectHideFlags: 0

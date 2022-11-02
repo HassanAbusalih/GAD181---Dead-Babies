@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Trainers : ScriptableObject
 {
     public string trainerName;
-    public string trainerSprite;
+    public Sprite trainerSprite;
     public List<Pokemon> trainerPokemon;
     public bool battled;
 }
