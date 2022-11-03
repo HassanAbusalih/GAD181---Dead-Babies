@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public SaveLoad saveLoad;
     private float speed = 3.0f;
     Vector2 movementOfPlayer;
+    public SwitchPokemon switchPokemon;
 
 
     // Start is called before the first frame update
@@ -24,10 +25,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
-        movementOfPlayer.y = Input.GetAxisRaw("Vertical");
-        PlayerAnimation();
-        BattleEcnouter();
+        if (switchPokemon.isActive == false)
+        {
+            movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
+            movementOfPlayer.y = Input.GetAxisRaw("Vertical");
+            PlayerAnimation();
+            BattleEcnouter();
+        }
     }
 
     private void FixedUpdate()
@@ -68,16 +72,10 @@ public class PlayerMovement : MonoBehaviour
         {
             saveLoad.PlayerSave();
             saveLoad.EnemySave();
+            StartCoroutine(LoadScene());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Trainer"))
-        {
-            saveLoad.isTrainer = true;
-        }
-    }
 
     IEnumerator LoadScene()
     {

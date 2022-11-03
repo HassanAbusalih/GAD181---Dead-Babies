@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "TrainersData", menuName = "Trainers")]
+[CreateAssetMenu]
 public class Trainers : ScriptableObject
 {
-    public string TrainerName;
-    public string TrainerPokemons;
-    public Sprite TrainerSprite;
-
-    
-   
+    public string trainerName;
+    public Sprite trainerSprite;
+    public List<Pokemon> trainerPokemon;
+    public bool battled;
 }

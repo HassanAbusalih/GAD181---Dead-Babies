@@ -9,6 +9,7 @@ public class SaveLoad : MonoBehaviour
     int beforeLoad;
     int afterLoad;
     int enemyPokemonNumber;
+    public string trainerName;
     Pokemon randomPokemon;
     int enemyLevel;
     public bool isTrainer;
@@ -59,6 +60,7 @@ public class SaveLoad : MonoBehaviour
         }
         else if (PlayerPrefs.GetInt("Trainer") == 1)
         {
+            trainerName = PlayerPrefs.GetString("trainerName");
             for (int i = 0; i < PlayerPrefs.GetInt("enemyParty"); i++)
             {
                 enemyPokemonNumber = PlayerPrefs.GetInt($"enemyPokemon{i}");
