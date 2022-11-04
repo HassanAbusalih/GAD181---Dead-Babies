@@ -659,6 +659,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184848125}
   m_CullTransparentMesh: 1
+--- !u!1 &190086140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190086143}
+  - component: {fileID: 190086142}
+  - component: {fileID: 190086141}
+  m_Layer: 5
+  m_Name: XP Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &190086141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190086140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8962264, g: 0.8548308, b: 0.3269253, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &190086142
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190086140}
+  m_CullTransparentMesh: 1
+--- !u!224 &190086143
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190086140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1330484650}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 326.428, y: -175.94}
+  m_SizeDelta: {x: 185.114, y: 6.77}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &258024955
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,6 +2667,7 @@ MonoBehaviour:
   audiosource1: {fileID: 1302404493}
   audiosource2: {fileID: 285493282}
   saveLoad: {fileID: 1336103228}
+  levelSystem: {fileID: 1336103229}
 --- !u!114 &1176521206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2716,7 +2792,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e6129640af4b4c24db1f1cf2f0e9f68a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da2761ee332b5b14989022f3cf100f59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3526,6 +3602,7 @@ RectTransform:
   - {fileID: 184848126}
   - {fileID: 438773067}
   - {fileID: 1200760353}
+  - {fileID: 190086143}
   m_Father: {fileID: 1176521204}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3562,6 +3639,7 @@ GameObject:
   - component: {fileID: 1336103227}
   - component: {fileID: 1336103226}
   - component: {fileID: 1336103228}
+  - component: {fileID: 1336103229}
   m_Layer: 0
   m_Name: Pokemons
   m_TagString: Untagged
@@ -3581,8 +3659,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerParty: []
-  enemyParty: []
+  playerParty:
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
+  enemyParty:
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
     level: 0
@@ -3635,7 +3733,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pokemonParties: {fileID: 1336103226}
+  trainerName: 
   isTrainer: 0
+--- !u!114 &1336103229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336103225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60365d56b9825db428446fc4e4465f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokemonParties: {fileID: 1336103226}
+  pokemon:
+    pokemonBase: {fileID: 0}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+  dialogue: {fileID: 1176521206}
+  xpBar: {fileID: 190086141}
+  xpPoints: 0
+  levelThreshhold: 30
 --- !u!1 &1398718049
 GameObject:
   m_ObjectHideFlags: 0
