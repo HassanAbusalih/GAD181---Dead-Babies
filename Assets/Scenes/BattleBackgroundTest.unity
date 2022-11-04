@@ -3688,16 +3688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerParty:
-  - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
-    level: 10
-    totalHP: 0
-    currentHP: 0
-  enemyParty:
-  - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
-    level: 10
-    totalHP: 0
-    currentHP: 0
+  playerParty: []
+  enemyParty: []
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
     level: 0
@@ -4224,7 +4216,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 204279e3a736bf844bbcc4af339fcaa7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
