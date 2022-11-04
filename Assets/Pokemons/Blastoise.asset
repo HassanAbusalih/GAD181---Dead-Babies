@@ -26,7 +26,9 @@ MonoBehaviour:
   type2: 0
   pokeNumber: 0
   learnableMoves:
+  - moves: {fileID: 11400000, guid: 11fac35d7bb64184097dd30c181e9c73, type: 2}
+    level: 0
   - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
-    level: 5
+    level: 0
   - moves: {fileID: 11400000, guid: 6d1558ec8420a6144b51e6209b0dd275, type: 2}
-    level: 7
+    level: 0

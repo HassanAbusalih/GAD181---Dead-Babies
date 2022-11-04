@@ -15,6 +15,7 @@ public class Battle : MonoBehaviour
     public AudioSource audiosource1;
     public AudioSource audiosource2;
     public SaveLoad saveLoad;
+    public LevelSystem levelSystem;
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
@@ -98,8 +99,11 @@ public class Battle : MonoBehaviour
             selection = 0;
             if (fainted)
             {
-                pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
+                levelSystem.xpPoints += 30;
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + levelSystem.xpPoints + "XP");
+                StartCoroutine(levelSystem.LevelUp());
+                pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
                     state = BattleState.PlayerWin;
