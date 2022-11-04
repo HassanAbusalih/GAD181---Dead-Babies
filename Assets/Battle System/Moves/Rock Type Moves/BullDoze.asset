@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: Vine Whip
+  m_Name: BullDoze
   m_EditorClassIdentifier: 
-  movename: Vine Whip
+  movename: BullDoze
   description: 
-  type: 5
-  category: 3
+  type: 13
+  category: 2
   power: 45
   accuracy: 100
-  powerpoints: 25
+  powerpoints: 40

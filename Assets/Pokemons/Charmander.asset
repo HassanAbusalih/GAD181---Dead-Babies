@@ -26,11 +26,11 @@ MonoBehaviour:
   type2: 0
   pokeNumber: 1
   learnableMoves:
+  - moves: {fileID: 11400000, guid: 870db5da67cfcd741bd35b50f4db4c11, type: 2}
+    level: 0
   - moves: {fileID: 11400000, guid: 11fac35d7bb64184097dd30c181e9c73, type: 2}
-    level: 1
-  - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
-    level: 1
-  - moves: {fileID: 11400000, guid: 7e1ba876675050546910cde280c7cccb, type: 2}
-    level: 1
-  - moves: {fileID: 11400000, guid: 6d1558ec8420a6144b51e6209b0dd275, type: 2}
-    level: 1
+    level: 4
+  - moves: {fileID: 11400000, guid: b4eb6d89fec42c04a81c4b9fc6c2f760, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: 122e18ecf5a2bd8499b6e6b3d08aa24b, type: 2}
+    level: 10
