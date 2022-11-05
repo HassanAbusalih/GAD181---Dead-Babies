@@ -15,6 +15,7 @@ public class Battle : MonoBehaviour
     public AudioSource audiosource1;
     public AudioSource audiosource2;
     public SaveLoad saveLoad;
+    public LevelSystem levelSystem;
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
@@ -23,6 +24,7 @@ public class Battle : MonoBehaviour
     int selection;
     int selectionB;
     int selectionC;
+    bool deadPokemon;
 
     // Start is called before the first frame update
 
@@ -97,8 +99,11 @@ public class Battle : MonoBehaviour
             selection = 0;
             if (fainted)
             {
-                pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
+                levelSystem.xpPoints += 30;
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + levelSystem.xpPoints + "XP");
+                StartCoroutine(levelSystem.LevelUp());
+                pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
                     state = BattleState.PlayerWin;
@@ -111,7 +116,7 @@ public class Battle : MonoBehaviour
                 else
                 {
                     InitializePokemon();
-                    yield return dialogue.SetDialogue("Enemy sends out " + enemyMon.pokemon.pokemonBase.pokeName + "!");
+                    yield return dialogue.SetDialogue($"{saveLoad.trainerName} sends out {enemyMon.pokemon.pokemonBase.pokeName}!");
                     state = BattleState.EnemyAttack;
                     StartCoroutine(Attack());
                 }
@@ -143,9 +148,11 @@ public class Battle : MonoBehaviour
                 }
                 else
                 {
-                    InitializePokemon();
-                    yield return dialogue.SetDialogue("You send out " + playerMon.pokemon.pokemonBase.pokeName + "!");
-                    StartCoroutine(PlayerTurn());
+                    dialogue.SetPokemonNames(pokemonParties.playerParty);
+                    dialogue.pokemonList.SetActive(true);
+                    dialogue.selectionBox.SetActive(true);
+                    deadPokemon = true;
+                    state = BattleState.PokemonSelection;
                 }
             }
             else
@@ -172,7 +179,7 @@ public class Battle : MonoBehaviour
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
                 Victory();
-                StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].pokemonBase.name + "!"));
+                StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.enemyParty[0].pokemonBase.pokeName + "!"));
                 PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 StartCoroutine(EndBattle());
@@ -269,7 +276,14 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine(SwitchPokemon());
+            if (!deadPokemon && selectionC == 0)
+            {
+                StartCoroutine(dialogue.SetDialogue("This Pokemon is already on the field!"));
+            }
+            else
+            {
+                StartCoroutine(SwitchPokemon());
+            }
         }
     }
 
@@ -341,7 +355,17 @@ public class Battle : MonoBehaviour
         InitializePokemon();
         selectionC = 0;
         dialogue.SetPokemonNames(pokemonParties.playerParty);
-        StartCoroutine(Attack());
+        if (deadPokemon)
+        {
+            deadPokemon = false;
+            state = BattleState.PlayerMenu;
+            dialogue.menu.SetActive(true);
+            StartCoroutine(dialogue.SetDialogue("Select an action."));
+        }
+        else
+        {
+            StartCoroutine(Attack());
+        }
     }
     void InitializePokemon()
     {

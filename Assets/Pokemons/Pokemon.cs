@@ -11,8 +11,10 @@ public class Pokemon
     public float currentHP;
     public List<Move> pMoves;
 
-    public void MakePokemon()
+    public Pokemon (PokemonBase pBase, int pLevel)
     {
+         level = pLevel;
+         pokemonBase = pBase;
          totalHP = PokemonHealth(pokemonBase.maxHp);
          currentHP = PokemonHealth(pokemonBase.maxHp);
          pMoves = new List<Move>();
@@ -26,8 +28,25 @@ public class Pokemon
                     break;
                 }
             }
-
          }
+    }
+
+    public void MakePokemon()
+    {
+        totalHP = PokemonHealth(pokemonBase.maxHp);
+        currentHP = PokemonHealth(pokemonBase.maxHp);
+        pMoves = new List<Move>();
+        foreach (var move in pokemonBase.learnableMoves)
+        {
+            if (move.level <= level)
+            {
+                pMoves.Add(new Move(move.moves));
+                if (pMoves.Count == 4)
+                {
+                    break;
+                }
+            }
+        }
     }
 
     float PokemonHealth(int maxHP)
