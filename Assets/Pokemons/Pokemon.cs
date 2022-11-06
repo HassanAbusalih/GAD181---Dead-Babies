@@ -9,7 +9,13 @@ public class Pokemon
     [SerializeField] public int level;
     public float totalHP;
     public float currentHP;
+    public float currentXpPoints;
+    public float xpThreshhold;
     public List<Move> pMoves;
+    [HideInInspector] public int attackIncr;
+    [HideInInspector] public int defenceIncr;
+    [HideInInspector] public int maxHpIncr;
+    [HideInInspector] public bool isLevelUp;
 
     public Pokemon (PokemonBase pBase, int pLevel)
     {
@@ -35,6 +41,7 @@ public class Pokemon
     {
         totalHP = PokemonHealth(pokemonBase.maxHp);
         currentHP = PokemonHealth(pokemonBase.maxHp);
+        xpThreshhold = 30;
         pMoves = new List<Move>();
         foreach (var move in pokemonBase.learnableMoves)
         {
@@ -73,4 +80,23 @@ public class Pokemon
         int i = Random.Range(0, pMoves.Count);
         return pMoves[i];
     }
+    public IEnumerator LevelUp(int xpGained)
+    {
+        attackIncr = Random.Range(1, 4);
+        defenceIncr = Random.Range(1, 4);
+        currentXpPoints += xpGained;
+        if (currentXpPoints >= xpThreshhold)
+        {
+            level++;
+            maxHpIncr = level + 10;
+            pokemonBase.maxHp += maxHpIncr;
+            pokemonBase.attack += attackIncr;
+            pokemonBase.defense += defenceIncr;
+            currentXpPoints -= xpThreshhold;
+            xpThreshhold += 30;
+            isLevelUp = true;
+            yield return null;
+        }
+    }
 }
+
