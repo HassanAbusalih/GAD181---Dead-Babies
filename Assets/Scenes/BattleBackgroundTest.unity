@@ -2696,6 +2696,7 @@ MonoBehaviour:
   audiosource1: {fileID: 1302404493}
   audiosource2: {fileID: 285493282}
   saveLoad: {fileID: 1336103228}
+  levelSystem: {fileID: 0}
   captureanimation: {fileID: 70408684}
   capturefailanimation: {fileID: 1730308616}
   enemypokemon: {fileID: 1869626897}
@@ -3688,8 +3689,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerParty: []
-  enemyParty: []
+  playerParty:
+  - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
+  enemyParty:
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 5
+    totalHP: 0
+    currentHP: 0
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
     level: 0
