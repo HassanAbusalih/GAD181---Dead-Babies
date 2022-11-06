@@ -15,16 +15,17 @@ public class Battle : MonoBehaviour
     public AudioSource audiosource1;
     public AudioSource audiosource2;
     public SaveLoad saveLoad;
-    public LevelSystem levelSystem;
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
+    public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
     int selection;
     int selectionB;
     int selectionC;
     bool deadPokemon;
+    int xpGain;
 
     // Start is called before the first frame update
 
@@ -99,10 +100,20 @@ public class Battle : MonoBehaviour
             selection = 0;
             if (fainted)
             {
+                xpGain = 15 + enemyMon.pokemon.level;
+                playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                levelSystem.xpPoints += 30;
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + levelSystem.xpPoints + "XP");
-                StartCoroutine(levelSystem.LevelUp());
+                xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
+                yield return StartCoroutine(playerMon.pokemon.LevelUp(xpGain));
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
+                if(playerMon.pokemon.isLevelUp == true)
+                {
+                    yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));
+                    yield return StartCoroutine(dialogue.SetDialogue("Your Max HP increased by  " + playerMon.pokemon.maxHpIncr));
+                    yield return StartCoroutine(dialogue.SetDialogue("Your Attack increased by  " + playerMon.pokemon.attackIncr));
+                    yield return StartCoroutine(dialogue.SetDialogue("You Defence increased by  " + playerMon.pokemon.defenceIncr));
+                    playerMon.pokemon.isLevelUp = false;
+                }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
