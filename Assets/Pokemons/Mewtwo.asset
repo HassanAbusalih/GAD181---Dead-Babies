@@ -25,4 +25,12 @@ MonoBehaviour:
   type1: 11
   type2: 0
   pokeNumber: 0
-  learnableMoves: []
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 3eadf5374200d014e9d2f1869114a6f2, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: cf8c9dd444a68c8478ed18cc0ce329c5, type: 2}
+    level: 6
+  - moves: {fileID: 11400000, guid: 6b2ea974222d7f44d8754da253d8edf6, type: 2}
+    level: 18
+  - moves: {fileID: 11400000, guid: 7e5dec52d39339f429ff5980a420fbbc, type: 2}
+    level: 26
