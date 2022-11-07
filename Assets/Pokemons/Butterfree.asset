@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Butterfree
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 8b90aac49e9271341a1ad93a8db08801, type: 3}
+  backSprite: {fileID: 21300000, guid: cfc8664f557039e45beb9698aabf5af3, type: 3}
   maxHp: 60
   attack: 45
   defense: 50
@@ -23,3 +24,13 @@ MonoBehaviour:
   speed: 70
   type1: 12
   type2: 10
+  pokeNumber: 0
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: a43aa5fab682a1143b8d50c2dcb1eb82, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 5abf4f22307a41647b2546c7c3629932, type: 2}
+    level: 5
+  - moves: {fileID: 11400000, guid: c132557785161774b8ebf1f95906225d, type: 2}
+    level: 9
+  - moves: {fileID: 11400000, guid: 3e89f3afa95d5d24784fef3917b34154, type: 2}
+    level: 14

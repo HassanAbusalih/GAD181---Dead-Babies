@@ -6,12 +6,17 @@ using TMPro;
 public class BattleDialogue : MonoBehaviour
 {
     public TextMeshProUGUI dialoguetext;
-    public GameObject Attacks;
-    public List<TextMeshProUGUI> PokeMoves;
+    public GameObject attacks;
+    public GameObject menu;
+    public GameObject pokemonList;
+    public GameObject selectionBox;
+    public List<TextMeshProUGUI> playerPokemon;
+    public List<TextMeshProUGUI> pokeMoves;
+    public List<TextMeshProUGUI> menuActions;
 
     public IEnumerator SetDialogue(string dialogue)
     {
-        Attacks.SetActive(false);
+        attacks.SetActive(false);
         dialoguetext.enabled = true;
         dialoguetext.text = dialogue;
         yield return new WaitForSeconds(2f);
@@ -19,26 +24,38 @@ public class BattleDialogue : MonoBehaviour
     
     public void SetMoves(List<Move> Moves)
     {
-        for (int i = 0; i < PokeMoves.Count; i++)
+        for (int i = 0; i < pokeMoves.Count; i++)
         {
             if (i < Moves.Count)
-                PokeMoves[i].text = Moves[i].Base.movename;
+                pokeMoves[i].text = Moves[i].Base.movename;
             else
-                PokeMoves[i].text = "-";
+                pokeMoves[i].text = "-";
         }
 
     }
 
-    public void UpdateMoveSelection(int selection)
+    public void UpdateMenuSelection(int selection, List<TextMeshProUGUI> menu)
     {
-        for (int i = 0; i < PokeMoves.Count; i++)
+        for (int i = 0; i < menu.Count; i++)
         {
             if (selection == i)
             {
-                PokeMoves[i].color = Color.blue;
+                menu[i].color = Color.blue;
             }
-            else PokeMoves[i].color = Color.black;
+            else menu[i].color = Color.black;
         } 
+    }
+    
+    public void SetPokemonNames(List<Pokemon> pokemons)
+    {
+        for (int i = 0; i < playerPokemon.Count; i++)
+        {
+            if (i < pokemons.Count)
+                playerPokemon[i].text = pokemons[i].pokemonBase.pokeName;
+            else
+                playerPokemon[i].text = "-";
+        }
+
     }
 }
 
@@ -48,6 +65,8 @@ public class BattleDialogue : MonoBehaviour
 public enum BattleState
 {
     Start,
+    PlayerMenu,
+    PokemonSelection,
     PlayerTurn,
     PlayerAttack,
     EnemyAttack,

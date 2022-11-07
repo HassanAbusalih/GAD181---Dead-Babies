@@ -5,14 +5,23 @@ using UnityEngine.UI;
 
 public class BattleUnit : MonoBehaviour
 {
-    public PokemonBase Base;
-    public int level;
     public Pokemon pokemon;
+    public bool bsprite;
 
-    public void Setup()
+    public void Setup(Pokemon pokemonBase)
     {
-        pokemon = new Pokemon(Base, level);
-        GetComponent<SpriteRenderer>().sprite = pokemon.pokemon.pokeSprite;
+        pokemon = pokemonBase;
+        
+
+        if(bsprite)
+        {
+            GetComponent<SpriteRenderer>().sprite = pokemon.pokemonBase.backSprite;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = pokemon.pokemonBase.pokeSprite;
+        }
     }
+
 
 }

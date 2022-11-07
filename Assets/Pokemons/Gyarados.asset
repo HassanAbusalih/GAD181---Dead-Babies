@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Gyarados
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 197276a117b1fe849a5b1e29e616281f, type: 3}
+  backSprite: {fileID: 21300000, guid: 934379d947fe8ba478d771dda4d7fce8, type: 3}
   maxHp: 95
   attack: 125
   defense: 79
@@ -23,3 +24,13 @@ MonoBehaviour:
   speed: 81
   type1: 3
   type2: 10
+  pokeNumber: 5
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: fb8263baa4d23e8498b70bf62f23d8b4, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 9b89d974c12636548b1369a71b9ee352, type: 2}
+    level: 3
+  - moves: {fileID: 11400000, guid: e335750e7e057534e913387da362e650, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: 0a6881f94a760c444bf531c9c5a682b6, type: 2}
+    level: 13
