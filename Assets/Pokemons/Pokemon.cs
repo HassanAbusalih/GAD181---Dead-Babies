@@ -41,7 +41,8 @@ public class Pokemon
     {
         totalHP = PokemonHealth(pokemonBase.maxHp);
         currentHP = PokemonHealth(pokemonBase.maxHp);
-        xpThreshhold = 30;
+        currentXpPoints = 0;
+        xpThreshhold = XpToNextLevel(level);
         pMoves = new List<Move>();
         foreach (var move in pokemonBase.learnableMoves)
         {
@@ -80,23 +81,17 @@ public class Pokemon
         int i = Random.Range(0, pMoves.Count);
         return pMoves[i];
     }
-    public IEnumerator LevelUp(int xpGained)
+    public void StatsIncrease()
     {
         attackIncr = Random.Range(1, 4);
         defenceIncr = Random.Range(1, 4);
-        currentXpPoints += xpGained;
-        if (currentXpPoints >= xpThreshhold)
-        {
-            level++;
-            maxHpIncr = level + 10;
-            pokemonBase.maxHp += maxHpIncr;
-            pokemonBase.attack += attackIncr;
-            pokemonBase.defense += defenceIncr;
-            currentXpPoints -= xpThreshhold;
-            xpThreshhold += 30;
-            isLevelUp = true;
-            yield return null;
-        }
+        pokemonBase.attack += attackIncr;
+        pokemonBase.defense += defenceIncr;
+        isLevelUp = false;
+    }
+    public int XpToNextLevel(int level)
+    {
+        return 4 * (level * level * level) / 5;
     }
 }
 

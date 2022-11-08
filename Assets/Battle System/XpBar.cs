@@ -15,6 +15,6 @@ public class XpBar : MonoBehaviour
 
     public void SetXpBar(float currentXp, float xpThreshhold)
     {
-        xpBar.transform.localScale = new Vector3((currentXp / xpThreshhold), 1, 1);
+        xpBar.transform.localScale = new Vector3(Mathf.Clamp((currentXp / xpThreshhold), 0 , 1), 1, 1);
     }
 }

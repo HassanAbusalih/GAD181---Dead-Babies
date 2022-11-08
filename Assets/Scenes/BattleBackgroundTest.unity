@@ -3748,7 +3748,6 @@ MonoBehaviour:
   pokemonHP: {fileID: 1200760355}
   hpBar: {fileID: 438773065}
   health: {fileID: 438773068}
-  xp: {fileID: 383926248}
 --- !u!1 &1336103225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,7 +3811,7 @@ MonoBehaviour:
     isLevelUp: 0
   enemyParty:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
-    level: 5
+    level: 6
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
@@ -3822,7 +3821,7 @@ MonoBehaviour:
     maxHpIncr: 0
     isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
-    level: 5
+    level: 6
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
@@ -3832,7 +3831,17 @@ MonoBehaviour:
     maxHpIncr: 0
     isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
-    level: 5
+    level: 2
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+    attackIncr: 0
+    defenceIncr: 0
+    maxHpIncr: 0
+    isLevelUp: 0
+  - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
+    level: 6
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
@@ -5154,7 +5163,6 @@ MonoBehaviour:
   pokemonHP: {fileID: 1311603460}
   hpBar: {fileID: 680802603}
   health: {fileID: 680802606}
-  xp: {fileID: 0}
 --- !u!1 &2012978209
 GameObject:
   m_ObjectHideFlags: 0

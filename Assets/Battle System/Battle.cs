@@ -46,6 +46,7 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
@@ -101,19 +102,19 @@ public class Battle : MonoBehaviour
             selection = 0;
             if (fainted)
             {
-                xpGain = 15 + enemyMon.pokemon.level;
+                int expYield = enemyMon.pokemon.pokemonBase.xpYield;
+                int enemyLevel = enemyMon.pokemon.level;
+                xpGain = Mathf.FloorToInt((expYield * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
-                yield return StartCoroutine(playerMon.pokemon.LevelUp(xpGain));
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
-                if(playerMon.pokemon.isLevelUp == true)
+                while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
+                    playerMon.pokemon.level++;
+                    playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
+                    playerMon.pokemon.StatsIncrease();
+                    playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
                     yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));
-                    yield return StartCoroutine(dialogue.SetDialogue("Your Max HP increased by  " + playerMon.pokemon.maxHpIncr));
-                    yield return StartCoroutine(dialogue.SetDialogue("Your Attack increased by  " + playerMon.pokemon.attackIncr));
-                    yield return StartCoroutine(dialogue.SetDialogue("You Defence increased by  " + playerMon.pokemon.defenceIncr));
-                    playerMon.pokemon.isLevelUp = false;
                 }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
@@ -187,7 +188,7 @@ public class Battle : MonoBehaviour
             captureanimation.SetBool("Capture", true);
             yield return new WaitForSeconds(1);
             enemypokemon.GetComponent<SpriteRenderer>().enabled = false;
-            if (Random.Range(0, 10) <= 0)
+            if (Random.Range(0, 10) <= 8)
             {
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
