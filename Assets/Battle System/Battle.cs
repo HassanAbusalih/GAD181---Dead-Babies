@@ -107,13 +107,11 @@ public class Battle : MonoBehaviour
                 xpGain = Mathf.FloorToInt((expYield * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                //xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
                 while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
                     playerMon.pokemon.level++;
                     playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
-                    //xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
                     playerMon.pokemon.StatsIncrease();
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
                     yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));

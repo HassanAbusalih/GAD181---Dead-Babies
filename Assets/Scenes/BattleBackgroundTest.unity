@@ -3811,7 +3811,7 @@ MonoBehaviour:
     isLevelUp: 0
   enemyParty:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
-    level: 50
+    level: 6
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
@@ -3821,7 +3821,7 @@ MonoBehaviour:
     maxHpIncr: 0
     isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
-    level: 50
+    level: 6
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
@@ -3831,7 +3831,7 @@ MonoBehaviour:
     maxHpIncr: 0
     isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
-    level: 50
+    level: 2
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
@@ -3841,7 +3841,7 @@ MonoBehaviour:
     maxHpIncr: 0
     isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
-    level: 5
+    level: 6
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
