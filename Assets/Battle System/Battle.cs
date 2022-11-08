@@ -80,6 +80,7 @@ public class Battle : MonoBehaviour
 
     IEnumerator PlayerTurn()
     {
+        state = BattleState.Busy;
         yield return dialogue.SetDialogue("Choose a move.");
         state = BattleState.PlayerTurn;
         dialogue.dialoguetext.enabled = false;
