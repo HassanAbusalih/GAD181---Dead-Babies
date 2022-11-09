@@ -15,16 +15,17 @@ public class Battle : MonoBehaviour
     public AudioSource audiosource1;
     public AudioSource audiosource2;
     public SaveLoad saveLoad;
-    public LevelSystem levelSystem;
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
+    public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
     int selection;
     int selectionB;
     int selectionC;
     bool deadPokemon;
+    int xpGain;
 
     // Start is called before the first frame update
 
@@ -45,6 +46,7 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
@@ -79,6 +81,7 @@ public class Battle : MonoBehaviour
 
     IEnumerator PlayerTurn()
     {
+        state = BattleState.Busy;
         yield return dialogue.SetDialogue("Choose a move.");
         state = BattleState.PlayerTurn;
         dialogue.dialoguetext.enabled = false;
@@ -99,10 +102,20 @@ public class Battle : MonoBehaviour
             selection = 0;
             if (fainted)
             {
+                int expYield = enemyMon.pokemon.pokemonBase.xpYield;
+                int enemyLevel = enemyMon.pokemon.level;
+                xpGain = Mathf.FloorToInt((expYield * enemyLevel) / 7);
+                playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                levelSystem.xpPoints += 30;
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + levelSystem.xpPoints + "XP");
-                StartCoroutine(levelSystem.LevelUp());
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
+                while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
+                {
+                    playerMon.pokemon.level++;
+                    playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
+                    playerMon.pokemon.StatsIncrease();
+                    playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
+                    yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));
+                }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
@@ -175,7 +188,7 @@ public class Battle : MonoBehaviour
             captureanimation.SetBool("Capture", true);
             yield return new WaitForSeconds(1);
             enemypokemon.GetComponent<SpriteRenderer>().enabled = false;
-            if (Random.Range(0, 10) <= 4)
+            if (Random.Range(0, 10) <= 8)
             {
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);

@@ -20,6 +20,7 @@ MonoBehaviour:
   attack: 45
   defense: 160
   spAttack: 30
+  xpYield: 77
   spDefence: 45
   speed: 70
   type1: 9
