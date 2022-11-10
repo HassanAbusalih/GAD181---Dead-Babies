@@ -5,12 +5,13 @@ using UnityEngine;
 public class SaveLoad : MonoBehaviour
 {
     public PokemonParties pokemonParties;
+    Pokemon randomPokemon;
     int pokemonNumber;
+    int enemyPokemonNumber;
+    int enemyLevel;
     int beforeLoad;
     int afterLoad;
-    int enemyPokemonNumber;
-    Pokemon randomPokemon;
-    int enemyLevel;
+    public string trainerName;
     public bool isTrainer;
     public void Load()
     {
@@ -31,11 +32,14 @@ public class SaveLoad : MonoBehaviour
             {
                 if (pokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
                 {
-                    pokemonParties.playerParty.Add(pokemonParties.allPokemon[j]);
-                    pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].level = PlayerPrefs.GetInt($"pokemonLevel{i}");
+                    Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"pokemonLevel{i}"));
+                    pokemonParties.playerParty.Add(pokemon);
+                    PlayerPrefs.DeleteKey($"pokemon{i}");
+                    PlayerPrefs.DeleteKey($"pokemonLevel{i}");
                 }
             }
         }
+        PlayerPrefs.DeleteKey("party");
         afterLoad = pokemonParties.playerParty.Count - beforeLoad;
         if (afterLoad != 0 && beforeLoad != 0)
         {
@@ -52,13 +56,16 @@ public class SaveLoad : MonoBehaviour
             {
                 if (enemyPokemonNumber == pokemonParties.allPokemon[i].pokemonBase.pokeNumber)
                 {
-                    pokemonParties.enemyParty.Add(pokemonParties.allPokemon[i]);
-                    pokemonParties.enemyParty[pokemonParties.enemyParty.Count - 1].level = PlayerPrefs.GetInt("EncounterLevel");
+                    Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[i].pokemonBase, PlayerPrefs.GetInt($"EncounterLevel"));
+                    pokemonParties.enemyParty.Add(pokemon);
                 }
             }
+            PlayerPrefs.DeleteKey("Encounter");
+            PlayerPrefs.DeleteKey("EncounterLevel");
         }
         else if (PlayerPrefs.GetInt("Trainer") == 1)
         {
+            trainerName = PlayerPrefs.GetString("trainerName");
             for (int i = 0; i < PlayerPrefs.GetInt("enemyParty"); i++)
             {
                 enemyPokemonNumber = PlayerPrefs.GetInt($"enemyPokemon{i}");
@@ -66,13 +73,17 @@ public class SaveLoad : MonoBehaviour
                 {
                     if (enemyPokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
                     {
-                        pokemonParties.enemyParty.Add(pokemonParties.allPokemon[j]);
-                        pokemonParties.enemyParty[pokemonParties.enemyParty.Count - 1].level = PlayerPrefs.GetInt($"enemyPokemonLevel{i}");
+                        Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"enemyPokemonLevel{i}"));
+                        pokemonParties.enemyParty.Add(pokemon);
+                        PlayerPrefs.DeleteKey($"enemyPokemon{i}");
+                        PlayerPrefs.DeleteKey($"enemyPokemonLevel{i}");
                     }
                 }
             }
+            PlayerPrefs.DeleteKey("enemyParty");
+            PlayerPrefs.DeleteKey("trainerName");
         }
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("Trainer");
     }
 
     public void PlayerSave()

@@ -20,6 +20,7 @@ MonoBehaviour:
   attack: 49
   defense: 49
   spAttack: 65
+  xpYield: 64
   spDefence: 65
   speed: 45
   type1: 5
@@ -27,6 +28,10 @@ MonoBehaviour:
   pokeNumber: 2
   learnableMoves:
   - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
-    level: 1
-  - moves: {fileID: 11400000, guid: 7e1ba876675050546910cde280c7cccb, type: 2}
-    level: 6
+    level: 0
+  - moves: {fileID: 11400000, guid: 2ab6a1bf0fcf765438aef8c0f876237f, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: 1797f878a4baa084e972e6fbeb857af1, type: 2}
+    level: 4
+  - moves: {fileID: 11400000, guid: 69bbd8289ddea2e48aabc77ae9fc3c23, type: 2}
+    level: 10

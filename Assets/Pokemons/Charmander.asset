@@ -17,20 +17,21 @@ MonoBehaviour:
   pokeSprite: {fileID: 21300000, guid: 34fae48b014419a48b3e6a7352ca589b, type: 3}
   backSprite: {fileID: 21300000, guid: 6ab4336fe57494e478ab9d4fa2979015, type: 3}
   maxHp: 45
-  attack: 52
-  defense: 43
+  attack: 101
+  defense: 94
   spAttack: 60
+  xpYield: 62
   spDefence: 50
   speed: 65
   type1: 2
   type2: 0
   pokeNumber: 1
   learnableMoves:
-  - moves: {fileID: 11400000, guid: 11fac35d7bb64184097dd30c181e9c73, type: 2}
-    level: 1
-  - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
-    level: 1
-  - moves: {fileID: 11400000, guid: 7e1ba876675050546910cde280c7cccb, type: 2}
-    level: 1
   - moves: {fileID: 11400000, guid: 6d1558ec8420a6144b51e6209b0dd275, type: 2}
-    level: 1
+    level: 0
+  - moves: {fileID: 11400000, guid: 11fac35d7bb64184097dd30c181e9c73, type: 2}
+    level: 4
+  - moves: {fileID: 11400000, guid: b4eb6d89fec42c04a81c4b9fc6c2f760, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: 122e18ecf5a2bd8499b6e6b3d08aa24b, type: 2}
+    level: 10

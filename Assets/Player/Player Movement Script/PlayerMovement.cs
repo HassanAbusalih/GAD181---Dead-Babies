@@ -13,11 +13,14 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 3.0f;
     Vector2 movementOfPlayer;
     public SwitchPokemon switchPokemon;
+    bool encounter;
+    float cooldown;
 
 
     // Start is called before the first frame update
     private void Start()
     {
+        LoadPos();
         saveLoad.Load();
         myBoxCollider2D = GetComponent<BoxCollider2D>();
     }
@@ -25,12 +28,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (switchPokemon.isActive == false)
+        if (cooldown < 5)
+        {
+            cooldown += Time.deltaTime;
+        }
+        if (!switchPokemon.isActive && !encounter)
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
             PlayerAnimation();
-            BattleEcnouter();
+            BattleEncounter();
+        }
+        else
+        {
+            movementOfPlayer.x = 0;
+            movementOfPlayer.y = 0;
+            anim.StopPlayback();
         }
     }
 
@@ -52,36 +65,33 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }    
     }
-    void BattleEcnouter()
+    void BattleEncounter()
     {
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("Tall Grass")))
         {
-            int battleEcnounterRng = Random.Range(1, 500);
-            if(battleEcnounterRng <= 5)
+            int battleEncounterRNG = Random.Range(1, 500);
+            if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
-                Debug.Log("Encounter happening.");
+                encounter = true;
+                saveLoad.isTrainer = false;
                 battleAnim.SetBool("Encounter", true);
                 PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
-                saveLoad.isTrainer = false;
                 saveLoad.EnemySave();
+                SavePos();
                 StartCoroutine(LoadScene());
             }
         }
-        else if (saveLoad.isTrainer)
+        else if (saveLoad.isTrainer && !encounter)
         {
+            encounter = true;
             saveLoad.PlayerSave();
             saveLoad.EnemySave();
+            SavePos();
+            StartCoroutine(LoadScene());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Trainer"))
-        {
-            saveLoad.isTrainer = true;
-        }
-    }
 
     IEnumerator LoadScene()
     {
@@ -91,4 +101,16 @@ public class PlayerMovement : MonoBehaviour
         asyncOperation.allowSceneActivation = true;
     }
 
+    void SavePos()
+    {
+        PlayerPrefs.SetFloat("X", transform.position.x);
+        PlayerPrefs.SetFloat("Y", transform.position.y);
+    }
+
+    void LoadPos()
+    {
+        transform.position = new Vector2 (PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"));
+        PlayerPrefs.DeleteKey("X");
+        PlayerPrefs.DeleteKey("Y");
+    }
 }
