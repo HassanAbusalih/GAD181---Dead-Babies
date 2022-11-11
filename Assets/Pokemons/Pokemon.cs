@@ -89,9 +89,9 @@ public class Pokemon
         pokemonBase.defense += defenceIncr;
         isLevelUp = false;
     }
-    public int XpToNextLevel(int level)
+    public float XpToNextLevel(int level)
     {
-        return 4 * (level * level * level) / 5;
+        return Mathf.Floor(100 * Mathf.Pow(level, (float)1.2));
     }
 }
 
