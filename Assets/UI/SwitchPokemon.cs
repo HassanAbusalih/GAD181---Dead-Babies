@@ -10,11 +10,13 @@ public class SwitchPokemon : MonoBehaviour
     public PokemonParties pokemonParties;
     int selectionA = 0;
     int selectionB = 0;
-    int flag;
+    int flag1;
+    int flag2;
     Pokemon pokemonA;
     Pokemon pokemonB;
     public bool isActive;
     bool switching;
+    bool fusing;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,11 @@ public class SwitchPokemon : MonoBehaviour
             pokemonUI.SetActive(true);
             pokemons.SetActive(true);
             PokemonSelection();
-            if (flag == 1)
+            if (flag1 == 1)
+            {
+                UpdateMenuSelection(selectionB, pokemonNames);
+            }
+            else if (flag2 == 1)
             {
                 UpdateMenuSelection(selectionB, pokemonNames);
             }
@@ -47,7 +53,9 @@ public class SwitchPokemon : MonoBehaviour
             selectionA = 0;
             selectionB = 0;
             switching = false;
-            flag = 0;
+            fusing = false;
+            flag1 = 0;
+            flag2 = 0;
         }
     }
 
@@ -88,7 +96,7 @@ public class SwitchPokemon : MonoBehaviour
     }
 
     void PokemonSelection()
-    { if (!switching)
+    { if (!switching && !fusing)
         {
             if (Input.GetKeyDown(KeyCode.W))
             {
@@ -108,8 +116,12 @@ public class SwitchPokemon : MonoBehaviour
             {
                 switching = true;
             }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
+                fusing = true;
+            }
         }
-    else if (switching)
+    else if (switching || fusing)
         {
             SetFlag();
             if (Input.GetKeyDown(KeyCode.W))
@@ -126,9 +138,13 @@ public class SwitchPokemon : MonoBehaviour
                     selectionB += 1;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.Space))
+            else if (Input.GetKeyDown(KeyCode.Space) && switching)
             {
                 Switch();
+            }
+            else if (Input.GetKeyDown(KeyCode.E) && fusing)
+            {
+                Fuse();
             }
         }
     }
@@ -147,16 +163,74 @@ public class SwitchPokemon : MonoBehaviour
         }
     }
 
+    void Fuse()
+    {
+        string fusionNameA = $"{pokemonParties.playerParty[selectionA].pokemonBase.pokeName}{pokemonParties.playerParty[selectionB].pokemonBase.pokeName}";
+        string fusionNameB = $"{pokemonParties.playerParty[selectionB].pokemonBase.pokeName}{pokemonParties.playerParty[selectionA].pokemonBase.pokeName}";
+        for (int i = 0; i < pokemonParties.allPokemon.Count; i++)
+        {
+            if (fusionNameA == pokemonParties.allPokemon[i].pokemonBase.fusionName)
+            {
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionA]);
+                if (selectionA < selectionB)
+                {
+                    pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB - 1]);
+                }
+                else
+                {
+                    pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB]);
+                }
+                pokemonParties.playerParty.Add(pokemonParties.allPokemon[i]);
+                SetPokemonNames(pokemonParties.playerParty);
+                fusing = false;
+            }
+            else if (fusionNameB == pokemonParties.allPokemon[i].pokemonBase.fusionName)
+            {
+                pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionA]);
+                if (selectionA < selectionB)
+                {
+                    pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB - 1]);
+                }
+                else
+                {
+                    pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB]);
+                }
+                pokemonParties.playerParty.Add(pokemonParties.allPokemon[i]);
+                SetPokemonNames(pokemonParties.playerParty);
+                fusing = false;
+            }
+        }
+        if (!fusing)
+        {
+            SetFlag();
+        }
+        else
+        {
+            fusing = false;
+            SetFlag();
+        }
+    }
+
     void SetFlag()
     {
-        if (switching && flag == 0)
+        if (switching && flag1 == 0)
         {
-            flag++;
+            flag1++;
             selectionB = selectionA;
         }
-        else if (!switching && flag == 1)
+        else if (fusing && flag2 == 0)
         {
-            flag = 0;
+            flag2++;
+            selectionB = selectionA;
+        }
+        else if (!switching && flag1 == 1)
+        {
+            flag1 = 0;
+            selectionA = selectionB;
+        }
+        else if (!fusing && flag2 == 1)
+        {
+            flag2 = 0;
             selectionA = selectionB;
         }
     }

@@ -21,6 +21,7 @@ public class PokemonBase : ScriptableObject
     [SerializeField] public PokemonType type2;
     public int pokeNumber;
     public List<LearnableMoves> learnableMoves;
+    public string fusionName;
 }
 
 [System.Serializable]
