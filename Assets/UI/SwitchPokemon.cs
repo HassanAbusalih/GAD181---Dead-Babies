@@ -7,6 +7,7 @@ public class SwitchPokemon : MonoBehaviour
     public GameObject pokemonUI;
     public GameObject pokemons;
     public List<TextMeshProUGUI> pokemonNames;
+    public TextMeshProUGUI uiText;
     public PokemonParties pokemonParties;
     int selectionA = 0;
     int selectionB = 0;
@@ -69,6 +70,10 @@ public class SwitchPokemon : MonoBehaviour
             }
             else menu[i].color = Color.black;
         }
+        if (switching || fusing)
+        {
+            menu[selectionA].color = new Color (0, 0.5f, 0);
+        }
     }
 
     public void SetPokemonNames(List<Pokemon> pokemons)
@@ -92,6 +97,7 @@ public class SwitchPokemon : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {
             isActive = false;
+            uiText.text = "Pokemon";
         }
     }
 
@@ -115,10 +121,12 @@ public class SwitchPokemon : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Space))
             {
                 switching = true;
+                uiText.text = "Switching...";
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
                 fusing = true;
+                uiText.text = "Fusing...";
             }
         }
     else if (switching || fusing)
@@ -206,8 +214,9 @@ public class SwitchPokemon : MonoBehaviour
         }
         else
         {
+            uiText.text = "Fusion failed.";
             fusing = false;
-            SetFlag();
+            Invoke("SetFlag", 1f);
         }
     }
 
@@ -227,11 +236,13 @@ public class SwitchPokemon : MonoBehaviour
         {
             flag1 = 0;
             selectionA = selectionB;
+            uiText.text = "Pokemon";
         }
         else if (!fusing && flag2 == 1)
         {
             flag2 = 0;
             selectionA = selectionB;
+            uiText.text = "Pokemon";
         }
     }
 }
