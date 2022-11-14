@@ -1442,6 +1442,7 @@ MonoBehaviour:
   - {fileID: 122561305}
   - {fileID: 1607908206}
   - {fileID: 697065486}
+  uiText: {fileID: 866733486}
   pokemonParties: {fileID: 926748331}
   isActive: 0
 --- !u!1 &696993566
@@ -1863,7 +1864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -759, y: -482}
+  m_AnchoredPosition: {x: -791.3, y: -484.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &866733486
@@ -1920,7 +1921,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7343,7 +7344,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.03333336, y: 0.0625, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.100000024, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
