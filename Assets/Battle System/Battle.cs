@@ -14,6 +14,7 @@ public class Battle : MonoBehaviour
     public Animator animator;
     public AudioSource audiosource1;
     public AudioSource audiosource2;
+    public AudioSource levelUpSFX;
     public SaveLoad saveLoad;
     public Animator captureanimation;
     public Animator capturefailanimation;
@@ -107,21 +108,22 @@ public class Battle : MonoBehaviour
                 xpGain = Mathf.FloorToInt((340 * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieved " + xpGain + " XP.");
                 while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
                     playerMon.pokemon.level++;
+                    levelUpSFX.Play();
                     playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
-                    yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));                  
+                    yield return StartCoroutine(dialogue.SetDialogue("You leveld up to lvl   " + playerMon.pokemon.level + "."));                  
                 }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
                     state = BattleState.PlayerWin;
                     yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                    Victory();
                     yield return StartCoroutine(Evolution());
+                    Victory();
                     yield return dialogue.SetDialogue("You win!");
                     saveLoad.PlayerSave();
                     yield return EndBattle();
@@ -357,6 +359,7 @@ public class Battle : MonoBehaviour
     {
         if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve)
         {
+            audiosource2.Stop();
             yield return evoloutionUI.Evolve(playerMon.pokemon);
         }
     }
