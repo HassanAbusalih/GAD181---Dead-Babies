@@ -18,6 +18,7 @@ public class Battle : MonoBehaviour
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
+    public EvoloutionUI evoloutionUI;
     public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
@@ -111,7 +112,6 @@ public class Battle : MonoBehaviour
                 {
                     playerMon.pokemon.level++;
                     playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
-                    playerMon.pokemon.StatsIncrease();
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
                     yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));                  
                 }
@@ -121,7 +121,7 @@ public class Battle : MonoBehaviour
                     state = BattleState.PlayerWin;
                     yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                     Victory();
-                    yield return StartCoroutine(Evolotion());
+                    yield return StartCoroutine(Evolution());
                     yield return dialogue.SetDialogue("You win!");
                     saveLoad.PlayerSave();
                     yield return EndBattle();
@@ -351,13 +351,14 @@ public class Battle : MonoBehaviour
             audiosource2.Stop();
             audiosource1.Play();
         }
-        playerMon.pokemon.Evolve(playerMon.pokemon.level);
+        //playerMon.pokemon.Evolve();
     }
-    IEnumerator Evolotion()
+    IEnumerator Evolution()
     {
-        yield return dialogue.SetDialogue($"{playerMon.pokemon.pokemonBase.name} evolved to {playerMon.pokemon.pokemonBase.evolutions.evolveTo.name}");
-        playerMon.pokemon.Evolve(playerMon.pokemon.level);
-        yield return new WaitForSeconds(0.3f);
+        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve)
+        {
+            yield return evoloutionUI.Evolve(playerMon.pokemon);
+        }
     }
 
     IEnumerator EndBattle()
