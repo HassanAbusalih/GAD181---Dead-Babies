@@ -81,19 +81,11 @@ public class Pokemon
         int i = Random.Range(0, pMoves.Count);
         return pMoves[i];
     }
-    public void StatsIncrease()
-    {
-        attackIncr = Random.Range(1, 4);
-        defenceIncr = Random.Range(1, 4);
-        pokemonBase.attack += attackIncr;
-        pokemonBase.defense += defenceIncr;
-        isLevelUp = false;
-    }
     public float XpToNextLevel(int level)
     {
         return Mathf.Floor(100 * Mathf.Pow(level, (float)1.2));
     }
-    public void Evolve(int level)
+    public void Evolve()
     {
         if(level >= pokemonBase.evolutions.levelForEvolve)
         {
