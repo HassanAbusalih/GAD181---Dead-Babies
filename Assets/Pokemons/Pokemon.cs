@@ -93,5 +93,12 @@ public class Pokemon
     {
         return Mathf.Floor(100 * Mathf.Pow(level, (float)1.2));
     }
+    public void Evolve(int level)
+    {
+        if(level >= pokemonBase.evolutions.levelForEvolve)
+        {
+            pokemonBase = pokemonBase.evolutions.evolveTo;
+        }
+    }
 }
 
