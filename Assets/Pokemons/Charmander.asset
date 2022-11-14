@@ -17,8 +17,8 @@ MonoBehaviour:
   pokeSprite: {fileID: 21300000, guid: 34fae48b014419a48b3e6a7352ca589b, type: 3}
   backSprite: {fileID: 21300000, guid: 6ab4336fe57494e478ab9d4fa2979015, type: 3}
   maxHp: 45
-  attack: 101
-  defense: 94
+  attack: 52
+  defense: 43
   spAttack: 60
   xpYield: 62
   spDefence: 50
@@ -38,3 +38,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 11400000, guid: 625e31414338bf94db515d41478b2db2, type: 2}
     levelForEvolve: 16
+  fusionName: 
