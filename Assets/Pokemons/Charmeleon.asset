@@ -35,3 +35,6 @@ MonoBehaviour:
     level: 12
   - moves: {fileID: 11400000, guid: 128006eecb65e464b96ba333d52e9a8c, type: 2}
     level: 15
+  evolutions:
+    evolveTo: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
+    levelForEvolve: 36
