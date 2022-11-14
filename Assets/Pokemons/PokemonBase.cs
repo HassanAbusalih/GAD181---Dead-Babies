@@ -22,6 +22,7 @@ public class PokemonBase : ScriptableObject
     public int pokeNumber;
     public List<LearnableMoves> learnableMoves;
     public Evolution evolutions;
+    public string fusionName;
 }
 
 [System.Serializable]
