@@ -12,15 +12,12 @@ public class Pokemon
     public float currentXpPoints;
     public float xpThreshhold;
     public List<Move> pMoves;
-    [HideInInspector] public int attackIncr;
-    [HideInInspector] public int defenceIncr;
-    [HideInInspector] public int maxHpIncr;
-    [HideInInspector] public bool isLevelUp;
 
-    public Pokemon (PokemonBase pBase, int pLevel)
+    public Pokemon (PokemonBase pBase, int pLevel, float pXP) // Added a new parameter for the xp.
     {
          level = pLevel;
          pokemonBase = pBase;
+         currentXpPoints = pXP;
          totalHP = PokemonHealth(pokemonBase.maxHp);
          currentHP = PokemonHealth(pokemonBase.maxHp);
          pMoves = new List<Move>();
@@ -41,7 +38,7 @@ public class Pokemon
     {
         totalHP = PokemonHealth(pokemonBase.maxHp);
         currentHP = PokemonHealth(pokemonBase.maxHp);
-        currentXpPoints = 0;
+        currentXpPoints += currentXpPoints;
         xpThreshhold = XpToNextLevel(level);
         pMoves = new List<Move>();
         foreach (var move in pokemonBase.learnableMoves)

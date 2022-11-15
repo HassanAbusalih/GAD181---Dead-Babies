@@ -8744,30 +8744,18 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
-    level: 15
+    level: 5
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
-    level: 1
+    level: 5
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   enemyParty:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
     level: 60
@@ -8775,10 +8763,6 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
     level: 0
@@ -8786,60 +8770,36 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 9497fd36b0316ee4b835f50a9d635a3b, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   - pokemonBase: {fileID: 11400000, guid: 8351a9c423859b24c8c8d3e93cde1a5c, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
 --- !u!4 &1336103227
 Transform:
   m_ObjectHideFlags: 0
@@ -10155,10 +10115,6 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   bsprite: 0
 --- !u!1 &1883934644
 GameObject:
@@ -10861,8 +10817,4 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-    attackIncr: 0
-    defenceIncr: 0
-    maxHpIncr: 0
-    isLevelUp: 0
   bsprite: 1

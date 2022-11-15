@@ -49,6 +49,7 @@ public class Battle : MonoBehaviour
     void Update()
     {
         xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
+
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
