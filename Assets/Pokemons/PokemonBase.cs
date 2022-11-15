@@ -21,6 +21,8 @@ public class PokemonBase : ScriptableObject
     [SerializeField] public PokemonType type2;
     public int pokeNumber;
     public List<LearnableMoves> learnableMoves;
+    public Evolution evolutions;
+    public string fusionName;
 }
 
 [System.Serializable]
@@ -29,6 +31,14 @@ public class LearnableMoves
 {
     public Moves moves;
     public int level;
+}
+
+[System.Serializable]
+
+public class Evolution
+{
+    public PokemonBase evolveTo;
+    public int levelForEvolve;
 }
 public enum PokemonType
 {
