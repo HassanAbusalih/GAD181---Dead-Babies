@@ -32,10 +32,12 @@ public class SaveLoad : MonoBehaviour
             {
                 if (pokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
                 {
-                    Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"pokemonLevel{i}"));
+                    Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"pokemonLevel{i}"),
+                    PlayerPrefs.GetFloat($"PokemonXP{i}"));
                     pokemonParties.playerParty.Add(pokemon);
                     PlayerPrefs.DeleteKey($"pokemon{i}");
                     PlayerPrefs.DeleteKey($"pokemonLevel{i}");
+                    PlayerPrefs.DeleteKey($"PokemonXP{i}");
                 }
             }
         }
@@ -56,7 +58,7 @@ public class SaveLoad : MonoBehaviour
             {
                 if (enemyPokemonNumber == pokemonParties.allPokemon[i].pokemonBase.pokeNumber)
                 {
-                    Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[i].pokemonBase, PlayerPrefs.GetInt($"EncounterLevel"));
+                    Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[i].pokemonBase, PlayerPrefs.GetInt($"EncounterLevel"),0);
                     pokemonParties.enemyParty.Add(pokemon);
                 }
             }
@@ -73,7 +75,7 @@ public class SaveLoad : MonoBehaviour
                 {
                     if (enemyPokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
                     {
-                        Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"enemyPokemonLevel{i}"));
+                        Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"enemyPokemonLevel{i}"),0);
                         pokemonParties.enemyParty.Add(pokemon);
                         PlayerPrefs.DeleteKey($"enemyPokemon{i}");
                         PlayerPrefs.DeleteKey($"enemyPokemonLevel{i}");
@@ -93,6 +95,7 @@ public class SaveLoad : MonoBehaviour
         {
             PlayerPrefs.SetInt($"pokemon{i}", pokemonParties.playerParty[i].pokemonBase.pokeNumber);
             PlayerPrefs.SetInt($"pokemonLevel{i}", pokemonParties.playerParty[i].level);
+            PlayerPrefs.SetFloat($"PokemonXP{i}", pokemonParties.playerParty[i].currentXpPoints);
         }
     }
 
