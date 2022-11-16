@@ -416,6 +416,7 @@ public class Battle : MonoBehaviour
         else if (Random.Range(0, 10) <= 8)
         {
             state = BattleState.Busy;
+            saveLoad.PlayerSave();
             yield return dialogue.SetDialogue("You run away!");
             StartCoroutine(EndBattle());
         }
