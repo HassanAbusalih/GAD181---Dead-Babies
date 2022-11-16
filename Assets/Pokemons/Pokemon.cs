@@ -13,25 +13,10 @@ public class Pokemon
     public float xpThreshhold;
     public List<Move> pMoves;
 
-    public Pokemon (PokemonBase pBase, int pLevel, float pXP) // Added a new parameter for the xp.
+    public Pokemon (PokemonBase pBase, int pLevel) // Added a new parameter for the xp.
     {
          level = pLevel;
          pokemonBase = pBase;
-         currentXpPoints = pXP;
-         totalHP = PokemonHealth(pokemonBase.maxHp);
-         currentHP = PokemonHealth(pokemonBase.maxHp);
-         pMoves = new List<Move>();
-         foreach (var move in pokemonBase.learnableMoves)
-         {
-            if (move.level <= level)
-            {
-                pMoves.Add(new Move(move.moves));
-                if (pMoves.Count == 4)
-                {
-                    break;
-                }
-            }
-         }
     }
 
     public void MakePokemon()

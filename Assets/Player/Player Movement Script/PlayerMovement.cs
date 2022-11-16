@@ -75,7 +75,6 @@ public class PlayerMovement : MonoBehaviour
                 encounter = true;
                 saveLoad.isTrainer = false;
                 battleAnim.SetBool("Encounter", true);
-                PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 saveLoad.EnemySave();
                 SavePos();
