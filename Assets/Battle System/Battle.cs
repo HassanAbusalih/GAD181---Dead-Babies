@@ -100,7 +100,7 @@ public class Battle : MonoBehaviour
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
             yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            bool fainted = enemyMon.pokemon.TakeDamage(move);
+            bool fainted = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
             selection = 0;
             if (fainted)
@@ -148,7 +148,7 @@ public class Battle : MonoBehaviour
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
             yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            bool fainted = playerMon.pokemon.TakeDamage(move);
+            bool fainted = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
             if (fainted)
             {
@@ -416,6 +416,7 @@ public class Battle : MonoBehaviour
         else if (Random.Range(0, 10) <= 8)
         {
             state = BattleState.Busy;
+            saveLoad.PlayerSave();
             yield return dialogue.SetDialogue("You run away!");
             StartCoroutine(EndBattle());
         }
@@ -425,5 +426,15 @@ public class Battle : MonoBehaviour
             yield return dialogue.SetDialogue("You fail to escape!");
             StartCoroutine(Attack());
         }
+
+       
+    }
+    int getdamage(PokemonType T1, PokemonType T2)
+    {
+        if (T1 == PokemonType.Fire && T2 == PokemonType.Water)
+        {
+            return 2;
+        }
+        return 1;
     }
 }
