@@ -27,15 +27,15 @@ MonoBehaviour:
   type2: 12
   pokeNumber: 0
   learnableMoves:
-  - moves: {fileID: 0}
+  - moves: {fileID: 11400000, guid: 44b09f9a0c5539249839e4d200d16942, type: 2}
     level: 0
-  - moves: {fileID: 0}
-    level: 0
-  - moves: {fileID: 0}
-    level: 0
-  - moves: {fileID: 0}
-    level: 0
+  - moves: {fileID: 11400000, guid: 4ad4845860d6ea54f883288158f478c8, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: c0ee01e2d9b9b00418b0e40f2b070d28, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: f8cbe14e1934b1f4b90e28227f7890d2, type: 2}
+    level: 20
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: 
+  fusionName: PikachuButterfree

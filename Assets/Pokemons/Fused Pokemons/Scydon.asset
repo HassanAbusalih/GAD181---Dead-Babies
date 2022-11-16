@@ -26,8 +26,16 @@ MonoBehaviour:
   type1: 12
   type2: 13
   pokeNumber: 0
-  learnableMoves: []
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 2379083c27d95e74abcf3223f75b3e39, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: bd1edc09e77f3be40a38a33070427c6d, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 27b984cffc258484d9a9076c8d3d9620, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: ec5ecb755e20dbb4e90e035a7776ecaa, type: 2}
+    level: 20
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: 
+  fusionName: ScytherRhydon

@@ -26,8 +26,16 @@ MonoBehaviour:
   type1: 4
   type2: 2
   pokeNumber: 0
-  learnableMoves: []
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 44b09f9a0c5539249839e4d200d16942, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 4ad4845860d6ea54f883288158f478c8, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: f8d867ec468d0914390a1e82f61b6b91, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: 6a130429304cbe4449e29eb4971520eb, type: 2}
+    level: 20
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: 
+  fusionName: PikachuGrowlithe

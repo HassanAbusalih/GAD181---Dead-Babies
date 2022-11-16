@@ -12,6 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Kat
   m_EditorClassIdentifier: 
-  TrainerName: Kat
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 1852382593820184461, guid: 7c0adaacba603a447b6489d98901b138, type: 3}
+  trainerName: 
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
+    level: 6
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 7
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  battled: 0

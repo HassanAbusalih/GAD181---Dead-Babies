@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 71318227}
   - component: {fileID: 71318226}
   - component: {fileID: 71318225}
+  - component: {fileID: 71318229}
   m_Layer: 0
   m_Name: silver
   m_TagString: Trainer
@@ -237,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: 26fc962058e4fab409ff87cfe8c843a7, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &71318227
@@ -305,6 +306,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &71318229
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71318224}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.016678333, y: -0.033353806}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.25, y: 1.625}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0165033, y: 1.3136711}
+  m_EdgeRadius: 0
 --- !u!1 &109977818
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: 7c41194bf599c8f4abefc98d30ab23fd, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &119156808
@@ -1024,6 +1051,7 @@ GameObject:
   - component: {fileID: 248854916}
   - component: {fileID: 248854915}
   - component: {fileID: 248854914}
+  - component: {fileID: 248854918}
   m_Layer: 0
   m_Name: kapitan
   m_TagString: Trainer
@@ -1069,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: af6e32718bcab824e862601227d7a7d0, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &248854916
@@ -1137,6 +1165,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &248854918
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248854913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0066013336, y: -0.013201237}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.5625}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.87768555, y: 1.3380823}
+  m_EdgeRadius: 0
 --- !u!1 &257818348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1261,7 @@ GameObject:
   - component: {fileID: 304222172}
   - component: {fileID: 304222171}
   - component: {fileID: 304222170}
+  - component: {fileID: 304222174}
   m_Layer: 0
   m_Name: gold
   m_TagString: Trainer
@@ -1252,7 +1307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: feae15fcfe1809348b1390edadc2fdff, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &304222172
@@ -1320,6 +1375,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &304222174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304222169}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.02046585}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.5625}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8392639, y: 1.3193207}
+  m_EdgeRadius: 0
 --- !u!1 &334362019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +1728,7 @@ GameObject:
   - component: {fileID: 420094676}
   - component: {fileID: 420094675}
   - component: {fileID: 420094674}
+  - component: {fileID: 420094678}
   m_Layer: 0
   m_Name: emerald
   m_TagString: Trainer
@@ -1692,7 +1774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: c66b3cb4c2f203245a7910f12b3e305f, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &420094676
@@ -1760,6 +1842,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &420094678
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420094673}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0033369064, y: -0.017476082}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1875, y: 1.625}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.95391273, y: 1.3329868}
+  m_EdgeRadius: 0
 --- !u!1 &511322196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +2042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: 003d257ed8bd17a4f91bce0dbec5f7eb, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &514511010
@@ -9107,6 +9215,7 @@ GameObject:
   - component: {fileID: 1008115743}
   - component: {fileID: 1008115742}
   - component: {fileID: 1008115741}
+  - component: {fileID: 1008115745}
   m_Layer: 0
   m_Name: kid
   m_TagString: Trainer
@@ -9127,7 +9236,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -2.2153594}
+  m_Offset: {x: 0, y: -2.2011883}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9138,7 +9247,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8767824, y: 2.9541202}
+  m_Size: {x: 0.8767824, y: 2.9824624}
   m_EdgeRadius: 0
 --- !u!114 &1008115742
 MonoBehaviour:
@@ -9152,7 +9261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: aab3dda050b0dc142b6f09f0b99b3f53, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &1008115743
@@ -9220,6 +9329,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1008115745
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008115740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0011832714, y: -0.075071335}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.1875, y: 1.5}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0179486, y: 1.4536629}
+  m_EdgeRadius: 0
 --- !u!1 &1106999307
 GameObject:
   m_ObjectHideFlags: 0
@@ -78978,8 +79113,8 @@ Tilemap:
   - first: {x: 11, y: 16, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 19
-      m_TileSpriteIndex: 19
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -78988,8 +79123,8 @@ Tilemap:
   - first: {x: 12, y: 16, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 19
+      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -80178,8 +80313,8 @@ Tilemap:
   - first: {x: 11, y: 17, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -80188,8 +80323,8 @@ Tilemap:
   - first: {x: 12, y: 17, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -81378,8 +81513,8 @@ Tilemap:
   - first: {x: 11, y: 18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -81388,8 +81523,8 @@ Tilemap:
   - first: {x: 12, y: 18, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -82578,8 +82713,8 @@ Tilemap:
   - first: {x: 11, y: 19, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -82588,8 +82723,8 @@ Tilemap:
   - first: {x: 12, y: 19, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -118039,9 +118174,9 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 91bdcc5f1668d334d88bda89432823f7, type: 2}
-  - m_RefCount: 76
+  - m_RefCount: 75
     m_Data: {fileID: 11400000, guid: 3cabdda4ace63e54085e4f3ac1918e41, type: 2}
-  - m_RefCount: 217
+  - m_RefCount: 221
     m_Data: {fileID: 11400000, guid: bac5d2be27e584247be457aec8183917, type: 2}
   - m_RefCount: 77
     m_Data: {fileID: 11400000, guid: 57247866c36c54a488029faafe53b8fd, type: 2}
@@ -118055,7 +118190,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e46435c0245671e458a5a8ae9eaa8e9d, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 734e29a43305ffa4aab5c1d871271c10, type: 2}
-  - m_RefCount: 1053
+  - m_RefCount: 1050
     m_Data: {fileID: 11400000, guid: 60b83851486f79b46ab7e47eba3e91ba, type: 2}
   - m_RefCount: 9
     m_Data: {fileID: 11400000, guid: 7b28d92e883ba494496ef2bc498d8f76, type: 2}
@@ -118302,9 +118437,9 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 9
     m_Data: {fileID: -542547188912238135, guid: 7aeeb064187779441ad237412441a934, type: 3}
-  - m_RefCount: 76
+  - m_RefCount: 75
     m_Data: {fileID: 4245052342988409972, guid: 7aeeb064187779441ad237412441a934, type: 3}
-  - m_RefCount: 217
+  - m_RefCount: 221
     m_Data: {fileID: 8950652881746013642, guid: 7aeeb064187779441ad237412441a934, type: 3}
   - m_RefCount: 77
     m_Data: {fileID: -7535629791818594788, guid: 7aeeb064187779441ad237412441a934, type: 3}
@@ -118318,7 +118453,7 @@ Tilemap:
     m_Data: {fileID: 2601623841602742682, guid: 7aeeb064187779441ad237412441a934, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 1956494837358662919, guid: 7aeeb064187779441ad237412441a934, type: 3}
-  - m_RefCount: 1053
+  - m_RefCount: 1050
     m_Data: {fileID: 6951114633567200485, guid: 7aeeb064187779441ad237412441a934, type: 3}
   - m_RefCount: 9
     m_Data: {fileID: 360050356498797049, guid: 7aeeb064187779441ad237412441a934, type: 3}
@@ -118956,6 +119091,7 @@ GameObject:
   - component: {fileID: 1635504545}
   - component: {fileID: 1635504544}
   - component: {fileID: 1635504543}
+  - component: {fileID: 1635504547}
   m_Layer: 0
   m_Name: ginger
   m_TagString: Trainer
@@ -118976,7 +119112,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.0256207}
+  m_Offset: {x: 0, y: 1.1212997}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -118987,7 +119123,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8767824, y: 3.669931}
+  m_Size: {x: 0.8767824, y: 3.4785728}
   m_EdgeRadius: 0
 --- !u!114 &1635504544
 MonoBehaviour:
@@ -119001,7 +119137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: cf8e30d4c520c794bbf000b3f6e4b9a9, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &1635504545
@@ -119069,6 +119205,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1635504547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635504542}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.011481404}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.6875}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.86348724, y: 1.40429}
+  m_EdgeRadius: 0
 --- !u!1001 &1675610337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119282,6 +119444,7 @@ GameObject:
   - component: {fileID: 2010040751}
   - component: {fileID: 2010040750}
   - component: {fileID: 2010040749}
+  - component: {fileID: 2010040753}
   m_Layer: 0
   m_Name: tax
   m_TagString: Trainer
@@ -119327,7 +119490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: 2b28643720dc6d645848c0a0955f2e7c, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &2010040751
@@ -119395,6 +119558,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2010040753
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010040748}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.009990692, y: -0.09491062}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.5625}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.802742, y: 1.1728649}
+  m_EdgeRadius: 0
 --- !u!4 &2023817015 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 415733144691805351, guid: 10611470ad79f2e4f9ee623cf5748022, type: 3}
@@ -119479,6 +119668,7 @@ GameObject:
   - component: {fileID: 2133290705}
   - component: {fileID: 2133290704}
   - component: {fileID: 2133290703}
+  - component: {fileID: 2133290707}
   m_Layer: 0
   m_Name: Don
   m_TagString: Trainer
@@ -119499,7 +119689,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -2.2153594}
+  m_Offset: {x: 0, y: -2.1686468}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -119510,7 +119700,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8767824, y: 2.9541202}
+  m_Size: {x: 0.8767824, y: 3.0475454}
   m_EdgeRadius: 0
 --- !u!114 &2133290704
 MonoBehaviour:
@@ -119524,7 +119714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf016c0cc5654f41b3b8204b4869ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainerBase: {fileID: 11400000, guid: 7029aee26836ee44bbb88d274f35d7bb, type: 2}
+  trainerBase: {fileID: 11400000, guid: 8863b61306f6e4944a74d4a6c30b38a2, type: 2}
   pokemonParties: {fileID: 926748331}
   saveLoad: {fileID: 276493461}
 --- !u!212 &2133290705
@@ -119592,6 +119782,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2133290707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133290702}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0031147003, y: -0.05916941}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0625, y: 1.5625}
+    newSize: {x: 1.1875, y: 1.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.869421, y: 1.4441612}
+  m_EdgeRadius: 0
 --- !u!1001 &415733144149734625
 PrefabInstance:
   m_ObjectHideFlags: 0
