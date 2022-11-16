@@ -12,6 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Tax
   m_EditorClassIdentifier: 
-  TrainerName: Tax
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 8562159556375430177, guid: 99f72c97f516f2c4c97fd93f3cdd2537, type: 3}
+  trainerName: 
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+    level: 7
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 83e2851258ea7d04593f784e1e3a8ffe, type: 2}
+    level: 13
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: f32c8fcb734e6ba41b89809c96beee0b, type: 2}
+    level: 14
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  battled: 0

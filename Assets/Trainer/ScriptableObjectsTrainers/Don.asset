@@ -12,6 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Don
   m_EditorClassIdentifier: 
-  TrainerName: Don
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 3057747900608194562, guid: 213884f0fb8b76142a250453064a11d6, type: 3}
+  trainerName: 
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 6c95ddb8871ee294c95f9fc49ff4da1f, type: 2}
+    level: 7
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 8351a9c423859b24c8c8d3e93cde1a5c, type: 2}
+    level: 8
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 7ddc486109c5ee44bb069802b255257f, type: 2}
+    level: 13
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  battled: 0

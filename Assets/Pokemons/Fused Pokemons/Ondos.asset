@@ -26,8 +26,16 @@ MonoBehaviour:
   type1: 3
   type2: 13
   pokeNumber: 0
-  learnableMoves: []
+  learnableMoves:
+  - moves: {fileID: 0}
+    level: 0
+  - moves: {fileID: 0}
+    level: 0
+  - moves: {fileID: 0}
+    level: 0
+  - moves: {fileID: 0}
+    level: 0
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: 
+  fusionName: OnixGyarados
