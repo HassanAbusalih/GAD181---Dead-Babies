@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Growgeoth
+  m_EditorClassIdentifier: 
+  pokeName: Growgeoth
+  description: 
+  pokeSprite: {fileID: 21300000, guid: b497bfb232827ee4fa574438f45258af, type: 3}
+  backSprite: {fileID: 0}
+  maxHp: 0
+  attack: 0
+  defense: 0
+  spAttack: 0
+  xpYield: 0
+  spDefence: 0
+  speed: 0
+  type1: 2
+  type2: 10
+  pokeNumber: 0
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 27b2709feb2fe584daa9aa0c719ac8c1, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 52fe2e3244b61314ba15113c25df5e3a, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 953fa46b653e24a4b9f6528d144cd489, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: 036b7d03abf1b9449ab045a4d25d196e, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: GrowlithePidgeot

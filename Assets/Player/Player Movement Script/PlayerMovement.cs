@@ -67,15 +67,16 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("Tall Grass")))
+        print("WTF");
+        if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("bugwild")))
         {
             int battleEncounterRNG = Random.Range(1, 500);
+            print(battleEncounterRNG);
             if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
                 encounter = true;
                 saveLoad.isTrainer = false;
                 battleAnim.SetBool("Encounter", true);
-                PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 saveLoad.EnemySave();
                 SavePos();

@@ -12,7 +12,6 @@ public class BattleUI : MonoBehaviour
     public Image hpBar;
     Pokemon newPokemon;
     public HP health;
-    public XpBar xp;
 
     public void Setup(Pokemon pokemon)
     {
@@ -21,7 +20,6 @@ public class BattleUI : MonoBehaviour
         pokemonLevel.text = "Lvl   " + pokemon.level;
         pokemonHP.text = pokemon.currentHP + " / " + pokemon.totalHP;
         health.SetHealth(pokemon.currentHP, pokemon.totalHP);
-        //xp.SetXpBar(pokemon.currentXpPoints, pokemon.xpThreshhold);
     }
 
     public void DamageTaken()

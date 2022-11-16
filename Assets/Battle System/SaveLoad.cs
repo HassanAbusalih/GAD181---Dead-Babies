@@ -13,6 +13,7 @@ public class SaveLoad : MonoBehaviour
     int afterLoad;
     public string trainerName;
     public bool isTrainer;
+
     public void Load()
     {
         if (PlayerPrefs.GetInt("Trainer") == 0)
@@ -23,8 +24,15 @@ public class SaveLoad : MonoBehaviour
         {
             isTrainer = true;
         }
+
         // Loading player Pokemon.
         beforeLoad = pokemonParties.playerParty.Count;
+
+        if(PlayerPrefs.GetInt("HasSaveData", 0) == 1)   
+        {
+            pokemonParties.playerParty.Clear();
+        }
+
         for (int i = 0; i < PlayerPrefs.GetInt("party"); i++)
         {
             pokemonNumber = PlayerPrefs.GetInt($"pokemon{i}");
@@ -33,21 +41,29 @@ public class SaveLoad : MonoBehaviour
                 if (pokemonNumber == pokemonParties.allPokemon[j].pokemonBase.pokeNumber)
                 {
                     Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[j].pokemonBase, PlayerPrefs.GetInt($"pokemonLevel{i}"));
+                    pokemon.currentXpPoints = PlayerPrefs.GetInt($"PokemonXP{i}");
                     pokemonParties.playerParty.Add(pokemon);
+
                     PlayerPrefs.DeleteKey($"pokemon{i}");
                     PlayerPrefs.DeleteKey($"pokemonLevel{i}");
+                    PlayerPrefs.DeleteKey($"PokemonXP{i}");
+
+                    break;
                 }
             }
         }
-        PlayerPrefs.DeleteKey("party");
+
+        //PlayerPrefs.DeleteKey("party");
         afterLoad = pokemonParties.playerParty.Count - beforeLoad;
-        if (afterLoad != 0 && beforeLoad != 0)
+
+       /* if (afterLoad != 0 && beforeLoad != 0)
         {
-            for (int i = 0; i < beforeLoad; i++)
+            for (int i = beforeLoad - 1; i >= 0; i--)
             {
                 pokemonParties.playerParty.Remove(pokemonParties.playerParty[i]);
             }
-        }
+        }*/
+
         // Loading enemy Pokemon or random encounter.
         if (PlayerPrefs.GetInt("Trainer") == 0)
         {
@@ -77,6 +93,7 @@ public class SaveLoad : MonoBehaviour
                         pokemonParties.enemyParty.Add(pokemon);
                         PlayerPrefs.DeleteKey($"enemyPokemon{i}");
                         PlayerPrefs.DeleteKey($"enemyPokemonLevel{i}");
+                        break;
                     }
                 }
             }
@@ -89,11 +106,19 @@ public class SaveLoad : MonoBehaviour
     public void PlayerSave()
     {
         PlayerPrefs.SetInt("party", pokemonParties.playerParty.Count);
+
+
         for (int i = 0; i < pokemonParties.playerParty.Count; i++)
         {
+
             PlayerPrefs.SetInt($"pokemon{i}", pokemonParties.playerParty[i].pokemonBase.pokeNumber);
             PlayerPrefs.SetInt($"pokemonLevel{i}", pokemonParties.playerParty[i].level);
+            PlayerPrefs.SetInt($"PokemonXP{i}", (int)pokemonParties.playerParty[i].currentXpPoints);
+
         }
+
+        PlayerPrefs.SetInt("HasSaveData", 1);
+        PlayerPrefs.Save();
     }
 
     public void EnemySave()
@@ -117,5 +142,8 @@ public class SaveLoad : MonoBehaviour
             enemyLevel = Random.Range(1, 8);
             PlayerPrefs.SetInt("EncounterLevel", enemyLevel);
         }
+
+        PlayerPrefs.SetInt("HasSaveData", 1);
+        PlayerPrefs.Save();
     }
 }

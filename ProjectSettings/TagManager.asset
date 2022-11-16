@@ -9,14 +9,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Tall Grass
+  - bugwild
   - Water
   - UI
   - Player
-  - 
-  - 
-  - 
-  - 
+  - grassandflyingwild
+  - electricwild
+  - waterwild
+  - fireandrockwild
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
     locked: 0
   - name: Trees
     uniqueID: 527318383
+    locked: 0
+  - name: UI
+    uniqueID: 822750307
     locked: 0

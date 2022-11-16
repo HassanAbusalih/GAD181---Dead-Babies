@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Ivysaur
+  m_EditorClassIdentifier: 
+  pokeName: Ivysaur
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 64b379d9515fe0b4fa29ae1ab6ef66ef, type: 3}
+  backSprite: {fileID: 21300000, guid: 31890a6ba47b8d34b81539b091a666ac, type: 3}
+  maxHp: 60
+  attack: 62
+  defense: 64
+  spAttack: 80
+  xpYield: 142
+  spDefence: 80
+  speed: 60
+  type1: 5
+  type2: 8
+  pokeNumber: 0
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 9e2ec7701ae3a784aa6f18ec83c7218d, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 69bbd8289ddea2e48aabc77ae9fc3c23, type: 2}
+    level: 5
+  - moves: {fileID: 11400000, guid: ee66ec9937590d143ad5fe555bf20dcd, type: 2}
+    level: 12
+  - moves: {fileID: 11400000, guid: 7e3f3b01e6c12b746a1360ff3a9dd3b6, type: 2}
+    level: 15
+  evolutions:
+    evolveTo: {fileID: 11400000, guid: bc25f40e96b73e640869b65844309df4, type: 2}
+    levelForEvolve: 32

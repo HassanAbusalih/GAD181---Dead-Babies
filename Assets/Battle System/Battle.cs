@@ -14,10 +14,12 @@ public class Battle : MonoBehaviour
     public Animator animator;
     public AudioSource audiosource1;
     public AudioSource audiosource2;
+    public AudioSource levelUpSFX;
     public SaveLoad saveLoad;
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
+    public EvoloutionUI evoloutionUI;
     public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
@@ -46,6 +48,8 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
+
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
@@ -80,6 +84,7 @@ public class Battle : MonoBehaviour
 
     IEnumerator PlayerTurn()
     {
+        state = BattleState.Busy;
         yield return dialogue.SetDialogue("Choose a move.");
         state = BattleState.PlayerTurn;
         dialogue.dialoguetext.enabled = false;
@@ -100,25 +105,25 @@ public class Battle : MonoBehaviour
             selection = 0;
             if (fainted)
             {
-                xpGain = 15 + enemyMon.pokemon.level;
+                int enemyLevel = enemyMon.pokemon.level;
+                xpGain = Mathf.FloorToInt((340 * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
-                yield return StartCoroutine(playerMon.pokemon.LevelUp(xpGain));
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
-                if(playerMon.pokemon.isLevelUp == true)
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieved " + xpGain + " XP.");
+                while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
-                    yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));
-                    yield return StartCoroutine(dialogue.SetDialogue("Your Max HP increased by  " + playerMon.pokemon.maxHpIncr));
-                    yield return StartCoroutine(dialogue.SetDialogue("Your Attack increased by  " + playerMon.pokemon.attackIncr));
-                    yield return StartCoroutine(dialogue.SetDialogue("You Defence increased by  " + playerMon.pokemon.defenceIncr));
-                    playerMon.pokemon.isLevelUp = false;
+                    playerMon.pokemon.level++;
+                    levelUpSFX.Play();
+                    playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
+                    playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
+                    yield return StartCoroutine(dialogue.SetDialogue("You leveld up to lvl   " + playerMon.pokemon.level + "."));                  
                 }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
                     state = BattleState.PlayerWin;
                     yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
+                    yield return StartCoroutine(Evolution());
                     Victory();
                     yield return dialogue.SetDialogue("You win!");
                     saveLoad.PlayerSave();
@@ -186,7 +191,7 @@ public class Battle : MonoBehaviour
             captureanimation.SetBool("Capture", true);
             yield return new WaitForSeconds(1);
             enemypokemon.GetComponent<SpriteRenderer>().enabled = false;
-            if (Random.Range(0, 10) <= 0)
+            if (Random.Range(0, 10) <= 8)
             {
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
@@ -349,6 +354,15 @@ public class Battle : MonoBehaviour
             audiosource2.Stop();
             audiosource1.Play();
         }
+        //playerMon.pokemon.Evolve();
+    }
+    IEnumerator Evolution()
+    {
+        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve)
+        {
+            audiosource2.Stop();
+            yield return evoloutionUI.Evolve(playerMon.pokemon);
+        }
     }
 
     IEnumerator EndBattle()
@@ -359,7 +373,6 @@ public class Battle : MonoBehaviour
         asyncOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(1.5f);
         asyncOperation.allowSceneActivation = true;
-
     }
 
     IEnumerator SwitchPokemon()
@@ -403,6 +416,7 @@ public class Battle : MonoBehaviour
         else if (Random.Range(0, 10) <= 8)
         {
             state = BattleState.Busy;
+            saveLoad.PlayerSave();
             yield return dialogue.SetDialogue("You run away!");
             StartCoroutine(EndBattle());
         }

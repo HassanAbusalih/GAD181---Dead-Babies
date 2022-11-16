@@ -12,55 +12,19 @@ public class Pokemon
     public float currentXpPoints;
     public float xpThreshhold;
     public List<Move> pMoves;
-    [HideInInspector] public int attackIncr;
-    [HideInInspector] public int defenceIncr;
-    [HideInInspector] public int maxHpIncr;
-    [HideInInspector] public bool isLevelUp;
 
-    public Pokemon (PokemonBase pBase, int pLevel)
+    public Pokemon (PokemonBase pBase, int pLevel) // Added a new parameter for the xp.
     {
          level = pLevel;
          pokemonBase = pBase;
-         totalHP = PokemonHealth(pokemonBase.maxHp);
-         currentHP = PokemonHealth(pokemonBase.maxHp);
-         pMoves = new List<Move>();
-         foreach (var move in pokemonBase.learnableMoves)
-         {
-            if (move.level <= level)
-            {
-                pMoves.Add(new Move(move.moves));
-                if (pMoves.Count == 4)
-                {
-                    break;
-                }
-            }
-         }
-
-
-    }
-
-    public int attack
-    {
-        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
-    }
-    public int spAttack
-    {
-        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
-    }
-    public int defense
-    {
-        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
-    }
-    public int spDefense
-    {
-        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
     }
 
     public void MakePokemon()
     {
         totalHP = PokemonHealth(pokemonBase.maxHp);
         currentHP = PokemonHealth(pokemonBase.maxHp);
-        xpThreshhold = 30;
+        currentXpPoints += currentXpPoints;
+        xpThreshhold = XpToNextLevel(level);
         pMoves = new List<Move>();
         foreach (var move in pokemonBase.learnableMoves)
         {
@@ -123,22 +87,15 @@ public class Pokemon
         int i = Random.Range(0, pMoves.Count);
         return pMoves[i];
     }
-    public IEnumerator LevelUp(int xpGained)
+    public float XpToNextLevel(int level)
     {
-        attackIncr = Random.Range(1, 4);
-        defenceIncr = Random.Range(1, 4);
-        currentXpPoints += xpGained;
-        if (currentXpPoints >= xpThreshhold)
+        return Mathf.Floor(100 * Mathf.Pow(level, (float)1.2));
+    }
+    public void Evolve()
+    {
+        if(level >= pokemonBase.evolutions.levelForEvolve)
         {
-            level++;
-            maxHpIncr = level + 10;
-            pokemonBase.maxHp += maxHpIncr;
-            pokemonBase.attack += attackIncr;
-            pokemonBase.defense += defenceIncr;
-            currentXpPoints -= xpThreshhold;
-            xpThreshhold += 30;
-            isLevelUp = true;
-            yield return null;
+            pokemonBase = pokemonBase.evolutions.evolveTo;
         }
     }
 }
