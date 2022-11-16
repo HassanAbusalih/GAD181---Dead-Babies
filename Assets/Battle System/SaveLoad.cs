@@ -13,6 +13,7 @@ public class SaveLoad : MonoBehaviour
     int afterLoad;
     public string trainerName;
     public bool isTrainer;
+
     public void Load()
     {
         if (PlayerPrefs.GetInt("Trainer") == 0)
@@ -23,8 +24,10 @@ public class SaveLoad : MonoBehaviour
         {
             isTrainer = true;
         }
+
         // Loading player Pokemon.
         beforeLoad = pokemonParties.playerParty.Count;
+
         for (int i = 0; i < PlayerPrefs.GetInt("party"); i++)
         {
             pokemonNumber = PlayerPrefs.GetInt($"pokemon{i}");
@@ -41,8 +44,10 @@ public class SaveLoad : MonoBehaviour
                 }
             }
         }
+
         PlayerPrefs.DeleteKey("party");
         afterLoad = pokemonParties.playerParty.Count - beforeLoad;
+
         if (afterLoad != 0 && beforeLoad != 0)
         {
             for (int i = 0; i < beforeLoad; i++)
@@ -50,6 +55,7 @@ public class SaveLoad : MonoBehaviour
                 pokemonParties.playerParty.Remove(pokemonParties.playerParty[i]);
             }
         }
+
         // Loading enemy Pokemon or random encounter.
         if (PlayerPrefs.GetInt("Trainer") == 0)
         {
@@ -97,6 +103,8 @@ public class SaveLoad : MonoBehaviour
             PlayerPrefs.SetInt($"pokemonLevel{i}", pokemonParties.playerParty[i].level);
             PlayerPrefs.SetFloat($"PokemonXP{i}", pokemonParties.playerParty[i].currentXpPoints);
         }
+
+        PlayerPrefs.Save();
     }
 
     public void EnemySave()
@@ -120,5 +128,7 @@ public class SaveLoad : MonoBehaviour
             enemyLevel = Random.Range(1, 8);
             PlayerPrefs.SetInt("EncounterLevel", enemyLevel);
         }
+
+        PlayerPrefs.Save();
     }
 }
