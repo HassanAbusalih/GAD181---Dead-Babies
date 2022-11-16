@@ -45,10 +45,34 @@ public class Pokemon
         return hp;
     }
 
-    public bool TakeDamage(Move move)
+    public bool TakeDamage(Move move, Pokemon Playerattacker)
     {
-        float mod = Random.Range(0.85f, 0.9f);
-        float damage = move.Base.power * mod;
+        float criticalHit = 1f;
+        if(Random.Range(0,100) *100.0f <= 10.25f)
+        {
+            criticalHit = 2.0f;
+        }
+        float type = PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type1) * PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type2);
+
+        int attack;
+        int defense;
+
+       if ( move.Base.category == Moves.MoveType.Special)
+        {
+            attack = Playerattacker.pokemonBase.spAttack;
+            defense = pokemonBase.spDefence;
+        }
+        else
+        {
+            attack = Playerattacker.pokemonBase.attack;
+            defense = pokemonBase.defense;
+
+        }
+
+        float mod = Random.Range(0.85f, 0.9f)* type *criticalHit;
+        float calculationDamage1 = ((2 * Playerattacker.level) + 10) / 250.0f;
+        float calculationDamage2 = ((move.Base.power) * (attack / defense) + 2);
+        int damage = (int)(calculationDamage1 * calculationDamage2 * mod);
         currentHP -= damage;
         if (currentHP <= 0)
         {
