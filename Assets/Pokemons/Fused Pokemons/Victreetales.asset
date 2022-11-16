@@ -27,14 +27,14 @@ MonoBehaviour:
   type2: 5
   pokeNumber: 0
   learnableMoves:
-  - moves: {fileID: 0}
+  - moves: {fileID: 11400000, guid: 458626511572ea843b092441236ea490, type: 2}
     level: 0
-  - moves: {fileID: 0}
-    level: 0
-  - moves: {fileID: 0}
-    level: 0
-  - moves: {fileID: 0}
-    level: 0
+  - moves: {fileID: 11400000, guid: 52fe2e3244b61314ba15113c25df5e3a, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 4c2ce91064b42094892de0d2d73db016, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: c78c8f9f3d6d57a43a7839a7162ecc1e, type: 2}
+    level: 20
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
