@@ -8739,26 +8739,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerParty: []
   enemyParty: []
+  wildPokemon: []
   allPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 71ee1bb8af43a7b4d9498a38f3a1574f, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 8351a9c423859b24c8c8d3e93cde1a5c, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 400f37a7ef7e94547ba464120b3e2d32, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
   - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: 625e31414338bf94db515d41478b2db2, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: b7043590db7969349ac0f3edb5174ac8, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: 7b6fc27076399654a9adfe1d9b1cbdfc, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
@@ -8770,7 +8801,145 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: 8351a9c423859b24c8c8d3e93cde1a5c, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: 4d3d223ba8ae9de4daafbbbba38546df, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 606e42a6e9510e84fad58aa1899b225e, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: bc25f40e96b73e640869b65844309df4, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: c28790bb22e980d499399b7053c0a778, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 6c95ddb8871ee294c95f9fc49ff4da1f, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 3aafe55af99b29d49ab5f5fda2987761, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: f32c8fcb734e6ba41b89809c96beee0b, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 83e2851258ea7d04593f784e1e3a8ffe, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 7ddc486109c5ee44bb069802b255257f, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: cfaa1954e862d034c9da7e1499773c00, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: b331969930d474e4d81cd007c23d9fac, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: f6c694ecbee11314889658fbca6fd4cf, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: da9cfd2fce02b3349880f7e2b4236465, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: a15b4d9668edbdd4aa1dd1960d6e8b7b, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: a00c2701d8e55ef4ca50ac5a02956e83, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 1bc8d0f56cd02ae4d9a238515ada50d3, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: eb64775f092fe7c47aeedf4688152c05, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 518eff4d92369d84bac0654a520e3735, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 8e832db605a4b8445a1f9cb726e028f7, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 9497fd36b0316ee4b835f50a9d635a3b, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0
