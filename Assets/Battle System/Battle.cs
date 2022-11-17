@@ -297,6 +297,12 @@ public class Battle : MonoBehaviour
                 selectionC += 1;
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            dialogue.pokemonList.SetActive(false);
+            dialogue.selectionBox.SetActive(false);
+            state = BattleState.PlayerMenu;
+        }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!deadPokemon && selectionC == 0)
@@ -339,6 +345,13 @@ public class Battle : MonoBehaviour
             {
                 selection += 2;
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            state = BattleState.PlayerMenu;
+            dialogue.menu.SetActive(true);
+            StartCoroutine(dialogue.SetDialogue("Select an action."));
+
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
