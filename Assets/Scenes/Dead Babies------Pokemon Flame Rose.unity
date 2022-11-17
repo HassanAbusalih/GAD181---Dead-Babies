@@ -2347,6 +2347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemonUI: {fileID: 742210012}
   pokemons: {fileID: 696993566}
+  controlsUI: {fileID: 0}
   pokemonNames:
   - {fileID: 1498201654}
   - {fileID: 231946790}
@@ -2357,6 +2358,7 @@ MonoBehaviour:
   uiText: {fileID: 866733486}
   pokemonParties: {fileID: 926748331}
   isActive: 0
+  controls: 0
 --- !u!1 &696993566
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,7 +9122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerParty:
   - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
-    level: 6
+    level: 15
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0

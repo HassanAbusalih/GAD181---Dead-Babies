@@ -23,7 +23,7 @@ public class Pokemon
     {
         totalHP = PokemonHealth(pokemonBase.maxHp);
         currentHP = PokemonHealth(pokemonBase.maxHp);
-        currentXpPoints += currentXpPoints;
+        //currentXpPoints = 0;
         xpThreshhold = XpToNextLevel(level);
         pMoves = new List<Move>();
         foreach (var move in pokemonBase.learnableMoves)
