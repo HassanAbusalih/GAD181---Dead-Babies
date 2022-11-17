@@ -67,11 +67,9 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        print("WTF");
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("bugwild")))
         {
             int battleEncounterRNG = Random.Range(1, 500);
-            print(battleEncounterRNG);
             if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
                 encounter = true;

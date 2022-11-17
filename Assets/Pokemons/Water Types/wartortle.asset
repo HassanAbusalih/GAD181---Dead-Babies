@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: wartortle
+  m_Name: Wartortle
   m_EditorClassIdentifier: 
   pokeName: Wartortle
   description: 
@@ -25,7 +25,7 @@ MonoBehaviour:
   speed: 58
   type1: 3
   type2: 0
-  pokeNumber: 0
+  pokeNumber: 5
   learnableMoves:
   - moves: {fileID: 11400000, guid: 2ab6a1bf0fcf765438aef8c0f876237f, type: 2}
     level: 0
@@ -38,3 +38,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
     levelForEvolve: 36
+  fusionName: 
