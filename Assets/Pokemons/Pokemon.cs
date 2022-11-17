@@ -54,8 +54,8 @@ public class Pokemon
         }
         float type = PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type1) * PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type2);
 
-        int attack;
-        int defense;
+        int attack = 1;
+        int defense = 1;
 
        if ( move.Base.category == Moves.MoveType.Special)
         {
@@ -69,9 +69,9 @@ public class Pokemon
 
         }
 
-        float mod = Random.Range(0.85f, 0.9f)* type *criticalHit;
+        float mod = Random.Range(0.85f, 0.9f) * criticalHit;
         float calculationDamage1 = ((2 * Playerattacker.level) + 10) / 250.0f;
-        float calculationDamage2 = ((move.Base.power) * (attack / defense) + 2);
+        float calculationDamage2 = ((move.Base.power * attack) / defense) + 2;
         int damage = (int)(calculationDamage1 * calculationDamage2 * mod);
         currentHP -= damage;
         if (currentHP <= 0)
