@@ -41,7 +41,7 @@ public class Pokemon
 
     float PokemonHealth(int maxHP)
     {
-        float hp = (maxHP * level);
+        float hp =  (((2 * pokemonBase.maxHp) * level) / 100) + level + 10;
         return hp;
     }
 
@@ -56,6 +56,12 @@ public class Pokemon
 
         int attack;
         int defense;
+        float Stab = 1f;
+
+        if(Playerattacker.pokemonBase.type1 == move.Base.type || Playerattacker.pokemonBase.type2 == move.Base.type)
+        {
+            Stab = 1.5f;
+        }
 
        if ( move.Base.category == Moves.MoveType.Special)
         {
@@ -72,7 +78,7 @@ public class Pokemon
         float mod = Random.Range(0.85f, 0.9f)* type *criticalHit;
         float calculationDamage1 = ((2 * Playerattacker.level) + 10) / 250.0f;
         float calculationDamage2 = ((move.Base.power) * (attack / defense) + 2);
-        int damage = (int)(calculationDamage1 * calculationDamage2 * mod);
+        int damage = (int)(calculationDamage1 * calculationDamage2 * mod * Stab);
         currentHP -= damage;
         if (currentHP <= 0)
         {
@@ -80,6 +86,9 @@ public class Pokemon
             return true;
         }
         return false;
+
+        
+
     }
 
     public Move RandomMove() 
@@ -98,5 +107,34 @@ public class Pokemon
             pokemonBase = pokemonBase.evolutions.evolveTo;
         }
     }
+
+    public int  attack
+    {
+        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
+    }
+
+    public int defense
+    {
+        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
+    }
+
+    public int spAttack
+    {
+        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
+    }
+
+    public int spDefense
+    {
+        get { return (int)((pokemonBase.attack * level) / 100f) + 5; }
+    }
+
+    public int maxHp
+    {
+        get { return (int)((pokemonBase.attack * level) / 100f) + 10; }
+    }
+
+
+
+
 }
 
