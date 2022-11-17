@@ -25,7 +25,7 @@ MonoBehaviour:
   speed: 43
   type1: 3
   type2: 0
-  pokeNumber: 3
+  pokeNumber: 4
   learnableMoves:
   - moves: {fileID: 11400000, guid: 777dba8cf2c09fb4fbf95b1e13983146, type: 2}
     level: 0
@@ -38,3 +38,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 11400000, guid: 7ddc486109c5ee44bb069802b255257f, type: 2}
     levelForEvolve: 16
+  fusionName: 

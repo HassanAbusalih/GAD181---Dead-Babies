@@ -109,20 +109,19 @@ public class Battle : MonoBehaviour
                 xpGain = Mathf.FloorToInt((340 * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieved " + xpGain + " XP.");
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieves " + xpGain + " XP.");
                 while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
                     playerMon.pokemon.level++;
                     levelUpSFX.Play();
                     playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
-                    yield return StartCoroutine(dialogue.SetDialogue("You leveld up to lvl   " + playerMon.pokemon.level + "."));                  
+                    yield return StartCoroutine(dialogue.SetDialogue($"{playerMon.pokemon.pokemonBase.pokeName} leveled up to lvl  {playerMon.pokemon.level}."));                  
                 }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
                     state = BattleState.PlayerWin;
-                    yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                     yield return StartCoroutine(Evolution());
                     Victory();
                     yield return dialogue.SetDialogue("You win!");
@@ -207,12 +206,12 @@ public class Battle : MonoBehaviour
                 capturefailanimation.SetBool("capturefail", true);
                 yield return new WaitForSeconds(2.5f);
                 enemypokemon.GetComponent<SpriteRenderer>().enabled = true;
-                StartCoroutine(dialogue.SetDialogue("The Force is strong with him"));
+                StartCoroutine(dialogue.SetDialogue("The Force is strong with him."));
                 yield return new WaitForSeconds(0.1f);
                 capturefailanimation.SetBool("capturefail", false);
                 yield return new WaitForSeconds(1);
                 state = BattleState.EnemyAttack;
-                yield return dialogue.SetDialogue("You fail to capture");
+                yield return dialogue.SetDialogue("You fail to capture the Pokemon!");
                 StartCoroutine(Attack());
             }
         }

@@ -14,7 +14,6 @@ public class PokemonBase : ScriptableObject
     [SerializeField] public int attack;
     [SerializeField] public int defense;
     [SerializeField] public int spAttack;
-    public int xpYield;
     [SerializeField] public int spDefence;
     [SerializeField] public int speed;
     [SerializeField] public PokemonType type1;
@@ -86,7 +85,7 @@ public class PokemonTypeChart
         {
             return 1;
         }
-        int row = (int)attackType -1; 
+        int row = (int)attackType - 1; 
         int column = (int)defenseType - 1;
         {
             return TypeChart[row][column];

@@ -16,16 +16,15 @@ MonoBehaviour:
   description: 
   pokeSprite: {fileID: 21300000, guid: 389b8ec7a47032c4a829d030362b9faf, type: 3}
   backSprite: {fileID: 0}
-  maxHp: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  xpYield: 0
-  spDefence: 0
-  speed: 0
+  maxHp: 73
+  attack: 89
+  defense: 64
+  spAttack: 63
+  spDefence: 75
+  speed: 68
   type1: 3
   type2: 13
-  pokeNumber: 0
+  pokeNumber: 34
   learnableMoves:
   - moves: {fileID: 11400000, guid: 0f8087e2514b64842a38796581be93a0, type: 2}
     level: 0
