@@ -6,6 +6,7 @@ public class SwitchPokemon : MonoBehaviour
 {
     public GameObject pokemonUI;
     public GameObject pokemons;
+    public GameObject controlsUI;
     public List<TextMeshProUGUI> pokemonNames;
     public TextMeshProUGUI uiText;
     public PokemonParties pokemonParties;
@@ -16,6 +17,7 @@ public class SwitchPokemon : MonoBehaviour
     Pokemon pokemonA;
     Pokemon pokemonB;
     public bool isActive;
+    public bool controls;
     bool switching;
     bool fusing;
 
@@ -24,7 +26,11 @@ public class SwitchPokemon : MonoBehaviour
     void Update()
     {
         Activate();
-        if (isActive)
+        if (controls)
+        {
+            controlsUI.SetActive(true);
+        }
+        else if (isActive)
         {
             SetPokemonNames(pokemonParties.playerParty);
             pokemonUI.SetActive(true);
@@ -47,6 +53,7 @@ public class SwitchPokemon : MonoBehaviour
         {
             pokemonUI.SetActive(false);
             pokemons.SetActive(false);
+            controlsUI.SetActive(false);
             selectionA = 0;
             selectionB = 0;
             switching = false;
@@ -89,6 +96,15 @@ public class SwitchPokemon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab) && !isActive)
         {
             isActive = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && !controls)
+        {
+            controls = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && controls)
+        {
+            controls = false;
+            controlsUI.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {

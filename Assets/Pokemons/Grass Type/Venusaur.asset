@@ -14,13 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Venusaur
   description: 
-  pokeSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: 675a092b666936c4688bd4d6017827fd, type: 3}
   backSprite: {fileID: 21300000, guid: 03058645069a53740a9324d7047b4a41, type: 3}
   maxHp: 80
   attack: 82
   defense: 83
   spAttack: 100
-  xpYield: 263
   spDefence: 100
   speed: 80
   type1: 5

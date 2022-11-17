@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Wartortle
+  m_Name: wartortle
   m_EditorClassIdentifier: 
   pokeName: Wartortle
   description: 
@@ -20,7 +20,6 @@ MonoBehaviour:
   attack: 63
   defense: 80
   spAttack: 65
-  xpYield: 142
   spDefence: 80
   speed: 58
   type1: 3
