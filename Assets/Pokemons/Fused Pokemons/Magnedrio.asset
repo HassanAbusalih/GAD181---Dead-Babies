@@ -22,7 +22,7 @@ MonoBehaviour:
   spAttack: 78
   spDefence: 58
   speed: 73
-  type1: 10
+  type1: 12
   type2: 4
   pokeNumber: 26
   learnableMoves:

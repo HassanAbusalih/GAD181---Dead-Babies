@@ -20,11 +20,10 @@ MonoBehaviour:
   attack: 80
   defense: 85
   spAttack: 100
-  xpYield: 245
   spDefence: 90
   speed: 50
   type1: 5
-  type2: 8
+  type2: 10
   pokeNumber: 17
   learnableMoves:
   - moves: {fileID: 11400000, guid: 9e2ec7701ae3a784aa6f18ec83c7218d, type: 2}

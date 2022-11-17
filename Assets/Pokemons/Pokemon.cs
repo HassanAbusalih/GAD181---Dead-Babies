@@ -48,7 +48,7 @@ public class Pokemon
     public bool TakeDamage(Move move, Pokemon Playerattacker)
     {
         float criticalHit = 1f;
-        if(Random.Range(0,100) *100.0f <= 10.25f)
+        if(Random.Range(0, 200) <= Playerattacker.pokemonBase.speed)
         {
             criticalHit = 2.0f;
         }
@@ -56,11 +56,11 @@ public class Pokemon
 
         int attack;
         int defense;
-        float Stab = 1f;
+        float stab = 1f;
 
         if(Playerattacker.pokemonBase.type1 == move.Base.type || Playerattacker.pokemonBase.type2 == move.Base.type)
         {
-            Stab = 1.5f;
+            stab = 1.5f;
         }
 
        if ( move.Base.category == Moves.MoveType.Special)
@@ -77,8 +77,8 @@ public class Pokemon
 
         float mod = Random.Range(0.85f, 0.9f) * criticalHit;
         float calculationDamage1 = ((2 * Playerattacker.level) + 10) / 250.0f;
-        float calculationDamage2 = ((move.Base.power) * (attack / defense) + 2);
-        int damage = (int)(calculationDamage1 * calculationDamage2 * mod * Stab);
+        float calculationDamage2 = (move.Base.power * attack / defense) + 2;
+        int damage = (int)(calculationDamage1 * calculationDamage2 * mod * stab * type);
         currentHP -= damage;
         if (currentHP <= 0)
         {
