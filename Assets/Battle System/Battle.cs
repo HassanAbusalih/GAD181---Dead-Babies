@@ -14,10 +14,12 @@ public class Battle : MonoBehaviour
     public Animator animator;
     public AudioSource audiosource1;
     public AudioSource audiosource2;
+    public AudioSource levelUpSFX;
     public SaveLoad saveLoad;
     public Animator captureanimation;
     public Animator capturefailanimation;
     public SpriteRenderer enemypokemon;
+    public EvoloutionUI evoloutionUI;
     public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
@@ -47,6 +49,7 @@ public class Battle : MonoBehaviour
     void Update()
     {
         xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
+
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
@@ -97,7 +100,7 @@ public class Battle : MonoBehaviour
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
             yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            bool fainted = enemyMon.pokemon.TakeDamage(move);
+            bool fainted = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
             selection = 0;
             if (fainted)
@@ -106,20 +109,20 @@ public class Battle : MonoBehaviour
                 xpGain = Mathf.FloorToInt((340 * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " Recieved " + xpGain + " XP");
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieves " + xpGain + " XP.");
                 while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
                     playerMon.pokemon.level++;
+                    levelUpSFX.Play();
                     playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
-                    playerMon.pokemon.StatsIncrease();
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
-                    yield return StartCoroutine(dialogue.SetDialogue("You Leveld up to lvl   " + playerMon.pokemon.level));
+                    yield return StartCoroutine(dialogue.SetDialogue($"{playerMon.pokemon.pokemonBase.pokeName} leveled up to lvl  {playerMon.pokemon.level}."));                  
                 }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
                 if (pokemonParties.enemyParty.Count == 0)
                 {
                     state = BattleState.PlayerWin;
-                    yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
+                    yield return StartCoroutine(Evolution());
                     Victory();
                     yield return dialogue.SetDialogue("You win!");
                     saveLoad.PlayerSave();
@@ -144,7 +147,7 @@ public class Battle : MonoBehaviour
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
             yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            bool fainted = playerMon.pokemon.TakeDamage(move);
+            bool fainted = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
             if (fainted)
             {
@@ -203,12 +206,12 @@ public class Battle : MonoBehaviour
                 capturefailanimation.SetBool("capturefail", true);
                 yield return new WaitForSeconds(2.5f);
                 enemypokemon.GetComponent<SpriteRenderer>().enabled = true;
-                StartCoroutine(dialogue.SetDialogue("The Force is strong with him"));
+                StartCoroutine(dialogue.SetDialogue("The Force is strong with him."));
                 yield return new WaitForSeconds(0.1f);
                 capturefailanimation.SetBool("capturefail", false);
                 yield return new WaitForSeconds(1);
                 state = BattleState.EnemyAttack;
-                yield return dialogue.SetDialogue("You fail to capture");
+                yield return dialogue.SetDialogue("You fail to capture the Pokemon!");
                 StartCoroutine(Attack());
             }
         }
@@ -350,6 +353,15 @@ public class Battle : MonoBehaviour
             audiosource2.Stop();
             audiosource1.Play();
         }
+        //playerMon.pokemon.Evolve();
+    }
+    IEnumerator Evolution()
+    {
+        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve)
+        {
+            audiosource2.Stop();
+            yield return evoloutionUI.Evolve(playerMon.pokemon);
+        }
     }
 
     IEnumerator EndBattle()
@@ -360,7 +372,6 @@ public class Battle : MonoBehaviour
         asyncOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(1.5f);
         asyncOperation.allowSceneActivation = true;
-
     }
 
     IEnumerator SwitchPokemon()
@@ -404,6 +415,7 @@ public class Battle : MonoBehaviour
         else if (Random.Range(0, 10) <= 8)
         {
             state = BattleState.Busy;
+            saveLoad.PlayerSave();
             yield return dialogue.SetDialogue("You run away!");
             StartCoroutine(EndBattle());
         }
@@ -413,5 +425,15 @@ public class Battle : MonoBehaviour
             yield return dialogue.SetDialogue("You fail to escape!");
             StartCoroutine(Attack());
         }
+
+       
+    }
+    int getdamage(PokemonType T1, PokemonType T2)
+    {
+        if (T1 == PokemonType.Fire && T2 == PokemonType.Water)
+        {
+            return 2;
+        }
+        return 1;
     }
 }

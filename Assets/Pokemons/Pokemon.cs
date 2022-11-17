@@ -12,36 +12,18 @@ public class Pokemon
     public float currentXpPoints;
     public float xpThreshhold;
     public List<Move> pMoves;
-    [HideInInspector] public int attackIncr;
-    [HideInInspector] public int defenceIncr;
-    [HideInInspector] public int maxHpIncr;
-    [HideInInspector] public bool isLevelUp;
 
-    public Pokemon (PokemonBase pBase, int pLevel)
+    public Pokemon (PokemonBase pBase, int pLevel) // Added a new parameter for the xp.
     {
          level = pLevel;
          pokemonBase = pBase;
-         totalHP = PokemonHealth(pokemonBase.maxHp);
-         currentHP = PokemonHealth(pokemonBase.maxHp);
-         pMoves = new List<Move>();
-         foreach (var move in pokemonBase.learnableMoves)
-         {
-            if (move.level <= level)
-            {
-                pMoves.Add(new Move(move.moves));
-                if (pMoves.Count == 4)
-                {
-                    break;
-                }
-            }
-         }
     }
 
     public void MakePokemon()
     {
         totalHP = PokemonHealth(pokemonBase.maxHp);
         currentHP = PokemonHealth(pokemonBase.maxHp);
-        currentXpPoints = 0;
+        currentXpPoints += currentXpPoints;
         xpThreshhold = XpToNextLevel(level);
         pMoves = new List<Move>();
         foreach (var move in pokemonBase.learnableMoves)
@@ -63,10 +45,34 @@ public class Pokemon
         return hp;
     }
 
-    public bool TakeDamage(Move move)
+    public bool TakeDamage(Move move, Pokemon Playerattacker)
     {
-        float mod = Random.Range(0.85f, 0.9f);
-        float damage = move.Base.power * mod;
+        float criticalHit = 1f;
+        if(Random.Range(0,100) *100.0f <= 10.25f)
+        {
+            criticalHit = 2.0f;
+        }
+        float type = PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type1) * PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type2);
+
+        int attack;
+        int defense;
+
+       if ( move.Base.category == Moves.MoveType.Special)
+        {
+            attack = Playerattacker.pokemonBase.spAttack;
+            defense = pokemonBase.spDefence;
+        }
+        else
+        {
+            attack = Playerattacker.pokemonBase.attack;
+            defense = pokemonBase.defense;
+
+        }
+
+        float mod = Random.Range(0.85f, 0.9f)* type *criticalHit;
+        float calculationDamage1 = ((2 * Playerattacker.level) + 10) / 250.0f;
+        float calculationDamage2 = ((move.Base.power) * (attack / defense) + 2);
+        int damage = (int)(calculationDamage1 * calculationDamage2 * mod);
         currentHP -= damage;
         if (currentHP <= 0)
         {
@@ -81,17 +87,16 @@ public class Pokemon
         int i = Random.Range(0, pMoves.Count);
         return pMoves[i];
     }
-    public void StatsIncrease()
-    {
-        attackIncr = Random.Range(1, 4);
-        defenceIncr = Random.Range(1, 4);
-        pokemonBase.attack += attackIncr;
-        pokemonBase.defense += defenceIncr;
-        isLevelUp = false;
-    }
     public float XpToNextLevel(int level)
     {
         return Mathf.Floor(100 * Mathf.Pow(level, (float)1.2));
+    }
+    public void Evolve()
+    {
+        if(level >= pokemonBase.evolutions.levelForEvolve)
+        {
+            pokemonBase = pokemonBase.evolutions.evolveTo;
+        }
     }
 }
 

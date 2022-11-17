@@ -12,6 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
-  TrainerName: Gold
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 6281173559678341316, guid: 2c010bce8c8712141a40ae2d367c5459, type: 3}
+  trainerName: 
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 625e31414338bf94db515d41478b2db2, type: 2}
+    level: 13
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: b7043590db7969349ac0f3edb5174ac8, type: 2}
+    level: 14
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 7b6fc27076399654a9adfe1d9b1cbdfc, type: 2}
+    level: 16
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
+    level: 22
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  battled: 0

@@ -12,6 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Ginger
   m_EditorClassIdentifier: 
-  TrainerName: Ginger
-  TrainerPokemons: 
-  TrainerSprite: {fileID: -2227525577534050323, guid: 6aa1aff25b319f442a0a4a6fe62d1849, type: 3}
+  trainerName: 
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 606e42a6e9510e84fad58aa1899b225e, type: 2}
+    level: 10
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 71ee1bb8af43a7b4d9498a38f3a1574f, type: 2}
+    level: 11
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: c28790bb22e980d499399b7053c0a778, type: 2}
+    level: 13
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  battled: 0

@@ -19,11 +19,6 @@ public class SwitchPokemon : MonoBehaviour
     bool switching;
     bool fusing;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        SetPokemonNames(pokemonParties.playerParty);
-    }
 
     // Update is called once per frame
     void Update()
@@ -31,6 +26,7 @@ public class SwitchPokemon : MonoBehaviour
         Activate();
         if (isActive)
         {
+            SetPokemonNames(pokemonParties.playerParty);
             pokemonUI.SetActive(true);
             pokemons.SetActive(true);
             PokemonSelection();
@@ -118,12 +114,12 @@ public class SwitchPokemon : MonoBehaviour
                     selectionA += 1;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.Space))
+            else if (Input.GetKeyDown(KeyCode.Space) && pokemonParties.playerParty.Count >= 2)
             {
                 switching = true;
                 uiText.text = "Switching...";
             }
-            else if (Input.GetKeyDown(KeyCode.E))
+            else if (Input.GetKeyDown(KeyCode.E) && pokemonParties.playerParty.Count >= 2)
             {
                 fusing = true;
                 uiText.text = "Fusing...";
@@ -173,9 +169,12 @@ public class SwitchPokemon : MonoBehaviour
 
     void Fuse()
     {
-        string fusionNameA = $"{pokemonParties.playerParty[selectionA].pokemonBase.pokeName}{pokemonParties.playerParty[selectionB].pokemonBase.pokeName}";
-        string fusionNameB = $"{pokemonParties.playerParty[selectionB].pokemonBase.pokeName}{pokemonParties.playerParty[selectionA].pokemonBase.pokeName}";
-        for (int i = 0; i < pokemonParties.allPokemon.Count; i++)
+        pokemonA = pokemonParties.playerParty[selectionA];
+        pokemonB = pokemonParties.playerParty[selectionB];
+        int pokeLevel = (pokemonA.level + pokemonB.level) / 2;
+        string fusionNameA = $"{pokemonA.pokemonBase.pokeName}{pokemonB.pokemonBase.pokeName}";
+        string fusionNameB = $"{pokemonB.pokemonBase.pokeName}{pokemonA.pokemonBase.pokeName}";
+        for (int i = 0; i < pokemonParties.allPokemon.Count - 1; i++)
         {
             if (fusionNameA == pokemonParties.allPokemon[i].pokemonBase.fusionName)
             {
@@ -189,6 +188,7 @@ public class SwitchPokemon : MonoBehaviour
                     pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB]);
                 }
                 pokemonParties.playerParty.Add(pokemonParties.allPokemon[i]);
+                pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].level = pokeLevel;
                 SetPokemonNames(pokemonParties.playerParty);
                 fusing = false;
             }
@@ -204,12 +204,15 @@ public class SwitchPokemon : MonoBehaviour
                     pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB]);
                 }
                 pokemonParties.playerParty.Add(pokemonParties.allPokemon[i]);
+                pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].level = pokeLevel;
                 SetPokemonNames(pokemonParties.playerParty);
                 fusing = false;
             }
         }
         if (!fusing)
         {
+            selectionA = 0;
+            selectionB = 0;
             SetFlag();
         }
         else
