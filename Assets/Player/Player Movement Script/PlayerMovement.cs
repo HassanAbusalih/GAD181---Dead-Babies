@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         {
             cooldown += Time.deltaTime;
         }
-        if (!switchPokemon.isActive && !encounter)
+        if (!switchPokemon.isActive && !encounter && !switchPokemon.controls)
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
