@@ -48,8 +48,6 @@ public class Battle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
-
         if (state == BattleState.PokemonSelection)
         {
             PokemonSelection();
@@ -76,6 +74,7 @@ public class Battle : MonoBehaviour
         state = BattleState.Start;
         dialogue.SetPokemonNames(pokemonParties.playerParty);
         InitializePokemon();
+        xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
         yield return new WaitForSeconds(0.1f);
         yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
         state = BattleState.PlayerMenu;
@@ -110,11 +109,12 @@ public class Battle : MonoBehaviour
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieves " + xpGain + " XP.");
+                xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
                 while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
+                    playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
                     playerMon.pokemon.level++;
                     levelUpSFX.Play();
-                    playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
                     yield return StartCoroutine(dialogue.SetDialogue($"{playerMon.pokemon.pokemonBase.pokeName} leveled up to lvl  {playerMon.pokemon.level}."));                  
                 }
