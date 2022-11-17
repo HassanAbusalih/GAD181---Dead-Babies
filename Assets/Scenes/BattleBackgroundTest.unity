@@ -8737,8 +8737,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerParty: []
-  enemyParty: []
+  playerParty:
+  - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  enemyParty:
+  - pokemonBase: {fileID: 11400000, guid: a4898444bfc93f940ba9e5c40321456a, type: 2}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
   wildPokemon: []
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
