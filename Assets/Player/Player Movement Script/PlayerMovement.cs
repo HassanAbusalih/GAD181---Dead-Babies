@@ -134,8 +134,8 @@ public class PlayerMovement : MonoBehaviour
 
     void SavePos()
     {
-        PlayerPrefs.SetFloat("X", transform.position.x);
-        PlayerPrefs.SetFloat("Y", transform.position.y);
+        PlayerPrefs.SetFloat("X", Input.GetAxisRaw("Horizontal"));
+        PlayerPrefs.SetFloat("Y", Input.GetAxisRaw("Vertical"));
     }
 
     void LoadPos()
