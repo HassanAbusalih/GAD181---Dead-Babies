@@ -76,7 +76,15 @@ public class Battle : MonoBehaviour
         InitializePokemon();
         xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
         yield return new WaitForSeconds(0.1f);
-        yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
+        if (saveLoad.isTrainer)
+        {
+            yield return dialogue.SetDialogue($"{saveLoad.trainerName} challenges you!");
+        }
+        else
+        {
+            yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
+        }
+        yield return new WaitForSeconds(1f);
         state = BattleState.PlayerMenu;
         yield return dialogue.SetDialogue("Select an action.");
     }
