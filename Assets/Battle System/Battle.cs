@@ -373,7 +373,7 @@ public class Battle : MonoBehaviour
     }
     IEnumerator Evolution()
     {
-        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve)
+        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve && playerMon.pokemon.pokemonBase.evolutions.levelForEvolve != 0)
         {
             audiosource2.Stop();
             yield return evoloutionUI.Evolve(playerMon.pokemon);

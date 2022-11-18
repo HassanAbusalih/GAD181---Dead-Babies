@@ -123,10 +123,11 @@ public class SaveLoad : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public void EnemySave()
+    public void EnemySave(int level)
     {
         if (isTrainer)
         {
+            PlayerPrefs.SetInt("TrainerBattle", 1);
             PlayerPrefs.SetInt("Trainer", 1);
             PlayerPrefs.SetInt("enemyParty", pokemonParties.enemyParty.Count);
             for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
@@ -141,8 +142,7 @@ public class SaveLoad : MonoBehaviour
             randomPokemon = pokemonParties.wildPokemon[Random.Range(0, pokemonParties.wildPokemon.Count - 1)];
             pokemonParties.enemyParty.Add(randomPokemon);
             PlayerPrefs.SetInt("Encounter", randomPokemon.pokemonBase.pokeNumber);
-            enemyLevel = Random.Range(15, 20);
-            PlayerPrefs.SetInt("EncounterLevel", enemyLevel);
+            PlayerPrefs.SetInt("EncounterLevel", level);
         }
 
         PlayerPrefs.SetInt("HasSaveData", 1);
