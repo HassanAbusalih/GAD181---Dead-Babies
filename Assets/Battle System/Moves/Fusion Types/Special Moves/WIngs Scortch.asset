@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: WIngs Scortch
   description: 
-  type: 2
+  type: 12
   category: 2
   power: 80
   accuracy: 0

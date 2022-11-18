@@ -161,7 +161,8 @@ public class Battle : MonoBehaviour
                 {
                     state = BattleState.EnemyWin;
                     yield return dialogue.SetDialogue("You lose!");
-                    yield return EndBattle();
+                    PlayerPrefs.DeleteAll();
+                    Application.Quit();
                 }
                 else
                 {

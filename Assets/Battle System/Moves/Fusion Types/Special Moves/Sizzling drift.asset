@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Sizzling drift
   description: 
-  type: 10
+  type: 2
   category: 2
   power: 65
   accuracy: 0
