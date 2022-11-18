@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Metal Chip
   description: 
-  type: 12
+  type: 8
   category: 2
   power: 70
   accuracy: 0

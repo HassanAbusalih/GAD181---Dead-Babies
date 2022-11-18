@@ -161,7 +161,8 @@ public class Battle : MonoBehaviour
                 {
                     state = BattleState.EnemyWin;
                     yield return dialogue.SetDialogue("You lose!");
-                    yield return EndBattle();
+                    PlayerPrefs.DeleteAll();
+                    Application.Quit();
                 }
                 else
                 {
@@ -372,7 +373,7 @@ public class Battle : MonoBehaviour
     }
     IEnumerator Evolution()
     {
-        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve)
+        if(playerMon.pokemon.level >= playerMon.pokemon.pokemonBase.evolutions.levelForEvolve && playerMon.pokemon.pokemonBase.evolutions.levelForEvolve != 0)
         {
             audiosource2.Stop();
             yield return evoloutionUI.Evolve(playerMon.pokemon);

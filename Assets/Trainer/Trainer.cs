@@ -10,13 +10,13 @@ public class Trainer : MonoBehaviour
  
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !trainerBase.battled)
+        if (collision.gameObject.CompareTag("Player") && PlayerPrefs.GetInt($"{trainerBase.trainerName}") != 1)
         {
+            PlayerPrefs.SetInt($"{trainerBase.trainerName}", 1);
             Debug.Log("I can see you");
             pokemonParties.enemyParty = trainerBase.trainerPokemon;
             PlayerPrefs.SetString("trainerName", trainerBase.name);
             saveLoad.isTrainer = true;
-            trainerBase.battled = true;
         }
     }
 

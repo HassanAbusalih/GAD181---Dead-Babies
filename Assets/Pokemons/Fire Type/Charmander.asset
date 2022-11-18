@@ -20,7 +20,6 @@ MonoBehaviour:
   attack: 52
   defense: 43
   spAttack: 60
-  xpYield: 62
   spDefence: 50
   speed: 65
   type1: 2
@@ -37,5 +36,5 @@ MonoBehaviour:
     level: 10
   evolutions:
     evolveTo: {fileID: 11400000, guid: 625e31414338bf94db515d41478b2db2, type: 2}
-    levelForEvolve: 16
+    levelForEvolve: 10
   fusionName: 

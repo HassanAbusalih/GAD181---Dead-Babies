@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Roshi
   m_EditorClassIdentifier: 
-  TrainerName: Roshi
-  TrainerPokemons: 
-  TrainerSprite: {fileID: -8635501109359170042, guid: 08c787c562b1c374fad9713b7ab4349b, type: 3}
+  trainerName: Roshi
+  trainerSprite: {fileID: 0}
+  trainerPokemon: []
+  battled: 0

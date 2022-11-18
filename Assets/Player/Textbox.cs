@@ -8,6 +8,7 @@ public class Textbox : MonoBehaviour
     [SerializeField] List<string> textList = new List<string>();
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] GameObject textBox;
+    public SaveLoad saveLoad;
     Collider2D textCollider;
     Collider2D playerCollider;
     bool isActive;
@@ -35,6 +36,14 @@ public class Textbox : MonoBehaviour
                 NextLine();
             }
 
+        }
+        else if (PlayerPrefs.GetInt("TrainerBattle") == 1 && textCollider.IsTouching(playerCollider))
+        {
+            PlayerPrefs.DeleteKey("TrainerBattle");
+            isActive = true;
+            textBox.SetActive(true);
+            text.gameObject.SetActive(true);
+            NextLine();
         }
         else
         {
