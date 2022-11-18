@@ -15,7 +15,7 @@ MonoBehaviour:
   pokeName: Victreetales
   description: 
   pokeSprite: {fileID: 21300000, guid: cc9c53954e991184fa1b1cb7c5ec3c67, type: 3}
-  backSprite: {fileID: 0}
+  backSprite: {fileID: 21300000, guid: 1b41e2009d72aa044aefe4f60d8dc175, type: 3}
   maxHp: 77
   attack: 91
   defense: 70

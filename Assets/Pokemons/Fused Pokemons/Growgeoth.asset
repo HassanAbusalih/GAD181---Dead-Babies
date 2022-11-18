@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokeName: Growgeoth
   description: 
-  pokeSprite: {fileID: 21300000, guid: b497bfb232827ee4fa574438f45258af, type: 3}
-  backSprite: {fileID: 0}
+  pokeSprite: {fileID: 21300000, guid: b01f8085c7ae13a4db67cee42eef772a, type: 3}
+  backSprite: {fileID: 21300000, guid: 4cb043c7256aa1a4897da9c53f6c2af7, type: 3}
   maxHp: 69
   attack: 75
   defense: 63

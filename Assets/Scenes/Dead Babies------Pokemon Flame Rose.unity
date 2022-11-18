@@ -2347,7 +2347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pokemonUI: {fileID: 742210012}
   pokemons: {fileID: 696993566}
-  controlsUI: {fileID: 0}
+  controlsUI1: {fileID: 0}
+  controlsUI2: {fileID: 0}
   pokemonNames:
   - {fileID: 1498201654}
   - {fileID: 231946790}
@@ -2357,6 +2358,8 @@ MonoBehaviour:
   - {fileID: 697065486}
   uiText: {fileID: 866733486}
   pokemonParties: {fileID: 926748331}
+  selectionA: 0
+  selectionB: 0
   isActive: 0
   controls: 0
 --- !u!1 &696993566
@@ -9121,25 +9124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerParty:
-  - pokemonBase: {fileID: 11400000, guid: e15ea77092d64ef46936d1bfbfeee3ca, type: 2}
-    level: 15
-    totalHP: 0
-    currentHP: 0
-    currentXpPoints: 0
-    xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: 360ad9937717cc041b12b6f377fc3d01, type: 2}
-    level: 7
-    totalHP: 0
-    currentHP: 0
-    currentXpPoints: 0
-    xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: f32c8fcb734e6ba41b89809c96beee0b, type: 2}
-    level: 8
-    totalHP: 0
-    currentHP: 0
-    currentXpPoints: 0
-    xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: 6f1c83b4111ad794899c81825e120449, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: eb64775f092fe7c47aeedf4688152c05, type: 2}
     level: 15
     totalHP: 0
     currentHP: 0
