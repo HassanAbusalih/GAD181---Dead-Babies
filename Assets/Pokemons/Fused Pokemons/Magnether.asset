@@ -15,7 +15,7 @@ MonoBehaviour:
   pokeName: Magnether
   description: 
   pokeSprite: {fileID: 21300000, guid: 74cbd58b4caa13a4b8c147773b58245a, type: 3}
-  backSprite: {fileID: 0}
+  backSprite: {fileID: 21300000, guid: 7f3860081b9f8884c9a99700f796df42, type: 3}
   maxHp: 48
   attack: 73
   defense: 75
