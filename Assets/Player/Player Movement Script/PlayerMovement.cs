@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
                 StartEncounter(Random.Range(20, 25));
             }
         }
-        else if (saveLoad.isTrainer && !encounter)
+        else if (saveLoad.isTrainer && !encounter && cooldown > 4)
         {
             encounter = true;
             saveLoad.PlayerSave();
