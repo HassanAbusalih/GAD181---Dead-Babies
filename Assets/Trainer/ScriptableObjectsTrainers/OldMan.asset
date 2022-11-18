@@ -14,5 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainerName: Old man
   trainerSprite: {fileID: 0}
-  trainerPokemon: []
-  battled: 0
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 400f37a7ef7e94547ba464120b3e2d32, type: 2}
+    level: 3
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
