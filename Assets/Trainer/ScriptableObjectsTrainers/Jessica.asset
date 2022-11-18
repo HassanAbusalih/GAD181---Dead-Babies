@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Jessica
   m_EditorClassIdentifier: 
-  TrainerName: Jessica
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 3373546165635943069, guid: 162a92df1f879914ca61e47a310e895a, type: 3}
+  trainerName: Jessica
+  trainerSprite: {fileID: 0}
+  trainerPokemon: []
+  battled: 0

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Jim
   m_EditorClassIdentifier: 
-  TrainerName: Jim
-  TrainerPokemons: 
-  TrainerSprite: {fileID: 8231591186451798940, guid: 486a238058d37d542865ccb93f2757bb, type: 3}
+  trainerName: Jim
+  trainerSprite: {fileID: 0}
+  trainerPokemon: []
+  battled: 0
