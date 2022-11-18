@@ -6,31 +6,39 @@ public class SwitchPokemon : MonoBehaviour
 {
     public GameObject pokemonUI;
     public GameObject pokemons;
+    public GameObject controlsUI1;
+    public GameObject controlsUI2;
     public List<TextMeshProUGUI> pokemonNames;
     public TextMeshProUGUI uiText;
     public PokemonParties pokemonParties;
-    int selectionA = 0;
-    int selectionB = 0;
+    public int selectionA = 0;
+    public int selectionB = 0;
     int flag1;
     int flag2;
     Pokemon pokemonA;
     Pokemon pokemonB;
     public bool isActive;
+    public bool controls;
     bool switching;
     bool fusing;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        SetPokemonNames(pokemonParties.playerParty);
-    }
 
     // Update is called once per frame
     void Update()
     {
         Activate();
-        if (isActive)
+        if (controls)
         {
+            if (selectionA == 0)
+            {
+                selectionA++;
+                controlsUI1.SetActive(true);
+            }
+            ControlsSelection(controlsUI1 , controlsUI2);
+        }
+        else if (isActive)
+        {
+            SetPokemonNames(pokemonParties.playerParty);
             pokemonUI.SetActive(true);
             pokemons.SetActive(true);
             PokemonSelection();
@@ -51,6 +59,8 @@ public class SwitchPokemon : MonoBehaviour
         {
             pokemonUI.SetActive(false);
             pokemons.SetActive(false);
+            controlsUI1.SetActive(false);
+            controlsUI2.SetActive(false);
             selectionA = 0;
             selectionB = 0;
             switching = false;
@@ -76,6 +86,22 @@ public class SwitchPokemon : MonoBehaviour
         }
     }
 
+    public void ControlsSelection(GameObject page1, GameObject page2)
+    {
+        if (Input.GetKeyDown(KeyCode.A) && selectionB == 1)
+        {
+            selectionB--;
+            page1.SetActive(true);
+            page2.SetActive(false);
+        }
+        else if (Input.GetKeyDown(KeyCode.D) && selectionB == 0)
+        {
+            selectionB++;
+            page2.SetActive(true);
+            page1.SetActive(false);
+        }
+    }
+
     public void SetPokemonNames(List<Pokemon> pokemons)
     {
         for (int i = 0; i < pokemonNames.Count; i++)
@@ -90,9 +116,19 @@ public class SwitchPokemon : MonoBehaviour
 
     void Activate()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) && !isActive)
+        if (Input.GetKeyDown(KeyCode.Tab) && !isActive && !controls)
         {
             isActive = true;
+            controls = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && !controls && !isActive)
+        {
+            controls = true;
+            isActive = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && controls)
+        {
+            controls = false;
         }
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {
@@ -118,12 +154,12 @@ public class SwitchPokemon : MonoBehaviour
                     selectionA += 1;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.Space))
+            else if (Input.GetKeyDown(KeyCode.Space) && pokemonParties.playerParty.Count >= 2)
             {
                 switching = true;
                 uiText.text = "Switching...";
             }
-            else if (Input.GetKeyDown(KeyCode.E))
+            else if (Input.GetKeyDown(KeyCode.E) && pokemonParties.playerParty.Count >= 2)
             {
                 fusing = true;
                 uiText.text = "Fusing...";
@@ -152,7 +188,10 @@ public class SwitchPokemon : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.E) && fusing)
             {
-                Fuse();
+                if (selectionA != selectionB)
+                {
+                    Fuse();
+                }
             }
         }
     }
@@ -160,7 +199,7 @@ public class SwitchPokemon : MonoBehaviour
     void Switch()
     {
         pokemonA = pokemonParties.playerParty[selectionA];
-        if (Input.GetKeyDown(KeyCode.Space) && selectionB != selectionA)
+        if (selectionB != selectionA)
         {
             pokemonB = pokemonParties.playerParty[selectionB];
             pokemonParties.playerParty[selectionA] = pokemonB;
@@ -173,9 +212,12 @@ public class SwitchPokemon : MonoBehaviour
 
     void Fuse()
     {
-        string fusionNameA = $"{pokemonParties.playerParty[selectionA].pokemonBase.pokeName}{pokemonParties.playerParty[selectionB].pokemonBase.pokeName}";
-        string fusionNameB = $"{pokemonParties.playerParty[selectionB].pokemonBase.pokeName}{pokemonParties.playerParty[selectionA].pokemonBase.pokeName}";
-        for (int i = 0; i < pokemonParties.allPokemon.Count; i++)
+        pokemonA = pokemonParties.playerParty[selectionA];
+        pokemonB = pokemonParties.playerParty[selectionB];
+        int pokeLevel = (pokemonA.level + pokemonB.level) / 2;
+        string fusionNameA = $"{pokemonA.pokemonBase.pokeName}{pokemonB.pokemonBase.pokeName}";
+        string fusionNameB = $"{pokemonB.pokemonBase.pokeName}{pokemonA.pokemonBase.pokeName}";
+        for (int i = pokemonParties.allPokemon.Count - 1; i > 0; i--)
         {
             if (fusionNameA == pokemonParties.allPokemon[i].pokemonBase.fusionName)
             {
@@ -189,8 +231,10 @@ public class SwitchPokemon : MonoBehaviour
                     pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB]);
                 }
                 pokemonParties.playerParty.Add(pokemonParties.allPokemon[i]);
+                pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].level = pokeLevel;
                 SetPokemonNames(pokemonParties.playerParty);
                 fusing = false;
+                break;
             }
             else if (fusionNameB == pokemonParties.allPokemon[i].pokemonBase.fusionName)
             {
@@ -204,17 +248,22 @@ public class SwitchPokemon : MonoBehaviour
                     pokemonParties.playerParty.Remove(pokemonParties.playerParty[selectionB]);
                 }
                 pokemonParties.playerParty.Add(pokemonParties.allPokemon[i]);
+                pokemonParties.playerParty[pokemonParties.playerParty.Count - 1].level = pokeLevel;
                 SetPokemonNames(pokemonParties.playerParty);
                 fusing = false;
+                break;
             }
         }
         if (!fusing)
         {
+            selectionA = 0;
+            selectionB = 0;
             SetFlag();
         }
         else
         {
             uiText.text = "Fusion failed.";
+            selectionA = selectionB;
             fusing = false;
             Invoke("SetFlag", 1f);
         }

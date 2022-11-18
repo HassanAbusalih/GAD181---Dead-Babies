@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: BullDoze
   description: 
-  type: 13
+  type: 8
   category: 2
   power: 45
   accuracy: 100

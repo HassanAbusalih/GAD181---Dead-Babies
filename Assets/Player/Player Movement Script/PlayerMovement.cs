@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         {
             cooldown += Time.deltaTime;
         }
-        if (!switchPokemon.isActive && !encounter)
+        if (!switchPokemon.isActive && !encounter && !switchPokemon.controls)
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
@@ -67,32 +67,62 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        print("WTF");
-        if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("bugwild")))
+        int battleEncounterRNG = Random.Range(1, 500);
+        if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
-            int battleEncounterRNG = Random.Range(1, 500);
-            print(battleEncounterRNG);
             if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
-                encounter = true;
-                saveLoad.isTrainer = false;
-                battleAnim.SetBool("Encounter", true);
-                saveLoad.PlayerSave();
-                saveLoad.EnemySave();
-                SavePos();
-                StartCoroutine(LoadScene());
+                StartEncounter(Random.Range(1, 5));
+            }
+        }
+        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("2")))
+        {
+            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            {
+                StartEncounter(Random.Range(5, 10));
+            }
+        }
+        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("3")))
+        {
+            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            {
+                StartEncounter(Random.Range(10, 15));
+            }
+        }
+        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
+        {
+            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            {
+                StartEncounter(Random.Range(15, 20));
+            }
+        }
+        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("5")))
+        {
+            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            {
+                StartEncounter(Random.Range(20, 25));
             }
         }
         else if (saveLoad.isTrainer && !encounter)
         {
             encounter = true;
             saveLoad.PlayerSave();
-            saveLoad.EnemySave();
+            saveLoad.EnemySave(0);
             SavePos();
             StartCoroutine(LoadScene());
         }
     }
 
+    void StartEncounter(int level)
+    {
+        encounter = true;
+        saveLoad.isTrainer = false;
+        battleAnim.SetBool("Encounter", true);
+        saveLoad.PlayerSave();
+        saveLoad.EnemySave(level);
+        SavePos();
+        StartCoroutine(LoadScene());
+    }
 
     IEnumerator LoadScene()
     {

@@ -28,10 +28,10 @@ public class SaveLoad : MonoBehaviour
         // Loading player Pokemon.
         beforeLoad = pokemonParties.playerParty.Count;
 
-        if(PlayerPrefs.GetInt("HasSaveData", 0) == 1)   
+        /*if(PlayerPrefs.GetInt("HasSaveData", 0) == 1)   
         {
             pokemonParties.playerParty.Clear();
-        }
+        }*/
 
         for (int i = 0; i < PlayerPrefs.GetInt("party"); i++)
         {
@@ -53,16 +53,18 @@ public class SaveLoad : MonoBehaviour
             }
         }
 
-        //PlayerPrefs.DeleteKey("party");
+        PlayerPrefs.DeleteKey("party");
         afterLoad = pokemonParties.playerParty.Count - beforeLoad;
 
-       /* if (afterLoad != 0 && beforeLoad != 0)
+        if (afterLoad != 0 && beforeLoad != 0)
         {
             for (int i = beforeLoad - 1; i >= 0; i--)
             {
-                pokemonParties.playerParty.Remove(pokemonParties.playerParty[i]);
+
+               pokemonParties.playerParty.Remove(pokemonParties.playerParty[i]);
+
             }
-        }*/
+        }
 
         // Loading enemy Pokemon or random encounter.
         if (PlayerPrefs.GetInt("Trainer") == 0)
@@ -121,10 +123,11 @@ public class SaveLoad : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-    public void EnemySave()
+    public void EnemySave(int level)
     {
         if (isTrainer)
         {
+            PlayerPrefs.SetInt("TrainerBattle", 1);
             PlayerPrefs.SetInt("Trainer", 1);
             PlayerPrefs.SetInt("enemyParty", pokemonParties.enemyParty.Count);
             for (int i = 0; i < pokemonParties.enemyParty.Count; i++)
@@ -136,11 +139,10 @@ public class SaveLoad : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Trainer", 0);
-            randomPokemon = pokemonParties.allPokemon[Random.Range(0, pokemonParties.allPokemon.Count - 1)];
+            randomPokemon = pokemonParties.wildPokemon[Random.Range(0, pokemonParties.wildPokemon.Count - 1)];
             pokemonParties.enemyParty.Add(randomPokemon);
             PlayerPrefs.SetInt("Encounter", randomPokemon.pokemonBase.pokeNumber);
-            enemyLevel = Random.Range(1, 8);
-            PlayerPrefs.SetInt("EncounterLevel", enemyLevel);
+            PlayerPrefs.SetInt("EncounterLevel", level);
         }
 
         PlayerPrefs.SetInt("HasSaveData", 1);

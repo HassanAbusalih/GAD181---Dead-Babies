@@ -20,12 +20,11 @@ MonoBehaviour:
   attack: 125
   defense: 79
   spAttack: 60
-  xpYield: 189
   spDefence: 100
   speed: 81
   type1: 3
-  type2: 10
-  pokeNumber: 5
+  type2: 12
+  pokeNumber: 20
   learnableMoves:
   - moves: {fileID: 11400000, guid: fb8263baa4d23e8498b70bf62f23d8b4, type: 2}
     level: 0
@@ -35,3 +34,7 @@ MonoBehaviour:
     level: 8
   - moves: {fileID: 11400000, guid: 0a6881f94a760c444bf531c9c5a682b6, type: 2}
     level: 13
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

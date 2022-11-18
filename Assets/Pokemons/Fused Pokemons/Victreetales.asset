@@ -15,17 +15,16 @@ MonoBehaviour:
   pokeName: Victreetales
   description: 
   pokeSprite: {fileID: 21300000, guid: cc9c53954e991184fa1b1cb7c5ec3c67, type: 3}
-  backSprite: {fileID: 0}
-  maxHp: 0
-  attack: 0
-  defense: 0
-  spAttack: 0
-  xpYield: 0
-  spDefence: 0
-  speed: 0
-  type1: 2
-  type2: 5
-  pokeNumber: 0
+  backSprite: {fileID: 21300000, guid: 1b41e2009d72aa044aefe4f60d8dc175, type: 3}
+  maxHp: 77
+  attack: 91
+  defense: 70
+  spAttack: 91
+  spDefence: 80
+  speed: 85
+  type1: 5
+  type2: 2
+  pokeNumber: 32
   learnableMoves:
   - moves: {fileID: 11400000, guid: 458626511572ea843b092441236ea490, type: 2}
     level: 0

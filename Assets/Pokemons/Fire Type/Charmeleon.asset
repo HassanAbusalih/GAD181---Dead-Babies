@@ -20,21 +20,21 @@ MonoBehaviour:
   attack: 64
   defense: 58
   spAttack: 80
-  xpYield: 142
   spDefence: 65
   speed: 80
   type1: 2
   type2: 0
-  pokeNumber: 0
+  pokeNumber: 2
   learnableMoves:
   - moves: {fileID: 11400000, guid: a7dd3b2f974f42940a6ca1d896a5d634, type: 2}
     level: 0
   - moves: {fileID: 11400000, guid: 122e18ecf5a2bd8499b6e6b3d08aa24b, type: 2}
     level: 5
   - moves: {fileID: 11400000, guid: 7cafa261278b95d42888468e093b4b05, type: 2}
-    level: 12
+    level: 10
   - moves: {fileID: 11400000, guid: 128006eecb65e464b96ba333d52e9a8c, type: 2}
     level: 15
   evolutions:
     evolveTo: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
-    levelForEvolve: 36
+    levelForEvolve: 17
+  fusionName: 
