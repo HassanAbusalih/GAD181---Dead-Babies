@@ -15,14 +15,14 @@ MonoBehaviour:
   pokeName: Magnedrio
   description: 
   pokeSprite: {fileID: 21300000, guid: 9fb60a9f5ff37f841ba5a13a4a75c844, type: 3}
-  backSprite: {fileID: 0}
+  backSprite: {fileID: 21300000, guid: 6d1753c307986dc45b91c39190e4dbb7, type: 3}
   maxHp: 43
   attack: 73
   defense: 70
   spAttack: 78
   spDefence: 58
   speed: 73
-  type1: 10
+  type1: 12
   type2: 4
   pokeNumber: 26
   learnableMoves:

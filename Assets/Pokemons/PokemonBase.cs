@@ -65,18 +65,23 @@ public class PokemonTypeChart
     static float[][] TypeChart =                                 
                                                                         // Defense(column)
     {                    
-                        // Attack(Row)       Normal      Fire      Water       Electric       Grass      FLying      Bug       Rock 
-                       /*Normal*/new float[]{1.0f,       1.0f,     1.0f,       1.0f,          1.0f,       1.0f,      1.0f,     0.5f},
-                      /*Fire*/   new float[]{1.0f,       0.5f,     0.5f,       1.0f,          2.0f,       1.0f,      2.0f,     0.5f},
-                     /*Water*/   new float[]{1.0f,       2.0f,     0.5f,       1.0f,          0.5f,       1.0f,      1.0f,     2.0f},
-                    /*Electric*/ new float[]{1.0f,       1.0f,     2.0f,       0.5f,          0.5f,       2.0f,      1.0f,     1.0f},
-                   /*Grass*/     new float[]{1.0f,       0.5f,     2.0f,       1.0f,          0.5f,       0.5f,      0.5f,     2.0f},
-                  /*Flying*/     new float[]{1.0f,       1.0f,     1.0f,       0.5f,          2.0f,       1.0f,      2.0f,     0.5f},
-                 /*Bug*/         new float[]{1.0f,       0.5f,     1.0f,       1.0f,          2.0f,       0.5f,      1.0f,     1.0f},
-                /*Rock*/         new float[]{1.0f,       2.0f,     1.0f,       1.0f,          1.0f,       2.0f,      2.0f,     2.0f},
-
-
-
+                        // Attack(Row)       Normal      Fire      Water       Electric       Grass      FLying      Bug       Rock     Steel    Ice          Poison      Ground       Fighting      Psychic      Ghost      Dragon
+                       /*Normal*/new float[]{1.0f,       1.0f,     1.0f,       1.0f,          1.0f,       1.0f,      1.0f,     0.5f,    0.5f,    1.0f,        1.0f,        1.0f,          1.0f,        1.0f,       0.0f,      1.0f},
+                      /*Fire*/   new float[]{1.0f,       0.5f,     0.5f,       1.0f,          2.0f,       1.0f,      2.0f,     0.5f,    2.0f,    2.0f,        1.0f,        1.0f,          1.0f,        1.0f,       1.0f,      0.5f},
+                     /*Water*/   new float[]{1.0f,       2.0f,     0.5f,       1.0f,          0.5f,       1.0f,      1.0f,     2.0f,    1.0f,    1.0f,        1.0f,        2.0f,          1.0f,        1.0f,       1.0f,      0.5f},
+                    /*Electric*/ new float[]{1.0f,       1.0f,     2.0f,       0.5f,          0.5f,       2.0f,      1.0f,     1.0f,    1.0f,    1.0f,        1.0f,        0.0f,          1.0f,        1.0f,       1.0f,      0.5f},
+                   /*Grass*/     new float[]{1.0f,       0.5f,     2.0f,       1.0f,          0.5f,       0.5f,      0.5f,     2.0f,    0.5f,    1.0f,        0.5f,        2.0f,          1.0f,        1.0f,       1.0f,      0.5f},
+           /*Fighting*/          new float[]{2.0f,       1.0f,     1.0f,       1.0f,          1.0f,       0.5f,      0.5f,     2.0f,    0.5f,    2.0f,        0.5f,        1.0f,          1.0f,        0.5f,       0.0f,      1.0f},
+                 /*Bug*/         new float[]{1.0f,       0.5f,     1.0f,       1.0f,          2.0f,       0.5f,      1.0f,     1.0f,    0.5f,    1.0f,        0.5f,        1.0f,          0.5f,        2.0f,       0.5f,      1.0f},
+                /*Rock*/         new float[]{1.0f,       2.0f,     1.0f,       1.0f,          1.0f,       2.0f,      2.0f,     2.0f,    0.5f,    2.0f,        1.0f,        0.5f,          0.5f,        1.0f,       1.0f,      1.0f},
+              /*Ice*/            new float[]{1.0f,       0.5f,     0.5f,       1.0f,          2.0f,       2.0f,      1.0f,     1.0f,    0.5f,    0.5f,        1.0f,        2.0f,          1.0f,        1.0f,       1.0f,      2.0f},
+             /*Poison*/          new float[]{1.0f,       1.0f,     1.0f,       1.0f,          2.0f,       1.0f,      1.0f,     0.5f,    0.5f,    1.0f,        0.5f,        0.5f,          1.0f,        1.0f,       0.5f,      1.0f},
+            /*Ground*/           new float[]{1.0f,       2.0f,     1.0f,       2.0f,          0.5f,       0.0f,      0.5f,     2.0f,    0.5f,    1.0f,        2.0f,        1.0f,          1.0f,        1.0f,       1.0f,      1.0f},
+                  /*Flying*/     new float[]{1.0f,       1.0f,     1.0f,       0.5f,          2.0f,       1.0f,      2.0f,     0.5f,    0.5f,    1.0f,        1.0f,        1.0f,          2.0f,        1.0f,       1.0f,      1.0f},
+          /*Psychic*/            new float[]{1.0f,       1.0f,     1.0f,       1.0f,          1.0f,       1.0f,      1.0f,     1.0f,    0.5f,    1.0f,        2.0f,        1.0f,          2.0f,        0.5f,       1.0f,      1.0f},
+               /*Steel*/         new float[]{1.0f,       0.5f,     0.5f,       0.5f,          1.0f,       1.0f,      1.0f,     2.0f,    0.5f,    2.0f,        1.0f,        1.0f,          1.0f,        1.0f,       1.0f,      1.0f},
+         /*Ghost*/               new float[]{0.0f,       1.0f,     1.0f,       1.0f,          1.0f,       1.0f,      1.0f,     1.0f,    0.5f,    1.0f,        1.0f,        1.0f,          1.0f,        2.0f,       2.0f,      1.0f},
+        /*Dragon*/               new float[]{1.0f,       1.0f,     1.0f,       1.0f,          1.0f,       1.0f,      1.0f,     1.0f,    1.0f,    1.0f,        1.0f,        1.0f,          1.0f,        1.0f,       1.0f,      2.0f},
     };
     
     public static float GetDamageEffectiveness(PokemonType attackType, PokemonType defenseType)

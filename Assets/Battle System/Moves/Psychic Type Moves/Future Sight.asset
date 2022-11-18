@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: 'Future Sight '
   description: 
-  type: 11
+  type: 13
   category: 2
   power: 60
   accuracy: 100

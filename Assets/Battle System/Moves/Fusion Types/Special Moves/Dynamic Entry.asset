@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Dynamic Entry
   description: 
-  type: 10
+  type: 12
   category: 2
   power: 75
   accuracy: 0

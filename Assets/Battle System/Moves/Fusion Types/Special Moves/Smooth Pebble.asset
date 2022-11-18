@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Smooth Pebble
   description: 
-  type: 13
+  type: 8
   category: 2
   power: 75
   accuracy: 0

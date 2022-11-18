@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Pluck
   description: 
-  type: 10
+  type: 12
   category: 2
   power: 50
   accuracy: 100

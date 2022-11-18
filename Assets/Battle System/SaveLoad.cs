@@ -141,7 +141,7 @@ public class SaveLoad : MonoBehaviour
             randomPokemon = pokemonParties.wildPokemon[Random.Range(0, pokemonParties.wildPokemon.Count - 1)];
             pokemonParties.enemyParty.Add(randomPokemon);
             PlayerPrefs.SetInt("Encounter", randomPokemon.pokemonBase.pokeNumber);
-            enemyLevel = Random.Range(1, 8);
+            enemyLevel = Random.Range(15, 20);
             PlayerPrefs.SetInt("EncounterLevel", enemyLevel);
         }
 
