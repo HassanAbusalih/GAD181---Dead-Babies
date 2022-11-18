@@ -108,14 +108,16 @@ public class Battle : MonoBehaviour
                 xpGain = Mathf.FloorToInt((340 * enemyLevel) / 7);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
-                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieves " + xpGain + " XP.");
                 xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
+                yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " recieves " + xpGain + " XP.");
                 while (playerMon.pokemon.currentXpPoints >= playerMon.pokemon.xpThreshhold)
                 {
                     playerMon.pokemon.currentXpPoints -= playerMon.pokemon.xpThreshhold;
                     playerMon.pokemon.level++;
                     levelUpSFX.Play();
                     playerMon.pokemon.xpThreshhold = playerMon.pokemon.XpToNextLevel(playerMon.pokemon.level);
+                    xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
+                    playerInfo.Setup(playerMon.pokemon);
                     yield return StartCoroutine(dialogue.SetDialogue($"{playerMon.pokemon.pokemonBase.pokeName} leveled up to lvl  {playerMon.pokemon.level}."));                  
                 }
                 pokemonParties.enemyParty.Remove(pokemonParties.enemyParty[0]);
@@ -297,6 +299,12 @@ public class Battle : MonoBehaviour
                 selectionC += 1;
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            dialogue.pokemonList.SetActive(false);
+            dialogue.selectionBox.SetActive(false);
+            state = BattleState.PlayerMenu;
+        }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!deadPokemon && selectionC == 0)
@@ -340,6 +348,13 @@ public class Battle : MonoBehaviour
                 selection += 2;
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            state = BattleState.PlayerMenu;
+            dialogue.menu.SetActive(true);
+            StartCoroutine(dialogue.SetDialogue("Select an action."));
+
+        }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             state = BattleState.PlayerAttack;
@@ -361,6 +376,8 @@ public class Battle : MonoBehaviour
         {
             audiosource2.Stop();
             yield return evoloutionUI.Evolve(playerMon.pokemon);
+            playerMon.Setup(playerMon.pokemon);
+            playerInfo.Setup(playerMon.pokemon);
         }
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Fury Cutter
   description: 
-  type: 12
+  type: 7
   category: 2
   power: 55
   accuracy: 100

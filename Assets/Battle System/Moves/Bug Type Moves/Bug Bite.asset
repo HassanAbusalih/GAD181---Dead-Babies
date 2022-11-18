@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movename: Bug Bite
   description: 
-  type: 12
+  type: 7
   category: 2
   power: 40
   accuracy: 100

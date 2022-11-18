@@ -23,7 +23,7 @@ MonoBehaviour:
   spDefence: 100
   speed: 80
   type1: 5
-  type2: 8
+  type2: 10
   pokeNumber: 9
   learnableMoves:
   - moves: {fileID: 11400000, guid: 7ddffbcce53fc8a49921a295e0ed6ddd, type: 2}
