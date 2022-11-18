@@ -31,7 +31,7 @@ MonoBehaviour:
   - moves: {fileID: 11400000, guid: 505951e2179cafd439631ab45eb96e6a, type: 2}
     level: 10
   - moves: {fileID: 11400000, guid: eba69812b3450794e9a3aff6aaf88644, type: 2}
-    level: 18
+    level: 17
   - moves: {fileID: 11400000, guid: 51cb535bc87acdb40bf0bce1e7d89632, type: 2}
     level: 25
   evolutions:

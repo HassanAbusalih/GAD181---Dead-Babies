@@ -9,14 +9,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - bugwild
+  - 1
   - Water
   - UI
   - Player
-  - grassandflyingwild
-  - electricwild
-  - waterwild
-  - fireandrockwild
+  - 2
+  - 3
+  - 4
+  - 5
   - 
   - 
   - 
