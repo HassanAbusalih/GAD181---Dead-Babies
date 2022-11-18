@@ -45,13 +45,6 @@ public class Textbox : MonoBehaviour
             text.gameObject.SetActive(true);
             NextLine();
         }
-        else
-        {
-            textBox.SetActive(false);
-            text.gameObject.SetActive(false);
-            isActive = false;
-            counter = 0;
-        }
     }
 
     void NextLine()
@@ -68,6 +61,17 @@ public class Textbox : MonoBehaviour
             isActive = false;
             counter = 0;
             //FindObjectOfType<PlayerMovement>().encounter = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            textBox.SetActive(false);
+            text.gameObject.SetActive(false);
+            isActive = false;
+            counter = 0;
         }
     }
 }

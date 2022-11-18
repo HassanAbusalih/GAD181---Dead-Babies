@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        int battleEncounterRNG = Random.Range(1, 500);
+        int battleEncounterRNG = Random.Range(6, 500);
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
             if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
@@ -134,8 +134,8 @@ public class PlayerMovement : MonoBehaviour
 
     void SavePos()
     {
-        PlayerPrefs.SetFloat("X", Input.GetAxisRaw("Horizontal"));
-        PlayerPrefs.SetFloat("Y", Input.GetAxisRaw("Vertical"));
+        PlayerPrefs.SetFloat("X", transform.position.x);
+        PlayerPrefs.SetFloat("Y", transform.position.y);
     }
 
     void LoadPos()
