@@ -195,6 +195,7 @@ public class Battle : MonoBehaviour
         if (saveLoad.isTrainer == true)
         {
             StartCoroutine(dialogue.SetDialogue("You cannot capture a trainer's Pokemon."));
+            state = BattleState.PlayerMenu;
         }
         else if (pokemonParties.playerParty.Count < 6)
         {
@@ -229,6 +230,7 @@ public class Battle : MonoBehaviour
         else
         {
             StartCoroutine(dialogue.SetDialogue("Your party is full."));
+            state = BattleState.PlayerMenu;
         }
     }
     void MenuSelection()

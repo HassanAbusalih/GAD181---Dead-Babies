@@ -76,6 +76,7 @@ public class SaveLoad : MonoBehaviour
                 {
                     Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[i].pokemonBase, PlayerPrefs.GetInt($"EncounterLevel"));
                     pokemonParties.enemyParty.Add(pokemon);
+                    break;
                 }
             }
             PlayerPrefs.DeleteKey("Encounter");

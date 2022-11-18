@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        int battleEncounterRNG = Random.Range(6, 500);
+        int battleEncounterRNG = Random.Range(0, 500);
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
             if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
