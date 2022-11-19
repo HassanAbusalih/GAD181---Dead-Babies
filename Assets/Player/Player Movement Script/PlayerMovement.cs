@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
+            PlayerPrefs.SetFloat("X", (int)transform.position.x);
+            PlayerPrefs.SetFloat("Y", (int)transform.position.y);
             PlayerAnimation();
             BattleEncounter();
         }
@@ -134,8 +136,8 @@ public class PlayerMovement : MonoBehaviour
 
     void SavePos()
     {
-        PlayerPrefs.SetFloat("X", transform.position.x);
-        PlayerPrefs.SetFloat("Y", transform.position.y);
+        PlayerPrefs.SetFloat("X", (int)transform.position.x);
+        PlayerPrefs.SetFloat("Y", (int)transform.position.y);
     }
 
     void LoadPos()
