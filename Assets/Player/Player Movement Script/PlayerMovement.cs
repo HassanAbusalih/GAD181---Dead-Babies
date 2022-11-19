@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        int battleEncounterRNG = Random.Range(1, 500);
+        int battleEncounterRNG = Random.Range(0, 500);
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
             if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
@@ -79,28 +79,28 @@ public class PlayerMovement : MonoBehaviour
         {
             if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
-                StartEncounter(Random.Range(5, 10));
+                StartEncounter(Random.Range(5, 8));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("3")))
         {
             if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
-                StartEncounter(Random.Range(10, 15));
+                StartEncounter(Random.Range(7, 11));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
         {
             if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
-                StartEncounter(Random.Range(15, 20));
+                StartEncounter(Random.Range(10, 13));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("5")))
         {
             if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
             {
-                StartEncounter(Random.Range(20, 25));
+                StartEncounter(Random.Range(12, 15));
             }
         }
         else if (saveLoad.isTrainer && !encounter && cooldown > 4)
