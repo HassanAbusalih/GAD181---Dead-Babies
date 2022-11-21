@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Rhydon
+  m_EditorClassIdentifier: 
+  pokeName: Rhydon
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 17ddb8ce688916441924a0c2e6431f41, type: 3}
+  backSprite: {fileID: 21300000, guid: 06e6d980fee4e1741b26537e43375985, type: 3}
+  maxHp: 105
+  attack: 130
+  defense: 120
+  spAttack: 45
+  spDefence: 45
+  speed: 40
+  type1: 11
+  type2: 8
+  pokeNumber: 18
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 2950faa8518e3f3478eb8d491cee9b10, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 52bb9c74f4e07e24ca92284de2301567, type: 2}
+    level: 5
+  - moves: {fileID: 11400000, guid: eba69812b3450794e9a3aff6aaf88644, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: 3710d83c1a2188c4db0e41f34eb1d34a, type: 2}
+    level: 13
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

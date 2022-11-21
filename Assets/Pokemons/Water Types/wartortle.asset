@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: wartortle
+  m_EditorClassIdentifier: 
+  pokeName: Wartortle
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 4025ab4e5f621fd43b2e0c885c63592a, type: 3}
+  backSprite: {fileID: 21300000, guid: 71d6dd39990bc774294226c12a9f4e4f, type: 3}
+  maxHp: 59
+  attack: 63
+  defense: 80
+  spAttack: 65
+  spDefence: 80
+  speed: 58
+  type1: 3
+  type2: 0
+  pokeNumber: 5
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 2ab6a1bf0fcf765438aef8c0f876237f, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: da996b1c53545b947961d8c3b9830458, type: 2}
+    level: 5
+  - moves: {fileID: 11400000, guid: 0f9721a24d70d044d98531369503ba9a, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 1e2a510854d698f439257427ba1909ec, type: 2}
+    level: 15
+  evolutions:
+    evolveTo: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
+    levelForEvolve: 17
+  fusionName: 

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Magnemite
+  m_EditorClassIdentifier: 
+  pokeName: Magnemite
+  description: 
+  pokeSprite: {fileID: 21300000, guid: fcae44005ab66e14582a80fc7d70552d, type: 3}
+  backSprite: {fileID: 21300000, guid: df753f089521b884c867b107451ea70a, type: 3}
+  maxHp: 25
+  attack: 35
+  defense: 70
+  spAttack: 95
+  xpYield: 65
+  spDefence: 55
+  speed: 45
+  type1: 4
+  type2: 14
+  pokeNumber: 11
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 3eadf5374200d014e9d2f1869114a6f2, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: b805ebe69fce062409c2f7ba31396300, type: 2}
+    level: 7
+  - moves: {fileID: 11400000, guid: 8426ae9482c25ca4aaf2d17d080c604c, type: 2}
+    level: 3
+  - moves: {fileID: 11400000, guid: 675eb0ef65b436a4a8375353dc351dde, type: 2}
+    level: 12
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

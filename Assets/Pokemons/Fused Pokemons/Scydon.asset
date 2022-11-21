@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Scydon
+  m_EditorClassIdentifier: 
+  pokeName: Scydon
+  description: 
+  pokeSprite: {fileID: 21300000, guid: aef59738314683f4783d885ae82b28f9, type: 3}
+  backSprite: {fileID: 21300000, guid: 05a50181dd30ebf41a01a493cdff9fb8, type: 3}
+  maxHp: 88
+  attack: 120
+  defense: 100
+  spAttack: 50
+  spDefence: 63
+  speed: 73
+  type1: 7
+  type2: 8
+  pokeNumber: 27
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 2379083c27d95e74abcf3223f75b3e39, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: bd1edc09e77f3be40a38a33070427c6d, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 27b984cffc258484d9a9076c8d3d9620, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: ec5ecb755e20dbb4e90e035a7776ecaa, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: ScytherRhydon

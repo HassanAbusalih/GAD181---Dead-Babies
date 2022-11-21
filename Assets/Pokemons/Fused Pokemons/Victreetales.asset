@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Victreetales
+  m_EditorClassIdentifier: 
+  pokeName: Victreetales
+  description: 
+  pokeSprite: {fileID: 21300000, guid: cc9c53954e991184fa1b1cb7c5ec3c67, type: 3}
+  backSprite: {fileID: 21300000, guid: 1b41e2009d72aa044aefe4f60d8dc175, type: 3}
+  maxHp: 77
+  attack: 91
+  defense: 70
+  spAttack: 91
+  spDefence: 80
+  speed: 85
+  type1: 5
+  type2: 2
+  pokeNumber: 32
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 458626511572ea843b092441236ea490, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 52fe2e3244b61314ba15113c25df5e3a, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 4c2ce91064b42094892de0d2d73db016, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: c78c8f9f3d6d57a43a7839a7162ecc1e, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: VictreebelNinetales

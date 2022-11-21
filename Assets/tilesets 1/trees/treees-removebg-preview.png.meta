@@ -1,0 +1,3793 @@
+fileFormatVersion: 2
+guid: ad379bf505349d5448e0f14a16b05f1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3568979749749931052
+    second: treees-removebg-preview_0
+  - first:
+      213: 5014822288074811026
+    second: treees-removebg-preview_1
+  - first:
+      213: 2689138412894672563
+    second: treees-removebg-preview_2
+  - first:
+      213: 4314491847938933312
+    second: treees-removebg-preview_3
+  - first:
+      213: 235945701592524218
+    second: treees-removebg-preview_4
+  - first:
+      213: 7083494305809675166
+    second: treees-removebg-preview_5
+  - first:
+      213: -8650212090833969303
+    second: treees-removebg-preview_6
+  - first:
+      213: 6529631660271208170
+    second: treees-removebg-preview_7
+  - first:
+      213: -6427940456098204782
+    second: treees-removebg-preview_8
+  - first:
+      213: -5062103865433089830
+    second: treees-removebg-preview_9
+  - first:
+      213: 3862675095054945192
+    second: treees-removebg-preview_10
+  - first:
+      213: -7942136505460915921
+    second: treees-removebg-preview_11
+  - first:
+      213: 7214821225081372476
+    second: treees-removebg-preview_12
+  - first:
+      213: 2962016888145163391
+    second: treees-removebg-preview_13
+  - first:
+      213: 3606803513128548891
+    second: treees-removebg-preview_14
+  - first:
+      213: 7741490456778509634
+    second: treees-removebg-preview_15
+  - first:
+      213: -1430618669187485924
+    second: treees-removebg-preview_16
+  - first:
+      213: 3831512983722581096
+    second: treees-removebg-preview_17
+  - first:
+      213: -8403255537563424513
+    second: treees-removebg-preview_18
+  - first:
+      213: 3669636710613243735
+    second: treees-removebg-preview_19
+  - first:
+      213: 2268610506858833645
+    second: treees-removebg-preview_20
+  - first:
+      213: 4316167666908204310
+    second: treees-removebg-preview_21
+  - first:
+      213: -3225585626500768901
+    second: treees-removebg-preview_22
+  - first:
+      213: 4668063798265818550
+    second: treees-removebg-preview_23
+  - first:
+      213: -4453555208638481497
+    second: treees-removebg-preview_24
+  - first:
+      213: 156846073655180852
+    second: treees-removebg-preview_25
+  - first:
+      213: -8271427584718246819
+    second: treees-removebg-preview_26
+  - first:
+      213: -9096551872522475880
+    second: treees-removebg-preview_27
+  - first:
+      213: 6473808699234481695
+    second: treees-removebg-preview_28
+  - first:
+      213: 3840805347075974546
+    second: treees-removebg-preview_29
+  - first:
+      213: -4355056982130257025
+    second: treees-removebg-preview_30
+  - first:
+      213: -7912815189720050747
+    second: treees-removebg-preview_31
+  - first:
+      213: -922640582388020859
+    second: treees-removebg-preview_32
+  - first:
+      213: -1362559173024330698
+    second: treees-removebg-preview_33
+  - first:
+      213: 403071917214360296
+    second: treees-removebg-preview_34
+  - first:
+      213: 5856523834640110663
+    second: treees-removebg-preview_35
+  - first:
+      213: -4178148644851515215
+    second: treees-removebg-preview_36
+  - first:
+      213: 4523752835736096323
+    second: treees-removebg-preview_37
+  - first:
+      213: 267456455280736025
+    second: treees-removebg-preview_38
+  - first:
+      213: -4498314851003276987
+    second: treees-removebg-preview_39
+  - first:
+      213: 5113645747379769953
+    second: treees-removebg-preview_40
+  - first:
+      213: 7175658992420373414
+    second: treees-removebg-preview_41
+  - first:
+      213: 7414562688544668570
+    second: treees-removebg-preview_42
+  - first:
+      213: -7364384522937282122
+    second: treees-removebg-preview_43
+  - first:
+      213: -5400884603688486738
+    second: treees-removebg-preview_44
+  - first:
+      213: 5398402507142890046
+    second: treees-removebg-preview_45
+  - first:
+      213: -7220357266366260668
+    second: treees-removebg-preview_46
+  - first:
+      213: -4085508531891558183
+    second: treees-removebg-preview_47
+  - first:
+      213: 673114243174685039
+    second: treees-removebg-preview_48
+  - first:
+      213: 6034061054587112174
+    second: treees-removebg-preview_49
+  - first:
+      213: 1413955601950617102
+    second: treees-removebg-preview_50
+  - first:
+      213: -7603170580224237365
+    second: treees-removebg-preview_51
+  - first:
+      213: 4007682623145788691
+    second: treees-removebg-preview_52
+  - first:
+      213: -8320231982497748283
+    second: treees-removebg-preview_53
+  - first:
+      213: -3632087696691890981
+    second: treees-removebg-preview_54
+  - first:
+      213: 3363093728818669534
+    second: treees-removebg-preview_55
+  - first:
+      213: 2596373805325509689
+    second: treees-removebg-preview_56
+  - first:
+      213: 681534663565132498
+    second: treees-removebg-preview_57
+  - first:
+      213: 1903560533129720684
+    second: treees-removebg-preview_58
+  - first:
+      213: -1975891129383089804
+    second: treees-removebg-preview_59
+  - first:
+      213: -5393081948471737076
+    second: treees-removebg-preview_60
+  - first:
+      213: -1617181205404336682
+    second: treees-removebg-preview_61
+  - first:
+      213: -1825290232789722792
+    second: treees-removebg-preview_62
+  - first:
+      213: 9011187214157335285
+    second: treees-removebg-preview_63
+  - first:
+      213: 2335593809040290962
+    second: treees-removebg-preview_64
+  - first:
+      213: 3855620381149311866
+    second: treees-removebg-preview_65
+  - first:
+      213: -4667484446485943717
+    second: treees-removebg-preview_66
+  - first:
+      213: -2720039219783461929
+    second: treees-removebg-preview_67
+  - first:
+      213: 6894320104795951600
+    second: treees-removebg-preview_68
+  - first:
+      213: -6058078370777870568
+    second: treees-removebg-preview_69
+  - first:
+      213: -950415127463628867
+    second: treees-removebg-preview_70
+  - first:
+      213: -2109690194764373644
+    second: treees-removebg-preview_71
+  - first:
+      213: -2264484733263207284
+    second: treees-removebg-preview_72
+  - first:
+      213: -7672803298579580397
+    second: treees-removebg-preview_73
+  - first:
+      213: 8420230125367541712
+    second: treees-removebg-preview_74
+  - first:
+      213: -7750506497107563977
+    second: treees-removebg-preview_75
+  - first:
+      213: 868856312426143815
+    second: treees-removebg-preview_76
+  - first:
+      213: 8752261438550663765
+    second: treees-removebg-preview_77
+  - first:
+      213: -8804185385859559102
+    second: treees-removebg-preview_78
+  - first:
+      213: 1873557803891177144
+    second: treees-removebg-preview_79
+  - first:
+      213: 5045381925138989105
+    second: treees-removebg-preview_80
+  - first:
+      213: -6586096553271825804
+    second: treees-removebg-preview_81
+  - first:
+      213: -6385438359053112627
+    second: treees-removebg-preview_82
+  - first:
+      213: 3967467939325096343
+    second: treees-removebg-preview_83
+  - first:
+      213: -7942079694527744536
+    second: treees-removebg-preview_84
+  - first:
+      213: 7608749059398734615
+    second: treees-removebg-preview_85
+  - first:
+      213: 8825708184502538746
+    second: treees-removebg-preview_86
+  - first:
+      213: 82522087793669395
+    second: treees-removebg-preview_87
+  - first:
+      213: 1190502260392148125
+    second: treees-removebg-preview_88
+  - first:
+      213: -567093864345330484
+    second: treees-removebg-preview_89
+  - first:
+      213: -3194523826634372422
+    second: treees-removebg-preview_90
+  - first:
+      213: 623261508838485117
+    second: treees-removebg-preview_91
+  - first:
+      213: -1531158158945101991
+    second: treees-removebg-preview_92
+  - first:
+      213: 1488922297407490245
+    second: treees-removebg-preview_93
+  - first:
+      213: -488917673301983696
+    second: treees-removebg-preview_94
+  - first:
+      213: 7467070642198084340
+    second: treees-removebg-preview_95
+  - first:
+      213: 2690417794830625754
+    second: treees-removebg-preview_96
+  - first:
+      213: 5750775298036674367
+    second: treees-removebg-preview_97
+  - first:
+      213: 4966927737513878315
+    second: treees-removebg-preview_98
+  - first:
+      213: 7989040970346554793
+    second: treees-removebg-preview_99
+  - first:
+      213: 5224834824732143031
+    second: treees-removebg-preview_100
+  - first:
+      213: -7253538758406267094
+    second: treees-removebg-preview_101
+  - first:
+      213: 7819399842296968507
+    second: treees-removebg-preview_102
+  - first:
+      213: 862523955278432895
+    second: treees-removebg-preview_103
+  - first:
+      213: -1423682651236268108
+    second: treees-removebg-preview_104
+  - first:
+      213: -6030049836267451256
+    second: treees-removebg-preview_105
+  - first:
+      213: -6418825597808849490
+    second: treees-removebg-preview_106
+  - first:
+      213: -6779957908511784583
+    second: treees-removebg-preview_107
+  - first:
+      213: 6130633113361101298
+    second: treees-removebg-preview_108
+  - first:
+      213: -4417707581623668252
+    second: treees-removebg-preview_109
+  - first:
+      213: -6378646565820526306
+    second: treees-removebg-preview_110
+  - first:
+      213: -1152382631111538181
+    second: treees-removebg-preview_111
+  - first:
+      213: -3675232763979094837
+    second: treees-removebg-preview_112
+  - first:
+      213: 7944930591506700629
+    second: treees-removebg-preview_113
+  - first:
+      213: 6014732434489275540
+    second: treees-removebg-preview_114
+  - first:
+      213: -8965424337684322039
+    second: treees-removebg-preview_115
+  - first:
+      213: -7179241487981671877
+    second: treees-removebg-preview_116
+  - first:
+      213: -8140553332333735208
+    second: treees-removebg-preview_117
+  - first:
+      213: -2443610922857632310
+    second: treees-removebg-preview_118
+  - first:
+      213: -8233490686455523560
+    second: treees-removebg-preview_119
+  - first:
+      213: -722447255905709338
+    second: treees-removebg-preview_120
+  - first:
+      213: -2713967303298439141
+    second: treees-removebg-preview_121
+  - first:
+      213: -2264310588519257908
+    second: treees-removebg-preview_122
+  - first:
+      213: -3240733956191746190
+    second: treees-removebg-preview_123
+  - first:
+      213: -2881278473593559778
+    second: treees-removebg-preview_124
+  - first:
+      213: 7955539930873951290
+    second: treees-removebg-preview_125
+  - first:
+      213: -3568580768668427226
+    second: treees-removebg-preview_126
+  - first:
+      213: -139317309275139781
+    second: treees-removebg-preview_127
+  - first:
+      213: 4642632791819145450
+    second: treees-removebg-preview_128
+  - first:
+      213: 6619547474581741008
+    second: treees-removebg-preview_129
+  - first:
+      213: 139870877614568065
+    second: treees-removebg-preview_130
+  - first:
+      213: 2968596365393058016
+    second: treees-removebg-preview_131
+  - first:
+      213: -4283556148889103386
+    second: treees-removebg-preview_132
+  - first:
+      213: -5392329940311958604
+    second: treees-removebg-preview_133
+  - first:
+      213: 2805665855829227417
+    second: treees-removebg-preview_134
+  - first:
+      213: 1423359731700329880
+    second: treees-removebg-preview_135
+  - first:
+      213: -8845171363646125457
+    second: treees-removebg-preview_136
+  - first:
+      213: 6903913469536837958
+    second: treees-removebg-preview_137
+  - first:
+      213: -513527158390955433
+    second: treees-removebg-preview_138
+  - first:
+      213: 3048990952505359393
+    second: treees-removebg-preview_139
+  - first:
+      213: 1422410843005914675
+    second: treees-removebg-preview_140
+  - first:
+      213: 4765215724514182818
+    second: treees-removebg-preview_141
+  - first:
+      213: -1175716933134313538
+    second: treees-removebg-preview_142
+  - first:
+      213: -2520110608439061445
+    second: treees-removebg-preview_143
+  - first:
+      213: 179817072122110127
+    second: treees-removebg-preview_144
+  - first:
+      213: 4545007291426760176
+    second: treees-removebg-preview_145
+  - first:
+      213: -7568160824678910917
+    second: treees-removebg-preview_146
+  - first:
+      213: 2339186425287188337
+    second: treees-removebg-preview_147
+  - first:
+      213: -5016187894902281889
+    second: treees-removebg-preview_148
+  - first:
+      213: -7877610407863317606
+    second: treees-removebg-preview_149
+  - first:
+      213: -1924367894656778153
+    second: treees-removebg-preview_150
+  - first:
+      213: 5459851768602190027
+    second: treees-removebg-preview_151
+  - first:
+      213: 8976425038423263991
+    second: treees-removebg-preview_152
+  - first:
+      213: 7735740956138564281
+    second: treees-removebg-preview_153
+  - first:
+      213: 8568080044512202736
+    second: treees-removebg-preview_154
+  - first:
+      213: -5026020673772791913
+    second: treees-removebg-preview_155
+  - first:
+      213: -8648404159244977541
+    second: treees-removebg-preview_156
+  - first:
+      213: 4967132077312317919
+    second: treees-removebg-preview_157
+  - first:
+      213: 3292630067022316027
+    second: treees-removebg-preview_158
+  - first:
+      213: 125628324549040169
+    second: treees-removebg-preview_159
+  - first:
+      213: -7725507204263886352
+    second: treees-removebg-preview_160
+  - first:
+      213: -4338304402241830672
+    second: treees-removebg-preview_161
+  - first:
+      213: -197433691963843867
+    second: treees-removebg-preview_162
+  - first:
+      213: 4227585975674285305
+    second: treees-removebg-preview_163
+  - first:
+      213: 3407781809096429798
+    second: treees-removebg-preview_164
+  - first:
+      213: 7647082348324779677
+    second: treees-removebg-preview_165
+  - first:
+      213: -3204337652140894150
+    second: treees-removebg-preview_166
+  - first:
+      213: -5232642017324631563
+    second: treees-removebg-preview_167
+  - first:
+      213: 7089245845739949722
+    second: treees-removebg-preview_168
+  - first:
+      213: 5667206660686919805
+    second: treees-removebg-preview_169
+  - first:
+      213: 5635854706248307308
+    second: treees-removebg-preview_170
+  - first:
+      213: -8021893888311283598
+    second: treees-removebg-preview_171
+  - first:
+      213: 1188823376994408742
+    second: treees-removebg-preview_172
+  - first:
+      213: 8131617039518361308
+    second: treees-removebg-preview_173
+  - first:
+      213: -8375345572050361253
+    second: treees-removebg-preview_174
+  - first:
+      213: -3877842620561896711
+    second: treees-removebg-preview_175
+  - first:
+      213: 3504236930414148765
+    second: treees-removebg-preview_176
+  - first:
+      213: 8713896665606280909
+    second: treees-removebg-preview_177
+  - first:
+      213: 2219792732961635742
+    second: treees-removebg-preview_178
+  - first:
+      213: -5310417841918677588
+    second: treees-removebg-preview_179
+  - first:
+      213: -319677547523450906
+    second: treees-removebg-preview_180
+  - first:
+      213: -4224136633298052316
+    second: treees-removebg-preview_181
+  - first:
+      213: -2402784305635953237
+    second: treees-removebg-preview_182
+  - first:
+      213: -3289256679285006841
+    second: treees-removebg-preview_183
+  - first:
+      213: 7584311683276111714
+    second: treees-removebg-preview_184
+  - first:
+      213: -4143025238723766999
+    second: treees-removebg-preview_185
+  - first:
+      213: -6137684120271545459
+    second: treees-removebg-preview_186
+  - first:
+      213: -3548504487075200144
+    second: treees-removebg-preview_187
+  - first:
+      213: -4174561764143918055
+    second: treees-removebg-preview_188
+  - first:
+      213: -580380218943305246
+    second: treees-removebg-preview_189
+  - first:
+      213: 2923819944724808734
+    second: treees-removebg-preview_190
+  - first:
+      213: -2371289224180727635
+    second: treees-removebg-preview_191
+  - first:
+      213: 302140153124113656
+    second: treees-removebg-preview_192
+  - first:
+      213: -1146552929720053546
+    second: treees-removebg-preview_193
+  - first:
+      213: 8234786496596530145
+    second: treees-removebg-preview_194
+  - first:
+      213: -6881185055044379485
+    second: treees-removebg-preview_195
+  - first:
+      213: 1932544605098482131
+    second: treees-removebg-preview_196
+  - first:
+      213: 6031522655543966434
+    second: treees-removebg-preview_197
+  - first:
+      213: 6994698186516072588
+    second: treees-removebg-preview_198
+  - first:
+      213: 7055920193800461096
+    second: treees-removebg-preview_199
+  - first:
+      213: 5521080844427950224
+    second: treees-removebg-preview_200
+  - first:
+      213: -918882712805470057
+    second: treees-removebg-preview_201
+  - first:
+      213: -5572070446564689113
+    second: treees-removebg-preview_202
+  - first:
+      213: 2884905639818316423
+    second: treees-removebg-preview_203
+  - first:
+      213: -8393947705305523453
+    second: treees-removebg-preview_204
+  - first:
+      213: -5470582618065176876
+    second: treees-removebg-preview_205
+  - first:
+      213: -482403351644001967
+    second: treees-removebg-preview_206
+  - first:
+      213: 5048840002189190773
+    second: treees-removebg-preview_207
+  - first:
+      213: 8420808206577011822
+    second: treees-removebg-preview_208
+  - first:
+      213: -2358926322102989574
+    second: treees-removebg-preview_209
+  - first:
+      213: -631572715540639257
+    second: treees-removebg-preview_210
+  - first:
+      213: 8697306445584354374
+    second: treees-removebg-preview_211
+  - first:
+      213: 4955984609687310140
+    second: treees-removebg-preview_212
+  - first:
+      213: -7206809011049544372
+    second: treees-removebg-preview_213
+  - first:
+      213: 7532297180798741400
+    second: treees-removebg-preview_214
+  - first:
+      213: 581903689418779488
+    second: treees-removebg-preview_215
+  - first:
+      213: 551660497524130502
+    second: treees-removebg-preview_216
+  - first:
+      213: -5588106887088187379
+    second: treees-removebg-preview_217
+  - first:
+      213: -6479996503077856817
+    second: treees-removebg-preview_218
+  - first:
+      213: -3669865460630682592
+    second: treees-removebg-preview_219
+  - first:
+      213: -8573840490187693065
+    second: treees-removebg-preview_220
+  - first:
+      213: 4872208018219668169
+    second: treees-removebg-preview_221
+  - first:
+      213: 6460151075600695342
+    second: treees-removebg-preview_222
+  - first:
+      213: 3200222037916348848
+    second: treees-removebg-preview_223
+  - first:
+      213: 8736689770993561674
+    second: treees-removebg-preview_224
+  - first:
+      213: 4534508646316925431
+    second: treees-removebg-preview_225
+  - first:
+      213: 2774985675565250572
+    second: treees-removebg-preview_226
+  - first:
+      213: -5716278514331683113
+    second: treees-removebg-preview_227
+  - first:
+      213: 2873220965985223654
+    second: treees-removebg-preview_228
+  - first:
+      213: 5817955717745713440
+    second: treees-removebg-preview_229
+  - first:
+      213: 3102033196998753020
+    second: treees-removebg-preview_230
+  - first:
+      213: -7408250178947595956
+    second: treees-removebg-preview_231
+  - first:
+      213: -2566853990292389484
+    second: treees-removebg-preview_232
+  - first:
+      213: -3733679994898970353
+    second: treees-removebg-preview_233
+  - first:
+      213: 1878234968702330914
+    second: treees-removebg-preview_234
+  - first:
+      213: 4902750009007279428
+    second: treees-removebg-preview_235
+  - first:
+      213: -4171513275647648524
+    second: treees-removebg-preview_236
+  - first:
+      213: 9171153717134930940
+    second: treees-removebg-preview_237
+  - first:
+      213: -3298727629524130276
+    second: treees-removebg-preview_238
+  - first:
+      213: -4228423354521916053
+    second: treees-removebg-preview_239
+  - first:
+      213: -2938170192446038458
+    second: treees-removebg-preview_240
+  - first:
+      213: 8606309129900248619
+    second: treees-removebg-preview_241
+  - first:
+      213: -1377284538496418459
+    second: treees-removebg-preview_242
+  - first:
+      213: -7694398323633539199
+    second: treees-removebg-preview_243
+  - first:
+      213: -3284976101315332900
+    second: treees-removebg-preview_244
+  - first:
+      213: 7919305539681925340
+    second: treees-removebg-preview_245
+  - first:
+      213: 4656307742454008045
+    second: treees-removebg-preview_246
+  - first:
+      213: 1658289580550583861
+    second: treees-removebg-preview_247
+  - first:
+      213: -4215863090870404673
+    second: treees-removebg-preview_248
+  - first:
+      213: -1144327069792473205
+    second: treees-removebg-preview_249
+  - first:
+      213: -3281401479166765783
+    second: treees-removebg-preview_250
+  - first:
+      213: -3405960135732939077
+    second: treees-removebg-preview_251
+  - first:
+      213: -7605731942818190412
+    second: treees-removebg-preview_252
+  - first:
+      213: -5097621676892092408
+    second: treees-removebg-preview_253
+  - first:
+      213: 5371543072924342870
+    second: treees-removebg-preview_254
+  - first:
+      213: -2405289163940569633
+    second: treees-removebg-preview_255
+  - first:
+      213: 3043925775036067109
+    second: treees-removebg-preview_256
+  - first:
+      213: 863115430480770722
+    second: treees-removebg-preview_257
+  - first:
+      213: -7307418355880249956
+    second: treees-removebg-preview_258
+  - first:
+      213: 6350458638979677467
+    second: treees-removebg-preview_259
+  - first:
+      213: -8952465181708316600
+    second: treees-removebg-preview_260
+  - first:
+      213: 5807800635409100540
+    second: treees-removebg-preview_261
+  - first:
+      213: 6732165262960879827
+    second: treees-removebg-preview_262
+  - first:
+      213: -942550410025246741
+    second: treees-removebg-preview_263
+  - first:
+      213: 2210635034102343569
+    second: treees-removebg-preview_264
+  - first:
+      213: 2332006051956663528
+    second: treees-removebg-preview_265
+  - first:
+      213: 5878826315123862314
+    second: treees-removebg-preview_266
+  - first:
+      213: -742885095044151478
+    second: treees-removebg-preview_267
+  - first:
+      213: -5357185093222998125
+    second: treees-removebg-preview_268
+  - first:
+      213: -8064473088394879083
+    second: treees-removebg-preview_269
+  - first:
+      213: 8455505296297597086
+    second: treees-removebg-preview_270
+  - first:
+      213: 4840519279701870511
+    second: treees-removebg-preview_271
+  - first:
+      213: -6253355850667593200
+    second: treees-removebg-preview_272
+  - first:
+      213: -4523576482584925267
+    second: treees-removebg-preview_273
+  - first:
+      213: 5615698958193199738
+    second: treees-removebg-preview_274
+  - first:
+      213: 3632757017508580280
+    second: treees-removebg-preview_275
+  - first:
+      213: 3425596719994436946
+    second: treees-removebg-preview_276
+  - first:
+      213: 634423568509053288
+    second: treees-removebg-preview_277
+  - first:
+      213: 5962554988841012985
+    second: treees-removebg-preview_278
+  - first:
+      213: 8932861802496356244
+    second: treees-removebg-preview_279
+  - first:
+      213: -9104822441826238169
+    second: treees-removebg-preview_280
+  - first:
+      213: -6397733074435014420
+    second: treees-removebg-preview_281
+  - first:
+      213: -4691573255173957536
+    second: treees-removebg-preview_282
+  - first:
+      213: 8431649276762033456
+    second: treees-removebg-preview_283
+  - first:
+      213: 4494542255830301025
+    second: treees-removebg-preview_284
+  - first:
+      213: -9059813956408223102
+    second: treees-removebg-preview_285
+  - first:
+      213: -2109229830963299091
+    second: treees-removebg-preview_286
+  - first:
+      213: -3775033131486176462
+    second: treees-removebg-preview_287
+  - first:
+      213: -7000606676094999834
+    second: treees-removebg-preview_288
+  - first:
+      213: -1012413881871116846
+    second: treees-removebg-preview_289
+  - first:
+      213: 616479658428774153
+    second: treees-removebg-preview_290
+  - first:
+      213: -8539572141869430433
+    second: treees-removebg-preview_291
+  - first:
+      213: 5329513179514235247
+    second: treees-removebg-preview_292
+  - first:
+      213: 8963800690882608150
+    second: treees-removebg-preview_293
+  - first:
+      213: 3956858103172761562
+    second: treees-removebg-preview_294
+  - first:
+      213: -4887536291916232397
+    second: treees-removebg-preview_295
+  - first:
+      213: -7834616907414772408
+    second: treees-removebg-preview_296
+  - first:
+      213: 1911255548199916443
+    second: treees-removebg-preview_297
+  - first:
+      213: -8581326634430244099
+    second: treees-removebg-preview_298
+  - first:
+      213: 205550376653644059
+    second: treees-removebg-preview_299
+  - first:
+      213: 1817552421806015009
+    second: treees-removebg-preview_300
+  - first:
+      213: -7767526659050699213
+    second: treees-removebg-preview_301
+  - first:
+      213: -7273497358178942135
+    second: treees-removebg-preview_302
+  - first:
+      213: 2900116939187466850
+    second: treees-removebg-preview_303
+  - first:
+      213: 2118998839498746916
+    second: treees-removebg-preview_304
+  - first:
+      213: -4446996893731779419
+    second: treees-removebg-preview_305
+  - first:
+      213: 2942357355946178245
+    second: treees-removebg-preview_306
+  - first:
+      213: 3798306657287716009
+    second: treees-removebg-preview_307
+  - first:
+      213: -3278946182089259301
+    second: treees-removebg-preview_308
+  - first:
+      213: -1057593832570490653
+    second: treees-removebg-preview_309
+  - first:
+      213: -819870170296754002
+    second: treees-removebg-preview_310
+  - first:
+      213: -2152983011051004523
+    second: treees-removebg-preview_311
+  - first:
+      213: -1169849633394994062
+    second: treees-removebg-preview_312
+  - first:
+      213: 6346520800675952659
+    second: treees-removebg-preview_313
+  - first:
+      213: -2195278902830573024
+    second: treees-removebg-preview_314
+  - first:
+      213: 1912479932507291002
+    second: treees-removebg-preview_315
+  - first:
+      213: 7633808328804490564
+    second: treees-removebg-preview_316
+  - first:
+      213: -6291524066842914004
+    second: treees-removebg-preview_317
+  - first:
+      213: 4513185568409656311
+    second: treees-removebg-preview_318
+  - first:
+      213: -4241976761458786969
+    second: treees-removebg-preview_319
+  - first:
+      213: 4864997622434614180
+    second: treees-removebg-preview_320
+  - first:
+      213: -7846939535464051779
+    second: treees-removebg-preview_321
+  - first:
+      213: 8687709277268658580
+    second: treees-removebg-preview_322
+  - first:
+      213: -1151276198553197460
+    second: treees-removebg-preview_323
+  - first:
+      213: 3082250596226316578
+    second: treees-removebg-preview_324
+  - first:
+      213: 6866560818326892146
+    second: treees-removebg-preview_325
+  - first:
+      213: -5633372377560176433
+    second: treees-removebg-preview_326
+  - first:
+      213: -6459974031935116569
+    second: treees-removebg-preview_327
+  - first:
+      213: 241754601093889408
+    second: treees-removebg-preview_328
+  - first:
+      213: 4733678551779389641
+    second: treees-removebg-preview_329
+  - first:
+      213: -5510274368703720838
+    second: treees-removebg-preview_330
+  - first:
+      213: -7446525605417369553
+    second: treees-removebg-preview_331
+  - first:
+      213: 5387255298790411965
+    second: treees-removebg-preview_332
+  - first:
+      213: 5541859250840221689
+    second: treees-removebg-preview_333
+  - first:
+      213: -6005910450330791129
+    second: treees-removebg-preview_334
+  - first:
+      213: -7780092690928655562
+    second: treees-removebg-preview_335
+  - first:
+      213: 96378409728319452
+    second: treees-removebg-preview_336
+  - first:
+      213: -7789133131474645702
+    second: treees-removebg-preview_337
+  - first:
+      213: 6084768434656490229
+    second: treees-removebg-preview_338
+  - first:
+      213: -3412864045223977597
+    second: treees-removebg-preview_339
+  - first:
+      213: 6613468761657871217
+    second: treees-removebg-preview_340
+  - first:
+      213: -2659735130811425375
+    second: treees-removebg-preview_341
+  - first:
+      213: 3764035402783140314
+    second: treees-removebg-preview_342
+  - first:
+      213: 5706134752723895152
+    second: treees-removebg-preview_343
+  - first:
+      213: 8468499132950904275
+    second: treees-removebg-preview_344
+  - first:
+      213: -5910976150462534914
+    second: treees-removebg-preview_345
+  - first:
+      213: 5680453369114804559
+    second: treees-removebg-preview_346
+  - first:
+      213: 4375542921888886301
+    second: treees-removebg-preview_347
+  - first:
+      213: -1349997562212481459
+    second: treees-removebg-preview_348
+  - first:
+      213: -3002523583147841766
+    second: treees-removebg-preview_349
+  - first:
+      213: 4986361222202692205
+    second: treees-removebg-preview_350
+  - first:
+      213: 4246593431497878774
+    second: treees-removebg-preview_351
+  - first:
+      213: -7172814769343003509
+    second: treees-removebg-preview_352
+  - first:
+      213: -2977705336952223085
+    second: treees-removebg-preview_353
+  - first:
+      213: -745341757413421602
+    second: treees-removebg-preview_354
+  - first:
+      213: 333666577984520637
+    second: treees-removebg-preview_355
+  - first:
+      213: 1079697849609016429
+    second: treees-removebg-preview_356
+  - first:
+      213: -3179572425681868394
+    second: treees-removebg-preview_357
+  - first:
+      213: 1902939133073898329
+    second: treees-removebg-preview_358
+  - first:
+      213: -7151624775913049771
+    second: treees-removebg-preview_359
+  - first:
+      213: -7053135871415715270
+    second: treees-removebg-preview_360
+  - first:
+      213: 1512218607172227997
+    second: treees-removebg-preview_361
+  - first:
+      213: -4176055133396885071
+    second: treees-removebg-preview_362
+  - first:
+      213: -1089413349326311303
+    second: treees-removebg-preview_363
+  - first:
+      213: -5132768288600973633
+    second: treees-removebg-preview_364
+  - first:
+      213: -3288072107851630579
+    second: treees-removebg-preview_365
+  - first:
+      213: 1069712697268625596
+    second: treees-removebg-preview_366
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: treees-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c38625c20978130800000000000000
+      internalID: 3568979749749931052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29629642d4a389540800000000000000
+      internalID: 5014822288074811026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6d17c832db15520800000000000000
+      internalID: 2689138412894672563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04208bef97720eb30800000000000000
+      internalID: 4314491847938933312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5e3b19d5f364300800000000000000
+      internalID: 235945701592524218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93b94a8a80ad4260800000000000000
+      internalID: 7083494305809675166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f5d062fe544f780800000000000000
+      internalID: -8650212090833969303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae60c984669ed9a50800000000000000
+      internalID: 6529631660271208170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29377ec363e5bc6a0800000000000000
+      internalID: -6427940456098204782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 348
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad89ab4ca5bcfb9b0800000000000000
+      internalID: -5062103865433089830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab8f7b988afa9530800000000000000
+      internalID: 3862675095054945192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2107527decd7c190800000000000000
+      internalID: -7942136505460915921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f7ceeada1302460800000000000000
+      internalID: 7214821225081372476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74b9949aa23b1920800000000000000
+      internalID: 2962016888145163391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a78ae7fa0fd0230800000000000000
+      internalID: 3606803513128548891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d0c54ed8c4f6b60800000000000000
+      internalID: 7741490456778509634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fa90e66eb652ce0800000000000000
+      internalID: -1430618669187485924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cd41b22c44c2530800000000000000
+      internalID: 3831512983722581096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8a2b66c93a16b80800000000000000
+      internalID: -8403255537563424513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757d5de452b2de230800000000000000
+      internalID: 3669636710613243735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de62a038c39bb7f10800000000000000
+      internalID: 2268610506858833645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d071100ab16eb30800000000000000
+      internalID: 4316167666908204310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 316
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bd0db66fa6c33d0800000000000000
+      internalID: -3225585626500768901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdae74ca4b48c040800000000000000
+      internalID: 4668063798265818550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab3389322bc132c0800000000000000
+      internalID: -4453555208638481497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eb1a84caa3d2200800000000000000
+      internalID: 156846073655180852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c60838f6cf53d80800000000000000
+      internalID: -8271427584718246819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896226d744e82c180800000000000000
+      internalID: -9096551872522475880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1674b556b697d950800000000000000
+      internalID: 6473808699234481695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29562eb1d184d4530800000000000000
+      internalID: 3840805347075974546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f739a83bfbabf83c0800000000000000
+      internalID: -4355056982130257025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3db634288003290800000000000000
+      internalID: -7912815189720050747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5890767574f1233f0800000000000000
+      internalID: -922640582388020859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c4f6ab6a7371de0800000000000000
+      internalID: -1362559173024330698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e26f7ce5cff79500800000000000000
+      internalID: 403071917214360296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 284
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744155ef56d864150800000000000000
+      internalID: 5856523834640110663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b088dcb1fb3406c0800000000000000
+      internalID: -4178148644851515215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e47b97c3997ce30800000000000000
+      internalID: 4523752835736096323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917b4e1aa3236b300800000000000000
+      internalID: 267456455280736025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541e512e976c291c0800000000000000
+      internalID: -4498314851003276987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16212c7c6b157f640800000000000000
+      internalID: 5113645747379769953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3cd88d5df059360800000000000000
+      internalID: 7175658992420373414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 252
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bf19f2b71d5e660800000000000000
+      internalID: 7414562688544668570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b150f86b437cc990800000000000000
+      internalID: -7364384522937282122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8754c61143c05b0800000000000000
+      internalID: -5400884603688486738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3284d07a7afaea40800000000000000
+      internalID: 5398402507142890046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a14d242532ccb90800000000000000
+      internalID: -7220357266366260668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8a6cdd2ab5d47c0800000000000000
+      internalID: -4085508531891558183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69dead76d1675900800000000000000
+      internalID: 673114243174685039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea0faf2f8a4db350800000000000000
+      internalID: 6034061054587112174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ea076e0216f9310800000000000000
+      internalID: 1413955601950617102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0a80ff3ac1c7690800000000000000
+      internalID: -7603170580224237365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 220
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3154c15bc162e9730800000000000000
+      internalID: 4007682623145788691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5caa06a2819988c80800000000000000
+      internalID: -8320231982497748283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4fc95cb7b389dc0800000000000000
+      internalID: -3632087696691890981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7a49c8deb1cae20800000000000000
+      internalID: 3363093728818669534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9346e82483c280420800000000000000
+      internalID: 2596373805325509689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d24ae36a2c457900800000000000000
+      internalID: 681534663565132498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6376a9283eca6a10800000000000000
+      internalID: 1903560533129720684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479864e8c793494e0800000000000000
+      internalID: -1975891129383089804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0545c8aa8ce725b0800000000000000
+      internalID: -5393081948471737076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddbf6a034e9e89e0800000000000000
+      internalID: -1617181205404336682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859149e34344ba6e0800000000000000
+      internalID: -1825290232789722792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fac368270b2e0d70800000000000000
+      internalID: 9011187214157335285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294b27fd132b96020800000000000000
+      internalID: 2335593809040290962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 188
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7339270f4ae18530800000000000000
+      internalID: 3855620381149311866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a6b8410a3c93fb0800000000000000
+      internalID: -4667484446485943717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d31da1bdba704ad0800000000000000
+      internalID: -2720039219783461929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1523e8b9b8daf50800000000000000
+      internalID: 6894320104795951600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fce40a1d16deba0800000000000000
+      internalID: -6058078370777870568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf6f522a727fc2f0800000000000000
+      internalID: -950415127463628867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471e1fa02ffd8b2e0800000000000000
+      internalID: -2109690194764373644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c842d82022fe290e0800000000000000
+      internalID: -2264484733263207284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31af7bc5d0ab48590800000000000000
+      internalID: -7672803298579580397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df339dcfaaaad470800000000000000
+      internalID: 8420230125367541712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aeb82a76ba07490800000000000000
+      internalID: -7750506497107563977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7402407763cce0c00800000000000000
+      internalID: 868856312426143815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_77
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552692a2867467970800000000000000
+      internalID: 8752261438550663765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 156
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241d723c90041d580800000000000000
+      internalID: -8804185385859559102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6381765e6300a10800000000000000
+      internalID: 1873557803891177144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_80
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130061c112cc40640800000000000000
+      internalID: 5045381925138989105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47aeec5541c7994a0800000000000000
+      internalID: -6586096553271825804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca6c79d4ad5267a0800000000000000
+      internalID: -6385438359053112627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_83
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791393df1174f0730800000000000000
+      internalID: 3967467939325096343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_84
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5b4d5c89018c190800000000000000
+      internalID: -7942079694527744536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_85
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7139c86e4f4b79960800000000000000
+      internalID: 7608749059398734615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_86
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1188c45d63b7a70800000000000000
+      internalID: 8825708184502538746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_87
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315b011d66d252100800000000000000
+      internalID: 82522087793669395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_88
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 124
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c39fe8f73858010800000000000000
+      internalID: 1190502260392148125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc946d82274128f0800000000000000
+      internalID: -567093864345330484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abacfe64185caa3d0800000000000000
+      internalID: -3194523826634372422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_91
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ced744a0546a800800000000000000
+      internalID: 623261508838485117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d22154cb30cae0800000000000000
+      internalID: -1531158158945101991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8c12bd0f6b9a410800000000000000
+      internalID: 1488922297407490245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ebc6e67f30739f0800000000000000
+      internalID: -488917673301983696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_95
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4faf6f4df2d50a760800000000000000
+      internalID: 7467070642198084340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_96
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 92
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbe44edab8465520800000000000000
+      internalID: 2690417794830625754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f21962aabdecf40800000000000000
+      internalID: 5750775298036674367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_98
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23ac8b16721ee440800000000000000
+      internalID: 4966927737513878315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_99
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a56c8d4f66cede60800000000000000
+      internalID: 7989040970346554793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_100
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdef3a3797528840800000000000000
+      internalID: 5224834824732143031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f9aac1ee0465b90800000000000000
+      internalID: -7253538758406267094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b353bd44ab6148c60800000000000000
+      internalID: 7819399842296968507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_103
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ac2aca7fc48fb00800000000000000
+      internalID: 862523955278432895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_104
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b70d24fb201e3ce0800000000000000
+      internalID: -1423682651236268108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_105
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c406b5f95f05ca0800000000000000
+      internalID: -6030049836267451256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_106
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead4b6f8020cbe6a0800000000000000
+      internalID: -6418825597808849490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_107
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9710e073430c8e1a0800000000000000
+      internalID: -6779957908511784583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_108
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1b22ac552641550800000000000000
+      internalID: 6130633113361101298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_109
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 60
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e175cb4c5621b2c0800000000000000
+      internalID: -4417707581623668252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1190807ebe7a77a0800000000000000
+      internalID: -6378646565820526306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_111
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf944434a1ae100f0800000000000000
+      internalID: -1152382631111538181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4262cf543fefcc0800000000000000
+      internalID: -3675232763979094837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_113
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55914e76740124e60800000000000000
+      internalID: 7944930591506700629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_114
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494f0c0284f987350800000000000000
+      internalID: 6014732434489275540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9092fa3d01a649380800000000000000
+      internalID: -8965424337684322039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a0b1867e53e5c90800000000000000
+      internalID: -7179241487981671877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_117
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2102fefd1f60f80800000000000000
+      internalID: -8140553332333735208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_118
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd6ecdffcc861ed0800000000000000
+      internalID: -2443610922857632310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_119
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817d454f7d3ccbd80800000000000000
+      internalID: -8233490686455523560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_120
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2d8c66c0a59f5f0800000000000000
+      internalID: -722447255905709338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_121
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b182fdaed1d065ad0800000000000000
+      internalID: -2713967303298439141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: treees-removebg-preview_122
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 28
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8672e348d8390e0800000000000000
+      internalID: -2264310588519257908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
