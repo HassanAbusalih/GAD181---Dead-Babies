@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
+            movementOfPlayer = new Vector3(movementOfPlayer.x, movementOfPlayer.y).normalized;
             PlayerAnimation();
             BattleEncounter();
         }
