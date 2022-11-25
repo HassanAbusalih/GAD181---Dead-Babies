@@ -163,13 +163,11 @@ public class Battle : MonoBehaviour
             {
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " fainted!");
                 pokemonParties.playerParty.Remove(pokemonParties.playerParty[0]);
-                PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 if (pokemonParties.playerParty.Count == 0)
                 {
                     state = BattleState.EnemyWin;
                     yield return dialogue.SetDialogue("You lose!");
-                    PlayerPrefs.DeleteAll();
                     Application.Quit();
                 }
                 else
@@ -208,7 +206,6 @@ public class Battle : MonoBehaviour
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
                 Victory();
                 StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.enemyParty[0].pokemonBase.pokeName + "!"));
-                PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 StartCoroutine(EndBattle());
             }
