@@ -118,7 +118,7 @@ public class Battle : MonoBehaviour
             {
                 yield return dialogue.SetDialogue("A critical hit! But it's not very effective...");
             }
-            if (battleResult.type > 1)
+            else if (battleResult.type > 1)
             {
                 yield return dialogue.SetDialogue("It's super effective!");
             }
@@ -183,7 +183,7 @@ public class Battle : MonoBehaviour
             {
                 yield return dialogue.SetDialogue("A critical hit! But it's not very effective...");
             }
-            if (battleResult.type > 1)
+            else if (battleResult.type > 1)
             {
                 yield return dialogue.SetDialogue("It's super effective!");
             }
