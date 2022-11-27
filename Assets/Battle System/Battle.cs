@@ -248,7 +248,6 @@ public class Battle : MonoBehaviour
                 yield return new WaitForSeconds(2.5f);
                 enemypokemon.GetComponent<SpriteRenderer>().enabled = true;
                 StartCoroutine(dialogue.SetDialogue("The Force is strong with him."));
-                yield return new WaitForSeconds(0.1f);
                 capturefailanimation.SetBool("capturefail", false);
                 yield return new WaitForSeconds(1);
                 state = BattleState.EnemyAttack;
