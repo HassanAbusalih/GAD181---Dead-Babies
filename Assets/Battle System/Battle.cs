@@ -200,7 +200,7 @@ public class Battle : MonoBehaviour
             captureanimation.SetBool("Capture", true);
             yield return new WaitForSeconds(1);
             enemypokemon.GetComponent<SpriteRenderer>().enabled = false;
-            if (Random.Range(0, 10) <= 8)
+            if (Random.Range(0, 10) <= 6)
             {
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);

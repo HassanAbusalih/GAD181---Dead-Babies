@@ -13,7 +13,7 @@ public class Pokemon
     public float xpThreshhold;
     public List<Move> pMoves;
 
-    public Pokemon (PokemonBase pBase, int pLevel) // Added a new parameter for the xp.
+    public Pokemon (PokemonBase pBase, int pLevel)
     {
          level = pLevel;
          pokemonBase = pBase;
@@ -41,7 +41,7 @@ public class Pokemon
 
     float PokemonHealth(int maxHP)
     {
-        float hp =  (((2 * pokemonBase.maxHp) * level) / 100) + level + 10;
+        float hp =  ((2 * pokemonBase.maxHp * level) / 100) + level + 10;
         return hp;
     }
 
