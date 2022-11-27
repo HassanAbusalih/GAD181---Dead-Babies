@@ -8939,7 +8939,7 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-  - pokemonBase: {fileID: 11400000, guid: 9497fd36b0316ee4b835f50a9d635a3b, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: a4898444bfc93f940ba9e5c40321456a, type: 2}
     level: 0
     totalHP: 0
     currentHP: 0

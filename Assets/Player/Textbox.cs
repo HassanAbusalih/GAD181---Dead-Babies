@@ -13,9 +13,11 @@ public class Textbox : MonoBehaviour
     Collider2D playerCollider;
     bool isActive;
     int counter;
+    Trainer trainer;
 
     private void Start()
     {
+        trainer = GetComponent<Trainer>();
         textCollider = GetComponent<Collider2D>();
         playerCollider = FindObjectOfType<PlayerMovement>().GetComponent<Collider2D>();
     }
@@ -25,25 +27,24 @@ public class Textbox : MonoBehaviour
         if (textCollider.IsTouching(playerCollider))
         {
             if (Input.GetKeyDown(KeyCode.Space))
-            { 
+            {
                 if (!isActive)
                 {
                     isActive = true;
                     textBox.SetActive(true);
                     text.gameObject.SetActive(true);
-                    //FindObjectOfType<PlayerMovement>().encounter = true;
+                    //FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
                 }
                 NextLine();
             }
-
-        }
-        else if (PlayerPrefs.GetInt("TrainerBattle") == 1 && textCollider.IsTouching(playerCollider))
-        {
-            PlayerPrefs.DeleteKey("TrainerBattle");
-            isActive = true;
-            textBox.SetActive(true);
-            text.gameObject.SetActive(true);
-            NextLine();
+            else if (!saveLoad.isTrainer && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}") == 1 && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}1") != 1)
+            {
+                PlayerPrefs.SetInt($"{trainer.trainerBase.trainerName}1", 1);
+                isActive = true;
+                textBox.SetActive(true);
+                text.gameObject.SetActive(true);
+                NextLine();
+            }
         }
     }
 
@@ -65,6 +66,17 @@ public class Textbox : MonoBehaviour
     }
 
     private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            textBox.SetActive(false);
+            text.gameObject.SetActive(false);
+            isActive = false;
+            counter = 0;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
