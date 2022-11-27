@@ -10,16 +10,35 @@ public class BattleDialogue : MonoBehaviour
     public GameObject menu;
     public GameObject pokemonList;
     public GameObject selectionBox;
+    public float timer;
+    float time;
     public List<TextMeshProUGUI> playerPokemon;
     public List<TextMeshProUGUI> pokeMoves;
     public List<TextMeshProUGUI> menuActions;
 
+    private void Update()
+    {
+        if (dialoguetext.enabled)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            timer = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            timer += 2;
+        }
+
+    }
     public IEnumerator SetDialogue(string dialogue)
     {
         attacks.SetActive(false);
         dialoguetext.enabled = true;
         dialoguetext.text = dialogue;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitUntil(() => timer >= 2);
+        timer = 0;
     }
     
     public void SetMoves(List<Move> Moves)

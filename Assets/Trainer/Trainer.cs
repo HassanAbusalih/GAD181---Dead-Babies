@@ -14,7 +14,7 @@ public class Trainer : MonoBehaviour
         {
             PlayerPrefs.SetInt($"{trainerBase.trainerName}", 1);
             pokemonParties.enemyParty = trainerBase.trainerPokemon;
-            PlayerPrefs.SetString("trainerName", trainerBase.name);
+            PlayerPrefs.SetString("trainerName", trainerBase.trainerName);
             saveLoad.isTrainer = true;
         }
     }

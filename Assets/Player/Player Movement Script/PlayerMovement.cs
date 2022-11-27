@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public SwitchPokemon switchPokemon;
     public bool encounter;
     float cooldown;
-
+    float cd;
+    bool touching;
 
     // Start is called before the first frame update
     private void Start()
@@ -46,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
             movementOfPlayer.y = 0;
             anim.StopPlayback();
         }
+        if (cd < 1 && touching)
+        {
+            cd += Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
@@ -68,38 +73,43 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        int battleEncounterRNG = Random.Range(0, 1000);
+        int battleEncounterRNG = Random.Range(0, 1500);
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
-            if(battleEncounterRNG <= 1 && !encounter && cooldown > 4)
+            touching = true;
+            if(battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(1, 5));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("2")))
         {
-            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4)
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(5, 8));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("3")))
         {
-            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4)
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(7, 11));
             }
         }
         //else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
         //{
-           // if (battleEncounterRNG <= 1 && !encounter && cooldown > 4)
+        //    touching = true;
+           // if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             //{
               //  StartEncounter(Random.Range(10, 13));
             //}
         //}
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("5")))
         {
-            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4)
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(12, 15));
             }
@@ -112,6 +122,10 @@ public class PlayerMovement : MonoBehaviour
             saveLoad.EnemySave(0);
             SavePos();
             StartCoroutine(LoadScene());
+        }
+        else
+        {
+            touching = false;
         }
     }
 
