@@ -173,8 +173,24 @@ public class Battle : MonoBehaviour
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
             yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            (bool fainted, bool crit, bool effectiveness) battleResult = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
+            (bool fainted, bool crit, float type) battleResult = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
+            if (battleResult.crit && battleResult.type > 1)
+            {
+                yield return dialogue.SetDialogue("A super effective critical hit!");
+            }
+            else if (battleResult.crit && battleResult.type < 1)
+            {
+                yield return dialogue.SetDialogue("A critical hit! But it's not very effective...");
+            }
+            if (battleResult.type > 1)
+            {
+                yield return dialogue.SetDialogue("It's super effective!");
+            }
+            else if (battleResult.type < 1)
+            {
+                yield return dialogue.SetDialogue("It's not very effective...");
+            }
             if (battleResult.fainted)
             {
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " fainted!");
