@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public Animator battleAnim;
     public SaveLoad saveLoad;
-    private float speed = 3.0f;
+    public float walkSpeed;
+    public float runSpeed;
     Vector2 movementOfPlayer;
     public SwitchPokemon switchPokemon;
     public bool encounter;
@@ -55,7 +56,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2D.MovePosition(rb2D.position + movementOfPlayer * speed * Time.fixedDeltaTime);
+        if(Input.GetKey(KeyCode.RightShift))
+        {
+            rb2D.MovePosition(rb2D.position + movementOfPlayer * runSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            rb2D.MovePosition(rb2D.position + movementOfPlayer * walkSpeed * Time.fixedDeltaTime);
+        }
         
     }
     void PlayerAnimation()

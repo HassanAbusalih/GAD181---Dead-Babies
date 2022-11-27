@@ -144,7 +144,10 @@ MonoBehaviour:
   anim: {fileID: 6388750533834007535}
   battleAnim: {fileID: 0}
   saveLoad: {fileID: 276493461}
+  walkSpeed: 3
+  runSpeed: 10
   switchPokemon: {fileID: 0}
+  encounter: 0
 --- !u!61 &6388750533834007533
 BoxCollider2D:
   m_ObjectHideFlags: 0
