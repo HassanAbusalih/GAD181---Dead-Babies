@@ -43,6 +43,7 @@ public class BattleDialogue : MonoBehaviour
     }
     public IEnumerator SetDialogue(string dialogue)
     {
+        timer = 0;
         attacks.SetActive(false);
         dialoguetext.enabled = true;
         dialoguetext.text = dialogue;
@@ -81,9 +82,9 @@ public class BattleDialogue : MonoBehaviour
             if (selection == i)
             {
                 menu[i].color = Color.blue;
-                moveInfo[0].text = $"PP: {move.powerpoints} / {move.maxPP}";
-                moveInfo[1].text = $"Type: {move.Base.type}";
-                moveInfo[2].text = $"Power: {move.power}";
+                moveInfo[0].text = $"PP:  {move.powerpoints} / {move.maxPP}";
+                moveInfo[1].text = $"Type:  {move.Base.type}";
+                moveInfo[2].text = $"Power:  {move.power}";
             }
             else menu[i].color = Color.black;
         }
