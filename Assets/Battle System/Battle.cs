@@ -33,6 +33,7 @@ public class Battle : MonoBehaviour
 
     void Start()
     {
+        animator.SetBool("BattleStart", true);
         saveLoad.Load();
         for (int i = 0; i < pokemonParties.playerParty.Count; i++)
         {
@@ -58,12 +59,12 @@ public class Battle : MonoBehaviour
             MenuSelection();
             dialogue.UpdateMenuSelection(selectionB, dialogue.menuActions);
         }
-        else if (state == BattleState.MoveSelection)
+        if (state == BattleState.MoveSelection)
         {
             MoveSelection();
             dialogue.UpdateMoveSelection(selection, dialogue.pokeMoves, playerMon.pokemon.pMoves[selection]);
         }
-        else if (state == BattleState.PlayerAttack)
+        if (state == BattleState.PlayerAttack)
         {
             StartCoroutine(Attack());
         }
@@ -75,7 +76,6 @@ public class Battle : MonoBehaviour
         dialogue.SetPokemonNames(pokemonParties.playerParty);
         InitializePokemon();
         xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
-        yield return new WaitForSeconds(0.1f);
         if (saveLoad.isTrainer)
         {
             yield return dialogue.SetDialogue($"{saveLoad.trainerName} challenges you!");
@@ -84,7 +84,9 @@ public class Battle : MonoBehaviour
         {
             yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2.1f);
+        animator.SetBool("BattleStart", false);
+        animator.enabled = false;
         state = BattleState.PlayerMenu;
         yield return dialogue.SetDialogue("Select an action.");
     }
@@ -95,7 +97,7 @@ public class Battle : MonoBehaviour
         yield return dialogue.SetDialogue("Choose a move.");
         state = BattleState.MoveSelection;
         dialogue.dialoguetext.enabled = false;
-        //dialogue.info.SetActive(true);
+        dialogue.info.SetActive(true);
         dialogue.attacks.SetActive(true);
         dialogue.SetMoves(playerMon.pokemon.pMoves);
     }
@@ -106,6 +108,7 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
+            playerMon.pokemon.pMoves[selection].powerpoints--;
             yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             (bool fainted, bool crit, float type) battleResult = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
@@ -390,13 +393,14 @@ public class Battle : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             state = BattleState.PlayerMenu;
-            //dialogue.info.SetActive(false);
+            dialogue.info.SetActive(false);
             dialogue.menu.SetActive(true);
             StartCoroutine(dialogue.SetDialogue("Select an action."));
 
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
+            dialogue.info.SetActive(false);
             state = BattleState.PlayerAttack;
         }
     }
@@ -424,6 +428,7 @@ public class Battle : MonoBehaviour
     IEnumerator EndBattle()
     {
         yield return new WaitForSeconds(2);
+        animator.enabled = true;
         animator.SetBool("End", true);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(0);
         asyncOperation.allowSceneActivation = false;
