@@ -58,10 +58,10 @@ public class Battle : MonoBehaviour
             MenuSelection();
             dialogue.UpdateMenuSelection(selectionB, dialogue.menuActions);
         }
-        else if (state == BattleState.PlayerTurn)
+        else if (state == BattleState.MoveSelection)
         {
             MoveSelection();
-            dialogue.UpdateMenuSelection(selection, dialogue.pokeMoves);
+            dialogue.UpdateMoveSelection(selection, dialogue.pokeMoves, playerMon.pokemon.pMoves[selection]);
         }
         else if (state == BattleState.PlayerAttack)
         {
@@ -93,11 +93,11 @@ public class Battle : MonoBehaviour
     {
         state = BattleState.Busy;
         yield return dialogue.SetDialogue("Choose a move.");
-        state = BattleState.PlayerTurn;
+        state = BattleState.MoveSelection;
         dialogue.dialoguetext.enabled = false;
+        //dialogue.info.SetActive(true);
         dialogue.attacks.SetActive(true);
         dialogue.SetMoves(playerMon.pokemon.pMoves);
-
     }
 
     IEnumerator Attack()
@@ -390,6 +390,7 @@ public class Battle : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             state = BattleState.PlayerMenu;
+            //dialogue.info.SetActive(false);
             dialogue.menu.SetActive(true);
             StartCoroutine(dialogue.SetDialogue("Select an action."));
 
@@ -432,7 +433,7 @@ public class Battle : MonoBehaviour
 
     IEnumerator SwitchPokemon()
     {
-        state = BattleState.EnemyAttack;
+        state = BattleState.Busy;
         switchIn = pokemonParties.playerParty[selectionC];
         pokemonParties.playerParty[selectionC] = pokemonParties.playerParty[0];
         pokemonParties.playerParty[0] = switchIn;
@@ -451,6 +452,7 @@ public class Battle : MonoBehaviour
         }
         else
         {
+            state = BattleState.EnemyAttack;
             StartCoroutine(Attack());
         }
     }
@@ -484,13 +486,5 @@ public class Battle : MonoBehaviour
         }
 
        
-    }
-    int getdamage(PokemonType T1, PokemonType T2)
-    {
-        if (T1 == PokemonType.Fire && T2 == PokemonType.Water)
-        {
-            return 2;
-        }
-        return 1;
     }
 }
