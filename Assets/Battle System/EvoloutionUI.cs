@@ -21,14 +21,14 @@ public class EvoloutionUI : MonoBehaviour
         evoMusic.Play();
         pokemonImage.color = Color.black;
         yield return Particle();
-        var oldPokemon = pokemon.pokemonBase.name;
+        var oldPokemon = pokemon.pokemonBase.pokeName;
         pokemon.Evolve();
         evoMusic.Stop();
         pokemonImage.sprite = pokemon.pokemonBase.pokeSprite;
         particle.Stop();
         pokemonImage.color = Color.white;
         youEvolvedSound.Play();
-        yield return dialogue.SetDialogue($"{oldPokemon} evolved into {pokemon.pokemonBase.name}.");
+        yield return dialogue.SetDialogue($"{oldPokemon} evolved into {pokemon.pokemonBase.pokeName}.");
         yield return new WaitForSeconds(2f);
         evolutionUI.SetActive(false);
     }
