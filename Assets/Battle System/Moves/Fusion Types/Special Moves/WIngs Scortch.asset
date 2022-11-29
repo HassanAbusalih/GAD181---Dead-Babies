@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: WIngs Scortch
+  m_Name: Wings Scortch
   m_EditorClassIdentifier: 
   movename: WIngs Scortch
   description: 
@@ -18,4 +18,4 @@ MonoBehaviour:
   category: 2
   power: 80
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 4
