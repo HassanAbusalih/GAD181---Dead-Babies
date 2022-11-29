@@ -82,7 +82,18 @@ public class BattleDialogue : MonoBehaviour
             if (selection == i)
             {
                 menu[i].color = Color.blue;
-                moveInfo[0].text = $"PP:  {move.powerpoints} / {move.maxPP}";
+                if ((float)move.powerpoints/ (float)move.Base.powerpoints > 0.7f)
+                {
+                    moveInfo[0].text = $"PP:  {move.powerpoints} / {move.maxPP}";
+                }
+                else if ((float)move.powerpoints / (float)move.Base.powerpoints > 0.4f)
+                {
+                    moveInfo[0].text = $"PP:  <color=yellow>{move.powerpoints}</color> / {move.maxPP}";
+                }
+                else if ((float)move.powerpoints / (float)move.Base.powerpoints <= 0.4f)
+                {
+                    moveInfo[0].text = $"PP:  <color=red>{move.powerpoints}</color> / {move.maxPP}";
+                }
                 moveInfo[1].text = $"Type:  {move.Base.type}";
                 moveInfo[2].text = $"Power:  {move.power}";
             }
