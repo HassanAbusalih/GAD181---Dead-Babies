@@ -400,8 +400,15 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            dialogue.info.SetActive(false);
-            state = BattleState.PlayerAttack;
+            if (playerMon.pokemon.pMoves[selection].powerpoints == 0)
+            {
+                
+            }
+            else
+            {
+                state = BattleState.PlayerAttack;
+                dialogue.info.SetActive(false);
+            }
         }
     }
 
