@@ -10,16 +10,45 @@ public class BattleDialogue : MonoBehaviour
     public GameObject menu;
     public GameObject pokemonList;
     public GameObject selectionBox;
+    public GameObject info;
+    public float timer;
+    bool allow;
     public List<TextMeshProUGUI> playerPokemon;
     public List<TextMeshProUGUI> pokeMoves;
     public List<TextMeshProUGUI> menuActions;
+    public List<TextMeshProUGUI> moveInfo;
 
+    private void Update()
+    {
+        if (timer < 0.1)
+        {
+            allow = false;
+        }
+        else
+        {
+            allow = true;
+        }
+        if (dialoguetext.enabled)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            timer = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && allow)
+        {
+            timer += 2;
+        }
+    }
     public IEnumerator SetDialogue(string dialogue)
     {
+        timer = 0;
         attacks.SetActive(false);
         dialoguetext.enabled = true;
         dialoguetext.text = dialogue;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitUntil(() => timer >= 2);
+        timer = 0;
     }
     
     public void SetMoves(List<Move> Moves)
@@ -45,7 +74,22 @@ public class BattleDialogue : MonoBehaviour
             else menu[i].color = Color.black;
         } 
     }
-    
+
+    public void UpdateMoveSelection(int selection, List<TextMeshProUGUI> menu, Move move)
+    {
+        for (int i = 0; i < menu.Count; i++)
+        {
+            if (selection == i)
+            {
+                menu[i].color = Color.blue;
+                moveInfo[0].text = $"PP:  {move.powerpoints} / {move.maxPP}";
+                moveInfo[1].text = $"Type:  {move.Base.type}";
+                moveInfo[2].text = $"Power:  {move.power}";
+            }
+            else menu[i].color = Color.black;
+        }
+    }
+
     public void SetPokemonNames(List<Pokemon> pokemons)
     {
         for (int i = 0; i < playerPokemon.Count; i++)
@@ -67,7 +111,7 @@ public enum BattleState
     Start,
     PlayerMenu,
     PokemonSelection,
-    PlayerTurn,
+    MoveSelection,
     PlayerAttack,
     EnemyAttack,
     Busy,

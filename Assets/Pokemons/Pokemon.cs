@@ -13,7 +13,7 @@ public class Pokemon
     public float xpThreshhold;
     public List<Move> pMoves;
 
-    public Pokemon (PokemonBase pBase, int pLevel) // Added a new parameter for the xp.
+    public Pokemon (PokemonBase pBase, int pLevel)
     {
          level = pLevel;
          pokemonBase = pBase;
@@ -21,8 +21,8 @@ public class Pokemon
 
     public void MakePokemon()
     {
-        totalHP = PokemonHealth(pokemonBase.maxHp);
-        currentHP = PokemonHealth(pokemonBase.maxHp);
+        totalHP = PokemonHealth();
+        currentHP = PokemonHealth();
         //currentXpPoints = 0;
         xpThreshhold = XpToNextLevel(level);
         pMoves = new List<Move>();
@@ -39,23 +39,25 @@ public class Pokemon
         }
     }
 
-    float PokemonHealth(int maxHP)
+    float PokemonHealth()
     {
-        float hp =  (((2 * pokemonBase.maxHp) * level) / 100) + level + 10;
+        float hp =  ((2 * maxHp * level) / 100) + level + 10;
         return hp;
     }
 
-    public bool TakeDamage(Move move, Pokemon Playerattacker)
+    public (bool, bool, float) TakeDamage(Move move, Pokemon Playerattacker)
     {
+        bool crit = false;
         float criticalHit = 1f;
         if(Random.Range(0, 200) <= Playerattacker.pokemonBase.speed)
         {
             criticalHit = 2.0f;
+            crit = true;
         }
         float type = PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type1) * PokemonTypeChart.GetDamageEffectiveness(move.Base.type, this.pokemonBase.type2);
-
-        int attack;
-        int defense;
+        
+        int pAttack;
+        int pDefense;
         float stab = 1f;
 
         if(Playerattacker.pokemonBase.type1 == move.Base.type || Playerattacker.pokemonBase.type2 == move.Base.type)
@@ -65,30 +67,29 @@ public class Pokemon
 
        if ( move.Base.category == Moves.MoveType.Special)
         {
-            attack = Playerattacker.pokemonBase.spAttack;
-            defense = pokemonBase.spDefence;
+            pAttack = Playerattacker.spAttack;
+            pDefense = spDefense;
         }
         else
         {
-            attack = Playerattacker.pokemonBase.attack;
-            defense = pokemonBase.defense;
+            pAttack = Playerattacker.attack;
+            pDefense = defense;
 
         }
 
         float mod = Random.Range(0.85f, 0.9f) * criticalHit;
         float calculationDamage1 = ((2 * Playerattacker.level) + 10) / 250.0f;
-        float calculationDamage2 = (move.Base.power * attack / defense) + 2;
+        float calculationDamage2 = (move.Base.power * pAttack / pDefense) + 2;
         int damage = (int)(calculationDamage1 * calculationDamage2 * mod * stab * type);
         currentHP -= damage;
+        bool fainted = false;
         if (currentHP <= 0)
         {
             currentHP = 0;
-            return true;
+            fainted = true;
+            return (fainted, crit, type);
         }
-        return false;
-
-        
-
+        return (fainted, crit, type);
     }
 
     public Move RandomMove() 

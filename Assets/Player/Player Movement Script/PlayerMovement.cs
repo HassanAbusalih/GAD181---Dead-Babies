@@ -10,12 +10,14 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public Animator battleAnim;
     public SaveLoad saveLoad;
-    private float speed = 3.0f;
+    public float walkSpeed;
+    public float runSpeed;
     Vector2 movementOfPlayer;
     public SwitchPokemon switchPokemon;
-    bool encounter;
+    public bool encounter;
     float cooldown;
-
+    float cd;
+    bool touching;
 
     // Start is called before the first frame update
     private void Start()
@@ -36,8 +38,7 @@ public class PlayerMovement : MonoBehaviour
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
-            PlayerPrefs.SetFloat("X", (int)transform.position.x);
-            PlayerPrefs.SetFloat("Y", (int)transform.position.y);
+            movementOfPlayer = new Vector3(movementOfPlayer.x, movementOfPlayer.y).normalized;
             PlayerAnimation();
             BattleEncounter();
         }
@@ -47,11 +48,22 @@ public class PlayerMovement : MonoBehaviour
             movementOfPlayer.y = 0;
             anim.StopPlayback();
         }
+        if (cd < 1 && touching)
+        {
+            cd += Time.deltaTime;
+        }
     }
 
     private void FixedUpdate()
     {
-        rb2D.MovePosition(rb2D.position + movementOfPlayer * speed * Time.fixedDeltaTime);
+        if(Input.GetKey(KeyCode.RightShift))
+        {
+            rb2D.MovePosition(rb2D.position + movementOfPlayer * runSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            rb2D.MovePosition(rb2D.position + movementOfPlayer * walkSpeed * Time.fixedDeltaTime);
+        }
         
     }
     void PlayerAnimation()
@@ -69,49 +81,59 @@ public class PlayerMovement : MonoBehaviour
     }
     void BattleEncounter()
     {
-        int battleEncounterRNG = Random.Range(0, 500);
+        int battleEncounterRNG = Random.Range(0, 1500);
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
-            if(battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            touching = true;
+            if(battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(1, 5));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("2")))
         {
-            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(5, 8));
             }
         }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("3")))
         {
-            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(7, 11));
             }
         }
-        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
-        {
-            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
-            {
-                StartEncounter(Random.Range(10, 13));
-            }
-        }
+        //else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
+        //{
+        //    touching = true;
+           // if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
+            //{
+              //  StartEncounter(Random.Range(10, 13));
+            //}
+        //}
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("5")))
         {
-            if (battleEncounterRNG <= 5 && !encounter && cooldown > 4)
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(12, 15));
             }
         }
-        else if (saveLoad.isTrainer && !encounter && cooldown > 4)
+        else if (saveLoad.isTrainer && !encounter)
         {
             encounter = true;
+            battleAnim.SetBool("Encounter", true);
             saveLoad.PlayerSave();
             saveLoad.EnemySave(0);
             SavePos();
             StartCoroutine(LoadScene());
+        }
+        else
+        {
+            touching = false;
         }
     }
 
@@ -136,8 +158,8 @@ public class PlayerMovement : MonoBehaviour
 
     void SavePos()
     {
-        PlayerPrefs.SetFloat("X", (int)transform.position.x);
-        PlayerPrefs.SetFloat("Y", (int)transform.position.y);
+        PlayerPrefs.SetFloat("X", transform.position.x);
+        PlayerPrefs.SetFloat("Y", transform.position.y);
     }
 
     void LoadPos()

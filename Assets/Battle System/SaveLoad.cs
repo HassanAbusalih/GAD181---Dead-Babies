@@ -8,7 +8,6 @@ public class SaveLoad : MonoBehaviour
     Pokemon randomPokemon;
     int pokemonNumber;
     int enemyPokemonNumber;
-    int enemyLevel;
     int beforeLoad;
     int afterLoad;
     public string trainerName;
