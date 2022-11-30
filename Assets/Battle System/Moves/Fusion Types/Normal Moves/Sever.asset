@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sever
   m_EditorClassIdentifier: 
   movename: Sever
+  movescolor: {r: 0, g: 0, b: 0, a: 0}
   description: 
   type: 1
   category: 3

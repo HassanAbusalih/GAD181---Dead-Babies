@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Dynamic Entry
   m_EditorClassIdentifier: 
   movename: Dynamic Entry
+  movescolor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0}
   description: 
   type: 12
   category: 2

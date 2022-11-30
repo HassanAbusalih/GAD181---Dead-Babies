@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sizzling drift
   m_EditorClassIdentifier: 
   movename: Sizzling drift
+  movescolor: {r: 0.6509434, g: 0, b: 0, a: 0}
   description: 
   type: 2
   category: 2

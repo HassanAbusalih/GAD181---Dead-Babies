@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Melted Gravel
   m_EditorClassIdentifier: 
   movename: Melted Gravel
+  movescolor: {r: 0, g: 0.12315698, b: 0.6698113, a: 0}
   description: 
   type: 3
   category: 2
