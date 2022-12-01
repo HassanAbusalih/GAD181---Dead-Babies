@@ -57,6 +57,7 @@ public class BattleDialogue : MonoBehaviour
         {
             if (i < Moves.Count)
                 pokeMoves[i].text = Moves[i].Base.movename;
+                
             else
                 pokeMoves[i].text = "-";
         }
@@ -94,7 +95,7 @@ public class BattleDialogue : MonoBehaviour
                 {
                     moveInfo[0].text = $"PP:  <color=red>{move.powerpoints}</color> / {move.maxPP}";
                 }
-                moveInfo[1].text = $"Type:  {move.Base.type}";
+                moveInfo[1].text = $"Type:  <color=#{ColorUtility.ToHtmlStringRGB(move.Base.movescolor)}>{move.Base.type}</color>";
                 moveInfo[2].text = $"Power:  {move.power}";
             }
             else menu[i].color = Color.black;

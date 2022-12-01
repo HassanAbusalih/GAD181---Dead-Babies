@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Murder
   m_EditorClassIdentifier: 
   movename: Murder
+  movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 0
   category: 0

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Future Sight
   m_EditorClassIdentifier: 
   movename: 'Future Sight '
+  movescolor: {r: 0.6792453, g: 0, b: 0.46672884, a: 0}
   description: 
   type: 13
   category: 2

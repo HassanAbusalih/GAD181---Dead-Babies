@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Solar beam
   m_EditorClassIdentifier: 
   movename: Solar beam
+  movescolor: {r: 0.087778755, g: 0.5660378, b: 0, a: 0}
   description: 
   type: 5
   category: 2

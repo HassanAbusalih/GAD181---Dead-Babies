@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Mean Look
   m_EditorClassIdentifier: 
   movename: Mean Look
+  movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 1
   category: 3
