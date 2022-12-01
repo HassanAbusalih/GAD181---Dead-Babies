@@ -87,8 +87,8 @@ public class Battle : MonoBehaviour
         yield return new WaitForSeconds(2.1f);
         animator.SetBool("BattleStart", false);
         animator.enabled = false;
-        state = BattleState.PlayerMenu;
         yield return dialogue.SetDialogue("Select an action.");
+        state = BattleState.PlayerMenu;
     }
 
     IEnumerator PlayerTurn()
@@ -100,6 +100,14 @@ public class Battle : MonoBehaviour
         dialogue.info.SetActive(true);
         dialogue.attacks.SetActive(true);
         dialogue.SetMoves(playerMon.pokemon.pMoves);
+    }
+
+    IEnumerator PlayerMenu()
+    {
+        yield return dialogue.SetDialogue("Select an action.");
+        state = BattleState.PlayerMenu;
+        dialogue.info.SetActive(false);
+        dialogue.menu.SetActive(true);
     }
 
     IEnumerator Attack()
@@ -216,9 +224,7 @@ public class Battle : MonoBehaviour
             }
             else
             {
-                state = BattleState.PlayerMenu;
-                dialogue.menu.SetActive(true);
-                StartCoroutine(dialogue.SetDialogue("Select an action."));
+                StartCoroutine(PlayerMenu());
             }
         }
     }
@@ -392,10 +398,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            state = BattleState.PlayerMenu;
-            dialogue.info.SetActive(false);
-            dialogue.menu.SetActive(true);
-            StartCoroutine(dialogue.SetDialogue("Select an action."));
+            StartCoroutine(PlayerMenu());
 
         }
         else if (Input.GetKeyDown(KeyCode.Space))
@@ -458,9 +461,9 @@ public class Battle : MonoBehaviour
         if (deadPokemon)
         {
             deadPokemon = false;
+            yield return dialogue.SetDialogue("Select an action.");
             state = BattleState.PlayerMenu;
             dialogue.menu.SetActive(true);
-            StartCoroutine(dialogue.SetDialogue("Select an action."));
         }
         else
         {
