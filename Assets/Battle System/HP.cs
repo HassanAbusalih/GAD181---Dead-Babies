@@ -39,16 +39,27 @@ public class HP : MonoBehaviour
         }
         hp = HP;
         maxHp = maxHP;
-        StartCoroutine(AnimateHP());
+        if (hp == maxHp)
+        {
+            Health.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            StartCoroutine(AnimateHP());
+        }
     }
 
     IEnumerator AnimateHP()
     {
-        float reduceBy = (beforeDamage - hp) / 300;
+        float reduceBy = (beforeDamage - hp) / 300;  
         for (float i = beforeDamage; i > hp; i-= reduceBy)
         {
             Health.transform.localScale = new Vector3((i/maxHp), 1, 1);
             yield return new WaitForSeconds(0.001f);
+        }
+        if (hp == 0)
+        {
+            Health.transform.localScale = new Vector3(0, 1, 1);
         }
     }
 }
