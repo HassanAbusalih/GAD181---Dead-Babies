@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Bug Bite
   m_EditorClassIdentifier: 
   movename: Bug Bite
+  movescolor: {r: 0.5947196, g: 0.7735849, b: 0.5794589, a: 0}
   description: 
   type: 7
   category: 2

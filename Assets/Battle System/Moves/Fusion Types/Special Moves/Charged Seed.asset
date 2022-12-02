@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Charged Seed
   m_EditorClassIdentifier: 
   movename: Charged Seed
+  movescolor: {r: 0.40943396, g: 1, b: 0.44605696, a: 0}
   description: 
   type: 7
   category: 2

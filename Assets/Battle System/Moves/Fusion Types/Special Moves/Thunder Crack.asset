@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Thunder Crack
   m_EditorClassIdentifier: 
   movename: Thunder Crack
+  movescolor: {r: 0.735849, g: 0.48995906, b: 0, a: 0}
   description: 
   type: 4
   category: 2

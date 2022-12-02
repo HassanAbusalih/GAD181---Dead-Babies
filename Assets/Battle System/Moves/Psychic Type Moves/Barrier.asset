@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Barrier
   m_EditorClassIdentifier: 
   movename: Barrier
+  movescolor: {r: 0.6792453, g: 0, b: 0.46672884, a: 0}
   description: 
   type: 13
   category: 2

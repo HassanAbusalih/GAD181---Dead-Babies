@@ -11,8 +11,10 @@ public class BattleDialogue : MonoBehaviour
     public GameObject pokemonList;
     public GameObject selectionBox;
     public GameObject info;
+    string stopSpamming;
     public float timer;
     bool allow;
+    bool skip;
     public List<TextMeshProUGUI> playerPokemon;
     public List<TextMeshProUGUI> pokeMoves;
     public List<TextMeshProUGUI> menuActions;
@@ -23,6 +25,10 @@ public class BattleDialogue : MonoBehaviour
         if (timer < 0.1)
         {
             allow = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && allow || timer == 2)
+        {
+            skip = true;
         }
         else
         {
@@ -36,19 +42,42 @@ public class BattleDialogue : MonoBehaviour
         {
             timer = 0;
         }
-        if (Input.GetKeyDown(KeyCode.Space) && allow)
+        if (Input.GetKeyDown(KeyCode.Space) && allow && skip)
         {
             timer += 2;
         }
     }
     public IEnumerator SetDialogue(string dialogue)
     {
+        if (stopSpamming == dialogue)
+        {
+            yield break;
+        }
+        else
+        {
+            stopSpamming = dialogue;
+        }
         timer = 0;
+        skip = false;
         attacks.SetActive(false);
         dialoguetext.enabled = true;
-        dialoguetext.text = dialogue;
-        yield return new WaitUntil(() => timer >= 2);
+        dialoguetext.text = null;
+        if (!skip)
+        {
+            for (int i = 0; i < dialogue.Length; i++)
+            {
+                dialoguetext.text += dialogue[i];
+                yield return new WaitForSeconds(0.02f);
+            }
+            skip = true;
+        }
+        else
+        {
+            dialoguetext.text = dialogue;
+        }
+        yield return new WaitUntil(() => timer >= 2 && dialoguetext.text == dialogue);
         timer = 0;
+        stopSpamming = null;
     }
     
     public void SetMoves(List<Move> Moves)
@@ -57,6 +86,7 @@ public class BattleDialogue : MonoBehaviour
         {
             if (i < Moves.Count)
                 pokeMoves[i].text = Moves[i].Base.movename;
+                
             else
                 pokeMoves[i].text = "-";
         }
@@ -94,7 +124,7 @@ public class BattleDialogue : MonoBehaviour
                 {
                     moveInfo[0].text = $"PP:  <color=red>{move.powerpoints}</color> / {move.maxPP}";
                 }
-                moveInfo[1].text = $"Type:  {move.Base.type}";
+                moveInfo[1].text = $"Type:  <color=#{ColorUtility.ToHtmlStringRGB(move.Base.movescolor)}>{move.Base.type}</color>";
                 moveInfo[2].text = $"Power:  {move.power}";
             }
             else menu[i].color = Color.black;

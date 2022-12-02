@@ -6,6 +6,7 @@ using UnityEngine;
 public class Moves : ScriptableObject
 {
      public string movename;
+     public Color movescolor;
      public string description;
      public PokemonType type;
      public MoveType category;

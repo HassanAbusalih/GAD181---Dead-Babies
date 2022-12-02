@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Peck
   m_EditorClassIdentifier: 
   movename: Peck
+  movescolor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
   description: 
   type: 12
   category: 2

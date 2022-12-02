@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Growl
   m_EditorClassIdentifier: 
   movename: Growl
+  movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 1
   category: 3
