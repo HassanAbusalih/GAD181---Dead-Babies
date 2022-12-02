@@ -117,9 +117,9 @@ public class Battle : MonoBehaviour
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
             playerMon.pokemon.pMoves[selection].powerpoints--;
-            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             (bool fainted, bool crit, float type) battleResult = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
+            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             selection = 0;
             if (battleResult.crit && battleResult.type > 1)
             {
@@ -183,9 +183,9 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
-            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             (bool fainted, bool crit, float type) battleResult = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
+            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             if (battleResult.crit && battleResult.type > 1)
             {
                 yield return dialogue.SetDialogue("A super effective critical hit!");
