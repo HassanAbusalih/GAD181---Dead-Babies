@@ -15,7 +15,7 @@ public class Textbox : MonoBehaviour
     int counter;
     Trainer trainer;
 
-    private void Start()
+    private void Awake()
     {
         trainer = GetComponent<Trainer>();
         textCollider = GetComponent<Collider2D>();

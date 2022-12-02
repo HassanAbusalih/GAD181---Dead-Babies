@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.RightShift))
+        if(Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift))
         {
             rb2D.MovePosition(rb2D.position + movementOfPlayer * runSpeed * Time.fixedDeltaTime);
         }
