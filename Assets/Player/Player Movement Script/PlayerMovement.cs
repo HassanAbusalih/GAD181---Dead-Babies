@@ -106,14 +106,14 @@ public class PlayerMovement : MonoBehaviour
                 StartEncounter(Random.Range(7, 11));
             }
         }
-        //else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
-        //{
-        //    touching = true;
-           // if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
-            //{
-              //  StartEncounter(Random.Range(10, 13));
-            //}
-        //}
+        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
+        {
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
+            {
+                StartEncounter(Random.Range(10, 13));
+            }
+        }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("5")))
         {
             touching = true;
