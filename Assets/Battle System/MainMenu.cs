@@ -9,13 +9,27 @@ public class MainMenu : MonoBehaviour
     int selectionA;
     int selectionB;
     GameObject player;
+    GameObject gameMenu;
+    bool flag = false;
     private void Start()
-    {
+    {     
+        gameMenu = FindObjectOfType<MainMenu>().gameObject;
         player = GameObject.Find("Player(Pink)");
         player.SetActive(false);
     }
+    private void OnDisable()
+    {
+        player.SetActive(true);
+        gameMenu.tag = ("main");
+    }
+
     private void Update()
     {
+        if(gameMenu.tag == ("main"))
+        {
+            gameObject.SetActive(false);
+        }
+        DontDestroyOnLoad(gameObject);
         Selection();
         ActivateSelection();
     }
@@ -59,13 +73,13 @@ public class MainMenu : MonoBehaviour
     {
         if(selectionA == 0 && Input.GetKeyDown(KeyCode.Space))
         {
-            gameObject.SetActive(false); // Game start should take you to the starter pokemon screen select instead of just starting the game.
-            player.SetActive(true);
+            gameObject.SetActive(false);
+                        
         }
         if (selectionA == 3 && Input.GetKeyDown(KeyCode.Space)) 
         {
             Debug.Log("quit");
-            Application.Quit(); // will work in build only
+            Application.Quit();
         }
     }
 }

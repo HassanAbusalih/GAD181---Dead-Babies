@@ -21,6 +21,8 @@ public class Battle : MonoBehaviour
     public Animator playerattack;
     public SpriteRenderer enemypokemon;
     public EvoloutionUI evoloutionUI;
+    public bool battleEnd;
+    GameObject mainMenu;
     public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
@@ -28,6 +30,7 @@ public class Battle : MonoBehaviour
     int selectionB;
     int selectionC;
     bool deadPokemon;
+
     int xpGain;
 
     // Start is called before the first frame update
@@ -446,6 +449,7 @@ public class Battle : MonoBehaviour
         asyncOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(1.5f);
         asyncOperation.allowSceneActivation = true;
+        battleEnd = true;
     }
 
     IEnumerator SwitchPokemon()
@@ -500,8 +504,6 @@ public class Battle : MonoBehaviour
             state = BattleState.EnemyAttack;
             yield return dialogue.SetDialogue("You fail to escape!");
             StartCoroutine(Attack());
-        }
-
-       
+        }     
     }
 }
