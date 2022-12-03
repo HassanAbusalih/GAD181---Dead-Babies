@@ -2,36 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     public List<TextMeshProUGUI> menuSelect;
     int selectionA;
     int selectionB;
-    GameObject player;
-    GameObject gameMenu;
-    bool flag = false;
+    PlayerMovement player;
+
     private void Start()
-    {     
-        gameMenu = FindObjectOfType<MainMenu>().gameObject;
-        player = GameObject.Find("Player(Pink)");
-        player.SetActive(false);
+    {
+        DontDestroyOnLoad(gameObject);
+        player = GameObject.Find("Player(Pink)").GetComponent<PlayerMovement>();
+        player.gameObject.SetActive(false);
     }
+
     private void OnDisable()
     {
-        player.SetActive(true);
-        gameMenu.tag = ("main");
+        player.gameObject.SetActive(true);
+    }
+
+    private void OnEnable()
+    {
+        player.gameObject.SetActive(false);
     }
 
     private void Update()
     {
-        if(gameMenu.tag == ("main"))
+        if (gameObject.activeSelf)
         {
-            gameObject.SetActive(false);
+            Selection();
         }
-        DontDestroyOnLoad(gameObject);
-        Selection();
-        ActivateSelection();
+        MainMenu[] gameMenus = FindObjectsOfType<MainMenu>(true);
+        if (gameObject.activeSelf && gameMenus.Length > 1)
+        {
+            Destroy(gameObject);
+        }
     }
     public void UpdateMenuSelection(int selection, List<TextMeshProUGUI> menu)
     {
@@ -67,16 +74,13 @@ public class MainMenu : MonoBehaviour
         {          
             UpdateMenuSelection(selectionA, menuSelect);
         }
-
-    }
-    public void ActivateSelection()
-    {
-        if(selectionA == 0 && Input.GetKeyDown(KeyCode.Space))
+        if (selectionA == 0 && Input.GetKeyDown(KeyCode.Space))
         {
+            player = FindObjectOfType<PlayerMovement>(true);
             gameObject.SetActive(false);
-                        
+
         }
-        if (selectionA == 3 && Input.GetKeyDown(KeyCode.Space)) 
+        if (selectionA == 3 && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("quit");
             Application.Quit();
