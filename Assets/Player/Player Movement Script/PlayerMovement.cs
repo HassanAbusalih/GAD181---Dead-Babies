@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.RightShift))
+        if(Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift))
         {
             rb2D.MovePosition(rb2D.position + movementOfPlayer * runSpeed * Time.fixedDeltaTime);
         }
@@ -106,14 +106,14 @@ public class PlayerMovement : MonoBehaviour
                 StartEncounter(Random.Range(7, 11));
             }
         }
-        //else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
-        //{
-        //    touching = true;
-           // if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
-            //{
-              //  StartEncounter(Random.Range(10, 13));
-            //}
-        //}
+        else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("4")))
+        {
+            touching = true;
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
+            {
+                StartEncounter(Random.Range(10, 13));
+            }
+        }
         else if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("5")))
         {
             touching = true;

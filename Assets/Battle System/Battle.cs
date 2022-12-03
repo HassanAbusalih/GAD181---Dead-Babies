@@ -21,6 +21,8 @@ public class Battle : MonoBehaviour
     public Animator playerattack;
     public SpriteRenderer enemypokemon;
     public EvoloutionUI evoloutionUI;
+    public bool battleEnd;
+    GameObject mainMenu;
     public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
@@ -28,6 +30,7 @@ public class Battle : MonoBehaviour
     int selectionB;
     int selectionC;
     bool deadPokemon;
+
     int xpGain;
 
     // Start is called before the first frame update
@@ -119,9 +122,9 @@ public class Battle : MonoBehaviour
             Move move = playerMon.pokemon.pMoves[selection];
             playerMon.pokemon.pMoves[selection].powerpoints--;
             playerattack.SetBool("attack", true);
-            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             (bool fainted, bool crit, float type) battleResult = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
+            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             selection = 0;
             if (battleResult.crit && battleResult.type > 1)
             {
@@ -185,9 +188,9 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
-            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             (bool fainted, bool crit, float type) battleResult = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
+            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             if (battleResult.crit && battleResult.type > 1)
             {
                 yield return dialogue.SetDialogue("A super effective critical hit!");
@@ -446,6 +449,7 @@ public class Battle : MonoBehaviour
         asyncOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(1.5f);
         asyncOperation.allowSceneActivation = true;
+        battleEnd = true;
     }
 
     IEnumerator SwitchPokemon()
@@ -500,8 +504,6 @@ public class Battle : MonoBehaviour
             state = BattleState.EnemyAttack;
             yield return dialogue.SetDialogue("You fail to escape!");
             StartCoroutine(Attack());
-        }
-
-       
+        }     
     }
 }
