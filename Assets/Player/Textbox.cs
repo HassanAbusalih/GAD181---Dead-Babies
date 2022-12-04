@@ -37,13 +37,16 @@ public class Textbox : MonoBehaviour
                 }
                 NextLine();
             }
-            else if (!saveLoad.isTrainer && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}") == 1 && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}1") != 1)
+            else if (trainer != null)
             {
-                PlayerPrefs.SetInt($"{trainer.trainerBase.trainerName}1", 1);
-                isActive = true;
-                textBox.SetActive(true);
-                text.gameObject.SetActive(true);
-                NextLine();
+                if (!saveLoad.isTrainer && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}") == 1 && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}1") != 1)
+                {
+                    PlayerPrefs.SetInt($"{trainer.trainerBase.trainerName}1", 1);
+                    isActive = true;
+                    textBox.SetActive(true);
+                    text.gameObject.SetActive(true);
+                    NextLine();
+                }
             }
         }
     }
