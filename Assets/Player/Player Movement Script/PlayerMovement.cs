@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         {
             cooldown += Time.deltaTime;
         }
-        if (!switchPokemon.isActive && !encounter && !switchPokemon.controls)
+        if (!switchPokemon.isActive && !encounter && !switchPokemon.quitting)
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
@@ -168,4 +168,5 @@ public class PlayerMovement : MonoBehaviour
         PlayerPrefs.DeleteKey("X");
         PlayerPrefs.DeleteKey("Y");
     }
+
 }

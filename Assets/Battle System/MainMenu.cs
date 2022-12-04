@@ -1,38 +1,83 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public List<TextMeshProUGUI> menuSelect;
-    int selectionA;
-    int selectionB;
+    [SerializeField] GameObject menuText;
+    [SerializeField] GameObject newGame;
+    [SerializeField] GameObject page1;
+    [SerializeField] GameObject page2;
+    [SerializeField] List<TextMeshProUGUI> menuSelect;
+    [SerializeField] List<TextMeshProUGUI> starterNames;
+    [SerializeField] List<Pokemon> starters;
+    [SerializeField] List<Image> starterSprites;
+    [SerializeField] AudioSource menuTheme;
+    [SerializeField] AudioSource gameTheme;
     PlayerMovement player;
+    int selection;
+    bool ng;
+    bool guide;
 
     private void Start()
     {
+        MainMenu[] gameMenus = FindObjectsOfType<MainMenu>(true);
+        Canvas canvas = GetComponent<Canvas>();
+        if (!canvas.enabled && gameMenus.Length == 1)
+        {
+            canvas.enabled = true;
+        }
+        player = FindObjectOfType<PlayerMovement>();
         DontDestroyOnLoad(gameObject);
-        player = GameObject.Find("Player(Pink)").GetComponent<PlayerMovement>();
         player.gameObject.SetActive(false);
+        menuTheme.Play();
     }
 
     private void OnDisable()
     {
-        player.gameObject.SetActive(true);
+        if (player != null)
+        {
+            player.gameObject.SetActive(true);
+        }
+        else
+        {
+            player = FindObjectOfType<PlayerMovement>();
+            gameTheme = player.GetComponent<AudioSource>();
+        }
+        menuTheme.Stop();
+        gameTheme.Play();
     }
 
     private void OnEnable()
     {
-        player.gameObject.SetActive(false);
+        if (player != null)
+        {
+            player.gameObject.SetActive(false);
+        }
+        else
+        {
+            player = FindObjectOfType<PlayerMovement>();
+            gameTheme = player.GetComponent<AudioSource>();
+        }
+        menuTheme.Play();
+        gameTheme.Stop();
     }
 
     private void Update()
     {
-        if (gameObject.activeSelf)
+        if (gameObject.activeSelf && !ng && !guide)
         {
             Selection();
+        }
+        else if (ng)
+        {
+            StarterSelection();
+        }
+        else if (guide)
+        {
+            GuideSelection();
         }
         MainMenu[] gameMenus = FindObjectsOfType<MainMenu>(true);
         if (gameObject.activeSelf && gameMenus.Length > 1)
@@ -51,39 +96,105 @@ public class MainMenu : MonoBehaviour
             else menu[i].color = Color.black;
         }
     }
+
+    void StarterSelection()
+    {
+        UpdateMenuSelection(selection, starterNames);
+        if (Input.GetKeyDown(KeyCode.A) && selection > 0)
+        {
+            selection--;
+        }
+        if (Input.GetKeyDown(KeyCode.D) && selection < starterNames.Count - 1)
+        {
+            selection++;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            FindObjectOfType<PokemonParties>().playerParty.Add(starters[selection]);
+            FindObjectOfType<PokemonParties>().playerParty[0].level = 5;
+            selection = 0;
+            ng = false;
+            player = FindObjectOfType<PlayerMovement>(true);
+            newGame.SetActive(false);
+            menuText.SetActive(true);
+            gameObject.SetActive(false);
+        }
+    }
+
+    void SetStarters()
+    {
+        for (int i = 0; i < starterNames.Count; i++)
+        {
+            starterSprites[i].sprite = starters[i].pokemonBase.pokeSprite;
+            starterNames[i].text = starters[i].pokemonBase.pokeName;
+        }
+    }
+
     public void Selection()
     {
         
         if (Input.GetKeyDown(KeyCode.S))
         {
-            if(selectionA < menuSelect.Count -1)
+            if(selection < menuSelect.Count - 1)
             {
-                selectionA++;
-                UpdateMenuSelection(selectionA, menuSelect);
+                selection++;
+                UpdateMenuSelection(selection, menuSelect);
             }          
         }
         if(Input.GetKeyDown(KeyCode.W))
         {
-            if (selectionA > 0)
+            if (selection > 0)
             {
-                selectionA--;
-                UpdateMenuSelection(selectionA, menuSelect);
+                selection--;
+                UpdateMenuSelection(selection, menuSelect);
             }
         }
-        if (selectionA == 0)
+        if (selection == 0)
         {          
-            UpdateMenuSelection(selectionA, menuSelect);
+            UpdateMenuSelection(selection, menuSelect);
         }
-        if (selectionA == 0 && Input.GetKeyDown(KeyCode.Space))
+        if (selection == 0 && Input.GetKeyDown(KeyCode.Space))
+        {
+            newGame.SetActive(true);
+            menuText.SetActive(false);
+            SetStarters();
+            ng = true;
+            selection = 0;
+        }
+        if (selection == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             player = FindObjectOfType<PlayerMovement>(true);
             gameObject.SetActive(false);
-
         }
-        if (selectionA == 3 && Input.GetKeyDown(KeyCode.Space))
+        else if (selection == 2 && Input.GetKeyDown(KeyCode.Space))
+        {
+            guide = true;
+            page1.SetActive(true);
+        }
+        if (selection == 3 && Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("quit");
             Application.Quit();
+        }
+    }
+
+    void GuideSelection()
+    {
+        if (page1.activeSelf && Input.GetKeyDown(KeyCode.D))
+        {
+            page1.SetActive(false);
+            page2.SetActive(true);
+        }
+        if (page2.activeSelf && Input.GetKeyDown(KeyCode.A))
+        {
+            page2.SetActive(false);
+            page1.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Escape))
+        {
+            page1.SetActive(false);
+            page2.SetActive(false);
+            guide = false;
         }
     }
 }

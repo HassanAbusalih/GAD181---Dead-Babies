@@ -6,8 +6,8 @@ public class SwitchPokemon : MonoBehaviour
 {
     public GameObject pokemonUI;
     public GameObject pokemons;
-    public GameObject controlsUI1;
-    public GameObject controlsUI2;
+    public GameObject exit;
+    public List<TextMeshProUGUI> yesNo;
     public List<TextMeshProUGUI> pokemonNames;
     public TextMeshProUGUI uiText;
     public PokemonParties pokemonParties;
@@ -18,7 +18,7 @@ public class SwitchPokemon : MonoBehaviour
     Pokemon pokemonA;
     Pokemon pokemonB;
     public bool isActive;
-    public bool controls;
+    public bool quitting;
     bool switching;
     bool fusing;
 
@@ -27,14 +27,11 @@ public class SwitchPokemon : MonoBehaviour
     void Update()
     {
         Activate();
-        if (controls)
+        if (quitting)
         {
-            if (selectionA == 0)
-            {
-                selectionA++;
-                controlsUI1.SetActive(true);
-            }
-            ControlsSelection(controlsUI1 , controlsUI2);
+            exit.SetActive(true);
+            UpdateMenuSelection(selectionB, yesNo);
+            QuitSelection(yesNo);
         }
         else if (isActive)
         {
@@ -59,8 +56,7 @@ public class SwitchPokemon : MonoBehaviour
         {
             pokemonUI.SetActive(false);
             pokemons.SetActive(false);
-            controlsUI1.SetActive(false);
-            controlsUI2.SetActive(false);
+            exit.SetActive(false);
             selectionA = 0;
             selectionB = 0;
             switching = false;
@@ -86,19 +82,24 @@ public class SwitchPokemon : MonoBehaviour
         }
     }
 
-    public void ControlsSelection(GameObject page1, GameObject page2)
+    public void QuitSelection(List<TextMeshProUGUI> yesNo)
     {
         if (Input.GetKeyDown(KeyCode.A) && selectionB == 1)
         {
             selectionB--;
-            page1.SetActive(true);
-            page2.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.D) && selectionB == 0)
         {
             selectionB++;
-            page2.SetActive(true);
-            page1.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && selectionB == 0)
+        {
+            quitting = false;
+            FindObjectOfType<MainMenu>(true).gameObject.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && selectionB == 1)
+        {
+            quitting = false;
         }
     }
 
@@ -116,19 +117,19 @@ public class SwitchPokemon : MonoBehaviour
 
     void Activate()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) && !isActive && !controls)
+        if (Input.GetKeyDown(KeyCode.Tab) && !isActive && !quitting)
         {
             isActive = true;
-            controls = false;
+            quitting = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && !controls && !isActive)
+        else if (Input.GetKeyDown(KeyCode.Escape) && !quitting && !isActive)
         {
-            controls = true;
+            quitting = true;
             isActive = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && controls)
+        else if (Input.GetKeyDown(KeyCode.Escape) && quitting)
         {
-            controls = false;
+            quitting = false;
         }
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {
