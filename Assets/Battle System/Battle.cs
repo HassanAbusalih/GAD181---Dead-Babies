@@ -19,6 +19,7 @@ public class Battle : MonoBehaviour
     public Animator captureanimation;
     public Animator capturefailanimation;
     public Animator playerattack;
+    public Animator enemyattack;
     public SpriteRenderer enemypokemon;
     public EvoloutionUI evoloutionUI;
     public bool battleEnd;
@@ -108,6 +109,10 @@ public class Battle : MonoBehaviour
 
     IEnumerator PlayerMenu()
     {
+        playerattack.SetBool("attack", false);
+        playerattack.SetBool("defense", false);
+        enemyattack.SetBool("enemy defense", false);
+        enemyattack.SetBool("enemy attack", false);
         yield return dialogue.SetDialogue("Select an action.");
         state = BattleState.PlayerMenu;
         dialogue.info.SetActive(false);
@@ -122,6 +127,8 @@ public class Battle : MonoBehaviour
             Move move = playerMon.pokemon.pMoves[selection];
             playerMon.pokemon.pMoves[selection].powerpoints--;
             playerattack.SetBool("attack", true);
+            yield return new WaitForSeconds(1.15f);
+            enemyattack.SetBool("enemy defense", true);
             (bool fainted, bool crit, float type) battleResult = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
             yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");

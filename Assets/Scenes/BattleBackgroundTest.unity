@@ -7899,8 +7899,10 @@ MonoBehaviour:
   captureanimation: {fileID: 70408684}
   capturefailanimation: {fileID: 1730308616}
   playerattack: {fileID: 2087188721}
+  enemyattack: {fileID: 1869626899}
   enemypokemon: {fileID: 1869626897}
   evoloutionUI: {fileID: 1176521208}
+  battleEnd: 0
   xpBar: {fileID: 383926248}
 --- !u!114 &1176521206
 MonoBehaviour:
@@ -8917,8 +8919,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77dc1eff7c43e094f9eaa18ac1280dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerParty: []
-  enemyParty: []
+  playerParty:
+  - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
+    level: 1
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  enemyParty:
+  - pokemonBase: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
+    level: 1
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
   wildPokemon: []
   allPokemon:
   - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
@@ -10483,6 +10497,7 @@ GameObject:
   - component: {fileID: 1869626896}
   - component: {fileID: 1869626897}
   - component: {fileID: 1869626898}
+  - component: {fileID: 1869626899}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -10499,7 +10514,7 @@ Transform:
   m_GameObject: {fileID: 1869626895}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 202, y: 57, z: 0}
-  m_LocalScale: {x: 102.95341, y: 102.95341, z: 0}
+  m_LocalScale: {x: 102.95341, y: 102.9534, z: 0}
   m_Children: []
   m_Father: {fileID: 1933986251}
   m_RootOrder: 1
@@ -10575,6 +10590,25 @@ MonoBehaviour:
     currentXpPoints: 0
     xpThreshhold: 0
   bsprite: 0
+--- !u!95 &1869626899
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869626895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3dbfff36c3710c34b94349bfbf03490f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1883934644
 GameObject:
   m_ObjectHideFlags: 0
