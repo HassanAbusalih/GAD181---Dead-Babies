@@ -8920,14 +8920,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerParty:
-  - pokemonBase: {fileID: 11400000, guid: 4b3ce29d0f191554b8e62d6908fc7ce4, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: bc25f40e96b73e640869b65844309df4, type: 2}
     level: 1
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
   enemyParty:
-  - pokemonBase: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
+  - pokemonBase: {fileID: 11400000, guid: bc25f40e96b73e640869b65844309df4, type: 2}
     level: 1
     totalHP: 0
     currentHP: 0

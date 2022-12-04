@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Sampsage
+  m_EditorClassIdentifier: 
+  pokeName: Sampsage
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 515facf6742ab2f4898d2bb4aaec6fd1, type: 3}
+  backSprite: {fileID: 21300000, guid: 4d297a00f24aed14b813ca591feb1397, type: 3}
+  maxHp: 106
+  attack: 110
+  defense: 90
+  spAttack: 154
+  spDefence: 90
+  speed: 130
+  type1: 13
+  type2: 0
+  pokeNumber: 24
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 3eadf5374200d014e9d2f1869114a6f2, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: cf8c9dd444a68c8478ed18cc0ce329c5, type: 2}
+    level: 6
+  - moves: {fileID: 11400000, guid: 6b2ea974222d7f44d8754da253d8edf6, type: 2}
+    level: 18
+  - moves: {fileID: 11400000, guid: 7e5dec52d39339f429ff5980a420fbbc, type: 2}
+    level: 26
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

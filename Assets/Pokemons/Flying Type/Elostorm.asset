@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Elostorm
+  m_EditorClassIdentifier: 
+  pokeName: Elostorm
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 83f1756e3217acd43a9b643c979dc0d2, type: 3}
+  backSprite: {fileID: 21300000, guid: 03bcfbadf54401d4381c7149131b6780, type: 3}
+  maxHp: 83
+  attack: 80
+  defense: 80
+  spAttack: 135
+  spDefence: 80
+  speed: 121
+  type1: 1
+  type2: 12
+  pokeNumber: 14
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: e578a46a1fb2cb14e83a4ebcdcfccfca, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 306e8926963feba44a7dde1d3cdb44af, type: 2}
+    level: 5
+  - moves: {fileID: 11400000, guid: 0f9721a24d70d044d98531369503ba9a, type: 2}
+    level: 7
+  - moves: {fileID: 11400000, guid: b933fb7d89bcad747b060c5c81f8246e, type: 2}
+    level: 12
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 
