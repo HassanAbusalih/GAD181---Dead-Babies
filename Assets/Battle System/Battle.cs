@@ -195,6 +195,10 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
+            enemyattack.SetBool("enemy defense", false);
+            playerattack.SetBool("attack", false);
+            enemyattack.SetBool("enemy attack", true);
+            playerattack.SetBool("defense", true);
             (bool fainted, bool crit, float type) battleResult = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
             yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
