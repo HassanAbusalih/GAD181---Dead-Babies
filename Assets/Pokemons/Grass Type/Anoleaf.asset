@@ -24,6 +24,8 @@ MonoBehaviour:
   speed: 45
   type1: 5
   type2: 10
+  type1Color: {r: 0.08627451, g: 0.5647059, b: 0, a: 0}
+  type2Color: {r: 0.3331351, g: 0.16237986, b: 0.38679248, a: 0}
   pokeNumber: 7
   learnableMoves:
   - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}

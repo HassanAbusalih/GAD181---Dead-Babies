@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class SwitchPokemon : MonoBehaviour
 {
     public GameObject pokemonUI;
     public GameObject pokemons;
     public GameObject exit;
+    public GameObject spriteBox;
+    public Image sprite;
     public List<TextMeshProUGUI> yesNo;
     public List<TextMeshProUGUI> pokemonNames;
     public TextMeshProUGUI uiText;
@@ -38,6 +41,8 @@ public class SwitchPokemon : MonoBehaviour
             SetPokemonNames(pokemonParties.playerParty);
             pokemonUI.SetActive(true);
             pokemons.SetActive(true);
+            sprite.enabled = true;
+            spriteBox.SetActive(true);
             PokemonSelection();
             if (flag1 == 1)
             {
@@ -56,6 +61,8 @@ public class SwitchPokemon : MonoBehaviour
         {
             pokemonUI.SetActive(false);
             pokemons.SetActive(false);
+            sprite.enabled = false;
+            spriteBox.SetActive(false);
             exit.SetActive(false);
             selectionA = 0;
             selectionB = 0;
@@ -73,6 +80,7 @@ public class SwitchPokemon : MonoBehaviour
             if (selection == i)
             {
                 menu[i].color = Color.blue;
+                sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
             }
             else menu[i].color = Color.black;
         }
@@ -108,7 +116,13 @@ public class SwitchPokemon : MonoBehaviour
         for (int i = 0; i < pokemonNames.Count; i++)
         {
             if (i < pokemons.Count)
-                pokemonNames[i].text = pokemons[i].pokemonBase.pokeName;
+            {
+                pokemonNames[i].text = $"{pokemons[i].pokemonBase.pokeName} -  <color=#{ColorUtility.ToHtmlStringRGB(pokemons[i].pokemonBase.type1Color)}>{pokemons[i].pokemonBase.type1}</color>";
+                if (pokemons[i].pokemonBase.type2 != PokemonType.None)
+                {
+                    pokemonNames[i].text += $" / <color=#{ColorUtility.ToHtmlStringRGB(pokemons[i].pokemonBase.type2Color)}>{pokemons[i].pokemonBase.type2}</color>";
+                }
+            }
             else
                 pokemonNames[i].text = "-";
         }

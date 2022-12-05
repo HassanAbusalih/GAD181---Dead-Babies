@@ -110,6 +110,9 @@ public class MainMenu : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            PlayerPrefs.DeleteAll();
+            player.gameObject.transform.position = new Vector2(0, 0);
+            FindObjectOfType<PokemonParties>().playerParty.Clear();
             FindObjectOfType<PokemonParties>().playerParty.Add(starters[selection]);
             FindObjectOfType<PokemonParties>().playerParty[0].level = 5;
             selection = 0;
@@ -163,8 +166,11 @@ public class MainMenu : MonoBehaviour
         }
         if (selection == 1 && Input.GetKeyDown(KeyCode.Space))
         {
-            player = FindObjectOfType<PlayerMovement>(true);
-            gameObject.SetActive(false);
+            if (FindObjectOfType<PokemonParties>().playerParty.Count >= 1)
+            {
+                player = FindObjectOfType<PlayerMovement>(true);
+                gameObject.SetActive(false);
+            }
         }
         else if (selection == 2 && Input.GetKeyDown(KeyCode.Space))
         {
@@ -173,6 +179,12 @@ public class MainMenu : MonoBehaviour
         }
         if (selection == 3 && Input.GetKeyDown(KeyCode.Space))
         {
+            List<Pokemon> playerPokemon = FindObjectOfType<PokemonParties>().playerParty;
+            if (playerPokemon.Count > 0)
+            {
+                player.saveLoad.PlayerSave();
+                player.SavePos();
+            }
             Debug.Log("quit");
             Application.Quit();
         }
