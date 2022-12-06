@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Bubble Beam
   m_EditorClassIdentifier: 
   movename: Bubble beam
+  movescolor: {r: 0, g: 0.21403871, b: 0.754717, a: 0}
   description: 
   type: 3
   category: 2
   power: 55
   accuracy: 100
-  powerpoints: 45
+  powerpoints: 8

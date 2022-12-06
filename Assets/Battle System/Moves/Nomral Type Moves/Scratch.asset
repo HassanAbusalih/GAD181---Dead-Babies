@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Scratch
   m_EditorClassIdentifier: 
   movename: Scratch
+  movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 1
   category: 3
   power: 40
   accuracy: 100
-  powerpoints: 25
+  powerpoints: 15

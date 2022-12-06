@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Slice Current
   m_EditorClassIdentifier: 
   movename: Slice Current
+  movescolor: {r: 0.735849, g: 0.48995906, b: 0, a: 0}
   description: 
   type: 4
   category: 2
   power: 75
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 5

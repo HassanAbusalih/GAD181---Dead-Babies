@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 public class SwitchPokemon : MonoBehaviour
 {
     public GameObject pokemonUI;
     public GameObject pokemons;
-    public GameObject controlsUI1;
-    public GameObject controlsUI2;
+    public GameObject exit;
+    public GameObject spriteBox;
+    public Image sprite;
+    public List<TextMeshProUGUI> yesNo;
     public List<TextMeshProUGUI> pokemonNames;
     public TextMeshProUGUI uiText;
     public PokemonParties pokemonParties;
@@ -18,7 +21,7 @@ public class SwitchPokemon : MonoBehaviour
     Pokemon pokemonA;
     Pokemon pokemonB;
     public bool isActive;
-    public bool controls;
+    public bool quitting;
     bool switching;
     bool fusing;
 
@@ -27,20 +30,19 @@ public class SwitchPokemon : MonoBehaviour
     void Update()
     {
         Activate();
-        if (controls)
+        if (quitting)
         {
-            if (selectionA == 0)
-            {
-                selectionA++;
-                controlsUI1.SetActive(true);
-            }
-            ControlsSelection(controlsUI1 , controlsUI2);
+            exit.SetActive(true);
+            UpdateMenuSelection(selectionB, yesNo);
+            QuitSelection(yesNo);
         }
         else if (isActive)
         {
             SetPokemonNames(pokemonParties.playerParty);
             pokemonUI.SetActive(true);
             pokemons.SetActive(true);
+            sprite.enabled = true;
+            spriteBox.SetActive(true);
             PokemonSelection();
             if (flag1 == 1)
             {
@@ -59,8 +61,9 @@ public class SwitchPokemon : MonoBehaviour
         {
             pokemonUI.SetActive(false);
             pokemons.SetActive(false);
-            controlsUI1.SetActive(false);
-            controlsUI2.SetActive(false);
+            sprite.enabled = false;
+            spriteBox.SetActive(false);
+            exit.SetActive(false);
             selectionA = 0;
             selectionB = 0;
             switching = false;
@@ -77,6 +80,7 @@ public class SwitchPokemon : MonoBehaviour
             if (selection == i)
             {
                 menu[i].color = Color.blue;
+                sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
             }
             else menu[i].color = Color.black;
         }
@@ -86,19 +90,24 @@ public class SwitchPokemon : MonoBehaviour
         }
     }
 
-    public void ControlsSelection(GameObject page1, GameObject page2)
+    public void QuitSelection(List<TextMeshProUGUI> yesNo)
     {
         if (Input.GetKeyDown(KeyCode.A) && selectionB == 1)
         {
             selectionB--;
-            page1.SetActive(true);
-            page2.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.D) && selectionB == 0)
         {
             selectionB++;
-            page2.SetActive(true);
-            page1.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && selectionB == 0)
+        {
+            quitting = false;
+            FindObjectOfType<MainMenu>(true).gameObject.SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Space) && selectionB == 1)
+        {
+            quitting = false;
         }
     }
 
@@ -107,7 +116,13 @@ public class SwitchPokemon : MonoBehaviour
         for (int i = 0; i < pokemonNames.Count; i++)
         {
             if (i < pokemons.Count)
-                pokemonNames[i].text = pokemons[i].pokemonBase.pokeName;
+            {
+                pokemonNames[i].text = $"{pokemons[i].pokemonBase.pokeName} -  <color=#{ColorUtility.ToHtmlStringRGB(pokemons[i].pokemonBase.type1Color)}>{pokemons[i].pokemonBase.type1}</color>";
+                if (pokemons[i].pokemonBase.type2 != PokemonType.None)
+                {
+                    pokemonNames[i].text += $" / <color=#{ColorUtility.ToHtmlStringRGB(pokemons[i].pokemonBase.type2Color)}>{pokemons[i].pokemonBase.type2}</color>";
+                }
+            }
             else
                 pokemonNames[i].text = "-";
         }
@@ -116,19 +131,19 @@ public class SwitchPokemon : MonoBehaviour
 
     void Activate()
     {
-        if (Input.GetKeyDown(KeyCode.Tab) && !isActive && !controls)
+        if (Input.GetKeyDown(KeyCode.Tab) && !isActive && !quitting)
         {
             isActive = true;
-            controls = false;
+            quitting = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && !controls && !isActive)
+        else if (Input.GetKeyDown(KeyCode.Escape) && !quitting && !isActive)
         {
-            controls = true;
+            quitting = true;
             isActive = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && controls)
+        else if (Input.GetKeyDown(KeyCode.Escape) && quitting)
         {
-            controls = false;
+            quitting = false;
         }
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {

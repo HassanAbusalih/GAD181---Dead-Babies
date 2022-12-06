@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Sockeserp
+  m_EditorClassIdentifier: 
+  pokeName: Sockeserp
+  description: 
+  pokeSprite: {fileID: 21300000, guid: c44a2289ea689f54791a60183dd54d67, type: 3}
+  backSprite: {fileID: 21300000, guid: 41b0749ad058e6444ab95dfaed524792, type: 3}
+  maxHp: 35
+  attack: 55
+  defense: 40
+  spAttack: 50
+  spDefence: 50
+  speed: 90
+  type1: 4
+  type2: 0
+  type1Color: {r: 0.8313726, g: 0.6509804, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  pokeNumber: 10
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 68ae3b6aa7c637641bb44a850c9571a4, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 130b194de95617a46a607ac47c945771, type: 2}
+    level: 5
+  - moves: {fileID: 11400000, guid: 8eaedd49a66c86c429873123fffa3ad1, type: 2}
+    level: 7
+  - moves: {fileID: 11400000, guid: 54d6ed8f311b39a418d138bbeedda55a, type: 2}
+    level: 12
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

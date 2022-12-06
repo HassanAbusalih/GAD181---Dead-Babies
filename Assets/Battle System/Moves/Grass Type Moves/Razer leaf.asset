@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Razer leaf
   m_EditorClassIdentifier: 
   movename: Razer leaf
+  movescolor: {r: 0.087778755, g: 0.5660378, b: 0, a: 0}
   description: 
   type: 5
   category: 2
   power: 45
   accuracy: 100
-  powerpoints: 30
+  powerpoints: 10

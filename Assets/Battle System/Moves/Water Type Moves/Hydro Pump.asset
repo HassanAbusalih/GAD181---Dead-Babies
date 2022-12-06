@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Hydro Pump
   m_EditorClassIdentifier: 
   movename: Hydro Pump
+  movescolor: {r: 0, g: 0.21403871, b: 0.754717, a: 0}
   description: 
   type: 3
   category: 2
   power: 60
   accuracy: 100
-  powerpoints: 50
+  powerpoints: 5

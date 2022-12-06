@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Barrier
   m_EditorClassIdentifier: 
   movename: Barrier
+  movescolor: {r: 0.6792453, g: 0, b: 0.46672884, a: 0}
   description: 
   type: 13
   category: 2
   power: 45
   accuracy: 100
-  powerpoints: 40
+  powerpoints: 8

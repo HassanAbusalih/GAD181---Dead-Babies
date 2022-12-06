@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Fire Bolt
   m_EditorClassIdentifier: 
   movename: Fire Bolt
+  movescolor: {r: 0.6509434, g: 0, b: 0, a: 0}
   description: 
   type: 2
   category: 2
   power: 65
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 8

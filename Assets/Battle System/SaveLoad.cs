@@ -8,7 +8,6 @@ public class SaveLoad : MonoBehaviour
     Pokemon randomPokemon;
     int pokemonNumber;
     int enemyPokemonNumber;
-    int enemyLevel;
     int beforeLoad;
     int afterLoad;
     public string trainerName;
@@ -76,6 +75,7 @@ public class SaveLoad : MonoBehaviour
                 {
                     Pokemon pokemon = new Pokemon(pokemonParties.allPokemon[i].pokemonBase, PlayerPrefs.GetInt($"EncounterLevel"));
                     pokemonParties.enemyParty.Add(pokemon);
+                    break;
                 }
             }
             PlayerPrefs.DeleteKey("Encounter");

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Rain Water
   m_EditorClassIdentifier: 
   movename: Rain Water
+  movescolor: {r: 0, g: 0.12315698, b: 0.6698113, a: 0}
   description: 
   type: 3
   category: 2
   power: 75
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 5

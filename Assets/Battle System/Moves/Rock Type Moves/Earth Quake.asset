@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Earth Quake
   m_EditorClassIdentifier: 
   movename: Earth Quake
+  movescolor: {r: 0.33962262, g: 0.14042947, b: 0.017301502, a: 0}
   description: 
   type: 8
   category: 2
   power: 60
   accuracy: 100
-  powerpoints: 50
+  powerpoints: 8

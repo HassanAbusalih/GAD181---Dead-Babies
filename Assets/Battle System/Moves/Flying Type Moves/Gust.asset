@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Gust
   m_EditorClassIdentifier: 
   movename: Gust
+  movescolor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
   description: 
   type: 12
   category: 2
   power: 50
   accuracy: 100
-  powerpoints: 45
+  powerpoints: 8

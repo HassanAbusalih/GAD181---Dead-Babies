@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: Topaz
   m_EditorClassIdentifier: 
-  TrainerName: Topaz
-  TrainerPokemons: 
-  TrainerSprite: {fileID: -2810842130005341624, guid: e964b249e38689149a5d8509545f0b9b, type: 3}
+  trainerName: Topaz
+  trainerSprite: {fileID: 0}
+  trainerPokemon: []
+  battled: 0

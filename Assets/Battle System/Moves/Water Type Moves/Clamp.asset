@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Clamp
   m_EditorClassIdentifier: 
   movename: Clamp
+  movescolor: {r: 0, g: 0.21403871, b: 0.754717, a: 0}
   description: 
   type: 3
   category: 2
   power: 40
   accuracy: 100
-  powerpoints: 30
+  powerpoints: 12

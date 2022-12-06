@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Vine Whip
   m_EditorClassIdentifier: 
   movename: Vine Whip
+  movescolor: {r: 0.087778755, g: 0.5660378, b: 0, a: 0}
   description: 
   type: 5
   category: 2
   power: 35
   accuracy: 100
-  powerpoints: 25
+  powerpoints: 15

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Eaglace
+  m_EditorClassIdentifier: 
+  pokeName: Eaglace
+  description: 
+  pokeSprite: {fileID: 21300000, guid: ba378d260af38594db7470b5ed775188, type: 3}
+  backSprite: {fileID: 21300000, guid: 7ac5837e77b69ed4a8d83beb35058858, type: 3}
+  maxHp: 60
+  attack: 110
+  defense: 70
+  spAttack: 60
+  spDefence: 60
+  speed: 100
+  type1: 1
+  type2: 12
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0.5568628, g: 0.5568628, b: 0.5568628, a: 0}
+  pokeNumber: 15
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: a43aa5fab682a1143b8d50c2dcb1eb82, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: bc90d24553b512e48b12a451cb7d064a, type: 2}
+    level: 4
+  - moves: {fileID: 11400000, guid: a408e84411b6e07438b923dffacdf0a5, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: b0f927d2eb34454449d09b27bb761112, type: 2}
+    level: 11
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

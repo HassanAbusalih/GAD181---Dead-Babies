@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Pluck
   m_EditorClassIdentifier: 
   movename: Pluck
+  movescolor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
   description: 
   type: 12
   category: 2
   power: 50
   accuracy: 100
-  powerpoints: 40
+  powerpoints: 8

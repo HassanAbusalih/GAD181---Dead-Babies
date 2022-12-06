@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Bonk
   m_EditorClassIdentifier: 
   movename: Bonk
+  movescolor: {r: 0, g: 0, b: 0, a: 0}
   description: 
   type: 1
   category: 3
   power: 65
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 5

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Slash
   m_EditorClassIdentifier: 
   movename: Slash
+  movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 1
   category: 3
   power: 45
   accuracy: 100
-  powerpoints: 30
+  powerpoints: 12

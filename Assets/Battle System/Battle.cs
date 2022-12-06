@@ -18,8 +18,12 @@ public class Battle : MonoBehaviour
     public SaveLoad saveLoad;
     public Animator captureanimation;
     public Animator capturefailanimation;
+    public Animator playerattack;
+    public Animator enemyattack;
     public SpriteRenderer enemypokemon;
     public EvoloutionUI evoloutionUI;
+    public bool battleEnd;
+    GameObject mainMenu;
     public XpBar xpBar;
     Pokemon switchIn;
     BattleState state;
@@ -27,12 +31,14 @@ public class Battle : MonoBehaviour
     int selectionB;
     int selectionC;
     bool deadPokemon;
+
     int xpGain;
 
     // Start is called before the first frame update
 
     void Start()
     {
+        animator.SetBool("BattleStart", true);
         saveLoad.Load();
         for (int i = 0; i < pokemonParties.playerParty.Count; i++)
         {
@@ -58,12 +64,12 @@ public class Battle : MonoBehaviour
             MenuSelection();
             dialogue.UpdateMenuSelection(selectionB, dialogue.menuActions);
         }
-        else if (state == BattleState.PlayerTurn)
+        if (state == BattleState.MoveSelection)
         {
             MoveSelection();
-            dialogue.UpdateMenuSelection(selection, dialogue.pokeMoves);
+            dialogue.UpdateMoveSelection(selection, dialogue.pokeMoves, playerMon.pokemon.pMoves[selection]);
         }
-        else if (state == BattleState.PlayerAttack)
+        if (state == BattleState.PlayerAttack)
         {
             StartCoroutine(Attack());
         }
@@ -75,21 +81,42 @@ public class Battle : MonoBehaviour
         dialogue.SetPokemonNames(pokemonParties.playerParty);
         InitializePokemon();
         xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
-        yield return new WaitForSeconds(0.1f);
-        yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
-        state = BattleState.PlayerMenu;
+        if (saveLoad.isTrainer)
+        {
+            yield return dialogue.SetDialogue($"{saveLoad.trainerName} challenges you!");
+        }
+        else
+        {
+            yield return dialogue.SetDialogue("A wild " + enemyMon.pokemon.pokemonBase.pokeName + " appears!");
+        }
+        yield return new WaitForSeconds(2.1f);
+        animator.SetBool("BattleStart", false);
+        animator.enabled = false;
         yield return dialogue.SetDialogue("Select an action.");
+        state = BattleState.PlayerMenu;
     }
 
     IEnumerator PlayerTurn()
     {
         state = BattleState.Busy;
         yield return dialogue.SetDialogue("Choose a move.");
-        state = BattleState.PlayerTurn;
+        state = BattleState.MoveSelection;
         dialogue.dialoguetext.enabled = false;
+        dialogue.info.SetActive(true);
         dialogue.attacks.SetActive(true);
         dialogue.SetMoves(playerMon.pokemon.pMoves);
+    }
 
+    IEnumerator PlayerMenu()
+    {
+        playerattack.SetBool("attack", false);
+        playerattack.SetBool("defense", false);
+        enemyattack.SetBool("enemy defense", false);
+        enemyattack.SetBool("enemy attack", false);
+        yield return dialogue.SetDialogue("Select an action.");
+        state = BattleState.PlayerMenu;
+        dialogue.info.SetActive(false);
+        dialogue.menu.SetActive(true);
     }
 
     IEnumerator Attack()
@@ -98,14 +125,34 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
-            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            bool fainted = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
+            playerMon.pokemon.pMoves[selection].powerpoints--;
+            playerattack.SetBool("attack", true);
+            yield return new WaitForSeconds(1.15f);
+            enemyattack.SetBool("enemy defense", true);
+            (bool fainted, bool crit, float type) battleResult = enemyMon.pokemon.TakeDamage(move, playerMon.pokemon);
             enemyInfo.DamageTaken();
+            yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
             selection = 0;
-            if (fainted)
+            if (battleResult.crit && battleResult.type > 1)
+            {
+                yield return dialogue.SetDialogue("A super effective critical hit!");
+            }
+            else if (battleResult.crit && battleResult.type < 1)
+            {
+                yield return dialogue.SetDialogue("A critical hit! But it's not very effective...");
+            }
+            else if (battleResult.type > 1)
+            {
+                yield return dialogue.SetDialogue("It's super effective!");
+            }
+            else if (battleResult.type < 1)
+            {
+                yield return dialogue.SetDialogue("It's not very effective...");
+            }
+            if (battleResult.fainted)
             {
                 int enemyLevel = enemyMon.pokemon.level;
-                xpGain = Mathf.FloorToInt((340 * enemyLevel) / 7);
+                xpGain = Mathf.FloorToInt((340 * enemyLevel) / 6);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                 xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
@@ -148,20 +195,38 @@ public class Battle : MonoBehaviour
         {
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
-            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
-            bool fainted = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
+            enemyattack.SetBool("enemy defense", false);
+            playerattack.SetBool("attack", false);
+            enemyattack.SetBool("enemy attack", true);
+            playerattack.SetBool("defense", true);
+            (bool fainted, bool crit, float type) battleResult = playerMon.pokemon.TakeDamage(move, enemyMon.pokemon);
             playerInfo.DamageTaken();
-            if (fainted)
+            yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " uses " + move.Base.name + "!");
+            if (battleResult.crit && battleResult.type > 1)
+            {
+                yield return dialogue.SetDialogue("A super effective critical hit!");
+            }
+            else if (battleResult.crit && battleResult.type < 1)
+            {
+                yield return dialogue.SetDialogue("A critical hit! But it's not very effective...");
+            }
+            else if (battleResult.type > 1)
+            {
+                yield return dialogue.SetDialogue("It's super effective!");
+            }
+            else if (battleResult.type < 1)
+            {
+                yield return dialogue.SetDialogue("It's not very effective...");
+            }
+            if (battleResult.fainted)
             {
                 yield return dialogue.SetDialogue(playerMon.pokemon.pokemonBase.pokeName + " fainted!");
                 pokemonParties.playerParty.Remove(pokemonParties.playerParty[0]);
-                PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 if (pokemonParties.playerParty.Count == 0)
                 {
                     state = BattleState.EnemyWin;
                     yield return dialogue.SetDialogue("You lose!");
-                    PlayerPrefs.DeleteAll();
                     Application.Quit();
                 }
                 else
@@ -175,9 +240,7 @@ public class Battle : MonoBehaviour
             }
             else
             {
-                state = BattleState.PlayerMenu;
-                dialogue.menu.SetActive(true);
-                StartCoroutine(dialogue.SetDialogue("Select an action."));
+                StartCoroutine(PlayerMenu());
             }
         }
     }
@@ -187,19 +250,19 @@ public class Battle : MonoBehaviour
         if (saveLoad.isTrainer == true)
         {
             StartCoroutine(dialogue.SetDialogue("You cannot capture a trainer's Pokemon."));
+            state = BattleState.PlayerMenu;
         }
         else if (pokemonParties.playerParty.Count < 6)
         {
             captureanimation.SetBool("Capture", true);
             yield return new WaitForSeconds(1);
             enemypokemon.GetComponent<SpriteRenderer>().enabled = false;
-            if (Random.Range(0, 10) <= 8)
+            if (Random.Range(0, 10) <= 6)
             {
                 state = BattleState.PlayerWin;
                 pokemonParties.playerParty.Add(pokemonParties.enemyParty[0]);
                 Victory();
                 StartCoroutine(dialogue.SetDialogue("You have captured a " + pokemonParties.enemyParty[0].pokemonBase.pokeName + "!"));
-                PlayerPrefs.DeleteAll();
                 saveLoad.PlayerSave();
                 StartCoroutine(EndBattle());
             }
@@ -210,7 +273,6 @@ public class Battle : MonoBehaviour
                 yield return new WaitForSeconds(2.5f);
                 enemypokemon.GetComponent<SpriteRenderer>().enabled = true;
                 StartCoroutine(dialogue.SetDialogue("The Force is strong with him."));
-                yield return new WaitForSeconds(0.1f);
                 capturefailanimation.SetBool("capturefail", false);
                 yield return new WaitForSeconds(1);
                 state = BattleState.EnemyAttack;
@@ -221,6 +283,7 @@ public class Battle : MonoBehaviour
         else
         {
             StartCoroutine(dialogue.SetDialogue("Your party is full."));
+            state = BattleState.PlayerMenu;
         }
     }
     void MenuSelection()
@@ -351,14 +414,20 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            state = BattleState.PlayerMenu;
-            dialogue.menu.SetActive(true);
-            StartCoroutine(dialogue.SetDialogue("Select an action."));
+            StartCoroutine(PlayerMenu());
 
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            state = BattleState.PlayerAttack;
+            if (playerMon.pokemon.pMoves[selection].powerpoints == 0)
+            {
+                
+            }
+            else
+            {
+                state = BattleState.PlayerAttack;
+                dialogue.info.SetActive(false);
+            }
         }
     }
 
@@ -385,16 +454,18 @@ public class Battle : MonoBehaviour
     IEnumerator EndBattle()
     {
         yield return new WaitForSeconds(2);
+        animator.enabled = true;
         animator.SetBool("End", true);
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(0);
         asyncOperation.allowSceneActivation = false;
         yield return new WaitForSeconds(1.5f);
         asyncOperation.allowSceneActivation = true;
+        battleEnd = true;
     }
 
     IEnumerator SwitchPokemon()
     {
-        state = BattleState.EnemyAttack;
+        state = BattleState.Busy;
         switchIn = pokemonParties.playerParty[selectionC];
         pokemonParties.playerParty[selectionC] = pokemonParties.playerParty[0];
         pokemonParties.playerParty[0] = switchIn;
@@ -407,12 +478,13 @@ public class Battle : MonoBehaviour
         if (deadPokemon)
         {
             deadPokemon = false;
+            yield return dialogue.SetDialogue("Select an action.");
             state = BattleState.PlayerMenu;
             dialogue.menu.SetActive(true);
-            StartCoroutine(dialogue.SetDialogue("Select an action."));
         }
         else
         {
+            state = BattleState.EnemyAttack;
             StartCoroutine(Attack());
         }
     }
@@ -422,6 +494,7 @@ public class Battle : MonoBehaviour
         enemyMon.Setup(pokemonParties.enemyParty[0]);
         playerInfo.Setup(playerMon.pokemon);
         enemyInfo.Setup(enemyMon.pokemon);
+        xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);
     }
 
     IEnumerator Escape()
@@ -442,16 +515,6 @@ public class Battle : MonoBehaviour
             state = BattleState.EnemyAttack;
             yield return dialogue.SetDialogue("You fail to escape!");
             StartCoroutine(Attack());
-        }
-
-       
-    }
-    int getdamage(PokemonType T1, PokemonType T2)
-    {
-        if (T1 == PokemonType.Fire && T2 == PokemonType.Water)
-        {
-            return 2;
-        }
-        return 1;
+        }     
     }
 }

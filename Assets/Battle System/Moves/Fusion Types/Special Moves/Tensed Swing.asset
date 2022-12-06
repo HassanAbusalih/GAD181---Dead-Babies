@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Tensed Swing
   m_EditorClassIdentifier: 
   movename: Tensed Swing
+  movescolor: {r: 0.40943396, g: 1, b: 0.44605696, a: 0}
   description: 
   type: 7
   category: 2
   power: 70
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 5

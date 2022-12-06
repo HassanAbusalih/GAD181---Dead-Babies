@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Thunder Bolt
   m_EditorClassIdentifier: 
   movename: Thunder Bolt
+  movescolor: {r: 0.8301887, g: 0.6522335, b: 0, a: 0}
   description: 
   type: 4
   category: 2
   power: 45
   accuracy: 100
-  powerpoints: 40
+  powerpoints: 10

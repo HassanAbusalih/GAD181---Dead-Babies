@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
   m_Name: Bubble
   m_EditorClassIdentifier: 
-  movename: 
+  movename: Bubble
+  movescolor: {r: 0, g: 0.21403871, b: 0.754717, a: 0}
   description: 
   type: 3
   category: 2
   power: 40
   accuracy: 100
-  powerpoints: 35
+  powerpoints: 12

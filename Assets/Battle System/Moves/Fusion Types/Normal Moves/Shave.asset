@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Shave
   m_EditorClassIdentifier: 
   movename: Shave
+  movescolor: {r: 0, g: 0, b: 0, a: 0}
   description: 
   type: 1
   category: 3
   power: 45
   accuracy: 0
-  powerpoints: 0
+  powerpoints: 12

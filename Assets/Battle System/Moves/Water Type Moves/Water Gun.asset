@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Water Gun
   m_EditorClassIdentifier: 
   movename: Water Gun
+  movescolor: {r: 0, g: 0.21403871, b: 0.754717, a: 0}
   description: 
   type: 3
   category: 2
   power: 35
   accuracy: 100
-  powerpoints: 25
+  powerpoints: 15
