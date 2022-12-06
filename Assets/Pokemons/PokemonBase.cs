@@ -18,6 +18,8 @@ public class PokemonBase : ScriptableObject
     [SerializeField] public int speed;
     [SerializeField] public PokemonType type1;
     [SerializeField] public PokemonType type2;
+    [SerializeField] public Color type1Color;
+    [SerializeField] public Color type2Color;
     public int pokeNumber;
     public List<LearnableMoves> learnableMoves;
     public Evolution evolutions;

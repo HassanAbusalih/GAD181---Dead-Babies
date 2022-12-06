@@ -156,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
         asyncOperation.allowSceneActivation = true;
     }
 
-    void SavePos()
+    public void SavePos()
     {
         PlayerPrefs.SetFloat("X", transform.position.x);
         PlayerPrefs.SetFloat("Y", transform.position.y);
