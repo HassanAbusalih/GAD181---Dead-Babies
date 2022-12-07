@@ -49,17 +49,11 @@ public enum PokemonType
     Water,
     Electric,
     Grass,
-    Fighting,
     Bug,
     Rock,
-    Ice,
-    Poison,
     Ground,
     Flying,
-    Psychic,    
-    Steel,
-    Ghost,
-    Dragon
+    Psychic    
 }
 
 public class PokemonTypeChart
