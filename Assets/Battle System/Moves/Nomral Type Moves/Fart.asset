@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: Mean Look
+  m_Name: Fart
   m_EditorClassIdentifier: 
-  movename: Mean Look
+  movename: Fart
   movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 1
   category: 3
-  power: 40
+  power: 46
   accuracy: 100
-  powerpoints: 15
+  powerpoints: 12

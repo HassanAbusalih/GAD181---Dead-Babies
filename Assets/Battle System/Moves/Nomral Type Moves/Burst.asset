@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: Growl
+  m_Name: Burst
   m_EditorClassIdentifier: 
-  movename: Growl
+  movename: Burst
   movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
   type: 1
   category: 3
-  power: 30
+  power: 36
   accuracy: 100
   powerpoints: 20
