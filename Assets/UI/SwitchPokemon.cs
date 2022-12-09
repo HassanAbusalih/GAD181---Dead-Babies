@@ -80,7 +80,10 @@ public class SwitchPokemon : MonoBehaviour
             if (selection == i)
             {
                 menu[i].color = Color.blue;
-                sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
+                if (isActive)
+                {
+                    sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
+                }
             }
             else menu[i].color = Color.black;
         }

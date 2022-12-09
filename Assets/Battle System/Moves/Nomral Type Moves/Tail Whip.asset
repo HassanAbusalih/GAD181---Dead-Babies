@@ -17,6 +17,6 @@ MonoBehaviour:
   description: 
   type: 1
   category: 3
-  power: 40
+  power: 36
   accuracy: 100
   powerpoints: 15
