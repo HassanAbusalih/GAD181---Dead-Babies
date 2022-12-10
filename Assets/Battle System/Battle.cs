@@ -31,13 +31,17 @@ public class Battle : MonoBehaviour
     int selectionB;
     int selectionC;
     bool deadPokemon;
-
+    bool tutorial;
     int xpGain;
 
     // Start is called before the first frame update
 
     void Start()
     {
+        if (PlayerPrefs.GetInt("TutorialBattle") == 1)
+        {
+            tutorial = true;
+        }
         animator.SetBool("BattleStart", true);
         saveLoad.Load();
         for (int i = 0; i < pokemonParties.playerParty.Count; i++)
@@ -92,6 +96,14 @@ public class Battle : MonoBehaviour
         yield return new WaitForSeconds(2.1f);
         animator.SetBool("BattleStart", false);
         animator.enabled = false;
+        if (tutorial)
+        {
+            dialogue.tutorialText.enabled = true;
+            dialogue.tutorialBox.SetActive(true);
+            yield return dialogue.SetTutorialDialogue(dialogue.tutorialTextList);
+            dialogue.tutorialText.enabled = false;
+            dialogue.tutorialBox.SetActive(false);
+        }
         yield return dialogue.SetDialogue("Select an action.");
         state = BattleState.PlayerMenu;
     }

@@ -111,7 +111,7 @@ public class MainMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             PlayerPrefs.DeleteAll();
-            player.gameObject.transform.position = new Vector2(0, 0);
+            player.gameObject.transform.position = new Vector2(8.98f, -34.43f);
             FindObjectOfType<PokemonParties>().playerParty.Clear();
             FindObjectOfType<PokemonParties>().playerParty.Add(starters[selection]);
             FindObjectOfType<PokemonParties>().playerParty[0].level = 5;
