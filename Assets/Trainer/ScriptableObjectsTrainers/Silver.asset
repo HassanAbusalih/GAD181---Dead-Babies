@@ -33,4 +33,4 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
-  battled: 0
+  trainerinbattle: {fileID: 21300000, guid: c7b8cb88791b1e143a3e9fe60ffc8407, type: 3}
