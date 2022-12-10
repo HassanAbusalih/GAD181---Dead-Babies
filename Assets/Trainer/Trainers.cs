@@ -9,4 +9,5 @@ public class Trainers : ScriptableObject
     public string trainerName;
     public Sprite trainerSprite;
     public List<Pokemon> trainerPokemon;
+    public Sprite trainerinbattle;
 }

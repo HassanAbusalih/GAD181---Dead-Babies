@@ -11,6 +11,7 @@ public class BattleDialogue : MonoBehaviour
     public GameObject pokemonList;
     public GameObject selectionBox;
     public GameObject info;
+    public GameObject tutorialBox;
     string stopSpamming;
     public float timer;
     bool allow;
@@ -19,6 +20,8 @@ public class BattleDialogue : MonoBehaviour
     public List<TextMeshProUGUI> pokeMoves;
     public List<TextMeshProUGUI> menuActions;
     public List<TextMeshProUGUI> moveInfo;
+    public string[] tutorialTextList;
+    public TextMeshProUGUI tutorialText;
 
     private void Update()
     {
@@ -47,6 +50,17 @@ public class BattleDialogue : MonoBehaviour
             timer += 2;
         }
     }
+
+    public IEnumerator SetTutorialDialogue(string[] dialogue)
+    {
+        for (int i = 0; i < tutorialTextList.Length; i++)
+        {
+            tutorialText.text = dialogue[i];
+            yield return new WaitForSeconds(0.3f);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        }
+    }
+
     public IEnumerator SetDialogue(string dialogue)
     {
         if (stopSpamming == dialogue)
