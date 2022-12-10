@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POKEMON
+  m_text: FERA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a48f2b347f93f54380ef8c7e6d9c6ff, type: 2}
   m_sharedMaterial: {fileID: -8338230230091764462, guid: 0a48f2b347f93f54380ef8c7e6d9c6ff, type: 2}
@@ -7032,7 +7032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POKEBALL
+  m_text: FERABALL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0a48f2b347f93f54380ef8c7e6d9c6ff, type: 2}
   m_sharedMaterial: {fileID: -8338230230091764462, guid: 0a48f2b347f93f54380ef8c7e6d9c6ff, type: 2}
