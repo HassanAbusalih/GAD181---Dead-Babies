@@ -151,7 +151,7 @@ public class SwitchPokemon : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {
             isActive = false;
-            uiText.text = "Pokemon";
+            uiText.text = "Fera";
         }
     }
 
@@ -303,13 +303,13 @@ public class SwitchPokemon : MonoBehaviour
         {
             flag1 = 0;
             selectionA = selectionB;
-            uiText.text = "Pokemon";
+            uiText.text = "Fera";
         }
         else if (!fusing && flag2 == 1)
         {
             flag2 = 0;
             selectionA = selectionB;
-            uiText.text = "Pokemon";
+            uiText.text = "Fera";
         }
     }
 }

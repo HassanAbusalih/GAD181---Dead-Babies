@@ -38,9 +38,10 @@ public class Battle : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("TutorialBattle") == 1)
+        if (PlayerPrefs.GetInt("Tutorial") == 1)
         {
             tutorial = true;
+            PlayerPrefs.SetInt("Tutorial", 2);
         }
         animator.SetBool("BattleStart", true);
         saveLoad.Load();
@@ -239,7 +240,9 @@ public class Battle : MonoBehaviour
                 {
                     state = BattleState.EnemyWin;
                     yield return dialogue.SetDialogue("You lose!");
-                    Application.Quit();
+                    PlayerPrefs.DeleteAll();
+                    Destroy(FindObjectOfType<MainMenu>(true).gameObject);
+                    StartCoroutine(EndBattle());
                 }
                 else
                 {
@@ -261,7 +264,7 @@ public class Battle : MonoBehaviour
         state = BattleState.Busy;
         if (saveLoad.isTrainer == true)
         {
-            StartCoroutine(dialogue.SetDialogue("You cannot capture a trainer's Pokemon."));
+            StartCoroutine(dialogue.SetDialogue("You cannot capture a trainer's Fera."));
             state = BattleState.PlayerMenu;
         }
         else if (pokemonParties.playerParty.Count < 6)
@@ -288,7 +291,7 @@ public class Battle : MonoBehaviour
                 capturefailanimation.SetBool("capturefail", false);
                 yield return new WaitForSeconds(1);
                 state = BattleState.EnemyAttack;
-                yield return dialogue.SetDialogue("You fail to capture the Pokemon!");
+                yield return dialogue.SetDialogue("You fail to capture the Fera!");
                 StartCoroutine(Attack());
             }
         }
@@ -349,7 +352,7 @@ public class Battle : MonoBehaviour
                 }
                 else
                 {
-                    StartCoroutine(dialogue.SetDialogue("You only have one Pokemon."));
+                    StartCoroutine(dialogue.SetDialogue("You only have one Fera."));
                 }
             }
             else if(selectionB == 3)
@@ -385,7 +388,7 @@ public class Battle : MonoBehaviour
         {
             if (!deadPokemon && selectionC == 0)
             {
-                StartCoroutine(dialogue.SetDialogue("This Pokemon is already on the field!"));
+                StartCoroutine(dialogue.SetDialogue("This Fera is already on the field!"));
             }
             else
             {

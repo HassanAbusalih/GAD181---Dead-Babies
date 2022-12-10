@@ -44,6 +44,7 @@ public class TutorialText : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Space) && PlayerPrefs.GetInt("TutorialBattle") != 1)
             {
+                PlayerPrefs.SetInt("Tutorial", 1);
                 DialogueBeforeCombat();
             }
             else if (!saveLoad.isTrainer && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}") == 1 && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}1") != 1)
