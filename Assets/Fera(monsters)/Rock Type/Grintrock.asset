@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Grintrock
+  m_EditorClassIdentifier: 
+  pokeName: Grintrock
+  description: 
+  pokeSprite: {fileID: 21300000, guid: b38d74dbb49480143bef7acc0ddbb9d7, type: 3}
+  backSprite: {fileID: 21300000, guid: 76e86c53ab4989246922c3d093323cf8, type: 3}
+  maxHp: 35
+  attack: 45
+  defense: 160
+  spAttack: 30
+  spDefence: 45
+  speed: 70
+  type1: 8
+  type2: 0
+  type1Color: {r: 0.5377358, g: 0.37196943, b: 0, a: 0}
+  type2Color: {r: 0.34117648, g: 0.14117648, b: 0.015686275, a: 0}
+  pokeNumber: 19
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: ee66ec9937590d143ad5fe555bf20dcd, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: b9779f122da444f4c8385aceb5ebf4d7, type: 2}
+    level: 4
+  - moves: {fileID: 11400000, guid: 8eaedd49a66c86c429873123fffa3ad1, type: 2}
+    level: 7
+  - moves: {fileID: 11400000, guid: 1ce26ef50c223a640b0173941cc8fa38, type: 2}
+    level: 13
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 
