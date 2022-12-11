@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Growgeoth
+  m_Name: Eaglebot
   m_EditorClassIdentifier: 
   pokeName: Growgeoth
-  description: 
-  pokeSprite: {fileID: 21300000, guid: b01f8085c7ae13a4db67cee42eef772a, type: 3}
-  backSprite: {fileID: 21300000, guid: 4cb043c7256aa1a4897da9c53f6c2af7, type: 3}
+  description: 'Eaglebot '
+  pokeSprite: {fileID: 21300000, guid: 20c93bded774ad244be52b55e5e3869f, type: 3}
+  backSprite: {fileID: 21300000, guid: 0eb40561faa74254bb9f5dd4310ae931, type: 3}
   maxHp: 69
   attack: 75
   defense: 63
@@ -24,6 +24,8 @@ MonoBehaviour:
   speed: 91
   type1: 2
   type2: 12
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
   pokeNumber: 30
   learnableMoves:
   - moves: {fileID: 11400000, guid: 27b2709feb2fe584daa9aa0c719ac8c1, type: 2}
@@ -37,4 +39,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: GrowlithePidgeot
+  fusionName: EaglaceMonkeybot

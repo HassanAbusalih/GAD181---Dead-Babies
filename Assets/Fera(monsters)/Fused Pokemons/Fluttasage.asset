@@ -10,31 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Pikalithe
+  m_Name: Fluttasage
   m_EditorClassIdentifier: 
-  pokeName: Pikalithe
+  pokeName: Fluttasage
   description: 
-  pokeSprite: {fileID: 21300000, guid: 96a7b51b2616cb44bbeeb6b3176b1d0d, type: 3}
-  backSprite: {fileID: 21300000, guid: b2333ab947f3a454f851609f59d3545c, type: 3}
-  maxHp: 45
-  attack: 73
-  defense: 75
-  spAttack: 75
-  spDefence: 68
-  speed: 75
-  type1: 4
-  type2: 2
-  pokeNumber: 32
+  pokeSprite: {fileID: 21300000, guid: 86ac63f61b6c5ab44abccf2f2ca00d64, type: 3}
+  backSprite: {fileID: 21300000, guid: 94663ae8cad643541847a8145de919ed, type: 3}
+  maxHp: 48
+  attack: 50
+  defense: 45
+  spAttack: 65
+  spDefence: 65
+  speed: 80
+  type1: 13
+  type2: 7
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  pokeNumber: 25
   learnableMoves:
   - moves: {fileID: 11400000, guid: 44b09f9a0c5539249839e4d200d16942, type: 2}
     level: 0
   - moves: {fileID: 11400000, guid: 4ad4845860d6ea54f883288158f478c8, type: 2}
     level: 10
-  - moves: {fileID: 11400000, guid: f8d867ec468d0914390a1e82f61b6b91, type: 2}
+  - moves: {fileID: 11400000, guid: c0ee01e2d9b9b00418b0e40f2b070d28, type: 2}
     level: 15
-  - moves: {fileID: 11400000, guid: 6a130429304cbe4449e29eb4971520eb, type: 2}
+  - moves: {fileID: 11400000, guid: f8cbe14e1934b1f4b90e28227f7890d2, type: 2}
     level: 20
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: PikachuGrowlithe
+  fusionName: FluttaflapSampsage

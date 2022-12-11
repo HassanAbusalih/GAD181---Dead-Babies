@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Scydon
+  m_Name: Elosage
   m_EditorClassIdentifier: 
-  pokeName: Scydon
+  pokeName: Elosage
   description: 
-  pokeSprite: {fileID: 21300000, guid: aef59738314683f4783d885ae82b28f9, type: 3}
-  backSprite: {fileID: 21300000, guid: 05a50181dd30ebf41a01a493cdff9fb8, type: 3}
+  pokeSprite: {fileID: 21300000, guid: e241dab87367dca4f840e753cff05757, type: 3}
+  backSprite: {fileID: 21300000, guid: 14c665daefac65b42849953a62d5a5ee, type: 3}
   maxHp: 88
   attack: 120
   defense: 100
@@ -24,6 +24,8 @@ MonoBehaviour:
   speed: 73
   type1: 7
   type2: 8
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
   pokeNumber: 27
   learnableMoves:
   - moves: {fileID: 11400000, guid: 2379083c27d95e74abcf3223f75b3e39, type: 2}
@@ -37,4 +39,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: ScytherRhydon
+  fusionName: ElostormSampsage

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Vileduck
+  m_Name: Embershell
   m_EditorClassIdentifier: 
-  pokeName: Vileduck
+  pokeName: Embershell
   description: 
-  pokeSprite: {fileID: 21300000, guid: 5c9f833079ae17449802c055ae870978, type: 3}
-  backSprite: {fileID: 21300000, guid: 501a3e3bacc301846bda0a79e07a7b1f, type: 3}
+  pokeSprite: {fileID: 21300000, guid: d12ffa6901c8b7045b0826ff7b0c7df0, type: 3}
+  backSprite: {fileID: 21300000, guid: cff74052a39012246ac27e5f5fdcdd70, type: 3}
   maxHp: 63
   attack: 66
   defense: 67
@@ -23,7 +23,9 @@ MonoBehaviour:
   spDefence: 70
   speed: 53
   type1: 3
-  type2: 5
+  type2: 2
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
   pokeNumber: 29
   learnableMoves:
   - moves: {fileID: 11400000, guid: 458626511572ea843b092441236ea490, type: 2}
@@ -37,4 +39,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: VileplumePsyduck
+  fusionName: EmbraShelagu

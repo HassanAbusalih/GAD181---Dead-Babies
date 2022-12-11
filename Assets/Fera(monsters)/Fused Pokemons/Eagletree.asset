@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Victreetales
+  m_Name: Eagletree
   m_EditorClassIdentifier: 
-  pokeName: Victreetales
+  pokeName: Eagletree
   description: 
-  pokeSprite: {fileID: 21300000, guid: cc9c53954e991184fa1b1cb7c5ec3c67, type: 3}
-  backSprite: {fileID: 21300000, guid: 1b41e2009d72aa044aefe4f60d8dc175, type: 3}
+  pokeSprite: {fileID: 21300000, guid: 42f97044506896d4fa3a36ac3e222030, type: 3}
+  backSprite: {fileID: 21300000, guid: d3e86524bdbe3e04e81d85081e540a48, type: 3}
   maxHp: 77
   attack: 91
   defense: 70
@@ -24,6 +24,8 @@ MonoBehaviour:
   speed: 85
   type1: 5
   type2: 2
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
   pokeNumber: 31
   learnableMoves:
   - moves: {fileID: 11400000, guid: 458626511572ea843b092441236ea490, type: 2}
@@ -37,4 +39,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: VictreebelNinetales
+  fusionName: EaglaceConifrost
