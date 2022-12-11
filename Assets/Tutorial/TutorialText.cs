@@ -63,7 +63,7 @@ public class TutorialText : MonoBehaviour
                     isActive = true;
                     textBox.SetActive(true);
                     text.gameObject.SetActive(true);
-                    FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
+                    //FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
                 }
                 DialogueAfterCombat();
             }

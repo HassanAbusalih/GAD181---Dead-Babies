@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
   m_Name: Eaglebot
   m_EditorClassIdentifier: 
-  pokeName: Growgeoth
-  description: 'Eaglebot '
+  pokeName: 'Eaglebot '
+  description: 
   pokeSprite: {fileID: 21300000, guid: 20c93bded774ad244be52b55e5e3869f, type: 3}
   backSprite: {fileID: 21300000, guid: 0eb40561faa74254bb9f5dd4310ae931, type: 3}
   maxHp: 69
