@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Magnether
+  m_Name: Coleoshell
   m_EditorClassIdentifier: 
-  pokeName: Magnether
+  pokeName: Coleoshell
   description: 
-  pokeSprite: {fileID: 21300000, guid: 74cbd58b4caa13a4b8c147773b58245a, type: 3}
-  backSprite: {fileID: 21300000, guid: 7f3860081b9f8884c9a99700f796df42, type: 3}
+  pokeSprite: {fileID: 21300000, guid: ddc35e61153e1dc429ce01ecf5cdab0d, type: 3}
+  backSprite: {fileID: 21300000, guid: 4501c0b1de7519f4aa1ace74afb2fa20, type: 3}
   maxHp: 48
   attack: 73
   defense: 75
   spAttack: 75
   spDefence: 68
   speed: 75
-  type1: 4
+  type1: 3
   type2: 7
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
   pokeNumber: 34
   learnableMoves:
   - moves: {fileID: 11400000, guid: 2379083c27d95e74abcf3223f75b3e39, type: 2}
@@ -37,4 +39,4 @@ MonoBehaviour:
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: MagnemiteScyther
+  fusionName: ColeorusShelagu

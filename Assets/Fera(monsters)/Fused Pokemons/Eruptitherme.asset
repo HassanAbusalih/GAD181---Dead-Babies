@@ -10,31 +10,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
-  m_Name: Pikafree
+  m_Name: Eruptitherme
   m_EditorClassIdentifier: 
-  pokeName: Pikafree
+  pokeName: Eruptitherme
   description: 
-  pokeSprite: {fileID: 21300000, guid: c23075806f0ab764d89c79492bc03775, type: 3}
-  backSprite: {fileID: 21300000, guid: a15aece2729d638428a4e0370423195f, type: 3}
-  maxHp: 48
-  attack: 50
-  defense: 45
-  spAttack: 65
-  spDefence: 65
-  speed: 80
+  pokeSprite: {fileID: 21300000, guid: 6ada483e698b9cd4da816bd9457c974e, type: 3}
+  backSprite: {fileID: 21300000, guid: 86c1b69c22541e740b9a5b991b809b29, type: 3}
+  maxHp: 45
+  attack: 73
+  defense: 75
+  spAttack: 75
+  spDefence: 68
+  speed: 75
   type1: 4
-  type2: 7
-  pokeNumber: 25
+  type2: 2
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  pokeNumber: 32
   learnableMoves:
   - moves: {fileID: 11400000, guid: 44b09f9a0c5539249839e4d200d16942, type: 2}
     level: 0
   - moves: {fileID: 11400000, guid: 4ad4845860d6ea54f883288158f478c8, type: 2}
     level: 10
-  - moves: {fileID: 11400000, guid: c0ee01e2d9b9b00418b0e40f2b070d28, type: 2}
+  - moves: {fileID: 11400000, guid: f8d867ec468d0914390a1e82f61b6b91, type: 2}
     level: 15
-  - moves: {fileID: 11400000, guid: f8cbe14e1934b1f4b90e28227f7890d2, type: 2}
+  - moves: {fileID: 11400000, guid: 6a130429304cbe4449e29eb4971520eb, type: 2}
     level: 20
   evolutions:
     evolveTo: {fileID: 0}
     levelForEvolve: 0
-  fusionName: PikachuButterfree
+  fusionName: CriniothermeEruptibus
