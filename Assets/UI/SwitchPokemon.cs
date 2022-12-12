@@ -25,7 +25,10 @@ public class SwitchPokemon : MonoBehaviour
     bool switching;
     bool fusing;
 
-
+    [SerializeField] private AudioSource SelectionSoundEffect;
+    [SerializeField] private AudioSource ClickSound;
+    [SerializeField] private AudioClip SelectionSFX;
+    [SerializeField] private AudioClip ClickSFX;
     // Update is called once per frame
     void Update()
     {
@@ -94,19 +97,23 @@ public class SwitchPokemon : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A) && selectionB == 1)
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSFX);
             selectionB--;
         }
         else if (Input.GetKeyDown(KeyCode.D) && selectionB == 0)
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSFX);
             selectionB++;
         }
         if (Input.GetKeyDown(KeyCode.Space) && selectionB == 0)
         {
+            ClickSound.PlayOneShot(ClickSFX);
             quitting = false;
             FindObjectOfType<MainMenu>(true).gameObject.SetActive(true);
         }
         if (Input.GetKeyDown(KeyCode.Space) && selectionB == 1)
         {
+            ClickSound.PlayOneShot(ClickSFX);
             quitting = false;
         }
     }
@@ -163,10 +170,12 @@ public class SwitchPokemon : MonoBehaviour
                 }
             }
             else if (Input.GetKeyDown(KeyCode.S))
-            {
+            { 
                 if (selectionA < pokemonParties.playerParty.Count - 1)
                 {
+                    
                     selectionA += 1;
+
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Space) && pokemonParties.playerParty.Count >= 2)

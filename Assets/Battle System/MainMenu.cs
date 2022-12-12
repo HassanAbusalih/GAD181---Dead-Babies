@@ -20,7 +20,10 @@ public class MainMenu : MonoBehaviour
     int selection;
     bool ng;
     bool guide;
-
+    [SerializeField] private AudioSource SelectionSoundEffect;
+    [SerializeField] private AudioSource ClickSound;
+    [SerializeField] private AudioClip Click;
+    [SerializeField] private AudioClip Sound;
     private void Start()
     {
         MainMenu[] gameMenus = FindObjectsOfType<MainMenu>(true);
@@ -102,14 +105,17 @@ public class MainMenu : MonoBehaviour
         UpdateMenuSelection(selection, starterNames);
         if (Input.GetKeyDown(KeyCode.A) && selection > 0)
         {
+            SelectionSoundEffect.PlayOneShot(Sound);
             selection--;
         }
         if (Input.GetKeyDown(KeyCode.D) && selection < starterNames.Count - 1)
         {
+            SelectionSoundEffect.PlayOneShot(Sound);
             selection++;
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            ClickSound.PlayOneShot(Click);
             PlayerPrefs.DeleteAll();
             player.gameObject.transform.position = new Vector2(0, 0);
             FindObjectOfType<PokemonParties>().playerParty.Clear();
@@ -138,7 +144,8 @@ public class MainMenu : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.S))
         {
-            if(selection < menuSelect.Count - 1)
+            SelectionSoundEffect.PlayOneShot(Sound);
+            if (selection < menuSelect.Count - 1)
             {
                 selection++;
                 UpdateMenuSelection(selection, menuSelect);
@@ -146,6 +153,7 @@ public class MainMenu : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.W))
         {
+            SelectionSoundEffect.PlayOneShot(Sound);
             if (selection > 0)
             {
                 selection--;
@@ -158,6 +166,7 @@ public class MainMenu : MonoBehaviour
         }
         if (selection == 0 && Input.GetKeyDown(KeyCode.Space))
         {
+            ClickSound.PlayOneShot(Click);
             newGame.SetActive(true);
             menuText.SetActive(false);
             SetStarters();
@@ -168,12 +177,14 @@ public class MainMenu : MonoBehaviour
         {
             if (FindObjectOfType<PokemonParties>().playerParty.Count >= 1)
             {
+                ClickSound.PlayOneShot(Click);
                 player = FindObjectOfType<PlayerMovement>(true);
                 gameObject.SetActive(false);
             }
         }
         else if (selection == 2 && Input.GetKeyDown(KeyCode.Space))
         {
+            ClickSound.PlayOneShot(Click);
             guide = true;
             page1.SetActive(true);
         }
@@ -194,16 +205,19 @@ public class MainMenu : MonoBehaviour
     {
         if (page1.activeSelf && Input.GetKeyDown(KeyCode.D))
         {
+            SelectionSoundEffect.PlayOneShot(Sound);
             page1.SetActive(false);
             page2.SetActive(true);
         }
         if (page2.activeSelf && Input.GetKeyDown(KeyCode.A))
         {
-            page2.SetActive(false);
+            SelectionSoundEffect.PlayOneShot(Sound);
+            SelectionSoundEffect.Play(); page2.SetActive(false);
             page1.SetActive(true);
         }
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Escape))
         {
+            ClickSound.PlayOneShot(Click);
             page1.SetActive(false);
             page2.SetActive(false);
             guide = false;

@@ -12,7 +12,7 @@ public class Battle : MonoBehaviour
     public BattleDialogue dialogue;
     public PokemonParties pokemonParties;
     public Animator animator;
-    public AudioSource audiosource1;
+    public AudioSource  audiosource1;
     public AudioSource audiosource2;
     public AudioSource levelUpSFX;
     public SaveLoad saveLoad;
@@ -32,7 +32,18 @@ public class Battle : MonoBehaviour
     int selectionC;
     bool deadPokemon;
 
+    [SerializeField] AudioSource playerattackSFX;
+    [SerializeField] AudioSource loosingHPSFX;
+    [SerializeField] AudioSource enemyattackSFX;
+
     int xpGain;
+    [SerializeField] private AudioSource SelectionSoundEffect;
+    [SerializeField] private AudioSource ClickSound;
+    [SerializeField] private AudioClip Playerattack;
+    [SerializeField] private AudioClip loosingHP;
+    [SerializeField] private AudioClip enemmyattack;
+    [SerializeField] private AudioClip SelectionSound;
+    [SerializeField] private AudioClip Click;
 
     // Start is called before the first frame update
 
@@ -123,6 +134,7 @@ public class Battle : MonoBehaviour
     {
         if (state == BattleState.PlayerAttack)
         {
+            playerattackSFX.PlayOneShot(Playerattack);
             state = BattleState.Busy;
             Move move = playerMon.pokemon.pMoves[selection];
             playerMon.pokemon.pMoves[selection].powerpoints--;
@@ -193,6 +205,8 @@ public class Battle : MonoBehaviour
         }
         else if (state == BattleState.EnemyAttack)
         {
+             playerattackSFX.PlayOneShot(Playerattack);
+            enemyattackSFX.PlayOneShot(enemmyattack);
             state = BattleState.Busy;
             Move move = enemyMon.pokemon.RandomMove();
             enemyattack.SetBool("enemy defense", false);
@@ -292,6 +306,7 @@ public class Battle : MonoBehaviour
         {
             if (selectionB < dialogue.menuActions.Count - 1)
             {
+                SelectionSoundEffect.PlayOneShot(SelectionSound);
                 selectionB++;
             }
         }
@@ -299,11 +314,13 @@ public class Battle : MonoBehaviour
         {
             if (selectionB > 0)
             {
+                SelectionSoundEffect.PlayOneShot(SelectionSound);
                 selectionB--;
             }
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selectionB > 1)
             {
                 selectionB -= 2;
@@ -311,6 +328,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selectionB < dialogue.menuActions.Count - 2)
             {
                 selectionB += 2;
@@ -318,6 +336,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
+            ClickSound.PlayOneShot(Click);
             if (selectionB == 0)
             {
                 dialogue.menu.SetActive(false);
@@ -351,6 +370,7 @@ public class Battle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selectionC > 0)
             {
                 selectionC -= 1;
@@ -358,6 +378,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selectionC < pokemonParties.playerParty.Count - 1)
             {
                 selectionC += 1;
@@ -365,12 +386,14 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            ClickSound.PlayOneShot(Click);
             dialogue.pokemonList.SetActive(false);
             dialogue.selectionBox.SetActive(false);
             state = BattleState.PlayerMenu;
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
+            ClickSound.PlayOneShot(Click);
             if (!deadPokemon && selectionC == 0)
             {
                 StartCoroutine(dialogue.SetDialogue("This Pokemon is already on the field!"));
@@ -386,6 +409,7 @@ public class Battle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selection < playerMon.pokemon.pMoves.Count - 1)
             {
                 selection++;
@@ -393,6 +417,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selection > 0)
             {
                 selection--;
@@ -400,6 +425,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSound);
             if (selection > 1)
             {
                 selection -= 2;
@@ -407,6 +433,7 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
+            SelectionSoundEffect.Play();
             if (selection < playerMon.pokemon.pMoves.Count - 2)
             {
                 selection += 2;
@@ -414,11 +441,13 @@ public class Battle : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
+            ClickSound.PlayOneShot(Click);
             StartCoroutine(PlayerMenu());
 
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
+            ClickSound.PlayOneShot(Click);
             if (playerMon.pokemon.pMoves[selection].powerpoints == 0)
             {
                 
