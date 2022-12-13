@@ -24,6 +24,7 @@ public class PokemonBase : ScriptableObject
     public List<LearnableMoves> learnableMoves;
     public Evolution evolutions;
     public string fusionName;
+
 }
 
 [System.Serializable]
