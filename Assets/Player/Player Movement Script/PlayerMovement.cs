@@ -18,7 +18,10 @@ public class PlayerMovement : MonoBehaviour
     float cooldown;
     float cd;
     bool touching;
-
+    [SerializeField] public AudioSource WalkingSound;
+    [SerializeField] public AudioSource RunningSound;
+    [SerializeField] public AudioClip Walk;
+    [SerializeField] public AudioClip Run;
     // Start is called before the first frame update
     private void Start()
     {
@@ -51,33 +54,35 @@ public class PlayerMovement : MonoBehaviour
         if (cd < 1 && touching)
         {
             cd += Time.deltaTime;
-        }
+        } 
     }
 
     private void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift))
         {
             rb2D.MovePosition(rb2D.position + movementOfPlayer * runSpeed * Time.fixedDeltaTime);
+            RunningSound.PlayOneShot(Run);
+            WalkingSound.Pause();
         }
         else
         {
             rb2D.MovePosition(rb2D.position + movementOfPlayer * walkSpeed * Time.fixedDeltaTime);
         }
-        
     }
     void PlayerAnimation()
     {
         anim.SetFloat("ySpeed", movementOfPlayer.y);
         anim.SetFloat("xSpeed", Mathf.Abs(movementOfPlayer.x));
-        if(movementOfPlayer.x < 0)
+        if (movementOfPlayer.x < 0)
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
         }
+
         else if (movementOfPlayer.x > 0)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
-        }    
+        }
     }
     void BattleEncounter()
     {
@@ -85,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         if (myBoxCollider2D.IsTouchingLayers(LayerMask.GetMask("1")))
         {
             touching = true;
-            if(battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
+            if (battleEncounterRNG <= 1 && !encounter && cooldown > 4 && cd >= 1)
             {
                 StartEncounter(Random.Range(1, 5));
             }
@@ -147,7 +152,6 @@ public class PlayerMovement : MonoBehaviour
         SavePos();
         StartCoroutine(LoadScene());
     }
-
     IEnumerator LoadScene()
     {
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(1);
@@ -164,9 +168,13 @@ public class PlayerMovement : MonoBehaviour
 
     void LoadPos()
     {
-        transform.position = new Vector2 (PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"));
+        transform.position = new Vector2(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"));
         PlayerPrefs.DeleteKey("X");
         PlayerPrefs.DeleteKey("Y");
     }
 
+    public void WalkingSFX()
+    {
+        WalkingSound.PlayOneShot(Walk);
+    }
 }

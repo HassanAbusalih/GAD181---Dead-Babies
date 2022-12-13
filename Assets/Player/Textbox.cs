@@ -15,6 +15,8 @@ public class Textbox : MonoBehaviour
     int counter;
     Trainer trainer;
 
+    [SerializeField] AudioSource SelectionSFX;
+    [SerializeField] private AudioClip SelectSFX;
     private void Awake()
     {
         trainer = GetComponent<Trainer>();
@@ -36,6 +38,7 @@ public class Textbox : MonoBehaviour
                     //FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
                 }
                 NextLine();
+                SelectionSFX.PlayOneShot(SelectSFX);
             }
             else if (trainer != null)
             {
@@ -46,6 +49,7 @@ public class Textbox : MonoBehaviour
                     textBox.SetActive(true);
                     text.gameObject.SetActive(true);
                     NextLine();
+                    SelectionSFX.PlayOneShot(SelectSFX);
                 }
             }
         }
@@ -57,6 +61,7 @@ public class Textbox : MonoBehaviour
         {
             text.text = textList[counter];
             counter++;
+            SelectionSFX.PlayOneShot(SelectSFX);
         }
         else
         {
@@ -66,6 +71,7 @@ public class Textbox : MonoBehaviour
             counter = 0;
             //FindObjectOfType<PlayerMovement>().encounter = false;
         }
+        SelectionSFX.PlayOneShot(SelectSFX);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
