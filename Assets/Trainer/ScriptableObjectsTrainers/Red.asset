@@ -14,5 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trainerName: Red
   trainerSprite: {fileID: 0}
-  trainerPokemon: []
-  battled: 0
+  trainerPokemon:
+  - pokemonBase: {fileID: 0}
+    level: 0
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  trainerinbattle: {fileID: 0}

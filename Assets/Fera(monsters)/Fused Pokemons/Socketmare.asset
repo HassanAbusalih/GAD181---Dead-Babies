@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Socketmare
+  m_EditorClassIdentifier: 
+  pokeName: Socketmare
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 4ca271bb1dd857f4bbcbb4facf5ee454, type: 3}
+  backSprite: {fileID: 21300000, guid: 9b22840f9894ba549b601d72bdc70d5a, type: 3}
+  maxHp: 43
+  attack: 73
+  defense: 70
+  spAttack: 78
+  spDefence: 58
+  speed: 73
+  type1: 3
+  type2: 4
+  type1Color: {r: 0, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  pokeNumber: 26
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 27b2709feb2fe584daa9aa0c719ac8c1, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 02f48b7e392ecb14a94092f8a8823796, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 49e0a6ac0c6596d449773ed1da34447e, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: ca1e5183333c1064e976d3a6cfe0673c, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: SockeserpLightmare

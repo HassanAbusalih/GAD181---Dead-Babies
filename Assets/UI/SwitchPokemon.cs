@@ -83,7 +83,10 @@ public class SwitchPokemon : MonoBehaviour
             if (selection == i)
             {
                 menu[i].color = Color.blue;
-                sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
+                if (isActive)
+                {
+                    sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
+                }
             }
             else menu[i].color = Color.black;
         }
@@ -155,7 +158,7 @@ public class SwitchPokemon : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Tab) && isActive)
         {
             isActive = false;
-            uiText.text = "Pokemon";
+            uiText.text = "Fera";
         }
     }
 
@@ -315,13 +318,13 @@ public class SwitchPokemon : MonoBehaviour
         {
             flag1 = 0;
             selectionA = selectionB;
-            uiText.text = "Pokemon";
+            uiText.text = "Fera";
         }
         else if (!fusing && flag2 == 1)
         {
             flag2 = 0;
             selectionA = selectionB;
-            uiText.text = "Pokemon";
+            uiText.text = "Fera";
         }
     }
 }

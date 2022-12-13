@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Progression : MonoBehaviour
 {
-    Trainer trainer;
+    [SerializeField] Trainers trainerBase;
 
     private void Start()
     {
-        trainer = GetComponent<Trainer>();
+        trainerBase = GetComponent<Trainers>();
     }
 
     void Update()
     {
-        if (PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}1") == 0)
+        if (PlayerPrefs.GetInt($"{trainerBase.trainerName}1") == 0)
         {
             gameObject.SetActive(true);
         }
