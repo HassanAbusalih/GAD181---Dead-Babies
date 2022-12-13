@@ -18,17 +18,16 @@ public class PlayerMovement : MonoBehaviour
     float cooldown;
     float cd;
     bool touching;
-    [SerializeField] private AudioSource WalkingSound;
-    [SerializeField] private AudioSource RunningSound;
-    [SerializeField] private AudioClip Walk;
-    [SerializeField] private AudioClip Run;
+    [SerializeField] public AudioSource WalkingSound;
+    [SerializeField] public AudioSource RunningSound;
+    [SerializeField] public AudioClip Walk;
+    [SerializeField] public AudioClip Run;
     // Start is called before the first frame update
     private void Start()
     {
         LoadPos();
         saveLoad.Load();
         myBoxCollider2D = GetComponent<BoxCollider2D>();
-
     }
 
     // Update is called once per frame
@@ -37,33 +36,24 @@ public class PlayerMovement : MonoBehaviour
         if (cooldown < 5)
         {
             cooldown += Time.deltaTime;
-
         }
         if (!switchPokemon.isActive && !encounter && !switchPokemon.quitting)
         {
             movementOfPlayer.x = Input.GetAxisRaw("Horizontal");
-
             movementOfPlayer.y = Input.GetAxisRaw("Vertical");
             movementOfPlayer = new Vector3(movementOfPlayer.x, movementOfPlayer.y).normalized;
             PlayerAnimation();
             BattleEncounter();
-
-            if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W))
-            {
-                WalkingSound.PlayOneShot(Walk);
-            }
         }
         else
         {
             movementOfPlayer.x = 0;
             movementOfPlayer.y = 0;
             anim.StopPlayback();
-
         }
         if (cd < 1 && touching)
         {
             cd += Time.deltaTime;
-
         } 
     }
 
@@ -74,12 +64,10 @@ public class PlayerMovement : MonoBehaviour
             rb2D.MovePosition(rb2D.position + movementOfPlayer * runSpeed * Time.fixedDeltaTime);
             RunningSound.PlayOneShot(Run);
             WalkingSound.Pause();
-
         }
         else
         {
             rb2D.MovePosition(rb2D.position + movementOfPlayer * walkSpeed * Time.fixedDeltaTime);
-            
         }
     }
     void PlayerAnimation()
@@ -89,13 +77,11 @@ public class PlayerMovement : MonoBehaviour
         if (movementOfPlayer.x < 0)
         {
             transform.localScale = new Vector3(1f, 1f, 1f);
-
         }
 
         else if (movementOfPlayer.x > 0)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
-
         }
     }
     void BattleEncounter()
@@ -187,4 +173,8 @@ public class PlayerMovement : MonoBehaviour
         PlayerPrefs.DeleteKey("Y");
     }
 
+    public void WalkingSFX()
+    {
+        WalkingSound.PlayOneShot(Walk);
+    }
 }
