@@ -29,7 +29,7 @@ public class Textbox : MonoBehaviour
         if (textCollider.IsTouching(playerCollider))
         {
             if (Input.GetKeyDown(KeyCode.Space))
-            {
+            { 
                 if (!isActive)
                 {
                     isActive = true;
@@ -38,7 +38,6 @@ public class Textbox : MonoBehaviour
                     //FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
                 }
                 NextLine();
-                SelectionSFX.PlayOneShot(SelectSFX);
             }
             else if (trainer != null)
             {
@@ -49,7 +48,6 @@ public class Textbox : MonoBehaviour
                     textBox.SetActive(true);
                     text.gameObject.SetActive(true);
                     NextLine();
-                    SelectionSFX.PlayOneShot(SelectSFX);
                 }
             }
         }
@@ -59,9 +57,9 @@ public class Textbox : MonoBehaviour
     {
         if (counter < textList.Count)
         {
+            SelectionSFX.PlayOneShot(SelectSFX);
             text.text = textList[counter];
             counter++;
-            SelectionSFX.PlayOneShot(SelectSFX);
         }
         else
         {
@@ -71,7 +69,6 @@ public class Textbox : MonoBehaviour
             counter = 0;
             //FindObjectOfType<PlayerMovement>().encounter = false;
         }
-        SelectionSFX.PlayOneShot(SelectSFX);
     }
 
     private void OnCollisionExit2D(Collision2D collision)

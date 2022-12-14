@@ -22,6 +22,8 @@ public class BattleDialogue : MonoBehaviour
     public List<TextMeshProUGUI> moveInfo;
     public string[] tutorialTextList;
     public TextMeshProUGUI tutorialText;
+    [SerializeField] AudioSource SelectionSFX;
+    [SerializeField] private AudioClip SelectSFX;
 
     private void Update()
     {
@@ -31,6 +33,7 @@ public class BattleDialogue : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && allow || timer == 2)
         {
+            SelectionSFX.PlayOneShot(SelectSFX);
             skip = true;
         }
         else
@@ -47,6 +50,7 @@ public class BattleDialogue : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && allow && skip)
         {
+            SelectionSFX.PlayOneShot(SelectSFX);
             timer += 2;
         }
     }
