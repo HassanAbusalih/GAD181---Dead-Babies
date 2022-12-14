@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: X-Scissor
   m_EditorClassIdentifier: 
   movename: X-Scissor
+  movescolor: {r: 0, g: 0, b: 0, a: 0}
   description: 
-  type: 7
+  type: 6
   category: 2
   power: 45
   accuracy: 100

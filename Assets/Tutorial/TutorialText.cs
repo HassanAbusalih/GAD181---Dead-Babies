@@ -12,7 +12,7 @@ public class TutorialText : MonoBehaviour
     public SaveLoad saveLoad;
     Collider2D textCollider;
     Collider2D playerCollider;
-    bool isActive;
+    public bool isActive;
     int counter;
     Trainer trainer;
     public bool tutorialBattle;

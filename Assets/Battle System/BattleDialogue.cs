@@ -50,7 +50,10 @@ public class BattleDialogue : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && allow && skip)
         {
-            SelectionSFX.PlayOneShot(SelectSFX);
+            if (timer <= 2)
+            {
+                SelectionSFX.PlayOneShot(SelectSFX);
+            }
             timer += 2;
         }
     }

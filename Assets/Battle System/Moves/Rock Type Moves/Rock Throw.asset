@@ -15,7 +15,7 @@ MonoBehaviour:
   movename: 'Rock Throw '
   movescolor: {r: 0.33962262, g: 0.14042947, b: 0.017301502, a: 0}
   description: 
-  type: 8
+  type: 7
   category: 2
   power: 45
   accuracy: 100

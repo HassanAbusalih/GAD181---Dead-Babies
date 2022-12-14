@@ -15,7 +15,7 @@ MonoBehaviour:
   movename: Take Down
   movescolor: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 0}
   description: 
-  type: 1
+  type: 0
   category: 3
   power: 49
   accuracy: 100
