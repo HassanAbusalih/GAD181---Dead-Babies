@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Petal Spray
   m_EditorClassIdentifier: 
   movename: Petal Spray
+  movescolor: {r: 0.08627451, g: 0.5647059, b: 0, a: 0}
   description: 
-  type: 5
+  type: 4
   category: 2
   power: 70
   accuracy: 0

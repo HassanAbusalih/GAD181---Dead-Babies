@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Metal Chip
   m_EditorClassIdentifier: 
   movename: Metal Chip
+  movescolor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0}
   description: 
   type: 8
   category: 2
