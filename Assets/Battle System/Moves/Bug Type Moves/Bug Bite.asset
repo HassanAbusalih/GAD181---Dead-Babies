@@ -15,7 +15,7 @@ MonoBehaviour:
   movename: Bug Bite
   movescolor: {r: 0.5947196, g: 0.7735849, b: 0.5794589, a: 0}
   description: 
-  type: 7
+  type: 6
   category: 2
   power: 40
   accuracy: 100

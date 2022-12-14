@@ -32,47 +32,50 @@ public class SwitchPokemon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Activate();
-        if (quitting)
+        if (!FindObjectOfType<TutorialText>().isActive)
         {
-            exit.SetActive(true);
-            UpdateMenuSelection(selectionB, yesNo);
-            QuitSelection(yesNo);
-        }
-        else if (isActive)
-        {
-            SetPokemonNames(pokemonParties.playerParty);
-            pokemonUI.SetActive(true);
-            pokemons.SetActive(true);
-            sprite.enabled = true;
-            spriteBox.SetActive(true);
-            PokemonSelection();
-            if (flag1 == 1)
+            Activate();
+            if (quitting)
             {
-                UpdateMenuSelection(selectionB, pokemonNames);
+                exit.SetActive(true);
+                UpdateMenuSelection(selectionB, yesNo);
+                QuitSelection(yesNo);
             }
-            else if (flag2 == 1)
+            else if (isActive)
             {
-                UpdateMenuSelection(selectionB, pokemonNames);
+                SetPokemonNames(pokemonParties.playerParty);
+                pokemonUI.SetActive(true);
+                pokemons.SetActive(true);
+                sprite.enabled = true;
+                spriteBox.SetActive(true);
+                PokemonSelection();
+                if (flag1 == 1)
+                {
+                    UpdateMenuSelection(selectionB, pokemonNames);
+                }
+                else if (flag2 == 1)
+                {
+                    UpdateMenuSelection(selectionB, pokemonNames);
+                }
+                else
+                {
+                    UpdateMenuSelection(selectionA, pokemonNames);
+                }
             }
             else
             {
-                UpdateMenuSelection(selectionA, pokemonNames);
+                pokemonUI.SetActive(false);
+                pokemons.SetActive(false);
+                sprite.enabled = false;
+                spriteBox.SetActive(false);
+                exit.SetActive(false);
+                selectionA = 0;
+                selectionB = 0;
+                switching = false;
+                fusing = false;
+                flag1 = 0;
+                flag2 = 0;
             }
-        }
-        else
-        {
-            pokemonUI.SetActive(false);
-            pokemons.SetActive(false);
-            sprite.enabled = false;
-            spriteBox.SetActive(false);
-            exit.SetActive(false);
-            selectionA = 0;
-            selectionB = 0;
-            switching = false;
-            fusing = false;
-            flag1 = 0;
-            flag2 = 0;
         }
     }
 

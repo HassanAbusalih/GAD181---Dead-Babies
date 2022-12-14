@@ -7403,9 +7403,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 594bb832a010c4c488d4cdacb46329f5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3725053a7bcb43f47a1dd335c8bade54, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.201
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8202,7 +8202,7 @@ MonoBehaviour:
   Playerattack: {fileID: 8300000, guid: df40ceab3197edb4a9bdadcfa5cbfcdd, type: 3}
   loosingHP: {fileID: 8300000, guid: cec44632ea4ff6f4c88bee2b92a41d9f, type: 3}
   enemmyattack: {fileID: 8300000, guid: 48132ba856eadb340a70ab1c8df21fa3, type: 3}
-  SelectionSound: {fileID: 8300000, guid: dd427be906f9600458801d6b53f8e5d8, type: 3}
+  SelectionSound: {fileID: 8300000, guid: 3725053a7bcb43f47a1dd335c8bade54, type: 3}
   Click: {fileID: 8300000, guid: 6316d45df58e5f444a1bc1557b6f91b5, type: 3}
 --- !u!114 &1176521206
 MonoBehaviour:
@@ -8263,7 +8263,7 @@ MonoBehaviour:
   - Now, let's battle!
   tutorialText: {fileID: 1364705276}
   SelectionSFX: {fileID: 994639529}
-  SelectSFX: {fileID: 8300000, guid: dd427be906f9600458801d6b53f8e5d8, type: 3}
+  SelectSFX: {fileID: 8300000, guid: 3725053a7bcb43f47a1dd335c8bade54, type: 3}
 --- !u!95 &1176521207
 Animator:
   serializedVersion: 3
