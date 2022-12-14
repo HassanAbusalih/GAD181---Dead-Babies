@@ -17,6 +17,10 @@ public class TutorialText : MonoBehaviour
     Trainer trainer;
     public bool tutorialBattle;
     bool intro;
+    [SerializeField] private AudioSource SelectionSoundEffect;
+    [SerializeField] private AudioSource ClickSound;
+    [SerializeField] private AudioClip SelectionSFX;
+    [SerializeField] private AudioClip ClickSFX;
 
     private void Awake()
     {
@@ -44,6 +48,7 @@ public class TutorialText : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Space) && PlayerPrefs.GetInt("TutorialBattle") != 1)
             {
+                SelectionSoundEffect.PlayOneShot(SelectionSFX);
                 PlayerPrefs.SetInt("Tutorial", 1);
                 DialogueBeforeCombat();
             }
@@ -58,12 +63,13 @@ public class TutorialText : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.Space) && PlayerPrefs.GetInt($"{trainer.trainerBase.trainerName}1") == 1)
             {
+                SelectionSoundEffect.PlayOneShot(SelectionSFX);
                 if (!isActive)
                 {
                     isActive = true;
                     textBox.SetActive(true);
                     text.gameObject.SetActive(true);
-                    FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
+                    //FindObjectOfType<PlayerMovement>().encounter = true;  //adding this line in pervents movement during dialogue
                 }
                 DialogueAfterCombat();
             }

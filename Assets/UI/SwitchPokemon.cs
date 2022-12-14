@@ -25,7 +25,10 @@ public class SwitchPokemon : MonoBehaviour
     bool switching;
     bool fusing;
 
-
+    [SerializeField] private AudioSource SelectionSoundEffect;
+    [SerializeField] private AudioSource ClickSound;
+    [SerializeField] private AudioClip SelectionSFX;
+    [SerializeField] private AudioClip ClickSFX;
     // Update is called once per frame
     void Update()
     {
@@ -97,19 +100,23 @@ public class SwitchPokemon : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A) && selectionB == 1)
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSFX);
             selectionB--;
         }
         else if (Input.GetKeyDown(KeyCode.D) && selectionB == 0)
         {
+            SelectionSoundEffect.PlayOneShot(SelectionSFX);
             selectionB++;
         }
         if (Input.GetKeyDown(KeyCode.Space) && selectionB == 0)
         {
+            ClickSound.PlayOneShot(ClickSFX);
             quitting = false;
             FindObjectOfType<MainMenu>(true).gameObject.SetActive(true);
         }
         if (Input.GetKeyDown(KeyCode.Space) && selectionB == 1)
         {
+            ClickSound.PlayOneShot(ClickSFX);
             quitting = false;
         }
     }
@@ -163,22 +170,26 @@ public class SwitchPokemon : MonoBehaviour
                 if (selectionA > 0)
                 {
                     selectionA -= 1;
+                    SelectionSoundEffect.PlayOneShot(SelectionSFX);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.S))
-            {
+            { 
                 if (selectionA < pokemonParties.playerParty.Count - 1)
                 {
+                    SelectionSoundEffect.PlayOneShot(SelectionSFX);
                     selectionA += 1;
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Space) && pokemonParties.playerParty.Count >= 2)
             {
+                ClickSound.PlayOneShot(ClickSFX);
                 switching = true;
                 uiText.text = "Switching...";
             }
             else if (Input.GetKeyDown(KeyCode.E) && pokemonParties.playerParty.Count >= 2)
             {
+                ClickSound.PlayOneShot(ClickSFX);
                 fusing = true;
                 uiText.text = "Fusing...";
             }
@@ -190,6 +201,7 @@ public class SwitchPokemon : MonoBehaviour
             {
                 if (selectionB > 0)
                 {
+                    SelectionSoundEffect.PlayOneShot(SelectionSFX);
                     selectionB -= 1;
                 }
             }
@@ -197,17 +209,20 @@ public class SwitchPokemon : MonoBehaviour
             {
                 if (selectionB < pokemonParties.playerParty.Count - 1)
                 {
+                    SelectionSoundEffect.PlayOneShot(SelectionSFX);
                     selectionB += 1;
                 }
             }
             else if (Input.GetKeyDown(KeyCode.Space) && switching)
             {
+                ClickSound.PlayOneShot(ClickSFX);
                 Switch();
             }
             else if (Input.GetKeyDown(KeyCode.E) && fusing)
             {
                 if (selectionA != selectionB)
                 {
+                    ClickSound.PlayOneShot(ClickSFX);
                     Fuse();
                 }
             }

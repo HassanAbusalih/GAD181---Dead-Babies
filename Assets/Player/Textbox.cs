@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Textbox : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Textbox : MonoBehaviour
     int counter;
     Trainer trainer;
 
+    [SerializeField] AudioSource SelectionSFX;
+    [SerializeField] private AudioClip SelectSFX;
+
     private void Awake()
     {
         trainer = GetComponent<Trainer>();
@@ -27,7 +31,7 @@ public class Textbox : MonoBehaviour
         if (textCollider.IsTouching(playerCollider))
         {
             if (Input.GetKeyDown(KeyCode.Space))
-            {
+            { 
                 if (!isActive)
                 {
                     isActive = true;
@@ -47,6 +51,10 @@ public class Textbox : MonoBehaviour
                     text.gameObject.SetActive(true);
                     NextLine();
                 }
+                else if (PlayerPrefs.GetInt("Red1") == 1)
+                {
+                    SceneManager.LoadScene(2);
+                }
             }
         }
     }
@@ -55,6 +63,7 @@ public class Textbox : MonoBehaviour
     {
         if (counter < textList.Count)
         {
+            SelectionSFX.PlayOneShot(SelectSFX);
             text.text = textList[counter];
             counter++;
         }
