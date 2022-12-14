@@ -62,6 +62,7 @@ public class BattleDialogue : MonoBehaviour
             tutorialText.text = dialogue[i];
             yield return new WaitForSeconds(0.3f);
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+            SelectionSFX.PlayOneShot(SelectSFX);
         }
     }
 
