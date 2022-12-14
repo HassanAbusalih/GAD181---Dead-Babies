@@ -23,7 +23,7 @@ MonoBehaviour:
   spDefence: 65
   speed: 80
   type1: 13
-  type2: 7
+  type2: 6
   type1Color: {r: 0, g: 0, b: 0, a: 0}
   type2Color: {r: 0, g: 0, b: 0, a: 0}
   pokeNumber: 25
