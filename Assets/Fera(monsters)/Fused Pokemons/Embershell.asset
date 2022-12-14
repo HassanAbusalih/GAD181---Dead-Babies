@@ -22,7 +22,7 @@ MonoBehaviour:
   spAttack: 83
   spDefence: 70
   speed: 53
-  type1: 3
+  type1: 1
   type2: 2
   type1Color: {r: 0, g: 0, b: 0, a: 0}
   type2Color: {r: 0, g: 0, b: 0, a: 0}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Textbox : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Textbox : MonoBehaviour
 
     [SerializeField] AudioSource SelectionSFX;
     [SerializeField] private AudioClip SelectSFX;
+
     private void Awake()
     {
         trainer = GetComponent<Trainer>();
@@ -48,6 +50,10 @@ public class Textbox : MonoBehaviour
                     textBox.SetActive(true);
                     text.gameObject.SetActive(true);
                     NextLine();
+                }
+                else if (PlayerPrefs.GetInt("Red1") == 1)
+                {
+                    SceneManager.LoadScene(2);
                 }
             }
         }

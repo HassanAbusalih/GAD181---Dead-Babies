@@ -15,7 +15,7 @@ MonoBehaviour:
   movename: Gust
   movescolor: {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 0}
   description: 
-  type: 12
+  type: 5
   category: 2
   power: 50
   accuracy: 100

@@ -25,9 +25,6 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        float dmg = PokemonTypeChart.GetDamageEffectiveness(PokemonType.Poison, PokemonType.Steel);
-        print($"damage is {dmg}");
-
         LoadPos();
         saveLoad.Load();
         myBoxCollider2D = GetComponent<BoxCollider2D>();
