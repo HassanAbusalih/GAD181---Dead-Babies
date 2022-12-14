@@ -6,11 +6,6 @@ public class Progression : MonoBehaviour
 {
     [SerializeField] Trainers trainerBase;
 
-    private void Start()
-    {
-        trainerBase = GetComponent<Trainers>();
-    }
-
     void Update()
     {
         if (PlayerPrefs.GetInt($"{trainerBase.trainerName}1") == 0)
