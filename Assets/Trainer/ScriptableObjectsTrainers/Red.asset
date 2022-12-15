@@ -15,8 +15,38 @@ MonoBehaviour:
   trainerName: Red
   trainerSprite: {fileID: 0}
   trainerPokemon:
-  - pokemonBase: {fileID: 0}
-    level: 0
+  - pokemonBase: {fileID: 11400000, guid: 518eff4d92369d84bac0654a520e3735, type: 2}
+    level: 11
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: f6c694ecbee11314889658fbca6fd4cf, type: 2}
+    level: 12
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: a4898444bfc93f940ba9e5c40321456a, type: 2}
+    level: 14
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: a15b4d9668edbdd4aa1dd1960d6e8b7b, type: 2}
+    level: 16
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: eb64775f092fe7c47aeedf4688152c05, type: 2}
+    level: 17
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 36432cc9e6316ae41ada8152f8ef4791, type: 2}
+    level: 19
     totalHP: 0
     currentHP: 0
     currentXpPoints: 0

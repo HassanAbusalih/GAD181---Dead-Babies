@@ -51,10 +51,6 @@ public class Textbox : MonoBehaviour
                     text.gameObject.SetActive(true);
                     NextLine();
                 }
-                else if (PlayerPrefs.GetInt("Red1") == 1)
-                {
-                    SceneManager.LoadScene(2);
-                }
             }
         }
     }
@@ -74,6 +70,10 @@ public class Textbox : MonoBehaviour
             isActive = false;
             counter = 0;
             //FindObjectOfType<PlayerMovement>().encounter = false;
+            if (PlayerPrefs.GetInt("Red1") == 1)
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
 
