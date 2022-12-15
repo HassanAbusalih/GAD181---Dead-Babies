@@ -9,9 +9,11 @@ public class SwitchPokemon : MonoBehaviour
     public GameObject pokemons;
     public GameObject exit;
     public GameObject spriteBox;
+    public GameObject statBox;
     public Image sprite;
     public List<TextMeshProUGUI> yesNo;
     public List<TextMeshProUGUI> pokemonNames;
+    public List<TextMeshProUGUI> pokemonStats;
     public TextMeshProUGUI uiText;
     public PokemonParties pokemonParties;
     public int selectionA = 0;
@@ -32,7 +34,7 @@ public class SwitchPokemon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!FindObjectOfType<TutorialText>().isActive)
+        if (!FindObjectOfType<TutorialText>(true).isActive)
         {
             Activate();
             if (quitting)
@@ -48,6 +50,7 @@ public class SwitchPokemon : MonoBehaviour
                 pokemons.SetActive(true);
                 sprite.enabled = true;
                 spriteBox.SetActive(true);
+                statBox.SetActive(true);
                 PokemonSelection();
                 if (flag1 == 1)
                 {
@@ -69,6 +72,7 @@ public class SwitchPokemon : MonoBehaviour
                 sprite.enabled = false;
                 spriteBox.SetActive(false);
                 exit.SetActive(false);
+                statBox.SetActive(false);
                 selectionA = 0;
                 selectionB = 0;
                 switching = false;
@@ -89,6 +93,12 @@ public class SwitchPokemon : MonoBehaviour
                 if (isActive)
                 {
                     sprite.sprite = pokemonParties.playerParty[i].pokemonBase.pokeSprite;
+                    pokemonStats[0].text = $"Base HP: {pokemonParties.playerParty[i].pokemonBase.maxHp}";
+                    pokemonStats[1].text = $"Attack: {pokemonParties.playerParty[i].pokemonBase.attack}";
+                    pokemonStats[2].text = $"Defense: {pokemonParties.playerParty[i].pokemonBase.defense}";
+                    pokemonStats[3].text = $"Sp Attack: {pokemonParties.playerParty[i].pokemonBase.spAttack}";
+                    pokemonStats[4].text = $"Sp Defense: {pokemonParties.playerParty[i].pokemonBase.spDefence}";
+                    pokemonStats[5].text = $"Crit Rate: {pokemonParties.playerParty[i].pokemonBase.speed/2}%";
                 }
             }
             else menu[i].color = Color.black;
