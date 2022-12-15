@@ -15,7 +15,7 @@ MonoBehaviour:
   movename: Magnetic drill
   movescolor: {r: 0.735849, g: 0.48995906, b: 0, a: 0}
   description: 
-  type: 4
+  type: 3
   category: 2
   power: 65
   accuracy: 0

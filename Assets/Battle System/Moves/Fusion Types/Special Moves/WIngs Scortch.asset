@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WIngs Scortch
   m_EditorClassIdentifier: 
   movename: Wings Scortch
-  movescolor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0}
+  movescolor: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
   description: 
-  type: 12
+  type: 5
   category: 2
   power: 80
   accuracy: 0
