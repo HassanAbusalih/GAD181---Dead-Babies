@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: Metal Chip
+  m_Name: Hard Wing
   m_EditorClassIdentifier: 
-  movename: Metal Chip
-  movescolor: {r: 0.764151, g: 0.764151, b: 0.764151, a: 0}
+  movename: Hard Wing
+  movescolor: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
   description: 
-  type: 8
+  type: 5
   category: 2
-  power: 70
+  power: 80
   accuracy: 0
-  powerpoints: 5
+  powerpoints: 4

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Smooth Pebble
   m_EditorClassIdentifier: 
   movename: Smooth Pebble
-  movescolor: {r: 0.5377358, g: 0.37196943, b: 0, a: 0}
+  movescolor: {r: 0.33962262, g: 0.14042947, b: 0.017301502, a: 0}
   description: 
   type: 7
   category: 2

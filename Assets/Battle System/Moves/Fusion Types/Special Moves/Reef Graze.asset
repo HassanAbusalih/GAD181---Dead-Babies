@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Reef Graze
   m_EditorClassIdentifier: 
   movename: Reef Graze
-  movescolor: {r: 0.08627451, g: 0.5647059, b: 0, a: 0}
+  movescolor: {r: 0.33962262, g: 0.14042947, b: 0.017301502, a: 0}
   description: 
   type: 7
   category: 2
