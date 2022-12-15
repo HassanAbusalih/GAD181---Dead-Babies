@@ -420,8 +420,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Thank you. We hope you enjoyed our game.\n\nDirected By:\_\n\nMain Designer:\n\nDesigner:\n\nMain
-    Programmer:\n\nProgrammer:"
+  m_Text: 'Thank you. We hope you enjoyed our game.
+
+
+
+
+    Main Designer:
+
+
+    Designer:
+
+
+    Main
+    Programmer:
+
+
+    Programmer and Desinger:'
 --- !u!222 &332601295
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -822,7 +836,6 @@ MonoBehaviour:
 
 
 
-    Ahmed Mukhtar
 
 
     Armaan Shaikh
@@ -831,11 +844,11 @@ MonoBehaviour:
     Khaled Ouedraogo
 
 
-    Hassan
-    Abusalih
+    Hassan Abusalih
 
 
-    Ahmed Mukhtar'
+    Ahmed
+    Mukhtar'
 --- !u!222 &1256811520
 CanvasRenderer:
   m_ObjectHideFlags: 0
