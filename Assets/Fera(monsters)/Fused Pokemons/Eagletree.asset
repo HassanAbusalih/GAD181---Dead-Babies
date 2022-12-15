@@ -24,17 +24,17 @@ MonoBehaviour:
   speed: 85
   type1: 5
   type2: 4
-  type1Color: {r: 0, g: 0, b: 0, a: 0}
-  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  type1Color: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
+  type2Color: {r: 0.08627451, g: 0.5647059, b: 0, a: 0}
   pokeNumber: 31
   learnableMoves:
   - moves: {fileID: 11400000, guid: 458626511572ea843b092441236ea490, type: 2}
     level: 0
   - moves: {fileID: 11400000, guid: 52fe2e3244b61314ba15113c25df5e3a, type: 2}
     level: 10
-  - moves: {fileID: 11400000, guid: 4c2ce91064b42094892de0d2d73db016, type: 2}
+  - moves: {fileID: 11400000, guid: 861da1d3a43d8a946a08aca2de1f6fb2, type: 2}
     level: 15
-  - moves: {fileID: 11400000, guid: c78c8f9f3d6d57a43a7839a7162ecc1e, type: 2}
+  - moves: {fileID: 11400000, guid: 036b7d03abf1b9449ab045a4d25d196e, type: 2}
     level: 20
   evolutions:
     evolveTo: {fileID: 0}

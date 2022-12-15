@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: WIngs Scortch
+  m_Name: Sting
   m_EditorClassIdentifier: 
-  movename: Wings Scortch
-  movescolor: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
+  movename: Sting
+  movescolor: {r: 0.40943396, g: 1, b: 0.44605696, a: 0}
   description: 
-  type: 5
+  type: 6
   category: 2
-  power: 80
+  power: 70
   accuracy: 0
-  powerpoints: 4
+  powerpoints: 5
