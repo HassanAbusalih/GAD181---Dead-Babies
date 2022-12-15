@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
+  m_Name: Silver
+  m_EditorClassIdentifier: 
+  trainerName: Silver
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 8351a9c423859b24c8c8d3e93cde1a5c, type: 2}
+    level: 11
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 400f37a7ef7e94547ba464120b3e2d32, type: 2}
+    level: 14
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 4d3d223ba8ae9de4daafbbbba38546df, type: 2}
+    level: 20
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  trainerinbattle: {fileID: 21300000, guid: c7b8cb88791b1e143a3e9fe60ffc8407, type: 3}

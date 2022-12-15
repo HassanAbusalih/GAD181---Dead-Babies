@@ -1,0 +1,721 @@
+fileFormatVersion: 2
+guid: ef58fbcb349a6684b907de7c5b5f9b5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2875931987899696872
+    second: sand-removebg-preview_0
+  - first:
+      213: 8941925976735359472
+    second: sand-removebg-preview_1
+  - first:
+      213: 5541928910935868728
+    second: sand-removebg-preview_2
+  - first:
+      213: -7927232866592948779
+    second: sand-removebg-preview_3
+  - first:
+      213: 3523514851950327911
+    second: sand-removebg-preview_4
+  - first:
+      213: -4853804395765551467
+    second: sand-removebg-preview_5
+  - first:
+      213: 877325216461103341
+    second: sand-removebg-preview_6
+  - first:
+      213: 7227216833208304998
+    second: sand-removebg-preview_7
+  - first:
+      213: 1016395677301073001
+    second: sand-removebg-preview_8
+  - first:
+      213: 2124838327393840000
+    second: sand-removebg-preview_9
+  - first:
+      213: -6586443286444918029
+    second: sand-removebg-preview_10
+  - first:
+      213: -528345939088770821
+    second: sand-removebg-preview_11
+  - first:
+      213: 2765381516675201678
+    second: sand-removebg-preview_12
+  - first:
+      213: -4238553624184481834
+    second: sand-removebg-preview_13
+  - first:
+      213: 5229300238257133586
+    second: sand-removebg-preview_14
+  - first:
+      213: -106415274431719088
+    second: sand-removebg-preview_15
+  - first:
+      213: -3165075367490751274
+    second: sand-removebg-preview_16
+  - first:
+      213: 4348064354687186391
+    second: sand-removebg-preview_17
+  - first:
+      213: -4267588388669126399
+    second: sand-removebg-preview_18
+  - first:
+      213: -2578087356905171113
+    second: sand-removebg-preview_19
+  - first:
+      213: 7238718526367954349
+    second: sand-removebg-preview_20
+  - first:
+      213: 8619294306351536922
+    second: sand-removebg-preview_21
+  - first:
+      213: -2858853282875893789
+    second: sand-removebg-preview_22
+  - first:
+      213: -3954290998905583765
+    second: sand-removebg-preview_23
+  - first:
+      213: -3632997625552767855
+    second: sand-removebg-preview_24
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sand-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6c1f8d7ec59e720800000000000000
+      internalID: 2875931987899696872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1262bac4a181c70800000000000000
+      internalID: 8941925976735359472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835ccca6bf2e8ec40800000000000000
+      internalID: 5541928910935868728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddfce645bfccf190800000000000000
+      internalID: -7927232866592948779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ff47e61a06e030800000000000000
+      internalID: 3523514851950327911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e2a2d5e92d3acb0800000000000000
+      internalID: -4853804395765551467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de028a7d2a2ec2c00800000000000000
+      internalID: 877325216461103341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665ca1a1b6b3c4460800000000000000
+      internalID: 7227216833208304998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 88
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964e5c0cb76fa1e00800000000000000
+      internalID: 1016395677301073001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08be17d6331fc7d10800000000000000
+      internalID: 2124838327393840000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fab13a3ab04894a0800000000000000
+      internalID: -6586443286444918029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8f71eea20faa8f0800000000000000
+      internalID: -528345939088770821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a3bd976db906620800000000000000
+      internalID: 2765381516675201678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d71a058fe1ad25c0800000000000000
+      internalID: -4238553624184481834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2189e255cd4329840800000000000000
+      internalID: 5229300238257133586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05952d82fdfe58ef0800000000000000
+      internalID: -106415274431719088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4ff59f8b46314d0800000000000000
+      internalID: -3165075367490751274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5faa95e7d675c30800000000000000
+      internalID: 4348064354687186391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1098bcd98fa76c4c0800000000000000
+      internalID: -4267588388669126399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757ddbb453bc83cd0800000000000000
+      internalID: -2578087356905171113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da57339b528157460800000000000000
+      internalID: 7238718526367954349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b51a03182ed9770800000000000000
+      internalID: 8619294306351536922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7193906105358d0800000000000000
+      internalID: -2858853282875893789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6745b789498f19c0800000000000000
+      internalID: -3954290998905583765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 24
+        width: 32
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194f61378eff49dc0800000000000000
+      internalID: -3632997625552767855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

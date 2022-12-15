@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Shelagu
+  m_EditorClassIdentifier: 
+  pokeName: Shelagu
+  description: 
+  pokeSprite: {fileID: 21300000, guid: aafbd7d68019e7241a028f8897a42173, type: 3}
+  backSprite: {fileID: 21300000, guid: c2ee90847061f9c4cb4682a641137be9, type: 3}
+  maxHp: 50
+  attack: 52
+  defense: 48
+  spAttack: 65
+  spDefence: 50
+  speed: 55
+  type1: 2
+  type2: -1
+  type1Color: {r: 0, g: 0.21568629, b: 0.75294125, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  pokeNumber: 21
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 777dba8cf2c09fb4fbf95b1e13983146, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 570164ef9d6ae0b4c8e3d63ff1ade66e, type: 2}
+    level: 3
+  - moves: {fileID: 11400000, guid: ee7a272f967edca4e82ed44af8b644ba, type: 2}
+    level: 7
+  - moves: {fileID: 11400000, guid: 1e2a510854d698f439257427ba1909ec, type: 2}
+    level: 11
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: 

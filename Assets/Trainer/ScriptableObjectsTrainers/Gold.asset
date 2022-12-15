@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
+  m_Name: Gold
+  m_EditorClassIdentifier: 
+  trainerName: Gold
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 625e31414338bf94db515d41478b2db2, type: 2}
+    level: 13
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: b7043590db7969349ac0f3edb5174ac8, type: 2}
+    level: 14
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 7b6fc27076399654a9adfe1d9b1cbdfc, type: 2}
+    level: 16
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 4a9ed57a3bf22484a92928e1d2f15369, type: 2}
+    level: 22
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  trainerinbattle: {fileID: 21300000, guid: fa046c48a7bc39542a1a75d5802dc37e, type: 3}

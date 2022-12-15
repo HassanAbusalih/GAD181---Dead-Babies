@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Embershell
+  m_EditorClassIdentifier: 
+  pokeName: Embershell
+  description: 
+  pokeSprite: {fileID: 21300000, guid: d12ffa6901c8b7045b0826ff7b0c7df0, type: 3}
+  backSprite: {fileID: 21300000, guid: cff74052a39012246ac27e5f5fdcdd70, type: 3}
+  maxHp: 63
+  attack: 66
+  defense: 67
+  spAttack: 83
+  spDefence: 70
+  speed: 53
+  type1: 1
+  type2: 2
+  type1Color: {r: 0.6509434, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0.12315698, b: 0.6698113, a: 0}
+  pokeNumber: 29
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 44b09f9a0c5539249839e4d200d16942, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: bd1edc09e77f3be40a38a33070427c6d, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 953fa46b653e24a4b9f6528d144cd489, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: 4c2ce91064b42094892de0d2d73db016, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: EmbraShelagu

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Fluttasage
+  m_EditorClassIdentifier: 
+  pokeName: Fluttasage
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 86ac63f61b6c5ab44abccf2f2ca00d64, type: 3}
+  backSprite: {fileID: 21300000, guid: 94663ae8cad643541847a8145de919ed, type: 3}
+  maxHp: 48
+  attack: 50
+  defense: 45
+  spAttack: 65
+  spDefence: 65
+  speed: 80
+  type1: 13
+  type2: 6
+  type1Color: {r: 0.6784314, g: 0, b: 0.4666667, a: 0}
+  type2Color: {r: 0.40943396, g: 1, b: 0.44605696, a: 0}
+  pokeNumber: 25
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 2379083c27d95e74abcf3223f75b3e39, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 4ad4845860d6ea54f883288158f478c8, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 0c5c97d37d1fd0e46b19fed55a7a43e8, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: c0ee01e2d9b9b00418b0e40f2b070d28, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: FluttaflapSampsage

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Eruptitherme
+  m_EditorClassIdentifier: 
+  pokeName: Eruptitherme
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 6ada483e698b9cd4da816bd9457c974e, type: 3}
+  backSprite: {fileID: 21300000, guid: 86c1b69c22541e740b9a5b991b809b29, type: 3}
+  maxHp: 45
+  attack: 73
+  defense: 75
+  spAttack: 75
+  spDefence: 68
+  speed: 75
+  type1: 1
+  type2: 7
+  type1Color: {r: 0.6509434, g: 0, b: 0, a: 0}
+  type2Color: {r: 0.33962262, g: 0.14042947, b: 0.017301502, a: 0}
+  pokeNumber: 32
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 0f8087e2514b64842a38796581be93a0, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 3fec37249fe5b70429c28a395e9084aa, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: c78c8f9f3d6d57a43a7839a7162ecc1e, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: ec5ecb755e20dbb4e90e035a7776ecaa, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: CriniothermeEruptibus

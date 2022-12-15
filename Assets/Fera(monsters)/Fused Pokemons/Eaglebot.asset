@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Eaglebot
+  m_EditorClassIdentifier: 
+  pokeName: 'Eaglebot '
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 20c93bded774ad244be52b55e5e3869f, type: 3}
+  backSprite: {fileID: 21300000, guid: 0eb40561faa74254bb9f5dd4310ae931, type: 3}
+  maxHp: 69
+  attack: 75
+  defense: 63
+  spAttack: 103
+  spDefence: 65
+  speed: 91
+  type1: 5
+  type2: 3
+  type1Color: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
+  type2Color: {r: 0.735849, g: 0.48995906, b: 0, a: 0}
+  pokeNumber: 30
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 27b2709feb2fe584daa9aa0c719ac8c1, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 02f48b7e392ecb14a94092f8a8823796, type: 2}
+    level: 10
+  - moves: {fileID: 11400000, guid: 49e0a6ac0c6596d449773ed1da34447e, type: 2}
+    level: 15
+  - moves: {fileID: 11400000, guid: ca1e5183333c1064e976d3a6cfe0673c, type: 2}
+    level: 20
+  evolutions:
+    evolveTo: {fileID: 0}
+    levelForEvolve: 0
+  fusionName: EaglaceMonkeybot

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f31e170ce9a473046beb959598f73e62, type: 3}
+  m_Name: Agnite
+  m_EditorClassIdentifier: 
+  pokeName: Agnite
+  description: 
+  pokeSprite: {fileID: 21300000, guid: 3752d2a7db915224081b2e941bf7992e, type: 3}
+  backSprite: {fileID: 21300000, guid: fc4d9de1a727ea447b2e5f817f0669d3, type: 3}
+  maxHp: 45
+  attack: 52
+  defense: 43
+  spAttack: 60
+  spDefence: 50
+  speed: 65
+  type1: 1
+  type2: -1
+  type1Color: {r: 0.8313726, g: 0, b: 0, a: 0}
+  type2Color: {r: 0, g: 0, b: 0, a: 0}
+  pokeNumber: 1
+  learnableMoves:
+  - moves: {fileID: 11400000, guid: 870db5da67cfcd741bd35b50f4db4c11, type: 2}
+    level: 0
+  - moves: {fileID: 11400000, guid: 11fac35d7bb64184097dd30c181e9c73, type: 2}
+    level: 4
+  - moves: {fileID: 11400000, guid: b4eb6d89fec42c04a81c4b9fc6c2f760, type: 2}
+    level: 8
+  - moves: {fileID: 11400000, guid: 122e18ecf5a2bd8499b6e6b3d08aa24b, type: 2}
+    level: 10
+  evolutions:
+    evolveTo: {fileID: 11400000, guid: 625e31414338bf94db515d41478b2db2, type: 2}
+    levelForEvolve: 10
+  fusionName: 

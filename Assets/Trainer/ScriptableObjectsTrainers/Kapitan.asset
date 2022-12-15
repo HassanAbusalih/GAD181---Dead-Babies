@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
+  m_Name: Kapitan
+  m_EditorClassIdentifier: 
+  trainerName: Kapitan
+  trainerSprite: {fileID: 0}
+  trainerPokemon:
+  - pokemonBase: {fileID: 11400000, guid: 4bf10cc7151fddd4691b74e463059d19, type: 2}
+    level: 9
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  - pokemonBase: {fileID: 11400000, guid: 7ddc486109c5ee44bb069802b255257f, type: 2}
+    level: 15
+    totalHP: 0
+    currentHP: 0
+    currentXpPoints: 0
+    xpThreshhold: 0
+  trainerinbattle: {fileID: 21300000, guid: ccde06d236a9da946ab0800818c3fcb4, type: 3}

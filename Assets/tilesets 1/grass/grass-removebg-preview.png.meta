@@ -1,0 +1,4505 @@
+fileFormatVersion: 2
+guid: 0304b377df29f33459abde1853a08524
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6376084700010565120
+    second: grass-removebg-preview_0
+  - first:
+      213: 7154753963911971981
+    second: grass-removebg-preview_1
+  - first:
+      213: -8949568787221602803
+    second: grass-removebg-preview_2
+  - first:
+      213: -1305588322876212391
+    second: grass-removebg-preview_3
+  - first:
+      213: -1713370610002320475
+    second: grass-removebg-preview_4
+  - first:
+      213: 3607680621821571903
+    second: grass-removebg-preview_5
+  - first:
+      213: 3851261880860682845
+    second: grass-removebg-preview_6
+  - first:
+      213: 8743498081644500948
+    second: grass-removebg-preview_7
+  - first:
+      213: -3729302352651197811
+    second: grass-removebg-preview_8
+  - first:
+      213: 3904178147958203584
+    second: grass-removebg-preview_9
+  - first:
+      213: -5417782123817013039
+    second: grass-removebg-preview_10
+  - first:
+      213: -1927388928953314148
+    second: grass-removebg-preview_11
+  - first:
+      213: -3890650351768164538
+    second: grass-removebg-preview_12
+  - first:
+      213: -3795974925516493401
+    second: grass-removebg-preview_13
+  - first:
+      213: -2482046431098929943
+    second: grass-removebg-preview_14
+  - first:
+      213: 215474445784001653
+    second: grass-removebg-preview_15
+  - first:
+      213: -6010715774683214821
+    second: grass-removebg-preview_16
+  - first:
+      213: -7795670706379502350
+    second: grass-removebg-preview_17
+  - first:
+      213: 7448448697198843654
+    second: grass-removebg-preview_18
+  - first:
+      213: 6190267870999506541
+    second: grass-removebg-preview_19
+  - first:
+      213: 3137466981800658802
+    second: grass-removebg-preview_20
+  - first:
+      213: -844911444573751022
+    second: grass-removebg-preview_21
+  - first:
+      213: 4699860764802049868
+    second: grass-removebg-preview_22
+  - first:
+      213: 5697894109989363857
+    second: grass-removebg-preview_23
+  - first:
+      213: 3074037905096118916
+    second: grass-removebg-preview_24
+  - first:
+      213: 8333941282726719242
+    second: grass-removebg-preview_25
+  - first:
+      213: 148591771933983453
+    second: grass-removebg-preview_26
+  - first:
+      213: -324243091772595874
+    second: grass-removebg-preview_27
+  - first:
+      213: -2967250891444382631
+    second: grass-removebg-preview_28
+  - first:
+      213: 398516033887903595
+    second: grass-removebg-preview_29
+  - first:
+      213: -482360107240389220
+    second: grass-removebg-preview_30
+  - first:
+      213: 7221144249754717322
+    second: grass-removebg-preview_31
+  - first:
+      213: -6844813041475032627
+    second: grass-removebg-preview_32
+  - first:
+      213: 1283292501769850368
+    second: grass-removebg-preview_33
+  - first:
+      213: -7113051574166285744
+    second: grass-removebg-preview_34
+  - first:
+      213: 2919920127503174549
+    second: grass-removebg-preview_35
+  - first:
+      213: 7548708969904873354
+    second: grass-removebg-preview_36
+  - first:
+      213: -6898056212461088001
+    second: grass-removebg-preview_37
+  - first:
+      213: 1746831508119873882
+    second: grass-removebg-preview_38
+  - first:
+      213: 6283011791477648767
+    second: grass-removebg-preview_39
+  - first:
+      213: 1982932843897515488
+    second: grass-removebg-preview_40
+  - first:
+      213: 7103171953543748743
+    second: grass-removebg-preview_41
+  - first:
+      213: 6400255123896320136
+    second: grass-removebg-preview_42
+  - first:
+      213: 653279733928797815
+    second: grass-removebg-preview_43
+  - first:
+      213: 8199962918974033449
+    second: grass-removebg-preview_44
+  - first:
+      213: 5919458292286102834
+    second: grass-removebg-preview_45
+  - first:
+      213: 744520100008025062
+    second: grass-removebg-preview_46
+  - first:
+      213: -7930766515589766873
+    second: grass-removebg-preview_47
+  - first:
+      213: 1477997491453776108
+    second: grass-removebg-preview_48
+  - first:
+      213: 8684494483869727686
+    second: grass-removebg-preview_49
+  - first:
+      213: -8279241903379860381
+    second: grass-removebg-preview_50
+  - first:
+      213: 5464995229198747191
+    second: grass-removebg-preview_51
+  - first:
+      213: 3218007350277936977
+    second: grass-removebg-preview_52
+  - first:
+      213: -4125391566007288238
+    second: grass-removebg-preview_53
+  - first:
+      213: 1507515164375381182
+    second: grass-removebg-preview_54
+  - first:
+      213: -4213627929219668742
+    second: grass-removebg-preview_55
+  - first:
+      213: -5454088038827151104
+    second: grass-removebg-preview_56
+  - first:
+      213: 7206664520777219050
+    second: grass-removebg-preview_57
+  - first:
+      213: 7211830812082168629
+    second: grass-removebg-preview_58
+  - first:
+      213: 4201747249879055610
+    second: grass-removebg-preview_59
+  - first:
+      213: 2867675838678295146
+    second: grass-removebg-preview_60
+  - first:
+      213: 7016769403197949612
+    second: grass-removebg-preview_61
+  - first:
+      213: -2288913909068499400
+    second: grass-removebg-preview_62
+  - first:
+      213: 7305895592554772853
+    second: grass-removebg-preview_63
+  - first:
+      213: 6958631515931104402
+    second: grass-removebg-preview_64
+  - first:
+      213: -4901010852247246685
+    second: grass-removebg-preview_65
+  - first:
+      213: -8187667739995069129
+    second: grass-removebg-preview_66
+  - first:
+      213: 841009688880216935
+    second: grass-removebg-preview_67
+  - first:
+      213: -7074948507666119243
+    second: grass-removebg-preview_68
+  - first:
+      213: 903981258307022781
+    second: grass-removebg-preview_69
+  - first:
+      213: 3999729677451647504
+    second: grass-removebg-preview_70
+  - first:
+      213: -3903874136881240007
+    second: grass-removebg-preview_71
+  - first:
+      213: 614991830474143344
+    second: grass-removebg-preview_72
+  - first:
+      213: -9036982176242074266
+    second: grass-removebg-preview_73
+  - first:
+      213: -4292374376322313106
+    second: grass-removebg-preview_74
+  - first:
+      213: -8408494322574367650
+    second: grass-removebg-preview_75
+  - first:
+      213: -6729066088657280327
+    second: grass-removebg-preview_76
+  - first:
+      213: -2091145753346155551
+    second: grass-removebg-preview_77
+  - first:
+      213: 455479769854229327
+    second: grass-removebg-preview_78
+  - first:
+      213: 949212749307609757
+    second: grass-removebg-preview_79
+  - first:
+      213: 4098555108581067268
+    second: grass-removebg-preview_80
+  - first:
+      213: 4656931507295439062
+    second: grass-removebg-preview_81
+  - first:
+      213: -4255998206481445998
+    second: grass-removebg-preview_82
+  - first:
+      213: 939119017953781802
+    second: grass-removebg-preview_83
+  - first:
+      213: -6890432885804201980
+    second: grass-removebg-preview_84
+  - first:
+      213: 8654939621980849217
+    second: grass-removebg-preview_85
+  - first:
+      213: 8760933971534105460
+    second: grass-removebg-preview_86
+  - first:
+      213: -8239093664921127513
+    second: grass-removebg-preview_87
+  - first:
+      213: 5311326484244661770
+    second: grass-removebg-preview_88
+  - first:
+      213: -8861478018970027987
+    second: grass-removebg-preview_89
+  - first:
+      213: -6383679940747533826
+    second: grass-removebg-preview_90
+  - first:
+      213: -5189522973014526209
+    second: grass-removebg-preview_91
+  - first:
+      213: 5887321705381503507
+    second: grass-removebg-preview_92
+  - first:
+      213: -8547337019432978969
+    second: grass-removebg-preview_93
+  - first:
+      213: 163795561507720344
+    second: grass-removebg-preview_94
+  - first:
+      213: 511082039658557553
+    second: grass-removebg-preview_95
+  - first:
+      213: 8111575709526021400
+    second: grass-removebg-preview_96
+  - first:
+      213: -6959855178396458385
+    second: grass-removebg-preview_97
+  - first:
+      213: 2712749612185231616
+    second: grass-removebg-preview_98
+  - first:
+      213: -591966990366522250
+    second: grass-removebg-preview_99
+  - first:
+      213: -5631726960390031974
+    second: grass-removebg-preview_100
+  - first:
+      213: 2741529661007969337
+    second: grass-removebg-preview_101
+  - first:
+      213: -2337267013304137325
+    second: grass-removebg-preview_102
+  - first:
+      213: -2067694633133198523
+    second: grass-removebg-preview_103
+  - first:
+      213: 4789899034742717271
+    second: grass-removebg-preview_104
+  - first:
+      213: -8737774780476672137
+    second: grass-removebg-preview_105
+  - first:
+      213: 7152786556526020050
+    second: grass-removebg-preview_106
+  - first:
+      213: -6773411878230507470
+    second: grass-removebg-preview_107
+  - first:
+      213: 7283701273665346693
+    second: grass-removebg-preview_108
+  - first:
+      213: 3146602019732071213
+    second: grass-removebg-preview_109
+  - first:
+      213: 175827452091237926
+    second: grass-removebg-preview_110
+  - first:
+      213: -8219612011668161704
+    second: grass-removebg-preview_111
+  - first:
+      213: 2802762678370751258
+    second: grass-removebg-preview_112
+  - first:
+      213: 1071385081280992227
+    second: grass-removebg-preview_113
+  - first:
+      213: -7584675693415016706
+    second: grass-removebg-preview_114
+  - first:
+      213: 5084029955146665046
+    second: grass-removebg-preview_115
+  - first:
+      213: -4948466699079681259
+    second: grass-removebg-preview_116
+  - first:
+      213: 7615669225661127919
+    second: grass-removebg-preview_117
+  - first:
+      213: -3446775627545898297
+    second: grass-removebg-preview_118
+  - first:
+      213: 5840987265573551650
+    second: grass-removebg-preview_119
+  - first:
+      213: 2171279853201105364
+    second: grass-removebg-preview_120
+  - first:
+      213: 7820860563246736732
+    second: grass-removebg-preview_121
+  - first:
+      213: -8183111612725739066
+    second: grass-removebg-preview_122
+  - first:
+      213: -3301300814222165250
+    second: grass-removebg-preview_123
+  - first:
+      213: -8702855974724050504
+    second: grass-removebg-preview_124
+  - first:
+      213: -6307749627864655951
+    second: grass-removebg-preview_125
+  - first:
+      213: -4277897842680145351
+    second: grass-removebg-preview_126
+  - first:
+      213: 861885505294234923
+    second: grass-removebg-preview_127
+  - first:
+      213: 3161580183723203194
+    second: grass-removebg-preview_128
+  - first:
+      213: 6293543544263549202
+    second: grass-removebg-preview_129
+  - first:
+      213: 435708615227708214
+    second: grass-removebg-preview_130
+  - first:
+      213: -5759503220052620890
+    second: grass-removebg-preview_131
+  - first:
+      213: 1911112721555000773
+    second: grass-removebg-preview_132
+  - first:
+      213: 9123867001776956888
+    second: grass-removebg-preview_133
+  - first:
+      213: -1749377845554824181
+    second: grass-removebg-preview_134
+  - first:
+      213: 4373617856987618830
+    second: grass-removebg-preview_135
+  - first:
+      213: -2175145017833992635
+    second: grass-removebg-preview_136
+  - first:
+      213: -316627594767047698
+    second: grass-removebg-preview_137
+  - first:
+      213: -6184812762604159300
+    second: grass-removebg-preview_138
+  - first:
+      213: 7532606797413885070
+    second: grass-removebg-preview_139
+  - first:
+      213: -7072600502142071087
+    second: grass-removebg-preview_140
+  - first:
+      213: -8533214530737795643
+    second: grass-removebg-preview_141
+  - first:
+      213: 5645190281237105430
+    second: grass-removebg-preview_142
+  - first:
+      213: 1845335847809064940
+    second: grass-removebg-preview_143
+  - first:
+      213: 2557590412296949018
+    second: grass-removebg-preview_144
+  - first:
+      213: -4390412574368421364
+    second: grass-removebg-preview_145
+  - first:
+      213: -7845636856982024562
+    second: grass-removebg-preview_146
+  - first:
+      213: 7558850463256515530
+    second: grass-removebg-preview_147
+  - first:
+      213: -2859414701434019431
+    second: grass-removebg-preview_148
+  - first:
+      213: -1536882197751081999
+    second: grass-removebg-preview_149
+  - first:
+      213: 9032620348386601419
+    second: grass-removebg-preview_150
+  - first:
+      213: 1306560676128377605
+    second: grass-removebg-preview_151
+  - first:
+      213: 4373144134455461871
+    second: grass-removebg-preview_152
+  - first:
+      213: 3710894205231614243
+    second: grass-removebg-preview_153
+  - first:
+      213: 442599065435424573
+    second: grass-removebg-preview_154
+  - first:
+      213: 9147718031285826643
+    second: grass-removebg-preview_155
+  - first:
+      213: -4804349000787077844
+    second: grass-removebg-preview_156
+  - first:
+      213: -8768421379607592669
+    second: grass-removebg-preview_157
+  - first:
+      213: -7913846761295433110
+    second: grass-removebg-preview_158
+  - first:
+      213: -702756496642960300
+    second: grass-removebg-preview_159
+  - first:
+      213: 2014092067863912645
+    second: grass-removebg-preview_160
+  - first:
+      213: 3827441245135598073
+    second: grass-removebg-preview_161
+  - first:
+      213: 3981447875820336759
+    second: grass-removebg-preview_162
+  - first:
+      213: -776524436700808602
+    second: grass-removebg-preview_163
+  - first:
+      213: 1529094987088683996
+    second: grass-removebg-preview_164
+  - first:
+      213: 8003987067499382009
+    second: grass-removebg-preview_165
+  - first:
+      213: -4501829292363356749
+    second: grass-removebg-preview_166
+  - first:
+      213: 1261620885365641875
+    second: grass-removebg-preview_167
+  - first:
+      213: -5820597005535160997
+    second: grass-removebg-preview_168
+  - first:
+      213: -5345157378705726395
+    second: grass-removebg-preview_169
+  - first:
+      213: -9214268492061570014
+    second: grass-removebg-preview_170
+  - first:
+      213: -8100361846716119279
+    second: grass-removebg-preview_171
+  - first:
+      213: -8986195835236760287
+    second: grass-removebg-preview_172
+  - first:
+      213: -2684074950269765612
+    second: grass-removebg-preview_173
+  - first:
+      213: 8603949079038531848
+    second: grass-removebg-preview_174
+  - first:
+      213: -1822112748214252339
+    second: grass-removebg-preview_175
+  - first:
+      213: 2437058905583140551
+    second: grass-removebg-preview_176
+  - first:
+      213: -7062513415231356052
+    second: grass-removebg-preview_177
+  - first:
+      213: -8442454629459408891
+    second: grass-removebg-preview_178
+  - first:
+      213: -7400641354240749257
+    second: grass-removebg-preview_179
+  - first:
+      213: 4517882149878830630
+    second: grass-removebg-preview_180
+  - first:
+      213: -1427741538865384186
+    second: grass-removebg-preview_181
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grass-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ecee1b0476c7850800000000000000
+      internalID: 6376084700010565120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 607
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d848a4a92daca4360800000000000000
+      internalID: 7154753963911971981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 607
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e9bb8da9ebcc380800000000000000
+      internalID: -8949568787221602803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 607
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bb010765e91ede0800000000000000
+      internalID: -1305588322876212391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 607
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3a73e0282e838e0800000000000000
+      internalID: -1713370610002320475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f333cb6496e011230800000000000000
+      internalID: 3607680621821571903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a24b9964e627530800000000000000
+      internalID: 3851261880860682845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7dab22e25275970800000000000000
+      internalID: 8743498081644500948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82623ad44bde3cc0800000000000000
+      internalID: -3729302352651197811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c424e0275d6e2630800000000000000
+      internalID: 3904178147958203584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0fc6fecdb20d4b0800000000000000
+      internalID: -5417782123817013039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9497b91bf98045e0800000000000000
+      internalID: -1927388928953314148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 575
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6472c9d5e12a10ac0800000000000000
+      internalID: -3890650351768164538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adac4ccaecf15bc0800000000000000
+      internalID: -3795974925516493401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec725edbeffd8dd0800000000000000
+      internalID: -2482046431098929943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c2127edd48df200800000000000000
+      internalID: 215474445784001653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c8b2c59d5a59ca0800000000000000
+      internalID: -6010715774683214821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcc458bbc630d390800000000000000
+      internalID: -7795670706379502350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607124460a43e5760800000000000000
+      internalID: 7448448697198843654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 543
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e607bc4df38e550800000000000000
+      internalID: 6190267870999506541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277ceb0d8958a8b20800000000000000
+      internalID: 3137466981800658802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219f48784854644f0800000000000000
+      internalID: -844911444573751022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4762d3f672493140800000000000000
+      internalID: 4699860764802049868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190e4b9118cf21f40800000000000000
+      internalID: 5697894109989363857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482175f003d29aa20800000000000000
+      internalID: 3074037905096118916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fa3e7017b18a370800000000000000
+      internalID: 8333941282726719242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2cba6ed67ef0200800000000000000
+      internalID: 148591771933983453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51250e30ae008bf0800000000000000
+      internalID: -324243091772595874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 511
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9541fff090532d6d0800000000000000
+      internalID: -2967250891444382631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f9f2da830d78500800000000000000
+      internalID: 398516033887903595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c950e12c9005e49f0800000000000000
+      internalID: -482360107240389220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c0c769f68a63460800000000000000
+      internalID: 7221144249754717322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc96becddc65201a0800000000000000
+      internalID: -6844813041475032627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e0aee2bbb2fc110800000000000000
+      internalID: 1283292501769850368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05219c4a74d594d90800000000000000
+      internalID: -7113051574166285744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b0754b2e3a58820800000000000000
+      internalID: 2919920127503174549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_36
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f1cf730d662c860800000000000000
+      internalID: 7548708969904873354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff294971c6e2540a0800000000000000
+      internalID: -6898056212461088001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59e1f3600efd3810800000000000000
+      internalID: 1746831508119873882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7dad9e7fedb13750800000000000000
+      internalID: 6283011791477648767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed67fd5aeac48b10800000000000000
+      internalID: 1982932843897515488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1e7de149839260800000000000000
+      internalID: 7103171953543748743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880c6bb002642d850800000000000000
+      internalID: 6400255123896320136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776a9cfe47ae01900800000000000000
+      internalID: 653279733928797815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e82dc54de1cc170800000000000000
+      internalID: 8199962918974033449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d147644f3262250800000000000000
+      internalID: 5919458292286102834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebdd191611155a00800000000000000
+      internalID: 744520100008025062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721a5b18fd140f190800000000000000
+      internalID: -7930766515589766873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0550143e6e28410800000000000000
+      internalID: 1477997491453776108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbf4ec78b5858870800000000000000
+      internalID: 8684494483869727686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 447
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364b38baa593a1d80800000000000000
+      internalID: -8279241903379860381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7368897c43097db40800000000000000
+      internalID: 5464995229198747191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15799e5a2a8a8ac20800000000000000
+      internalID: 3218007350277936977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e3ebc5a3aafb6c0800000000000000
+      internalID: -4125391566007288238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4fb1a0e05cbe410800000000000000
+      internalID: 1507515164375381182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4623f19bf2685c0800000000000000
+      internalID: -4213627929219668742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_56
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001300063df2f44b0800000000000000
+      internalID: -5454088038827151104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb3658f237330460800000000000000
+      internalID: 7206664520777219050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_58
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533ef56e9e1951460800000000000000
+      internalID: 7211830812082168629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -14, y: -2}
+        - {x: -13, y: 14}
+        - {x: 14, y: 14}
+        - {x: 13, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: afcf309acda9f4a30800000000000000
+      internalID: 4201747249879055610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_60
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -11, y: -6}
+        - {x: -10, y: 15}
+        - {x: 16, y: 15}
+        - {x: 16, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62e36f4bf70cc720800000000000000
+      internalID: 2867675838678295146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 415
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca681748892906160800000000000000
+      internalID: 7016769403197949612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83675884de42c30e0800000000000000
+      internalID: -2288913909068499400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579b1584551c36560800000000000000
+      internalID: 7305895592554772853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29459edce76029060800000000000000
+      internalID: 6958631515931104402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8e777b89c1cfbb0800000000000000
+      internalID: -4901010852247246685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7352ba2129f8f5e80800000000000000
+      internalID: -8187667739995069129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_67
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bfd5e2bdddbab00800000000000000
+      internalID: 841009688880216935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5816421dbb0dd90800000000000000
+      internalID: -7074948507666119243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf20093a269b8c00800000000000000
+      internalID: 903981258307022781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -9}
+        - {x: -13, y: 12}
+        - {x: 14, y: 12}
+        - {x: 14, y: -11}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ad71e33f4e18730800000000000000
+      internalID: 3999729677451647504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_71
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -11, y: -8}
+        - {x: -9, y: 10}
+        - {x: 16, y: 15}
+        - {x: 15, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938eb57f727a2d9c0800000000000000
+      internalID: -3903874136881240007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_72
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 383
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076bd2bbfc3e88800800000000000000
+      internalID: 614991830474143344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66dfd873790369280800000000000000
+      internalID: -9036982176242074266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_74
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64d1582f3c6e64c0800000000000000
+      internalID: -4292374376322313106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54e017b6f60f4b80800000000000000
+      internalID: -8408494322574367650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2a4736b0e8d92a0800000000000000
+      internalID: -6729066088657280327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb5c364402caf2e0800000000000000
+      internalID: -2091145753346155551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bb98cff60325600800000000000000
+      internalID: 455479769854229327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9280c267f74c2d00800000000000000
+      internalID: 949212749307609757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_80
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a465bf72ef0e830800000000000000
+      internalID: 4098555108581067268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d84bab488eb0a040800000000000000
+      internalID: 4656931507295439062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_82
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b49f13e28afe4c0800000000000000
+      internalID: -4255998206481445998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_83
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 351
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28e2fa65cb680d00800000000000000
+      internalID: 939119017953781802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40888f42cc34060a0800000000000000
+      internalID: -6890432885804201980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1444f98fab58c1870800000000000000
+      internalID: 8654939621980849217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_86
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b41f99707159970800000000000000
+      internalID: 8760933971534105460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_87
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5743fd6fbd8ad80800000000000000
+      internalID: -8239093664921127513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06078bfb4f95b940800000000000000
+      internalID: 5311326484244661770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28fb5e11b4b50580800000000000000
+      internalID: -8861478018970027987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_90
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1e4f38aec9867a0800000000000000
+      internalID: -6383679940747533826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_91
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff67dbfe95c1bf7b0800000000000000
+      internalID: -5189522973014526209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31226bf06e7f3b150800000000000000
+      internalID: 5887321705381503507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5b62d3442c16980800000000000000
+      internalID: -8547337019432978969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c0473023be54200800000000000000
+      internalID: 163795561507720344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1703ee0486ab71700800000000000000
+      internalID: 511082039658557553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_96
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8155cfe712b129070800000000000000
+      internalID: 8111575709526021400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6224831790a96f90800000000000000
+      internalID: -6959855178396458385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_98
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00121e6466f95a520800000000000000
+      internalID: 2712749612185231616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_99
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674427c9829e8c7f0800000000000000
+      internalID: -591966990366522250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_100
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9536fdea2618d1b0800000000000000
+      internalID: -5631726960390031974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_101
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cb39193bedb0620800000000000000
+      internalID: 2741529661007969337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_102
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399c4c6e80c509fd0800000000000000
+      internalID: -2337267013304137325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_103
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5433d10bfa21e43e0800000000000000
+      internalID: -2067694633133198523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_104
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b73db4bc3297240800000000000000
+      internalID: 4789899034742717271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_105
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 287
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7773252c1203db680800000000000000
+      internalID: -8737774780476672137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d54cefd97dc34360800000000000000
+      internalID: 7152786556526020050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_107
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230c8a8a8c10002a0800000000000000
+      internalID: -6773411878230507470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_108
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c12eab7b7e41560800000000000000
+      internalID: 7283701273665346693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_109
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2328a39dd9faab20800000000000000
+      internalID: 3146602019732071213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62609a7d22aa07200800000000000000
+      internalID: 175827452091237926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_111
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b3cfcbc621eed80800000000000000
+      internalID: -8219612011668161704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_112
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13d20a6ec965e620800000000000000
+      internalID: 2802762678370751258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_113
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e318631e035ede00800000000000000
+      internalID: 1071385081280992227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_114
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6557564a1ddb690800000000000000
+      internalID: -7584675693415016706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_115
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c46ffce4a1e8640800000000000000
+      internalID: 5084029955146665046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_116
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 255
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b718a51c3835bb0800000000000000
+      internalID: -4948466699079681259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecd76aafca40b960800000000000000
+      internalID: 7615669225661127919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c217ab14d79a20d0800000000000000
+      internalID: -3446775627545898297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_119
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e771e98fa5f0150800000000000000
+      internalID: 5840987265573551650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_120
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1a306c58fe12e10800000000000000
+      internalID: 2171279853201105364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_121
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55ee2ede37498c60800000000000000
+      internalID: 7820860563246736732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_122
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1cb1e185fbf6e80800000000000000
+      internalID: -8183111612725739066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_123
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa7497866c6f22d0800000000000000
+      internalID: -3301300814222165250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_124
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1ef27c99e393780800000000000000
+      internalID: -8702855974724050504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_125
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b75603222f5678a0800000000000000
+      internalID: -6307749627864655951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_126
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ad3adc39ad1a4c0800000000000000
+      internalID: -4277897842680145351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_127
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25fe14fc4806fb00800000000000000
+      internalID: 861885505294234923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a5cb32d6030eb20800000000000000
+      internalID: 3161580183723203194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_129
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21128464288275750800000000000000
+      internalID: 6293543544263549202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_130
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63399345da2fb0600800000000000000
+      internalID: 435708615227708214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_131
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a98b0626522210b0800000000000000
+      internalID: -5759503220052620890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_132
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd040e05e2a58a10800000000000000
+      internalID: 1911112721555000773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_133
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5e2d2a2bc7e9e70800000000000000
+      internalID: 9123867001776956888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c34c93e16f8b7e0800000000000000
+      internalID: -1749377845554824181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_135
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e5d0db44632bc30800000000000000
+      internalID: 4373617856987618830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_136
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e4b05712550d1e0800000000000000
+      internalID: -2175145017833992635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3e2df41ec1b9bf0800000000000000
+      internalID: -316627594767047698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 191
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe3daa9f812b2aa0800000000000000
+      internalID: -6184812762604159300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e842c8809f1398860800000000000000
+      internalID: 7532606797413885070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_140
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de8297c05319dd90800000000000000
+      internalID: -7072600502142071087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd0c2f589ee39980800000000000000
+      internalID: -8533214530737795643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_142
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b00aab6aeb75e40800000000000000
+      internalID: 5645190281237105430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_143
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef14f33d23fb9910800000000000000
+      internalID: 1845335847809064940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_144
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d87e5ede26e7320800000000000000
+      internalID: 2557590412296949018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_145
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0aac57660f1213c0800000000000000
+      internalID: -4390412574368421364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_146
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ecfd6b8d2be1390800000000000000
+      internalID: -7845636856982024562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_147
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac393b4a27e66e860800000000000000
+      internalID: 7558850463256515530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_148
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991ee779a715158d0800000000000000
+      internalID: -2859414701434019431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 159
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3dc6da8c5ebaae0800000000000000
+      internalID: -1536882197751081999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc96c8899505a5d70800000000000000
+      internalID: 9032620348386601419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_151
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b40223306d12210800000000000000
+      internalID: 1306560676128377605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe70dcd9b6780bc30800000000000000
+      internalID: 4373144134455461871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_153
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329c2e55e9ebf7330800000000000000
+      internalID: 3710894205231614243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_154
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37c239418d642600800000000000000
+      internalID: 442599065435424573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_155
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3543a30351933fe70800000000000000
+      internalID: 9147718031285826643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_156
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25551fc906835db0800000000000000
+      internalID: -4804349000787077844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_157
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3218c8b563f405680800000000000000
+      internalID: -8768421379607592669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_158
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a623c1acc4e5c2290800000000000000
+      internalID: -7913846761295433110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_159
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4549ffd80be4f36f0800000000000000
+      internalID: -702756496642960300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_160
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 127
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0e5f9801e73fb10800000000000000
+      internalID: 2014092067863912645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_161
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f17cf6a88dcd1530800000000000000
+      internalID: 3827441245135598073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_162
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776310a9fb1f04730800000000000000
+      internalID: 3981447875820336759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_163
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ab907932b3935f0800000000000000
+      internalID: -776524436700808602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_164
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3604d0acf683510800000000000000
+      internalID: 1529094987088683996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_165
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f40f19b4dfd31f60800000000000000
+      internalID: 8003987067499382009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_166
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5eb3d3c1a4681c0800000000000000
+      internalID: -4501829292363356749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_167
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392de69c28d228110800000000000000
+      internalID: 1261620885365641875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_168
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55df50ccd5193fa0800000000000000
+      internalID: -5820597005535160997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_169
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 95
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544efa51faf22d5b0800000000000000
+      internalID: -5345157378705726395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_170
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c889130a7502080800000000000000
+      internalID: -9214268492061570014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_171
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117cb5661dbb59f80800000000000000
+      internalID: -8100361846716119279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_172
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1254e9eaf7e9a4380800000000000000
+      internalID: -8986195835236760287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_173
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41875a6bd0040cad0800000000000000
+      internalID: -2684074950269765612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_174
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80914a90a1e576770800000000000000
+      internalID: 8603949079038531848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_175
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc8af50c1e86b6e0800000000000000
+      internalID: -1822112748214252339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce3cfb992c22d120800000000000000
+      internalID: 2437058905583140551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_177
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6344b7b779ecfd90800000000000000
+      internalID: -7062513415231356052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_178
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50848ba9e3066da80800000000000000
+      internalID: -8442454629459408891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_179
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7311a6a06e3ab4990800000000000000
+      internalID: -7400641354240749257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_180
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6261b98e0edb2be30800000000000000
+      internalID: 4517882149878830630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass-removebg-preview_181
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605fbd882a4af2ce0800000000000000
+      internalID: -1427741538865384186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
