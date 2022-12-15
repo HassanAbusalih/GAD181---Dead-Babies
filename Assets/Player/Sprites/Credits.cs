@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
-    bool skipGarbage;
+    bool skip;
     float timer;
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.DeleteAll();
         StartCoroutine(EndCredits());
     }
 
@@ -19,13 +20,13 @@ public class Credits : MonoBehaviour
         timer += Time.deltaTime;
         if (Input.GetKey(KeyCode.Space))
         {
-            skipGarbage = true;
+            skip = true;
         }
     }
 
     IEnumerator EndCredits()
     {
-        yield return new WaitUntil(() => skipGarbage || timer == 35);
+        yield return new WaitUntil(() => skip || timer == 35);
         SceneManager.LoadScene(0);
     }
 }
