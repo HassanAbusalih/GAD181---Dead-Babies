@@ -15,7 +15,7 @@ MonoBehaviour:
   movename: Aqua Tension
   movescolor: {r: 0, g: 0.12315698, b: 0.6698113, a: 0}
   description: 
-  type: 3
+  type: 2
   category: 2
   power: 65
   accuracy: 0

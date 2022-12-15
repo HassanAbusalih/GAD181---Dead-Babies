@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tensed Swing
   m_EditorClassIdentifier: 
   movename: Tensed Swing
-  movescolor: {r: 0.40943396, g: 1, b: 0.44605696, a: 0}
+  movescolor: {r: 0.5377358, g: 0.37196943, b: 0, a: 0}
   description: 
   type: 7
   category: 2

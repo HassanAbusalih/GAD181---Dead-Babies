@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Red Creeper
   m_EditorClassIdentifier: 
   movename: Red Creeper
+  movescolor: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
   description: 
   type: 5
   category: 2
