@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5d19e91e8fa2cf40a8f68161e5b9838, type: 3}
-  m_Name: Thunder Crack
+  m_Name: Gust Rush
   m_EditorClassIdentifier: 
-  movename: Thunder Crack
-  movescolor: {r: 0.735849, g: 0.48995906, b: 0, a: 0}
+  movename: Gust Rush
+  movescolor: {r: 0.46873143, g: 0.7022135, b: 0.745283, a: 0}
   description: 
-  type: 3
+  type: 5
   category: 2
   power: 65
   accuracy: 0
