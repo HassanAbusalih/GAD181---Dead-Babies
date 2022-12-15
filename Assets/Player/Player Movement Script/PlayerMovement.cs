@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         {
             movementOfPlayer.x = 0;
             movementOfPlayer.y = 0;
+            anim.Play("Idle Amimation");
             anim.StopPlayback();
         }
         if (cd < 1 && touching)
