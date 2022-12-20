@@ -176,7 +176,7 @@ public class Battle : MonoBehaviour
             if (battleResult.fainted)
             {
                 int enemyLevel = enemyMon.pokemon.level;
-                xpGain = Mathf.FloorToInt((340 * enemyLevel) / 4);
+                xpGain = Mathf.FloorToInt((440 * enemyLevel) / 2);
                 playerMon.pokemon.currentXpPoints += xpGain;
                 yield return dialogue.SetDialogue(enemyMon.pokemon.pokemonBase.pokeName + " fainted!");
                 xpBar.SetXpBar(playerMon.pokemon.currentXpPoints, playerMon.pokemon.xpThreshhold);

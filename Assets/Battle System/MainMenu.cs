@@ -24,6 +24,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private AudioSource ClickSound;
     [SerializeField] private AudioClip Click;
     [SerializeField] private AudioClip Sound;
+    bool start = false;
     private void Start()
     {
         MainMenu[] gameMenus = FindObjectsOfType<MainMenu>(true);
@@ -36,6 +37,7 @@ public class MainMenu : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         player.gameObject.SetActive(false);
         menuTheme.Play();
+        start = true;
     }
 
     private void OnDisable()
@@ -47,6 +49,7 @@ public class MainMenu : MonoBehaviour
         else
         {
             player = FindObjectOfType<PlayerMovement>();
+            player.gameObject.SetActive(true);
             gameTheme = player.GetComponent<AudioSource>();
         }
         menuTheme.Stop();
@@ -64,8 +67,14 @@ public class MainMenu : MonoBehaviour
             player = FindObjectOfType<PlayerMovement>();
             gameTheme = player.GetComponent<AudioSource>();
         }
+        if (start)
+        {
+            player.gameObject.SetActive(false);
+        }
         menuTheme.Play();
         gameTheme.Stop();
+        SelectionSoundEffect = GameObject.Find("Selection SFX").GetComponent<AudioSource>();
+        ClickSound = GameObject.Find("Click SFX").GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -190,14 +199,8 @@ public class MainMenu : MonoBehaviour
         }
         if (selection == 3 && Input.GetKeyDown(KeyCode.Space))
         {
-            List<Pokemon> playerPokemon = FindObjectOfType<PokemonParties>().playerParty;
-            if (playerPokemon.Count > 0)
-            {
-                player.saveLoad.PlayerSave();
-                player.SavePos();
-            }
-            Debug.Log("quit");
-            Application.Quit();
+            ClickSound.PlayOneShot(Click);
+            StartCoroutine(Quit());
         }
     }
 
@@ -222,5 +225,18 @@ public class MainMenu : MonoBehaviour
             page2.SetActive(false);
             guide = false;
         }
+    }
+
+    IEnumerator Quit()
+    {
+        List<Pokemon> playerPokemon = FindObjectOfType<PokemonParties>().playerParty;
+        if (playerPokemon.Count > 0)
+        {
+            player.saveLoad.PlayerSave();
+            player.SavePos();
+        }
+        yield return new WaitForSeconds(0.1f);
+        Debug.Log("quit");
+        Application.Quit();
     }
 }
