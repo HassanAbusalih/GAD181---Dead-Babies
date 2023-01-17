@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb428becedb4b244bb5db461ff4d861, type: 3}
   m_Name: OldMan
   m_EditorClassIdentifier: 
-  trainerName: Old man
+  trainerName: Dash
   trainerSprite: {fileID: 0}
   trainerPokemon:
   - pokemonBase: {fileID: 11400000, guid: 400f37a7ef7e94547ba464120b3e2d32, type: 2}
@@ -21,3 +21,4 @@ MonoBehaviour:
     currentHP: 0
     currentXpPoints: 0
     xpThreshhold: 0
+  trainerinbattle: {fileID: 0}
